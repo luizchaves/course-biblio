@@ -99,7 +99,9 @@
     "bibliografias": [
       {
         "referencia": "FINNEY, Ross L.; Weir, Maurice D.; Frank; R. Giordano. Cálculo de George B. Thomas. 10. ed. São Paulo: Addison Wesley, 2002, v 1.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/THOMAS2002.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -111,7 +113,10 @@
       },
       {
         "referencia": "GUIDORIZZI, Hamilton Luiz, Um Curso de Cálculo. 5ª ed., Rio de Janeiro, LTC, 2001, v.1.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/GUIDORIZZI2018.bib",
+          "bibtex/GUIDORIZZI2001.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -121,7 +126,9 @@
       },
       {
         "referencia": "LEITHOLD, Louis. O Cálculo com Geometria Analítica. 3. ed. São Paulo: Harbra, 1994. v.1.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/LEITHOLD1994.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -136,7 +143,9 @@
       },
       {
         "referencia": "SWOKOWSKI, Earl. W. Cálculo com Geometria Analítica. 2. ed. São Paulo: Makron Books, 1994. v.1.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SWOKOWSKI1994.bib"
+        ],
         "tipo": "complementar"
       }
     ]
@@ -205,7 +214,9 @@
       },
       {
         "referencia": "PHILIPPI JR, A. Saneamento, Saúde e Ambiente. São Paulo: Manole, 2004.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/PHILIPPIJUNIOR2005.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -261,7 +272,9 @@
       },
       {
         "referencia": "PRESSMAN, R. S. Engenharia de Software - Uma Abordagem Profissional - 8ª Ed. 2016, Editora Amgh;",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/PRESSMAN2011.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -400,7 +413,9 @@
       },
       {
         "referencia": "FREEMAN, Eric; ROBSON, Elisabeth. Use a Cabeça! HTML e CSS. Editora Alta Books, 2015. ISBN-13 9788576088622",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/FREEMAN2016.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -451,7 +466,9 @@
     "bibliografias": [
       {
         "referencia": "BOULOS, P.; CAMARGO, I. Geometria Analítica – Um Tratamento Vetorial. São Paulo: Pearson, 2004.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/CAMARGO2005.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -487,7 +504,9 @@
       },
       {
         "referencia": "SWOKOWSKI, Earl W. Cálculo com Geometria Analítica – v.2, Makron Books, São Paulo – SP, 1994.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SWOKOWSKI1994.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -544,7 +563,9 @@
       },
       {
         "referencia": "CORMEN, T. H.; LEISERSON, C.; Algoritmos - Teoria e Prática. Elsevier. 2002. ISBN-10 8535209263",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/CORMEN2012.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -623,12 +644,16 @@
       },
       {
         "referencia": "GUEDES, Gilleanes T. A.. UML 2: uma abordagem prática. 3a. Edição. São Paulo: Novatec, 2018. 496p.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/GUEDES2009.bib"
+        ],
         "tipo": "basica"
       },
       {
         "referencia": "LARMAN Craig. Utilizando UML e padrões: uma introdução à análise e ao projeto orientados a objetos e ao processo unificado. 3. ed. São Paulo: Bookman, 2007. 696p.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/LARMAN2004.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -640,7 +665,9 @@
       },
       {
         "referencia": "LIMA, Adilson da Silva. UML 2.5: do requisito à solução. São Paulo: Érica, 2014. 368 p.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/LIMA2014.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -652,12 +679,17 @@
       },
       {
         "referencia": "PREECE, Jennifer; ROGERS, Yvonne; SHARP, Helen. Design de interação Porto Alegre: Bookman, 2013. 600p.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/PREECE2005.bib",
+          "bibtex/ROGERS2013.bib"
+        ],
         "tipo": "basica"
       },
       {
         "referencia": "SOMMERVILLE, Ian. Engenharia de software. 10a. ed. São Paulo: Pearson, 2019. 768p.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SOMMERVILLE2007.bib"
+        ],
         "tipo": "basica"
       }
     ]
@@ -683,7 +715,9 @@
     "bibliografias": [
       {
         "referencia": "BRONCKART, Jean-Paul. Atividade de linguagem, textos e discursos: por um interacionismo sócio-discursivo. São Paulo: Educ. 1999.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/BRONCKART2007.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -693,7 +727,9 @@
       },
       {
         "referencia": "DIONÌSIO, Paiva Angela et al. Organizadoras. Gêneros Textuais e Ensino. 2a ed. Rio de Janeiro: Lucerna, 2003.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/DIONÍSIO2005.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -705,17 +741,23 @@
       },
       {
         "referencia": "DOUGLAS, Dan. Assessing Languages for specific purposes. (2002)",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/DOUGLAS2000.bib"
+        ],
         "tipo": "basica"
       },
       {
         "referencia": "DUDLEY-EVANS, TONY, ST John, Maggie Jo. Developments in English for specific purposes. (2003)",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/DUDLEYEVANS1998.bib"
+        ],
         "tipo": "basica"
       },
       {
         "referencia": "GRELLET, Françoise. Developing readings kills: a practical guide to reading comprehension exercises. (2003).",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/GRELLET1981.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -725,7 +767,9 @@
       },
       {
         "referencia": "KLEIMAN, Angela. Leitura: ensino e pesquisa. Campinas: Editora Pontes, 1996.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/KLEIMAN2008.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -1119,7 +1163,9 @@
       },
       {
         "referencia": "SILBERSCHATZ, Abraham; KORTH, S., SUDARSHAN, Henry. Sistema de Banco de Dados. Editora GEN LTC; 7ª edição, 2020. ISBN-13 9788595157330.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SILBERSCHATZ2012.bib"
+        ],
         "tipo": "basica"
       }
     ]
@@ -1172,7 +1218,10 @@
       },
       {
         "referencia": "Larman, Craig. Utilizando Uml e Padrões: Uma Introdução a Análise e ao Projeto Orientados a Objetos e ao Desenvolvimento Iterativo. 3. Ed. Porto Alegre, Rs: Bookman, 2007-2008. 695 P. ISBN-13 9788560031528.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/LARMAN2000.bib",
+          "bibtex/LARMAN2004.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -1228,12 +1277,18 @@
       },
       {
         "referencia": "BAGNO, Marcos. Preconceito linguístico – o que é, como se faz. 49.ed. São Paulo: Edições Loyola, 1999.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/BAGNO2013.bib",
+          "bibtex/BAGNO2001.bib"
+        ],
         "tipo": "basica"
       },
       {
         "referencia": "BAGNO, Marcos. Preconceito linguístico – o que é, como se faz. 49.ed. São Paulo: Edições Loyola, 1999.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/BAGNO2013.bib",
+          "bibtex/BAGNO2001.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -1245,7 +1300,9 @@
       },
       {
         "referencia": "DIONÍSIO, Ângela P. et al (Org.). Gêneros textuais e ensino. 2. ed. Rio de Janeiro: Lucerna, 2002. GUIMARÃES, Elisa. Texto, discurso e ensino. São Paulo: Contexto, 2009.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/DIONÍSIO2005.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -1402,12 +1459,16 @@
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/PRESSMAN2011.bib"
+        ],
         "tipo": "basica"
       },
       {
         "referencia": "SOMMERVILLE, Ian. Engenharia de software. 10a. ed. São Paulo: Pearson, 2019. 768p.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SOMMERVILLE2007.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -1443,7 +1504,10 @@
     "bibliografias": [
       {
         "referencia": "COMER, Douglas E. Interligação em redes com TCP/IP – Vol. 1. 5ª Edição. Editora Campus. Rio de Janeiro. 2006.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/COMER2015.bib",
+          "bibtex/COMER2006.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -1552,7 +1616,9 @@
       },
       {
         "referencia": "SILBERSCHATZ, Abraham; KORTH, S., SUDARSHAN, Henry. Sistema de Banco de Dados. Editora GEN LTC; 7ª edição, 2020. ISBN-13 9788595157330",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SILBERSCHATZ2012.bib"
+        ],
         "tipo": "basica"
       }
     ]
@@ -1771,7 +1837,10 @@
       },
       {
         "referencia": "TANENBAUM, Andrew S; WOODHULL, Albert S. Sistemas operacionais: projeto e implantação. 3. ed. São Paulo: Bookman, 2008. 990 p. il.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/TANENBAUM2008.bib",
+          "bibtex/TANENBAUM1999.bib"
+        ],
         "tipo": "basica"
       }
     ]
@@ -1797,7 +1866,10 @@
     "bibliografias": [
       {
         "referencia": "ANTUNES, Ricardo(org.). A dialética do trabalho. São Paulo, Expressão Popular, 2004.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/ANTUNES2004.bib",
+          "bibtex/ANTUNES2013.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -1920,7 +1992,9 @@
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/PRESSMAN2011.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -2018,12 +2092,16 @@
     "bibliografias": [
       {
         "referencia": "ALUR, Deepak et al. Core J2EE Patterns: As melhores práticas e estratégias de design. Editora Campus, 2004.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/ALUR2002.bib"
+        ],
         "tipo": "complementar"
       },
       {
         "referencia": "FREEMEN, Eric; FREEMAN, Elisabeth. Use a cabeça: padrões e projetos. 2. ed. Rio de Janeiro: Alta Books, 2009. 478 p. il. (Use a cabeça!).",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/FREEMAN2016.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -2035,7 +2113,9 @@
       },
       {
         "referencia": "GUEDES, Gilleanes T. A.. UML 2: uma abordagem prática. São Paulo: Novatec, 2009. 485 p. il.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/GUEDES2009.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -2188,7 +2268,9 @@
       },
       {
         "referencia": "GUEDES, Gilleanes T. A.. UML 2: uma abordagem prática. São Paulo: Novatec, 2009. 485 p. 08",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/GUEDES2009.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -2207,7 +2289,9 @@
       },
       {
         "referencia": "LIMA, Adilson da Silva. UML 2.5: do requisito à solução. São Paulo: Érica, 2014. 368 p.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/LIMA2014.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -2226,12 +2310,18 @@
       },
       {
         "referencia": "PREECE, Jennifer; ROGERS, Yvonne; SHARP, Helen. Design de interação. Porto Alegre: Bookman, 2008. 548 p. 05",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/ROGERS2013.bib",
+          "bibtex/PREECE2005.bib"
+        ],
         "tipo": "complementar"
       },
       {
         "referencia": "PRESSMAN, R. S. Engenharia de Software - Uma Abordagem Profissional - 8ª Ed. 2016, Editora Amgh;",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/PRESSMAN1995.bib",
+          "bibtex/PRESSMAN2011.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -2243,7 +2333,9 @@
       },
       {
         "referencia": "SBROCCO, José Henrique Teixeira de Carvalho. UML 2.5 com enterprise architect: modelagem visual de projetos orientada a objetos. São Paulo: Érica, 2014. 320 p.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SBROCCO2014.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -2310,7 +2402,10 @@
       },
       {
         "referencia": "PREECE, Jennifer, ROGERS , Yvonne, SHARP, HELEN. Design de interação: além da interação homem-computador. Bookman, Porto Alegre, 2011.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/PREECE2005.bib",
+          "bibtex/ROGERS2013.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -2393,7 +2488,9 @@
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/PRESSMAN2011.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -2552,12 +2649,16 @@
       },
       {
         "referencia": "PMI - PROJECT MANAGEMENT INSTITUTE. Guia PMBOK®: Um Guia para o Conjunto de Conhecimentos em Gerenciamento de Projetos, Sexta edição, Pennsylvania: PMI, 2017. ISBN-13 9781628251845.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/G2008.bib"
+        ],
         "tipo": "basica"
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/PRESSMAN2011.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -2576,7 +2677,9 @@
       },
       {
         "referencia": "SOMMERVILLE, Ian. Engenharia de software. 10. ed. São Paulo: Pearson Prentice Hall, 2019. 771 p. il. ISBN-10 8543024978.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SOMMERVILLE2007.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -2627,7 +2730,9 @@
       },
       {
         "referencia": "AQUINO, Italo de Souza. Como ler artigos científicos da graduação ao doutorado 3. ed. São Paulo: Saraiva, 2012. 126 p. il. ISBN-13 9788502160965.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/AQUINO2012.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -2718,7 +2823,9 @@
       },
       {
         "referencia": "LECHETA, R. R. Google Android: aprenda a criar aplicações para dispositivos móveis com o Android SDK. 3. ed. São Paulo: Novatec, 2013.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/LECHETA2015.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -3021,7 +3128,10 @@
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/PRESSMAN1995.bib",
+          "bibtex/PRESSMAN2011.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -3079,7 +3189,9 @@
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/PRESSMAN2011.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -3163,7 +3275,9 @@
       },
       {
         "referencia": "RICHARDSON, Leonard; RUBY, Sam. RESTful serviços Web. Rio de Janeiro: Alta Books, 2007. 336 p.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/RICHARDSON2007.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -3185,7 +3299,9 @@
       },
       {
         "referencia": "TANENBAUM, Andrew S; WOODHULL, Albert S. Sistemas operacionais, projeto e implantação. 3. ed. São Paulo: Bookman, 2008. 990 p. il",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/TANENBAUM2008.bib"
+        ],
         "tipo": "complementar"
       }
     ]
@@ -3530,7 +3646,9 @@
       },
       {
         "referencia": "THOMAS, G. B. Cálculo, Volume 1 e 2. São Paulo: Pearson, 2013.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/THOMAS2002.bib"
+        ],
         "tipo": "basica"
       }
     ]
@@ -3706,7 +3824,9 @@
       },
       {
         "referencia": "SOUSA NETO, Manoel Veras de. Virtualização: Tecnologia Central do Datacenter. BRASPORT, 2ª edição. 2016. ISBN-13 9788574527611.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/VERAS2011.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -3798,17 +3918,23 @@
     "bibliografias": [
       {
         "referencia": "FURTADO, Celso. O capitalismo global. São Paulo: Paz e Terra, 2006",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/FURTADO2007.bib"
+        ],
         "tipo": "complementar"
       },
       {
         "referencia": "LOPES, Luiz Martins. VASCONSELOS; Marco Antônio. Manual de Macroeconomia. São Paulo: Siciliano, 2008.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/LOPES2008.bib"
+        ],
         "tipo": "complementar"
       },
       {
         "referencia": "MENDONÇA, Sônia Regina de. Estado e Economia no Brasil . São Paulo: Paz e Terra, 2002.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/MENDONÇA0000.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -3891,17 +4017,25 @@
       },
       {
         "referencia": "DOLABELA, Fernando. O Segredo de Luísa. 1. ed. Rio de Janeiro: Sextante. 2008. 304 p. ISBN-13 9788575423387.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/DOLABELA1999.bib"
+        ],
         "tipo": "complementar"
       },
       {
         "referencia": "DORNELAS, José Carlos Assis; SPINELLI, Stephen; ADAMS, Robert. Criação de novos negócios: empreendedorismo para o século XXI. 9. ed. São Paulo: GEN Atlas, 2013. 480 p. il. ISBN-13 9788535264586.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/DORNELAS2014.bib",
+          "bibtex/DORNELAS2014.bib"
+        ],
         "tipo": "complementar"
       },
       {
         "referencia": "DORNELAS, José. Empreendedorismo: transformando ideias em negócios. 7. ed. Rio de Janeiro: Empreende, 2021 288 p. il. ISBN-13 9786587052083.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/DORNELAS2014.bib",
+          "bibtex/DORNELAS2014.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -4132,7 +4266,9 @@
       },
       {
         "referencia": "SCHWABER, K.; SUTHERLAND, J.. The Scrum Guide: The Definitive Guide to Scrum [S.l.]: Scrum.org, 2020. Disponível em: https://scrumguides.org. Acesso em: 18 nov. 2024.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SUTHERLAND2019.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -4323,7 +4459,9 @@
       },
       {
         "referencia": "MARCUSCHI, Luiz Antônio. Produção textual, análise de gêneros e compreensão. São Paulo: Parábola, 2008.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/MARCUSCHI2008.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -4601,7 +4739,9 @@
       },
       {
         "referencia": "SUTHERLAND, JEFF; SUTHERLAND, J.J. Scrum: A arte de fazer o dobro do trabalho na metade do tempo. Ed. Sextante. 2019.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SUTHERLAND2019.bib"
+        ],
         "tipo": "complementar"
       }
     ]
@@ -4644,7 +4784,9 @@
       },
       {
         "referencia": "SOUSA NETO, Manoel Veras de. Virtualização: Tecnologia Central do Datacenter. BRASPORT, 2ª edição. 2016. ISBN-13 9788574527611.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/VERAS2011.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -4893,7 +5035,10 @@
       },
       {
         "referencia": "TANENBAUM, A. S.; WETHERRALL, D. Redes De Computadores. 5. ed. São Paulo: Pearson, 2011.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/TANENBAUM2011.bib",
+          "bibtex/TANENBAUM2003.bib"
+        ],
         "tipo": "basica"
       }
     ]
@@ -5452,7 +5597,9 @@
       },
       {
         "referencia": "SOUSA NETO, Manoel Veras de. Virtualização: Tecnologia Central do Datacenter. BRASPORT, 2ª edição. 2016. ISBN-13 9788574527611.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/VERAS2011.bib"
+        ],
         "tipo": "basica"
       },
       {
