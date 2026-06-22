@@ -112,10 +112,17 @@
       padding: 2px;
       border-radius: 3px;
       color: #0060df;
+      background: #eaf2ff;
       text-decoration: none;
     }
 
-    .koha-link:hover { background: #eaf2ff; }
+    .koha-link:hover { background: #cfe2ff; }
+
+    .koha-link-disabled {
+      color: #d93025;
+      background: #fce8e6;
+      cursor: not-allowed;
+    }
 
     .koha-link svg {
       width: 13px;
@@ -181,10 +188,8 @@ function parseBibUrl(text) {
 async function fetchBibCache(subjects) {
   const paths = new Set();
   for (const subject of subjects) {
-    for (const section of ['bibliografiaBasica', 'bibliografiaComplementar']) {
-      for (const item of subject[section] ?? []) {
-        if (item.bibtex?.[0]) paths.add(item.bibtex[0]);
-      }
+    for (const item of subject.bibliografias ?? []) {
+      if (item.bibtex?.[0]) paths.add(item.bibtex[0]);
     }
   }
   const cache = {};
@@ -202,7 +207,18 @@ async function fetchBibCache(subjects) {
 
 function renderKohaLinks(bibPaths, bibCache) {
   const urls = (bibPaths ?? []).map(p => bibCache[p]).filter(Boolean);
-  if (!urls.length) return '';
+  if (!urls.length) {
+    return `<div class="koha-links">
+      <span class="koha-link koha-link-disabled" title="Registro indisponível no Koha" aria-label="Registro indisponível no Koha">
+        <svg class="lucide lucide-link-2-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
+          <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
+          <line x1="8" x2="16" y1="12" y2="12"></line>
+          <line x1="2" x2="22" y1="2" y2="22"></line>
+        </svg>
+      </span>
+    </div>`;
+  }
   return `<div class="koha-links">${urls.map((url, index) => {
     const label = urls.length > 1
       ? `Abrir registro ${index + 1} no Koha`
@@ -230,10 +246,10 @@ function semesterSort(keys) {
 }
 
 function renderSubject(subject, bibCache) {
-  const references = [
-    ...(subject.bibliografiaBasica ?? []).map(item => ({ ...item, type: 'B' })),
-    ...(subject.bibliografiaComplementar ?? []).map(item => ({ ...item, type: 'C' })),
-  ].sort((left, right) => left.referencia.localeCompare(right.referencia, 'pt-BR'));
+  const references = (subject.bibliografias ?? []).map(item => ({
+    ...item,
+    type: item.tipo === 'basica' ? 'B' : 'C'
+  })).sort((left, right) => left.referencia.localeCompare(right.referencia, 'pt-BR'));
 
   const card = document.createElement('div');
   card.className = 'subject';
