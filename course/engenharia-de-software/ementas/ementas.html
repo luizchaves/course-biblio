@@ -202,7 +202,9 @@ async function fetchBibCache(subjects) {
   const paths = new Set();
   for (const subject of subjects) {
     for (const item of subject.bibliografias ?? []) {
-      if (item.bibtex?.[0]) paths.add(item.bibtex[0]);
+      for (const path of item.bibtex ?? []) {
+        if (path) paths.add(path);
+      }
     }
   }
   const cache = {};

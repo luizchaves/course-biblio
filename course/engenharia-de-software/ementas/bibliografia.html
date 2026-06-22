@@ -189,7 +189,9 @@ async function fetchBibCache(subjects) {
   const paths = new Set();
   for (const subject of subjects) {
     for (const item of subject.bibliografias ?? []) {
-      if (item.bibtex?.[0]) paths.add(item.bibtex[0]);
+      for (const path of item.bibtex ?? []) {
+        if (path) paths.add(path);
+      }
     }
   }
   const cache = {};
@@ -206,31 +208,44 @@ async function fetchBibCache(subjects) {
 }
 
 function renderKohaLinks(bibPaths, bibCache) {
-  const urls = (bibPaths ?? []).map(p => bibCache[p]).filter(Boolean);
-  if (!urls.length) {
-    return `<div class="koha-links">
-      <span class="koha-link koha-link-disabled" title="Registro indisponível no Koha" aria-label="Registro indisponível no Koha">
-        <svg class="lucide lucide-link-2-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
-          <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
-          <line x1="8" x2="16" y1="12" y2="12"></line>
-          <line x1="2" x2="22" y1="2" y2="22"></line>
-        </svg>
-      </span>
-    </div>`;
+  const paths = bibPaths ?? [];
+  const activeUrls = [];
+  for (const path of paths) {
+    const url = bibCache[path];
+    if (url) {
+      activeUrls.push(url);
+    }
   }
-  return `<div class="koha-links">${urls.map((url, index) => {
-    const label = urls.length > 1
-      ? `Abrir registro ${index + 1} no Koha`
-      : 'Abrir registro no Koha';
-    return `<a class="koha-link" href="${escapeHtml(url)}" target="_blank" rel="noopener" aria-label="${label}" title="${label}">
-      <svg class="lucide lucide-external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M15 3h6v6"></path>
-        <path d="M10 14 21 3"></path>
-        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+
+  if (activeUrls.length > 0) {
+    return `<div class="koha-links">${activeUrls.map((url, index) => {
+      const label = activeUrls.length > 1
+        ? `Abrir registro ${index + 1} no Koha`
+        : 'Abrir registro no Koha';
+      return `<a class="koha-link" href="${escapeHtml(url)}" target="_blank" rel="noopener" aria-label="${label}" title="${label}">
+        <svg class="lucide lucide-external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M15 3h6v6"></path>
+          <path d="M10 14 21 3"></path>
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+        </svg>
+      </a>`;
+    }).join('')}</div>`;
+  }
+
+  const label = paths.length > 0
+    ? 'Registro indisponível no Koha'
+    : 'Sem registro BibTeX cadastrado';
+
+  return `<div class="koha-links">
+    <span class="koha-link koha-link-disabled" title="${label}" aria-label="${label}">
+      <svg class="lucide lucide-link-2-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
+        <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
+        <line x1="8" x2="16" y1="12" y2="12"></line>
+        <line x1="2" x2="22" y1="2" y2="22"></line>
       </svg>
-    </a>`;
-  }).join('')}</div>`;
+    </span>
+  </div>`;
 }
 
 function semesterSort(keys) {
