@@ -118,6 +118,7 @@
     .badge-available { background: #d4edda; color: #155724; }
     .badge-consult   { background: #fff3cd; color: #856404; }
     .badge-borrowed  { background: #f8d7da; color: #721c24; }
+    .badge-count     { background: #e8f0fe; color: #1a73e8; border: 1px solid #d2e3fc; font-weight: 600; margin-left: 6px; }
 
     .bib-link {
       font-size: 0.72rem;
@@ -262,13 +263,21 @@ function bookIsbns(book, bibFields) {
 }
 
 function formatIsbns(isbns) {
-  return isbns.map(isbn => {
-    const normalized = String(isbn).toUpperCase().replace(/[^0-9X]/g, '');
-    const label = normalized.length === 13
-      ? 'ISBN-13'
-      : normalized.length === 10 ? 'ISBN-10' : 'ISBN';
-    return `${label} ${normalized}.`;
-  }).join(' ');
+  if (!isbns || isbns.length === 0) return '';
+  
+  let bestIsbn = isbns[0];
+  let bestLen = String(bestIsbn).replace(/[^0-9X]/gi, '').length;
+  
+  for (let i = 1; i < isbns.length; i++) {
+    const norm = String(isbns[i]).replace(/[^0-9X]/gi, '');
+    if (norm.length > bestLen) {
+      bestIsbn = isbns[i];
+      bestLen = norm.length;
+    }
+  }
+
+  const normalized = String(bestIsbn).toUpperCase().replace(/[^0-9X]/g, '');
+  return `ISBN ${normalized}.`;
 }
 
 function bibtexUrl(path) {
@@ -349,6 +358,11 @@ async function load() {
         : disc.disciplina;
       header.appendChild(nameEl);
 
+      const countBadge = document.createElement('span');
+      countBadge.className = 'badge badge-count';
+      countBadge.textContent = `${books.length} ${books.length === 1 ? 'reserva' : 'reservas'}`;
+      nameEl.appendChild(countBadge);
+
       if (disc.instrutores?.length) {
         const inst = document.createElement('div');
         inst.className = 'subject-instructors';
@@ -390,6 +404,16 @@ async function load() {
           }
 
           row.appendChild(citEl);
+
+          if (book.bibtex) {
+            const bibLink = document.createElement('a');
+            bibLink.className = 'bib-link';
+            bibLink.style.marginLeft = '6px';
+            bibLink.href = bibtexUrl(book.bibtex);
+            bibLink.target = '_blank';
+            bibLink.textContent = `(${book.bibtex.split('/').pop()})`;
+            citEl.appendChild(bibLink);
+          }
 
           const actions = document.createElement('div');
           actions.className = 'book-actions';

@@ -22,7 +22,12 @@
       color: #111;
     }
 
-    .semester { margin-bottom: 32px; }
+    .semester { margin-bottom: 32px; display: none; }
+    .semester.active { display: block; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
     .semester-title {
       font-size: 1rem;
@@ -98,6 +103,7 @@
 
     .badge-basic { background: #d4edda; color: #155724; }
     .badge-complementary { background: #fff3cd; color: #856404; }
+    .badge-count { background: #e8f0fe; color: #1a73e8; border: 1px solid #d2e3fc; font-weight: 600; margin-left: 6px; display: inline-block; vertical-align: middle; }
 
     .koha-links {
       display: inline-flex;
@@ -117,6 +123,27 @@
     }
 
     .koha-link:hover { background: #cfe2ff; }
+
+    .bib-link {
+      font-size: 0.72rem;
+      font-family: monospace;
+      white-space: nowrap;
+      color: #0060df;
+      text-decoration: none;
+      border: 1px solid #c8d8f0;
+      background: #f0f5ff;
+      padding: 1px 6px;
+      border-radius: 3px;
+      display: inline-flex;
+      align-items: center;
+      vertical-align: middle;
+    }
+
+    .bib-link:hover { background: #dce9ff; }
+
+    .ref-abnt {
+      margin-top: 4px;
+    }
 
     .koha-link-disabled {
       color: #d93025;
@@ -142,6 +169,38 @@
     .loading,
     .error { padding: 14px; }
     .error { color: #c00; }
+
+    .tabs-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 8px;
+    }
+
+    .tab-button {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #555;
+      background: transparent;
+      border: none;
+      padding: 5px 12px;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .tab-button:hover {
+      background: #eaf2ff;
+      color: #0060df;
+    }
+
+    .tab-button.active {
+      background: #0060df;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 96, 223, 0.2);
+    }
 
     @media (max-width: 640px) {
       body { padding: 14px; }
@@ -180,9 +239,117 @@ function renderText(value) {
   });
 }
 
-function parseBibUrl(text) {
-  const m = text.match(/\burl\s*=\s*\{([^}]+)\}/i);
-  return m ? m[1].trim() : null;
+function parseBibtex(raw) {
+  const headerMatch = raw.match(/@(\w+)\s*\{([^,\s]*)\s*,/);
+  if (!headerMatch) return {};
+
+  const fields = {
+    _type: headerMatch[1].toLowerCase(),
+    _key: headerMatch[2],
+  };
+
+  let pos = raw.indexOf(',', raw.indexOf('{')) + 1;
+
+  while (pos < raw.length) {
+    while (pos < raw.length && /\s/.test(raw[pos])) pos++;
+    if (raw[pos] === '}' || pos >= raw.length) break;
+
+    const nameStart = pos;
+    while (pos < raw.length && /\w/.test(raw[pos])) pos++;
+    const name = raw.slice(nameStart, pos).toLowerCase();
+    if (!name) break;
+
+    while (pos < raw.length && /[\s=]/.test(raw[pos])) pos++;
+
+    let value = '';
+    if (raw[pos] === '{') {
+      pos++;
+      let depth = 1;
+      const valStart = pos;
+      while (pos < raw.length && depth > 0) {
+        if (raw[pos] === '{') depth++;
+        else if (raw[pos] === '}') depth--;
+        pos++;
+      }
+      value = raw.slice(valStart, pos - 1).trim();
+    } else if (raw[pos] === '"') {
+      pos++;
+      const valStart = pos;
+      while (pos < raw.length && raw[pos] !== '"') pos++;
+      value = raw.slice(valStart, pos).trim();
+      pos++;
+    }
+
+    if (name) fields[name] = value;
+    while (pos < raw.length && (raw[pos] === ',' || /\s/.test(raw[pos]))) pos++;
+  }
+
+  return fields;
+}
+
+function formatIsbns(isbns) {
+  if (!isbns || isbns.length === 0) return '';
+  
+  let bestIsbn = isbns[0];
+  let bestLen = String(bestIsbn).replace(/[^0-9X]/gi, '').length;
+  
+  for (let i = 1; i < isbns.length; i++) {
+    const norm = String(isbns[i]).replace(/[^0-9X]/gi, '');
+    if (norm.length > bestLen) {
+      bestIsbn = isbns[i];
+      bestLen = norm.length;
+    }
+  }
+
+  const normalized = String(bestIsbn).toUpperCase().replace(/[^0-9X]/g, '');
+  return `ISBN ${normalized}.`;
+}
+
+function getBibIsbns(fields) {
+  const val = fields?.isbn;
+  if (!val) return [];
+  return [...new Set(val.split(/\s*[,;]\s*/).map(String).map(isbn => isbn.trim()).filter(Boolean))];
+}
+
+function formatAbnt(fields, kohaUrl, isbns = []) {
+  const clean = s => s ? s.replace(/[\/,]+$/, '').replace(/\s*:\s*$/, '').replace(/\s*-\s*$/, '').trim() : '';
+  const cleanYear = s => s ? s.replace(/^c/, '').replace(/\.$/, '').trim() : '';
+
+  let authorsHtml = '';
+  if (fields.author) {
+    const authors = fields.author.split(/\s+and\s+/i).map(a => a.replace(/,\s*$/, '').trim()).filter(Boolean);
+    const toAbnt = a => {
+      const i = a.indexOf(',');
+      if (i === -1) return a.toUpperCase();
+      return `${a.slice(0, i).trim().toUpperCase()}, ${a.slice(i + 1).trim()}`;
+    };
+    const list = authors.length > 3
+      ? [toAbnt(authors[0]), 'et al.']
+      : authors.map(toAbnt);
+    authorsHtml = list.join('; ');
+  }
+
+  const titleText = clean(fields.title);
+  let titleHtml = titleText ? `<strong>${titleText}</strong>` : '';
+  if (titleHtml && kohaUrl) {
+    titleHtml = `<strong><a href="${kohaUrl}" target="_blank">${titleText}</a></strong>`;
+  }
+
+  const edition = clean(fields.edition);
+  const address = clean(fields.address);
+  const publisher = clean(fields.publisher);
+  const year = cleanYear(fields.year);
+
+  const location = [address, [publisher, year].filter(Boolean).join(', ')].filter(Boolean).join(': ');
+
+  const parts = [authorsHtml, titleHtml, edition, location].filter(Boolean);
+  const citation = parts.reduce((acc, part, i) => {
+    if (i === 0) return part;
+    return acc + (acc.endsWith('.') ? ' ' : '. ') + part;
+  }, '');
+  const normalizedCitation = citation.endsWith('.') ? citation : citation + '.';
+  const isbnText = formatIsbns(isbns);
+  return [normalizedCitation, isbnText].filter(Boolean).join(' ');
 }
 
 async function fetchBibCache(subjects) {
@@ -199,8 +366,7 @@ async function fetchBibCache(subjects) {
     try {
       const r = await fetch('../' + path);
       if (r.ok) {
-        const url = parseBibUrl(await r.text());
-        if (url) cache[path] = url;
+        cache[path] = parseBibtex(await r.text());
       }
     } catch {}
   }));
@@ -211,7 +377,8 @@ function renderKohaLinks(bibPaths, bibCache) {
   const paths = bibPaths ?? [];
   const activeUrls = [];
   for (const path of paths) {
-    const url = bibCache[path];
+    const bib = bibCache[path];
+    const url = bib?.url;
     if (url) {
       activeUrls.push(url);
     }
@@ -272,10 +439,26 @@ function renderSubject(subject, bibCache) {
   const header = document.createElement('div');
   header.className = 'subject-header';
 
+  let activeLinksCount = 0;
+  for (const ref of references) {
+    if (ref.bibtex) {
+      for (const path of ref.bibtex) {
+        if (path && bibCache[path]) {
+          activeLinksCount++;
+        }
+      }
+    }
+  }
+
   const name = document.createElement('div');
   name.className = 'subject-name';
   name.textContent = subject.disciplina;
   header.appendChild(name);
+
+  const countBadge = document.createElement('span');
+  countBadge.className = 'badge badge-count';
+  countBadge.textContent = `${activeLinksCount} ${activeLinksCount === 1 ? 'link externo' : 'links externos'}`;
+  name.appendChild(countBadge);
 
   if (subject.docentes?.length) {
     const instructors = document.createElement('div');
@@ -303,8 +486,49 @@ function renderSubject(subject, bibCache) {
 
     const citation = document.createElement('div');
     citation.className = 'book-citation';
-    citation.innerHTML = renderText(reference.referencia);
-    citation.insertAdjacentHTML('beforeend', renderKohaLinks(reference.bibtex, bibCache));
+
+    const originalBlock = document.createElement('div');
+    originalBlock.className = 'ref-original';
+    originalBlock.innerHTML = renderText(reference.referencia);
+    citation.appendChild(originalBlock);
+
+    let abntRendered = false;
+
+    if (reference.bibtex && reference.bibtex.length > 0) {
+      const firstPath = reference.bibtex[0];
+      const bibFields = bibCache[firstPath];
+      if (bibFields) {
+        abntRendered = true;
+        const abntBlock = document.createElement('div');
+        abntBlock.className = 'ref-abnt';
+
+        const abntTextSpan = document.createElement('span');
+        const kohaUrl = bibFields.url || null;
+        const isbns = getBibIsbns(bibFields);
+        abntTextSpan.innerHTML = formatAbnt(bibFields, kohaUrl, isbns);
+        abntBlock.appendChild(abntTextSpan);
+
+        abntBlock.insertAdjacentHTML('beforeend', renderKohaLinks(reference.bibtex, bibCache));
+
+        for (const path of reference.bibtex) {
+          if (!path) continue;
+          const bibLink = document.createElement('a');
+          bibLink.className = 'bib-link';
+          bibLink.style.marginLeft = '6px';
+          bibLink.href = '../' + path;
+          bibLink.target = '_blank';
+          bibLink.textContent = `(${path.split('/').pop()})`;
+          abntBlock.appendChild(bibLink);
+        }
+
+        citation.appendChild(abntBlock);
+      }
+    }
+
+    if (!abntRendered) {
+      originalBlock.insertAdjacentHTML('beforeend', renderKohaLinks(reference.bibtex, bibCache));
+    }
+
     row.appendChild(citation);
 
     const badge = document.createElement('span');
@@ -333,26 +557,72 @@ async function load() {
 
     for (const subject of subjects) {
       const group = normalizeLabel(subject.tipoDisciplina).includes('optativ')
-        ? 'Disciplinas optativas'
+        ? 'Optativas'
         : subject.periodo;
       (groups[group] ??= []).push(subject);
     }
 
+    const getTabSlug = name => normalizeLabel(name).replace(/\s+/g, '-');
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialTabSlug = urlParams.get('tab');
+
     content.replaceChildren();
-    for (const groupName of semesterSort(Object.keys(groups))) {
+
+    const tabsContainer = document.createElement('div');
+    tabsContainer.className = 'tabs-container';
+    content.appendChild(tabsContainer);
+
+    const semesterKeys = semesterSort(Object.keys(groups));
+    const sections = [];
+    const buttons = [];
+
+    semesterKeys.forEach((groupName, idx) => {
       const section = document.createElement('div');
       section.className = 'semester';
+      section.id = `semester-${idx}`;
 
-      const title = document.createElement('div');
-      title.className = 'semester-title';
-      title.textContent = groupName;
-      section.appendChild(title);
+
 
       groups[groupName]
         .sort((left, right) => left.disciplina.localeCompare(right.disciplina, 'pt-BR'))
         .forEach(subject => section.appendChild(renderSubject(subject, bibCache)));
 
       content.appendChild(section);
+      sections.push(section);
+
+      const btn = document.createElement('button');
+      btn.className = 'tab-button';
+      btn.textContent = groupName;
+
+      const slug = getTabSlug(groupName);
+      btn.dataset.slug = slug;
+
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+        sections.forEach(s => s.classList.remove('active'));
+        btn.classList.add('active');
+        section.classList.add('active');
+
+        const url = new URL(window.location);
+        url.searchParams.set('tab', slug);
+        window.history.replaceState({}, '', url);
+      });
+
+      tabsContainer.appendChild(btn);
+      buttons.push(btn);
+    });
+
+    let activeIdx = 0;
+    if (initialTabSlug) {
+      const foundIdx = semesterKeys.findIndex(name => getTabSlug(name) === initialTabSlug);
+      if (foundIdx !== -1) {
+        activeIdx = foundIdx;
+      }
+    }
+
+    if (buttons[activeIdx]) {
+      buttons[activeIdx].classList.add('active');
+      sections[activeIdx].classList.add('active');
     }
   } catch (error) {
     content.innerHTML = '<div class="error">Não foi possível carregar a bibliografia.</div>';

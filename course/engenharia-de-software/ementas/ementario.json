@@ -121,7 +121,10 @@
       },
       {
         "referencia": "HOWARD, Anton; Bivens Irl; Davis, Stephen. Cálculo. 10. ed. - Porto Alegre: Bookman, 2014. v.1.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/ANTON2014.bib",
+          "bibtex/ANTON2007.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -133,12 +136,19 @@
       },
       {
         "referencia": "ROGAWSKI, Jon. Cálculo. Porto Alegre: Bookman, 2009. v.1.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/ROGAWSKI2009.bib"
+        ],
         "tipo": "complementar"
       },
       {
         "referencia": "STEWART, James. Cálculo. 7. ed. São Paulo: Cengage Learning, 2015. v.1.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/STEWART2016.bib",
+          "bibtex/STEWART2013.bib",
+          "bibtex/STEWART2010.bib",
+          "bibtex/STEWART2009.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -171,18 +181,26 @@
     "bibliografias": [
       {
         "referencia": "BARBIERI, J. C. Gestão Ambiental Empresarial – Conceitos, Modelos e Instrumentos. São Paulo: Saraiva, 2012.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/BARBIERI2023.bib",
+          "bibtex/BARBIERI2016.bib",
+          "bibtex/BARBIERI2011.bib",
+          "bibtex/BARBIERI2007.bib"
+        ],
         "tipo": "basica"
       },
       {
         "referencia": "BRAGA, B. Introdução à Engenharia Ambiental. São Paulo: Pearson, 2005.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/BRAGA2005.bib"
+        ],
         "tipo": "basica"
       },
       {
         "referencia": "DIAS, Genebaldo Freire. Educação ambiental: princípios e práticas. 9ª ed. São Paulo: Gaia, 2004. 551 p. il.",
         "bibtex": [
-          "bibtex/DIAS2004.bib"
+          "bibtex/DIAS2004.bib",
+          "bibtex/DIAS2003.bib"
         ],
         "tipo": "complementar"
       },
@@ -202,7 +220,9 @@
       },
       {
         "referencia": "MONTIBELLER, F. G. Empresas, Desenvolvimento e Ambiente - Diagnóstico e Diretrizes de Sustentabilidade. São Paulo: Manole, 2006.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/MONTIBELLERFILHO2007.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -221,7 +241,9 @@
       },
       {
         "referencia": "PHILIPPI JR., A.; PELICIONI, M. C. F. Educação Ambiental e Sustentabilidade. Barueri, SP: Manole, 2014.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/PHILIPPIJR2005.bib"
+        ],
         "tipo": "basica"
       }
     ]
@@ -284,7 +306,9 @@
       },
       {
         "referencia": "SOMMERVILLE, I. Engenharia De Software - 9ª Ed. 2011. Editora Pearson Prentice Hall;",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SOMMERVILLE2007.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -326,6 +350,7 @@
       {
         "referencia": "BARRY, Paul. Use a cabeça: Python. Rio de Janeiro: Alta Books, 2012. 458 p. il. (Use a cabeça!).",
         "bibtex": [
+          "bibtex/BARRY2018.bib",
           "bibtex/BARRY2012.bib"
         ],
         "tipo": "complementar"
@@ -340,7 +365,8 @@
       {
         "referencia": "FORBELLONE, André Luiz Villar; EBERSPÄCHER, Henri Frederico. Lógica de programação: a construção de algoritmos e estruturas de dados. 3. ed. São Paulo: Makron Books, 2005. 218 p. il.",
         "bibtex": [
-          "bibtex/FORBELLONE2005.bib"
+          "bibtex/FORBELLONE2005.bib",
+          "bibtex/FORBELLONE2000.bib"
         ],
         "tipo": "complementar"
       },
@@ -354,14 +380,8 @@
       {
         "referencia": "MANZANO, José Augusto N. G; OLIVEIRA, Jayr Figueiredo de. Algoritmos: lógica para desenvolvimento de programação de computadores. 27. ed. São Paulo: Érica, 2014. 328 p. il.",
         "bibtex": [
-          "bibtex/MANZANO2014.bib"
-        ],
-        "tipo": "basica"
-      },
-      {
-        "referencia": "MANZANO, José Augusto N. G; OLIVEIRA, Jayr Figueiredo de. Algoritmos: lógica para desenvolvimento de programação de computadores. 27. ed. São Paulo: Érica, 2014. 328 p. il.",
-        "bibtex": [
-          "bibtex/MANZANO2014.bib"
+          "bibtex/MANZANO2014.bib",
+          "bibtex/MANZANO2012.bib"
         ],
         "tipo": "complementar"
       },
