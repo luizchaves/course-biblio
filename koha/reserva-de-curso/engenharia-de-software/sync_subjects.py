@@ -12,8 +12,10 @@ import urllib.request
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
+PROJECT_ROOT = BASE_DIR.parents[2]
 SUBJECTS_FILE = BASE_DIR / "subjects.json"
-BIBTEX_DIR = BASE_DIR / "bibtex"
+BIBTEX_DIR = PROJECT_ROOT / "bibtex"
+BIBTEX_RELATIVE_PREFIX = "bibtex"
 KOHA_BASE = "https://biblioteca.ifpb.edu.br/cgi-bin/koha/"
 
 # Runtime maps: bib (str) ↔ key (str), built at startup and updated as we go
@@ -55,7 +57,7 @@ def sync_missing_bibtex_isbns(subjects: list[dict]) -> int:
 
     updated = 0
     for relative_path, isbns in isbn_by_path.items():
-        bibtex_file = BASE_DIR / relative_path
+        bibtex_file = PROJECT_ROOT / relative_path
         if not bibtex_file.is_file():
             continue
         content = bibtex_file.read_text(encoding="utf-8")
@@ -350,6 +352,7 @@ def fetch_course_list() -> list[dict]:
 
 
 def main():
+    BIBTEX_DIR.mkdir(exist_ok=True)
     subjects = json.loads(SUBJECTS_FILE.read_text(encoding="utf-8"))
     updated_bibtex = sync_missing_bibtex_isbns(subjects)
     print(f"Filled missing ISBN field in {updated_bibtex} existing BibTeX files.\n")
@@ -384,7 +387,7 @@ def main():
             key, prefetched_content = resolve_key(
                 bib, entry["autor"], entry["numeroChamada"]
             )
-            bibtex_path = f"bibtex/{key}.bib"
+            bibtex_path = f"{BIBTEX_RELATIVE_PREFIX}/{key}.bib"
             bibtex_file = BIBTEX_DIR / f"{key}.bib"
 
             if prefetched_content is not None:
