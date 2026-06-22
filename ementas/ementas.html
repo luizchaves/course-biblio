@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ementas - Bacharelado em Engenharia de Software</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 14px;
+      color: #1a1a1a;
+      background: #f5f5f5;
+      padding: 24px;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #111;
+    }
+
+    .semester { margin-bottom: 32px; }
+
+    .semester-title {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #555;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+    }
+
+    .subject {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+
+    .subject-header {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      padding: 10px 14px;
+      background: #fafafa;
+      border-bottom: 1px solid #e0e0e0;
+      flex-wrap: wrap;
+    }
+
+    .subject-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .subject-instructors { font-size: 0.8rem; color: #777; }
+
+    .subject-content { padding: 4px 14px; }
+
+    .subject-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px 18px;
+      padding: 8px 0;
+      border-bottom: 1px solid #f0f0f0;
+      color: #666;
+      font-size: 0.78rem;
+    }
+
+    .subject-meta strong { color: #444; font-weight: 600; }
+
+    .syllabus-section {
+      padding: 8px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .syllabus-section:last-child { border-bottom: none; }
+
+    .section-title {
+      margin-bottom: 4px;
+      color: #555;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .section-content {
+      color: #222;
+      font-size: 0.84rem;
+      line-height: 1.55;
+    }
+
+    .section-content p + p { margin-top: 6px; }
+
+    .section-content ol,
+    .section-content ul {
+      padding-left: 22px;
+    }
+
+    .section-content li + li { margin-top: 3px; }
+
+    .section-content a {
+      color: #0060df;
+      text-decoration: none;
+    }
+
+    .section-content a:hover { text-decoration: underline; }
+
+    .loading,
+    .error {
+      padding: 14px;
+      color: #999;
+      font-style: italic;
+      font-size: 0.85rem;
+    }
+
+    .error { color: #c00; }
+
+    @media (max-width: 640px) {
+      body { padding: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Ementas — Bacharelado em Engenharia de Software</h1>
+<div id="content"><div class="loading">Carregando ementas…</div></div>
+
+<script>
+/* ── Markdown parser ──────────────────────────────────────────── */
+function normalizeLabel(value) {
+  return value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .trim()
+    .toLowerCase();
+}
+
+function parseEmentario(markdown) {
+  const periods = [];
+  let period = null;
+  let subject = null;
+  let section = null;
+
+  for (const rawLine of markdown.split(/\r?\n/)) {
+    const line = rawLine.trim();
+    let match;
+
+    if ((match = line.match(/^##\s+(.+)$/))) {
+      period = { name: match[1].trim(), subjects: [] };
+      periods.push(period);
+      subject = null;
+      section = null;
+      continue;
+    }
+
+    if ((match = line.match(/^###\s+(.+)$/))) {
+      if (!period) continue;
+      subject = {
+        name: match[1].trim(),
+        period: period.name,
+        metadata: {},
+        workload: {},
+        sections: [],
+      };
+      period.subjects.push(subject);
+      section = null;
+      continue;
+    }
+
+    if (!subject) continue;
+
+    if ((match = line.match(/^####\s+(.+)$/))) {
+      section = { name: match[1].trim(), lines: [] };
+      subject.sections.push(section);
+      continue;
+    }
+
+    if ((match = line.match(/^-\s+\*\*(.+?):\*\*\s*(.*)$/))) {
+      const label = match[1].trim();
+      const value = match[2].trim();
+      if (section && normalizeLabel(section.name) === 'distribuicao da carga horaria') {
+        subject.workload[label] = value;
+      } else if (!section) {
+        subject.metadata[label] = value;
+      } else {
+        section.lines.push(line);
+      }
+      continue;
+    }
+
+    if (section && line) section.lines.push(line);
+  }
+
+  return periods;
+}
+
+/* ── Rendering helpers ───────────────────────────────────────── */
+function escapeHtml(value) {
+  return value
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+}
+
+function renderInline(markdown) {
+  const links = [];
+  let value = markdown.replace(/\[([^\]]+)]\((https?:\/\/[^)]+)\)/g, (_, text, url) => {
+    const token = `@@LINK${links.length}@@`;
+    links.push(`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(text)}</a>`);
+    return token;
+  });
+
+  value = escapeHtml(value)
+    .replace(/\\([\\`*{}\[\]()#+\-.!_>])/g, '$1')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+
+  links.forEach((link, index) => {
+    value = value.replace(`@@LINK${index}@@`, link);
+  });
+  return value;
+}
+
+function renderBlocks(lines) {
+  const blocks = [];
+  let list = null;
+
+  const flushList = () => {
+    if (!list) return;
+    blocks.push(`<${list.type}>${list.items.map(item => `<li>${renderInline(item)}</li>`).join('')}</${list.type}>`);
+    list = null;
+  };
+
+  for (const line of lines) {
+    let match = line.match(/^\d+\.\s+(.+)$/);
+    if (match) {
+      if (!list || list.type !== 'ol') flushList();
+      list ??= { type: 'ol', items: [] };
+      list.items.push(match[1]);
+      continue;
+    }
+
+    match = line.match(/^[-*]\s+(.+)$/);
+    if (match) {
+      if (!list || list.type !== 'ul') flushList();
+      list ??= { type: 'ul', items: [] };
+      list.items.push(match[1]);
+      continue;
+    }
+
+    flushList();
+    blocks.push(`<p>${renderInline(line)}</p>`);
+  }
+
+  flushList();
+  return blocks.join('');
+}
+
+function semesterSort(keys) {
+  return keys.slice().sort((a, b) => {
+    const numA = parseInt(a) || 999;
+    const numB = parseInt(b) || 999;
+    if (numA !== numB) return numA - numB;
+    const optA = normalizeLabel(a).includes('optativ');
+    const optB = normalizeLabel(b).includes('optativ');
+    if (optA !== optB) return optA ? 1 : -1;
+    return a.localeCompare(b, 'pt-BR');
+  });
+}
+
+function metadataValue(subject, label) {
+  const wanted = normalizeLabel(label);
+  const entry = Object.entries(subject.metadata)
+    .find(([key]) => normalizeLabel(key) === wanted);
+  return entry?.[1] ?? '';
+}
+
+function renderSubject(subject) {
+  const type = metadataValue(subject, 'Tipo de Disciplina');
+  const hours = metadataValue(subject, 'Carga Horária');
+  const prerequisites = metadataValue(subject, 'Pré-Requisitos');
+  const instructors = metadataValue(subject, 'Docente');
+  const visibleSections = subject.sections.filter(item => {
+    const name = normalizeLabel(item.name);
+    return item.lines.length && name !== 'distribuicao da carga horaria';
+  });
+
+  const card = document.createElement('article');
+  card.className = 'subject';
+
+  const header = document.createElement('div');
+  header.className = 'subject-header';
+
+  const name = document.createElement('div');
+  name.className = 'subject-name';
+  name.textContent = subject.name;
+  header.appendChild(name);
+
+  if (instructors) {
+    const instructor = document.createElement('div');
+    instructor.className = 'subject-instructors';
+    instructor.textContent = instructors;
+    header.appendChild(instructor);
+  }
+
+  card.appendChild(header);
+
+  const content = document.createElement('div');
+  content.className = 'subject-content';
+
+  const meta = document.createElement('div');
+  meta.className = 'subject-meta';
+  if (type) {
+    const item = document.createElement('span');
+    item.innerHTML = `<strong>Tipo:</strong> ${escapeHtml(type)}`;
+    meta.appendChild(item);
+  }
+  if (hours) {
+    const item = document.createElement('span');
+    item.innerHTML = `<strong>Carga total:</strong> ${escapeHtml(hours)} h`;
+    meta.appendChild(item);
+  }
+  if (prerequisites) {
+    const item = document.createElement('span');
+    item.innerHTML = `<strong>Pré-requisitos:</strong> ${escapeHtml(prerequisites)}`;
+    meta.appendChild(item);
+  }
+
+  for (const [label, value] of Object.entries(subject.workload)) {
+    const item = document.createElement('span');
+    item.innerHTML = `<strong>${escapeHtml(label)}:</strong> ${escapeHtml(value)} h`;
+    meta.appendChild(item);
+  }
+  if (meta.children.length) content.appendChild(meta);
+
+  for (const item of visibleSections) {
+    const section = document.createElement('section');
+    section.className = 'syllabus-section';
+
+    const title = document.createElement('div');
+    title.className = 'section-title';
+    title.textContent = item.name;
+    section.appendChild(title);
+
+    const body = document.createElement('div');
+    body.className = 'section-content';
+    body.innerHTML = renderBlocks(item.lines);
+    section.appendChild(body);
+    content.appendChild(section);
+  }
+
+  card.appendChild(content);
+  return card;
+}
+
+/* ── Main ─────────────────────────────────────────────────────── */
+async function load() {
+  const content = document.getElementById('content');
+
+  try {
+    const response = await fetch('ementario.md');
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    const periods = parseEmentario(await response.text());
+    const groups = {};
+
+    for (const period of periods) {
+      for (const subject of period.subjects) {
+        const type = metadataValue(subject, 'Tipo de Disciplina');
+        const group = normalizeLabel(type).includes('optativ')
+          ? 'Disciplinas optativas'
+          : period.name;
+        (groups[group] ??= []).push(subject);
+      }
+    }
+
+    content.replaceChildren();
+    for (const groupName of semesterSort(Object.keys(groups))) {
+      const wrapper = document.createElement('section');
+      wrapper.className = 'semester';
+
+      const title = document.createElement('div');
+      title.className = 'semester-title';
+      title.textContent = groupName;
+      wrapper.appendChild(title);
+
+      groups[groupName].forEach(subject => wrapper.appendChild(renderSubject(subject)));
+      content.appendChild(wrapper);
+    }
+  } catch (error) {
+    content.innerHTML = '<div class="error">Não foi possível carregar o ementário.</div>';
+    console.error(error);
+  }
+}
+
+load();
+</script>
+</body>
+</html>
