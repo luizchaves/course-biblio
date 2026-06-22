@@ -197,7 +197,7 @@ function parseBibtex(raw) {
 }
 
 /* ── ABNT NBR 6023 formatter ──────────────────────────────────── */
-function formatAbnt(fields, kohaUrl) {
+function formatAbnt(fields, kohaUrl, isbns = []) {
   const clean = s => s ? s.replace(/[\/,]+$/, '').replace(/\s*:\s*$/, '').replace(/\s*-\s*$/, '').trim() : '';
   const cleanYear = s => s ? s.replace(/^c/, '').replace(/\.$/, '').trim() : '';
 
@@ -239,7 +239,9 @@ function formatAbnt(fields, kohaUrl) {
     if (i === 0) return part;
     return acc + (acc.endsWith('.') ? ' ' : '. ') + part;
   }, '');
-  return citation.endsWith('.') ? citation : citation + '.';
+  const normalizedCitation = citation.endsWith('.') ? citation : citation + '.';
+  const isbnText = formatIsbns(isbns);
+  return [normalizedCitation, isbnText].filter(Boolean).join(' ');
 }
 
 /* ── Render helpers ───────────────────────────────────────────── */
@@ -251,6 +253,23 @@ function situacaoClass(s) {
 }
 
 function normalize(s) { return s?.trim().toLowerCase() ?? ''; }
+
+function bookIsbns(book, bibFields) {
+  const values = book.isbn?.length
+    ? book.isbn
+    : bibFields?.isbn?.split(/\s*[,;]\s*/) ?? [];
+  return [...new Set(values.map(String).map(isbn => isbn.trim()).filter(Boolean))];
+}
+
+function formatIsbns(isbns) {
+  return isbns.map(isbn => {
+    const normalized = isbn.replace(/[^0-9X]/gi, '');
+    const label = normalized.length === 13
+      ? 'ISBN-13'
+      : normalized.length === 10 ? 'ISBN-10' : 'ISBN';
+    return `${label} ${isbn}.`;
+  }).join(' ');
+}
 
 function groupBy(arr, key) {
   return arr.reduce((acc, item) => {
@@ -342,14 +361,19 @@ async function load() {
           const citEl = document.createElement('div');
           citEl.className = 'book-citation';
 
-          if (book.bibtex && bibCache[book.bibtex]) {
-            citEl.innerHTML = formatAbnt(bibCache[book.bibtex], book.url || null);
+          const bibFields = book.bibtex ? bibCache[book.bibtex] : null;
+          const isbns = bookIsbns(book, bibFields);
+
+          if (bibFields) {
+            citEl.innerHTML = formatAbnt(bibFields, book.url || null, isbns);
           } else {
             // Fallback: compose from JSON fields
             const titleHtml = book.url
               ? `<strong><a href="${book.url}" target="_blank">${book.titulo}</a></strong>`
               : `<strong>${book.titulo}</strong>`;
-            citEl.innerHTML = [book.autor, titleHtml, book.numeroChamada].filter(Boolean).join('. ') + '.';
+            const citation = [book.autor, titleHtml, book.numeroChamada].filter(Boolean).join('. ') + '.';
+            const isbnText = formatIsbns(isbns);
+            citEl.innerHTML = [citation, isbnText].filter(Boolean).join(' ');
           }
 
           row.appendChild(citEl);

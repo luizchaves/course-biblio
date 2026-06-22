@@ -24,6 +24,48 @@ _key_to_bib: dict[str, str] = {}
 _isbn_cache: dict[str, list[str]] = {}
 
 
+def add_bibtex_isbns_if_missing(content: str, isbns: list[str]) -> str:
+    """Add fallback ISBNs only when the downloaded BibTeX has no ISBN field."""
+    if not isbns or re.search(r"^\s*isbn\s*=", content, re.IGNORECASE | re.MULTILINE):
+        return content
+
+    closing_brace = content.rfind("}")
+    if closing_brace == -1:
+        return content
+
+    before = content[:closing_brace].rstrip()
+    if not before.endswith(","):
+        before += ","
+    isbn_field = f"\n\tisbn = {{{', '.join(isbns)}}}\n"
+    return before + isbn_field + content[closing_brace:]
+
+
+def sync_missing_bibtex_isbns(subjects: list[dict]) -> int:
+    """Fill missing BibTeX ISBN fields with values from subjects.json."""
+    isbn_by_path: dict[str, list[str]] = {}
+    for subject in subjects:
+        for reserve in subject.get("reservas", []):
+            bibtex_path = reserve.get("bibtex")
+            if not bibtex_path:
+                continue
+            merged = isbn_by_path.setdefault(bibtex_path, [])
+            for isbn in reserve.get("isbn", []):
+                if isbn not in merged:
+                    merged.append(isbn)
+
+    updated = 0
+    for relative_path, isbns in isbn_by_path.items():
+        bibtex_file = BASE_DIR / relative_path
+        if not bibtex_file.is_file():
+            continue
+        content = bibtex_file.read_text(encoding="utf-8")
+        new_content = add_bibtex_isbns_if_missing(content, isbns)
+        if new_content != content:
+            bibtex_file.write_text(new_content, encoding="utf-8")
+            updated += 1
+    return updated
+
+
 def fetch(url: str) -> str:
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
@@ -308,8 +350,11 @@ def fetch_course_list() -> list[dict]:
 
 
 def main():
-    reservas = fetch_course_list()
     subjects = json.loads(SUBJECTS_FILE.read_text(encoding="utf-8"))
+    updated_bibtex = sync_missing_bibtex_isbns(subjects)
+    print(f"Filled missing ISBN field in {updated_bibtex} existing BibTeX files.\n")
+
+    reservas = fetch_course_list()
 
     print("Building bib↔key map and ISBN cache from existing data…")
     build_initial_maps(subjects)
@@ -369,6 +414,14 @@ def main():
                 print(f"    isbn: {isbns or '—'}")
                 time.sleep(0.3)
 
+            # Keep an ISBN supplied by Koha; use subjects.json/detail-page data
+            # only as a fallback for downloaded BibTeX without the field.
+            if "bibtex" in entry and bibtex_file.is_file():
+                content = bibtex_file.read_text(encoding="utf-8")
+                new_content = add_bibtex_isbns_if_missing(content, isbns)
+                if new_content != content:
+                    bibtex_file.write_text(new_content, encoding="utf-8")
+
             reserve_list.append(entry)
             time.sleep(0.3)
 
@@ -391,6 +444,8 @@ def main():
         )
         time.sleep(0.5)
 
+    updated_bibtex = sync_missing_bibtex_isbns(list(existing.values()))
+    print(f"Filled missing ISBN field in {updated_bibtex} new BibTeX files.")
     print("Done.")
 
 
