@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bibliografia - Bacharelado em Engenharia de Software</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 14px;
+      color: #1a1a1a;
+      background: #f5f5f5;
+      padding: 24px;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #111;
+    }
+
+    .semester { margin-bottom: 32px; }
+
+    .semester-title {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #555;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+    }
+
+    .subject {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+
+    .subject-header {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      padding: 10px 14px;
+      background: #fafafa;
+      border-bottom: 1px solid #e0e0e0;
+      flex-wrap: wrap;
+    }
+
+    .subject-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .subject-instructors { font-size: 0.8rem; color: #777; }
+
+    .books { padding: 4px 14px; }
+
+    .book {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 8px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .book:last-child { border-bottom: none; }
+
+    .book-citation {
+      flex: 1;
+      min-width: 0;
+      font-size: 0.84rem;
+      line-height: 1.55;
+      color: #222;
+    }
+
+    .book-citation a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .book-citation a:hover { text-decoration: underline; color: #0060df; }
+
+    .book-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+
+    .badge {
+      font-size: 0.7rem;
+      padding: 1px 6px;
+      border-radius: 10px;
+      white-space: nowrap;
+    }
+
+    .badge-basic { background: #d4edda; color: #155724; }
+    .badge-complementary { background: #fff3cd; color: #856404; }
+
+    .koha-links {
+      display: flex;
+      justify-content: flex-end;
+      gap: 2px;
+    }
+
+    .koha-link {
+      display: inline-flex;
+      padding: 2px;
+      border-radius: 3px;
+      color: #0060df;
+      text-decoration: none;
+    }
+
+    .koha-link:hover { background: #eaf2ff; }
+
+    .koha-link svg {
+      width: 13px;
+      height: 13px;
+      stroke-width: 2;
+    }
+
+    .no-books,
+    .loading,
+    .error {
+      padding: 8px 14px;
+      color: #999;
+      font-style: italic;
+      font-size: 0.85rem;
+    }
+
+    .loading,
+    .error { padding: 14px; }
+    .error { color: #c00; }
+
+    @media (max-width: 640px) {
+      body { padding: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Bibliografia — Bacharelado em Engenharia de Software</h1>
+<div id="content"><div class="loading">Carregando bibliografia…</div></div>
+
+<script>
+/* ── Render helpers ───────────────────────────────────────────── */
+function normalizeLabel(value) {
+  return String(value ?? '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .trim()
+    .toLowerCase();
+}
+
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+}
+
+function renderText(value) {
+  return escapeHtml(value).replace(/https?:\/\/[^\s<)]+/g, rawUrl => {
+    const suffix = rawUrl.match(/[.,;:]+$/)?.[0] ?? '';
+    const url = suffix ? rawUrl.slice(0, -suffix.length) : rawUrl;
+    return `<a href="${url}" target="_blank" rel="noopener">${url}</a>${suffix}`;
+  });
+}
+
+function renderKohaLinks(urls) {
+  if (!urls?.length) return '';
+  return `<div class="koha-links">${urls.map((url, index) => {
+    const label = urls.length > 1
+      ? `Abrir registro ${index + 1} no Koha`
+      : 'Abrir registro no Koha';
+    return `<a class="koha-link" href="${escapeHtml(url)}" target="_blank" rel="noopener" aria-label="${label}" title="${label}">
+      <svg class="lucide lucide-external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M15 3h6v6"></path>
+        <path d="M10 14 21 3"></path>
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+      </svg>
+    </a>`;
+  }).join('')}</div>`;
+}
+
+function semesterSort(keys) {
+  return keys.slice().sort((left, right) => {
+    const leftNumber = parseInt(left) || 999;
+    const rightNumber = parseInt(right) || 999;
+    if (leftNumber !== rightNumber) return leftNumber - rightNumber;
+    const leftElective = normalizeLabel(left).includes('optativ');
+    const rightElective = normalizeLabel(right).includes('optativ');
+    if (leftElective !== rightElective) return leftElective ? 1 : -1;
+    return left.localeCompare(right, 'pt-BR');
+  });
+}
+
+function renderSubject(subject) {
+  const references = [
+    ...(subject.bibliografiaBasica ?? []).map(item => ({ ...item, type: 'Básica' })),
+    ...(subject.bibliografiaComplementar ?? []).map(item => ({ ...item, type: 'Complementar' })),
+  ].sort((left, right) => left.referencia.localeCompare(right.referencia, 'pt-BR'));
+
+  const card = document.createElement('div');
+  card.className = 'subject';
+
+  const header = document.createElement('div');
+  header.className = 'subject-header';
+
+  const name = document.createElement('div');
+  name.className = 'subject-name';
+  name.textContent = subject.disciplina;
+  header.appendChild(name);
+
+  if (subject.docentes?.length) {
+    const instructors = document.createElement('div');
+    instructors.className = 'subject-instructors';
+    instructors.textContent = subject.docentes.join(', ');
+    header.appendChild(instructors);
+  }
+
+  card.appendChild(header);
+
+  if (!references.length) {
+    const empty = document.createElement('div');
+    empty.className = 'no-books';
+    empty.textContent = 'Nenhuma referência cadastrada.';
+    card.appendChild(empty);
+    return card;
+  }
+
+  const books = document.createElement('div');
+  books.className = 'books';
+
+  for (const reference of references) {
+    const row = document.createElement('div');
+    row.className = 'book';
+
+    const citation = document.createElement('div');
+    citation.className = 'book-citation';
+    citation.innerHTML = renderText(reference.referencia);
+    row.appendChild(citation);
+
+    const actions = document.createElement('div');
+    actions.className = 'book-actions';
+
+    const badge = document.createElement('span');
+    badge.className = `badge ${reference.type === 'Básica' ? 'badge-basic' : 'badge-complementary'}`;
+    badge.textContent = reference.type;
+    actions.appendChild(badge);
+
+    actions.insertAdjacentHTML('beforeend', renderKohaLinks(reference.koha));
+    row.appendChild(actions);
+    books.appendChild(row);
+  }
+
+  card.appendChild(books);
+  return card;
+}
+
+/* ── Main ─────────────────────────────────────────────────────── */
+async function load() {
+  const content = document.getElementById('content');
+
+  try {
+    const response = await fetch('ementario.json');
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    const subjects = await response.json();
+    const groups = {};
+
+    for (const subject of subjects) {
+      const group = normalizeLabel(subject.tipoDisciplina).includes('optativ')
+        ? 'Disciplinas optativas'
+        : subject.periodo;
+      (groups[group] ??= []).push(subject);
+    }
+
+    content.replaceChildren();
+    for (const groupName of semesterSort(Object.keys(groups))) {
+      const section = document.createElement('div');
+      section.className = 'semester';
+
+      const title = document.createElement('div');
+      title.className = 'semester-title';
+      title.textContent = groupName;
+      section.appendChild(title);
+
+      groups[groupName]
+        .sort((left, right) => left.disciplina.localeCompare(right.disciplina, 'pt-BR'))
+        .forEach(subject => section.appendChild(renderSubject(subject)));
+
+      content.appendChild(section);
+    }
+  } catch (error) {
+    content.innerHTML = '<div class="error">Não foi possível carregar a bibliografia.</div>';
+    console.error(error);
+  }
+}
+
+load();
+</script>
+</body>
+</html>

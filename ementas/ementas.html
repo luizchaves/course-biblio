@@ -112,6 +112,28 @@
 
     .section-content a:hover { text-decoration: underline; }
 
+    .koha-links {
+      display: inline-flex;
+      gap: 2px;
+      margin-left: 4px;
+      vertical-align: text-bottom;
+    }
+
+    .koha-link {
+      display: inline-flex;
+      padding: 2px;
+      border-radius: 3px;
+      color: #0060df;
+    }
+
+    .koha-link:hover { background: #eaf2ff; }
+
+    .koha-link svg {
+      width: 13px;
+      height: 13px;
+      stroke-width: 2;
+    }
+
     .loading,
     .error {
       padding: 14px;
@@ -173,7 +195,22 @@ function renderText(value) {
 
 function renderBibliography(entries) {
   if (!entries?.length) return '';
-  return `<ol>${entries.map(item => `<li>${renderText(item.referencia)}</li>`).join('')}</ol>`;
+  return `<ol>${entries.map(item => {
+    const kohaLinks = (item.koha ?? []).map((url, index) => {
+      const label = item.koha.length > 1
+        ? `Abrir registro ${index + 1} no Koha`
+        : 'Abrir registro no Koha';
+      return `<a class="koha-link" href="${escapeHtml(url)}" target="_blank" rel="noopener" aria-label="${label}" title="${label}">
+        <svg class="lucide lucide-external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M15 3h6v6"></path>
+          <path d="M10 14 21 3"></path>
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+        </svg>
+      </a>`;
+    }).join('');
+    const links = kohaLinks ? `<span class="koha-links">${kohaLinks}</span>` : '';
+    return `<li>${renderText(item.referencia)}${links}</li>`;
+  }).join('')}</ol>`;
 }
 
 function semesterSort(keys) {
@@ -310,7 +347,9 @@ async function load() {
       title.textContent = groupName;
       wrapper.appendChild(title);
 
-      groups[groupName].forEach(subject => wrapper.appendChild(renderSubject(subject)));
+      groups[groupName]
+        .sort((left, right) => left.disciplina.localeCompare(right.disciplina, 'pt-BR'))
+        .forEach(subject => wrapper.appendChild(renderSubject(subject)));
       content.appendChild(wrapper);
     }
   } catch (error) {

@@ -18,53 +18,64 @@
     "bibliografiaBasica": [
       {
         "referencia": "PRESSMAN, R. S. Engenharia de Software - Uma Abordagem Profissional - 8ª Ed. 2016, Editora Amgh;",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SOMMERVILLE, I. Engenharia De Software - 9ª Ed. 2011. Editora Pearson Prentice Hall;",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "VALENTE, M.T. Engenharia de Software Moderna: Princípios e Práticas para Desenvolvimento de Software com Produtividade, eBook Kindle, ISBN-13 9786500019506.",
         "isbn": [
           "9786500019506"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=31101"
         ]
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "HIRAMA, K. Engenharia De Software - Qualidade E Produtividade Com Tecnologia. 2012. Editora Elsevier – Campus;",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "JALOTE, P. A Concise Introduction to Software Engineering, 2008. ISBN-13 9781848003026;",
         "isbn": [
           "9781848003026"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "MEYER, B. Agile!: The Good, the Hype and the Ugly, 2014, Springer. ISBN-13 9783319051543;",
         "isbn": [
           "9783319051543"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "PETERS, J.F.; PEDYCZ, W. Engenharia de Software: Teoria e Prática, Editora Campus, 2001. ISBN-10 8535207465.",
         "isbn": [
           "8535207465"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "PFLEEGER, S. L. Software Engineering: Theory and Practice, 4a edição, 2010. ISBN-13 9780136061694;",
         "isbn": [
           "9780136061694"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SCHACH, S. R. Object-Oriented and Classical Software Engineering, 8a edição, 2011. ISBN-13 9780073376189;",
         "isbn": [
           "9780073376189"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -92,19 +103,22 @@
         "referencia": "DUCKETT, Jon. HTML e CSS: Projete e Construa Websites. Alta Books, 2016. ISBN-13 9788576089391",
         "isbn": [
           "9788576089391"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "MAZZA, Lucas. HTML5 e CSS3. Domine a Web do Futuro. Casa do Código, 2013. ISBN-13 9788566250053",
         "isbn": [
           "9788566250053"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SILVA, Maurício Samy. Fundamentos de HTML5 e CSS3. São Paulo: Novatec, 2015. ISBN-13 9788575224380",
         "isbn": [
           "9788575224380"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
@@ -112,29 +126,34 @@
         "referencia": "CASTRO, Elizabeth; HYSLOP, Bruce. HTML5 e CSS3: Guia Prático e Visual. Alta Books; 7ª edição. 2013. ISBN-13 9788576088035.",
         "isbn": [
           "9788576088035"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "FREEMAN, Eric; ROBSON, Elisabeth. Use a Cabeça! HTML e CSS. Editora Alta Books, 2015. ISBN-13 9788576088622",
         "isbn": [
           "9788576088622"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "MILETTO, Evandro Manara. Desenvolvimento de Software II: Introdução ao Desenvolvimento Web com HTML, CSS, JavaScript e PHP. Bookman, 2014. ISBN-13 9788582601952.",
         "isbn": [
           "9788582601952"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SILVA, Maurício Samy. CSS3: desenvolva aplicações web profissionais com uso dos poderosos recursos de estilização das CSS3. São Paulo: Novatec, 2012. 494 p. il. ISBN-13 9788575222898.",
         "isbn": [
           "9788575222898"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SILVA, Maurício Samy. Construindo sites com CSS e XHTML: sites controlados por folhas de estilo em cascata. São Paulo: Novatec, 2007. ISBN: 978857522139.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -160,41 +179,68 @@
     "bibliografiaBasica": [
       {
         "referencia": "CORMEN, Thomas H et al. Algoritmos: teoria e prática. 3. ed. Rio de Janeiro: Elsevier, 2012. 926 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2098"
+        ]
       },
       {
         "referencia": "MANZANO, José Augusto N. G; OLIVEIRA, Jayr Figueiredo de. Algoritmos: lógica para desenvolvimento de programação de computadores. 27. ed. São Paulo: Érica, 2014. 328 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8700"
+        ]
       },
       {
         "referencia": "MENEZES, Nilo Ney Coutinho. Introdução à programação com Python: algoritmos e lógica de programação para iniciantes. São Paulo: Novatec, 2010. 222 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8974"
+        ]
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "ALMEIDA, Rafael Soares. Aprendendo algoritmo com Visualg. Rio de Janeiro: Ciência Moderna, 2013. 348 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7480"
+        ]
       },
       {
         "referencia": "BARRY, Paul. Use a cabeça: Python. Rio de Janeiro: Alta Books, 2012. 458 p. il. (Use a cabeça!).",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2060"
+        ]
       },
       {
         "referencia": "FORBELLONE, André Luiz Villar; EBERSPÄCHER, Henri Frederico. Lógica de programação: a construção de algoritmos e estruturas de dados. 3. ed. São Paulo: Makron Books, 2005. 218 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=268"
+        ]
       },
       {
         "referencia": "LOPES, Anita; GARCIA, Guto. Introdução à programação: 500 algoritmos resolvidos. Rio de Janeiro: Campus, 2002. 469 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7829"
+        ]
       },
       {
         "referencia": "MANZANO, José Augusto N. G; OLIVEIRA, Jayr Figueiredo de. Algoritmos: lógica para desenvolvimento de programação de computadores. 27. ed. São Paulo: Érica, 2014. 328 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8700"
+        ]
       },
       {
         "referencia": "RAMALHO, Luciano. Python fluente: programação clara, concisa e eficaz. São Paulo: Novatec, 2015. 798 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9092"
+        ]
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -219,40 +265,64 @@
     "bibliografiaBasica": [
       {
         "referencia": "FOROUZAN, Behrouz; MOSHARRAF, Firouz. Fundamentos da ciência da computação. São Paulo: Cengage Learning, 2011. 560 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1594"
+        ]
       },
       {
         "referencia": "MONTEIRO, Mario Antonio. Introdução à organização de computadores. 5. ed. Rio de Janeiro: LTC, 5. ed. Rio de Janeiro: LTC, 2011. 698 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=346"
+        ]
       },
       {
         "referencia": "STALLINGS, W. Arquitetura e Organização de Computadores. Pearson, 10.8. ed. São Paulo: Pearson, 20170. 864624 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1625"
+        ]
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "DALE, Nell; LEWIS, John. Ciência da computação. 4. ed. Rio de Janeiro: LTC, 4. ed. Rio de Janeiro: LTC, 2011. 436 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7059"
+        ]
       },
       {
         "referencia": "CAPRON, H.L. Introdução à Informática. Pearson, 2004.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1225"
+        ]
       },
       {
         "referencia": "VELLOSO, Fernando de Castro. Informática –Conceitos Básicos. Campus, 2004.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7138"
+        ]
       },
       {
         "referencia": "TANENBAUM, A.S. Organização estruturada de computadores. 4 ed. Rio de Janeiro: LTC, 2001. 398 p. ISBN-10 8521612532",
         "isbn": [
           "8521612532"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7227"
         ]
       },
       {
         "referencia": "VAHID, F. Sistemas digitais: projeto, otimização e HDLs. Porto Alegre: Artmed, 2008. 558 p. ISBN-13 9788577801909",
         "isbn": [
           "9788577801909"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2066"
         ]
       }
     ],
@@ -278,37 +348,47 @@
     "bibliografiaBasica": [
       {
         "referencia": "FLEMMING, Diva Marília; Gonçalves, Mirian Buss. Cálculo A: funções, limite, derivação e integração. 6. ed.- São Paulo: Pearson Prentice Hall, 2006.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=266"
+        ]
       },
       {
         "referencia": "HOWARD, Anton; Bivens Irl; Davis, Stephen. Cálculo. 10. ed. - Porto Alegre: Bookman, 2014. v.1.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "STEWART, James. Cálculo. 7. ed. São Paulo: Cengage Learning, 2015. v.1.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "FINNEY, Ross L.; Weir, Maurice D.; Frank; R. Giordano. Cálculo de George B. Thomas. 10. ed. São Paulo: Addison Wesley, 2002, v 1.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "GUIDORIZZI, Hamilton Luiz, Um Curso de Cálculo. 5ª ed., Rio de Janeiro, LTC, 2001, v.1.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "LEITHOLD, Louis. O Cálculo com Geometria Analítica. 3. ed. São Paulo: Harbra, 1994. v.1.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "ROGAWSKI, Jon. Cálculo. Porto Alegre: Bookman, 2009. v.1.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SWOKOWSKI, Earl. W. Cálculo com Geometria Analítica. 2. ed. São Paulo: Makron Books, 1994. v.1.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -333,41 +413,58 @@
     "bibliografiaBasica": [
       {
         "referencia": "BARBIERI, J. C. Gestão Ambiental Empresarial – Conceitos, Modelos e Instrumentos. São Paulo: Saraiva, 2012.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BRAGA, B. Introdução à Engenharia Ambiental. São Paulo: Pearson, 2005.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "PHILIPPI JR., A.; PELICIONI, M. C. F. Educação Ambiental e Sustentabilidade. Barueri, SP: Manole, 2014.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "DIAS, Genebaldo Freire. Educação ambiental: princípios e práticas. 9ª ed. São Paulo: Gaia, 2004. 551 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3892"
+        ]
       },
       {
         "referencia": "LIMA, José Dantas. Gestão de resíduos sólidos urbanos no Brasil. João Pessoa: Emlur, [200-]. 267 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=19782"
+        ]
       },
       {
         "referencia": "MANO, E. B. et al. Meio Ambiente, Poluição e Reciclagem. São Paulo: Blucher, 2010.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8002"
+        ]
       },
       {
         "referencia": "MONTIBELLER, F. G. Empresas, Desenvolvimento e Ambiente - Diagnóstico e Diretrizes de Sustentabilidade. São Paulo: Manole, 2006.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "PAZ, Ronilson José da; FREITAS, Getúlio Luís de ; SOUZA, Elivan Arantes de . Unidades de conservação no Brasil: história e legislação. João Pessoa: Universitária /UFPB, 2006. 243 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=15339"
+        ]
       },
       {
         "referencia": "PHILIPPI JR, A. Saneamento, Saúde e Ambiente. São Paulo: Manole, 2004.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -394,41 +491,58 @@
     "bibliografiaBasica": [
       {
         "referencia": "GUEDES, Gilleanes T. A.. UML 2: uma abordagem prática. 3a. Edição. São Paulo: Novatec, 2018. 496p.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "LARMAN Craig. Utilizando UML e padrões: uma introdução à análise e ao projeto orientados a objetos e ao processo unificado. 3. ed. São Paulo: Bookman, 2007. 696p.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "PREECE, Jennifer; ROGERS, Yvonne; SHARP, Helen. Design de interação Porto Alegre: Bookman, 2013. 600p.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SOMMERVILLE, Ian. Engenharia de software. 10a. ed. São Paulo: Pearson, 2019. 768p.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "FURGERI, Sérgio. Modelagem de sistemas orientados a objetos: ensino didático. 1. ed. São Paulo: Érica, 2013. 304 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8762"
+        ]
       },
       {
         "referencia": "GAMMA, Erich et al. Padrões de projeto: soluções reutilizáveis de software orientado a objetos. Porto Alegre: Bookman, 2000. 364 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7690"
+        ]
       },
       {
         "referencia": "LIMA, Adilson da Silva. Especificações técnicas de software. 1. ed. São Paulo: Érica, 2012. 384 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7700"
+        ]
       },
       {
         "referencia": "LIMA, Adilson da Silva. UML 2.5: do requisito à solução. São Paulo: Érica, 2014. 368 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "PAULA FILHO, Wilson de Pádua. Engenharia de software fundamentos, métodos e padrões. 3. ed. Rio de Janeiro: LTC, 2009. 1248 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3205"
+        ]
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -459,18 +573,25 @@
         "referencia": "FREEMAN, Eric T, ROBSON, Elisabeth. Use a cabeça! Programação JavaScript. Alta Books, 2016. ISBN-13 9788576089902.",
         "isbn": [
           "9788576089902"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=25170"
         ]
       },
       {
         "referencia": "HAVERBEKE, Marjin. Eloquent JavaScript: A Modern Introduction to Programming. No Starch Press, 2018. ISBN-13 9781593279509. Disponível em https://eloquentjavascript.net/.",
         "isbn": [
           "9781593279509"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SILVA, Maurício Samy. Javascript: Guia do Programador. São Paulo: Novatec, 2010. ISBN-13 9788575222485.",
         "isbn": [
           "9788575222485"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8858"
         ]
       }
     ],
@@ -479,31 +600,38 @@
         "referencia": "ADRIANO, Thiago da Silva. Guia prático de TypeScript Melhore suas aplicações JavaScript. Casa do Código, 2021. ISBN-13 9786586110777.",
         "isbn": [
           "9786586110777"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "BROWN, Ethan. Programação web com Node e Express: Beneficiando-se da Stack JavaScript. Novatec, 2020. ISBN-13 9786586057089.",
         "isbn": [
           "9786586057089"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=28963"
         ]
       },
       {
         "referencia": "MACHADO, Kheronn Khennedy. Angular 11 e Firebase: Construindo uma aplicação integrada com a plataforma do Google. Casa do Código, 2021. ISBN-13 9788572540360.",
         "isbn": [
           "9788572540360"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "RAUSHMAYER, Axel. JavaScript for impatient programmers. Independently Published, 2019. ISBN-13 9781091210097. Disponível em https://exploringjs.com/impatient- js/toc.html.",
         "isbn": [
           "9781091210097"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SILVA, Maurício Samy. React Aprenda Praticando. São Paulo: Novatec, 2021. ISBN-13 9786586057393.",
         "isbn": [
           "9786586057393"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -533,24 +661,32 @@
         "referencia": "CELES, Waldemar; CERQUEIRA, Renato ; RANGEL, José Lucas . Introdução a estruturas de dados: com técnicas de programação em C. Rio de Janeiro: Elsevier, 2004. 294 p. ISBN-13 9788535283457.",
         "isbn": [
           "9788535283457"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=531"
         ]
       },
       {
         "referencia": "CORMEN, T. H.; LEISERSON, C.; Algoritmos - Teoria e Prática. Elsevier. 2002. ISBN-10 8535209263",
         "isbn": [
           "8535209263"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "LAMBERT, Kenneth A. Fundamentos de Python: Estrutura de Dados. São Paulo: Cengage Learning, 2022. ISBN-13 9786555584264.",
         "isbn": [
           "9786555584264"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "TENENBAUM, Aaron M; LANGSAM, Yedidyah; AUGENSTEIN, Moshe J.. Estruturas de dados usando C. São Paulo: Makron Books, 1995. 884 p. ISBN-10 8534603480.",
         "isbn": [
           "8534603480"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=248"
         ]
       }
     ],
@@ -559,34 +695,49 @@
         "referencia": "BEAZLEY, David; JONES, Brian K. Python Cookbook. 1. ed. São Paulo: Novatec, 2013. 720 p. il. ISBN-13 9788575223321.",
         "isbn": [
           "9788575223321"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=4383"
         ]
       },
       {
         "referencia": "CAVALCANTI, Valéria Maria Bezerra; RODRIGUES, Nadja da Nóbrega . Estruturas de dados lineares básicas: abordagem prática, com implementação em C e Java. João Pessoa: IFPB, 2015. 294 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3405"
+        ]
       },
       {
         "referencia": "GOODRICH, Michael, TAMASSIA, Roberto, GOLDWASSER, Michael. Data Structures and Algorithms in Python. Wiley. 2013. ISBN-13 9781118290279",
         "isbn": [
           "9781118290279"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "MANZANO, José Augusto N. G; OLIVEIRA, Jayr Figueiredo de. Algoritmos lógica para desenvolvimento de programação de computadores. 27. ed. São Paulo: Érica, 2014. 328 p. il. ISBN-13 9788536502212.",
         "isbn": [
           "9788536502212"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8700",
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=24685"
         ]
       },
       {
         "referencia": "MILLER, Bradley. Problem Solving with Algorithms and Data Structures Using Python. 2013. ISBN-13 9781590282571.",
         "isbn": [
           "9781590282571"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "RAMALHO, Luciano. Python fluente: programação clara, concisa e eficaz. São Paulo: Novatec, 2015. 798 p. ISBN-13 9788575224625.",
         "isbn": [
           "9788575224625"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9092"
         ]
       }
     ],
@@ -614,49 +765,67 @@
         "referencia": "NOAL, Luiz Antonio Jacques. Linux para Linuxers. 1ª ed. São Paulo: Novatec, 2016. 696 p. ISBN-13 9788575224724.",
         "isbn": [
           "9788575224724"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "MOTA FILHO, João Eriberto. Descobrindo o Linux: Entenda o sistema operacional GNU/Linux. 3. ed. São Paulo: Novatec, 2012. 924 p. ISBN-13 9788575222782.",
         "isbn": [
           "9788575222782"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1547"
         ]
       },
       {
         "referencia": "WARD, Brian. Como o Linux funciona: O que todo superusuário deveria saber. São Paulo: Novatec, 2015. 440 p. ISBN-13 9788575224199.",
         "isbn": [
           "9788575224199"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9342"
         ]
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "BRITO, Samuel Henrique Bucke. Serviços de Redes em Servidores Linux. 1ª ed. Editora Novatec. 2017. 192 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=28988"
+        ]
       },
       {
         "referencia": "MORENO, Daniel. Certificação Linux LPIC-1. 1ª ed. São Paulo: Novatec, 2016. 592 p..",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MAZIOLI, Gleydson. Guia Foca Linux Intermediário. Versão 5.60, 2007. Disponível em http://focalinux.cipsga.org.br",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MAZIOLI, Gleydson. Guia Foca Linux Avançado. Versão 6.42, 2007. Disponível em http://focalinux.cipsga.org.br",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "NEMETH, Evi; SNYDER, Garth; HEIN, Trent R. Manual completo do Linux: Guia do administrador. 2. ed. São Paulo: Pearson, 2007. 684 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=287"
+        ]
       },
       {
         "referencia": "PELZ, Olivier, HOBSON, Jonathan. CentOS Linux Server Cookbook. 2nd. ed. Packt Publishing. 2016.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "RIBEIRO, Uirá. Certificação Linux – Guia Para Os Exames Lpic-1, Comptia Linux+ e Novell",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -681,37 +850,53 @@
     "bibliografiaBasica": [
       {
         "referencia": "SANTOS, F. J.; FERREIRA, S. F. Geometria Analítica. Porto Alegre: Bookman / Grupo A, 2009.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2096"
+        ]
       },
       {
         "referencia": "STEINBRUCH, A.; WINTERLE, P. Geometria Analítica. São Paulo: Pearson, 1987.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2111"
+        ]
       },
       {
         "referencia": "WINTERLE, P. Vetores e Geometria Analítica. São Paulo: Pearson, 2014.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17232"
+        ]
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "BOULOS, P.; CAMARGO, I. Geometria Analítica – Um Tratamento Vetorial. São Paulo: Pearson, 2004.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "LEITHOLD, L. O Cálculo com Geometria Analítica, v. 2. São Paulo: Harbra, 1994.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "REIS, G. L.; SILVA, V. V. Geometria Analítica. Rio de Janeiro: LTC/Grupo Gen, 1996.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=641"
+        ]
       },
       {
         "referencia": "SIMMONS, G. F. Cálculo com Geometria Analítica. São Paulo: Pearson, 1996.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SWOKOWSKI, Earl W. Cálculo com Geometria Analítica – v.2, Makron Books, São Paulo – SP, 1994.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -736,53 +921,67 @@
     "bibliografiaBasica": [
       {
         "referencia": "DOUGLAS, Dan. Assessing Languages for specific purposes. (2002)",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "DUDLEY-EVANS, TONY, ST John, Maggie Jo. Developments in English for specific purposes. (2003)",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BRONCKART, Jean-Paul. Atividade de linguagem, textos e discursos: por um interacionismo sócio-discursivo. São Paulo: Educ. 1999.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BROWN, Ann L. Metacognition: the development of selective attention strategies for learning from texts. In: SINGER, Harry; RUDDELL, Robert (Eds). Theoretical Models and Processes of Reading. Newark, Delaware International Reading Association, 1985, p. 501-526.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "GRELLET, Françoise. Developing readings kills: a practical guide to reading comprehension exercises. (2003).",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "HUTCHINSON, T.; WATERS, A. English for specific purposes. Cambridge: Cambridge University Press, 1987.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "KLEIMAN, Angela. Leitura: ensino e pesquisa. Campinas: Editora Pontes, 1996.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "DIÓGENES, Cândido de Lima (org.) Ensino e Aprendizagem de Língua Inglesa: conversa com especialistas. São Paulo: Parábola Editorial, 2009.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=821"
+        ]
       },
       {
         "referencia": "DIONÌSIO, Paiva Angela et al. Organizadoras. Gêneros Textuais e Ensino. 2a ed. Rio de Janeiro: Lucerna, 2003.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "RICHARDS, Jack. From reader to reading teacher. Cambridge: Cambridge University Press, 1998.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "NUTTAL, Christine. Teaching readings kills in a foreign language. London: Heinemann, 1982.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "PINTO, Abuêndia Padilha. É possível promover a autonomia na leitura em língua estrangeira? In: Passeggi, Luís (Org.). Abordagens em Lingüística aplicada. Natal: Editora da UFRN, 1998. p. 133-146.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -807,43 +1006,55 @@
     "bibliografiaBasica": [
       {
         "referencia": "ARAÚJO FILHO, T.; THIOLLENT, M.J. Metodologia para projetos de extensão: apresentação e discussão. Universidade Federal de São Carlos (UFSCar) – São Carlos: Cubo Multimídia, 2008. 666 p. Disponível em: http://beu.extension.unicen.edu.ar/xmlui/handle/123456789/198.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DA PARAÍBA. CONSUPER/DAAOC/REITORIA/IFPB. Resolução nº 96/2021. Dispõe sobre aprovação da Política de Extensão do Instituto Federal de Educação, Ciência e Tecnologia da Paraíba - IFPB. João Pessoa: IFPB, 2021. Disponível em: https://www.ifpb.edu.br/proexc/sobre/politica",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MELO, José Francisco de. Extensão popular. 2 ed. João Pessoa: Editora da UFPB, 2014. 122 p. Disponível em: https://www.ufpb.br/redepopsaude/contents/biblioteca-1/extensao-popular/extensao-popular.pdf",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "BRASIL, Conselho Nacional de Educação. Resolução CNE/CES nº7, de 18 de dezembro de 2018. Estabelece as Diretrizes para a Extensão na Educação Superior Brasileira e regimenta o disposto na Meta 12.7 da Lei nº 13.005/2014. Brasília: Diário Oficial da União, 19/dez, 2018. Disponível em: https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/55877808",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BROD, Cesar. Scrum: Guia Prático para Projetos Ágeis. 2. ed. São Paulo: Novatec, 2015. ISBN-13 9788575224410.",
         "isbn": [
           "9788575224410"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "KOLLER, S. H.; COUTO, M. C.; VON HOHENDORFF, J. Manual de Produção Científica. Porto Alegre: Penso, 2014. ISBN-13 9788565848916.",
         "isbn": [
           "9788565848916"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=28050"
         ]
       },
       {
         "referencia": "SOUSA, Ana Luiza Lima. A história da extensão universitária. Campinas: Alínea, 2010. 140 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=31325"
+        ]
       },
       {
         "referencia": "WAZLAWICK, Raul Sidnei. Metodologia de Pesquisa para Ciência da Computação. 2. ed. Rio de Janeiro: Elsevier, 2014. ISBN-13 9788535277821.",
         "isbn": [
           "9788535277821"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -872,23 +1083,27 @@
         "referencia": "Baldam, Valmir Sobral Roquemar Et Al. Gerenciamento de Processos de Negócios: Bpm - Business Process Management. 2. Ed. São Paulo, Sp: Érica, 2014. 240 P. ISBN-13 9788536501758.",
         "isbn": [
           "9788536501758"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "Business Process Model And Notation (Bpmn) Specification, Version 2.0.2. 2014. Disponível em: https://www.omg.org/spec/BPMN/2.0.2/PDF. Acesso em: março, 2021.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Dumas, Marlon Et Al. (Ed.). Fundamentals Of Business Process Management. 2Nd Ed. Germany: Springer, 2018. Xxxii, 527 P. ISBN-13 9783662565087.",
         "isbn": [
           "9783662565087"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "Valle, Rogério; Barbará, Saulo (Org.). Análise e Modelagem de Processos de Negócios: Foco na Notação Bpmn (Business Process Modeling Notation). São Paulo, Sp: Atlas, 2016. 207 P. ISBN-13 9788522456215.",
         "isbn": [
           "9788522456215"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
@@ -896,31 +1111,36 @@
         "referencia": "Brocke, Jan Vom. Manual de Bpm Gestão de Processos de Negócio. 1. Porto Alegre Bookman 2013 1 Recurso Online ISBN-13 9788582600665.",
         "isbn": [
           "9788582600665"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "Cruz, Tadeu. Manual para Gerenciamento de Processos de Negócio Metodologia DompTM: Documentação, Organização e Melhoria de Processos. São Paulo Atlas 2015 1 Recurso Online ISBN-13 9788522499700.",
         "isbn": [
           "9788522499700"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "Larman, Craig. Utilizando Uml e Padrões: Uma Introdução a Análise e ao Projeto Orientados a Objetos e ao Desenvolvimento Iterativo. 3. Ed. Porto Alegre, Rs: Bookman, 2007-2008. 695 P. ISBN-13 9788560031528.",
         "isbn": [
           "9788560031528"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "Modelagem da Organização Uma Visão Integrada. Porto Alegre Bookman 2013 1 Recurso Online ISBN-13 9788582601068.",
         "isbn": [
           "9788582601068"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "Wazlawick, Raul Sidnei. Análise e Design Orientados a Objetos para Sistemas de Informação: Modelagem com Uml, Ocl e Ifml. 3. Ed. Rio de Janeiro, Rj: Elsevier, 2015. 462 P. ISBN-13 9788535279849.",
         "isbn": [
           "9788535279849"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -945,37 +1165,49 @@
     "bibliografiaBasica": [
       {
         "referencia": "COMER, Douglas E. Interligação em redes com TCP/IP – Vol. 1. 5ª Edição. Editora Campus. Rio de Janeiro. 2006.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "KUROSE, James F. e ROSS, Keith W. Redes de computadores e a Internet: uma abordagem top down. 3ª Edição. Pearson, 2006",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=262"
+        ]
       },
       {
         "referencia": "TANENBAUM, Andrew S; WETHERALL, David. Redes de computadores. 5ª Edição. São Paulo: Pearson, 2011",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1030"
+        ]
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "Mockapetris, P. V. Domain Names - Implementation and Specification. Internet RFC1035, November 1987. Disponível em https://www.ietf.org/rfc/rfc1035.txt",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "VIXIE, P. Extension Mechanisms for DNS (EDNS0). Internet RFC 2671, August 1997. Disponível em https://www.ietf.org/rfc/rfc2671.txt",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "POSTEL, J. \"User Datagram Protocol\", Internet RFC768, USC/Information Sciences Institute, August 1980. Disponível em https://www.ietf.org/rfc/rfc768.txt",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "POSTEL, J. \"Transmission Control Protocol\", Internet RFC793, USC/Information Sciences Institute, September 1981. Disponível em https://www.ietf.org/rfc/rfc793.txt",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "KLENSIN, John C. Simple Mail Transfer Protocol, Internet RFC5321, October 2008. Disponível em https://www.ietf.org/rfc/rfc5321.txt",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -1004,18 +1236,27 @@
         "referencia": "DEITEL, Paul; DEITEL, Harvey. Java: como programar. 8. ed. São Paulo: Pearson, 2010. ISBN-13 9788576055631.",
         "isbn": [
           "9788576055631"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1079"
         ]
       },
       {
         "referencia": "HORSTMANN, Cay; CORNELL, Gary. Core Java, Vol. I: Fundamentos, 8ª edição. Pearson Education, 2009. ISBN-13 9788576053576.",
         "isbn": [
           "9788576053576"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2463"
         ]
       },
       {
         "referencia": "SIERRA, Kathy; BATES, Bert. Use a cabeça: Java 2. ed. Rio de Janeiro: Alta Books, 2007. 470 p. il. (Use a cabeça!). ISBN-13 9788576081739.",
         "isbn": [
           "9788576081739"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9029"
         ]
       }
     ],
@@ -1024,33 +1265,47 @@
         "referencia": "COSTA, Daniel Costa. Java: dicas e truques. Rio de Janeiro: Brasport, 2009. 340 p. il. ISBN-13 9788574524085.",
         "isbn": [
           "9788574524085"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8721"
         ]
       },
       {
         "referencia": "DEITEL, Paul; DEITEL, Harvey. Java: como programar. 10. ed. São Paulo: Pearson, 2016. ISBN-13 9788543004792",
         "isbn": [
           "9788543004792"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6135"
         ]
       },
       {
         "referencia": "MANZANO, José Augusto N. G.; COSTA JUNIOR, Roberto Affonso da. Java 8 programação de computadores. São Paulo: Érica, 2014. 384 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SANTOS, Rafael. Introdução à programação orientada a objetos usando JAVA. 2.ed. Rio de Janeiro: Elsevier, 2013. 313 p. il. (SBC - sociedade brasileira de computação).",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=24735"
+        ]
       },
       {
         "referencia": "SANTOS, Ciro Meneses. Desenvolvimento de aplicações comerciais com JAVA e NetBeans. Rio de Janeiro: Ciência Moderna, 2010. 190 p. il. ISBN-13 9788573938920.",
         "isbn": [
           "9788573938920"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8978"
         ]
       },
       {
         "referencia": "SILVEIRA, Paulo; TURINI, Rodrigo. Java 8 Prático. Lambdas, Streams e os Novos Recursos da Linguagem. Casa do Código; 1ª ed. 2014. ISBN-13 9788566250466",
         "isbn": [
           "9788566250466"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -1080,25 +1335,35 @@
         "referencia": "DATE, C.J. Introdução a Sistemas de Bancos de Dados. Editora GEN LTC, 1ª edição, 2004. ISBN-13 9788535212730.",
         "isbn": [
           "9788535212730"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9396"
         ]
       },
       {
         "referencia": "ELMASRI, Ramez; Navathe, Shamkant B. Sistemas de Banco de Dados. Editora Pearson/Addison Wesley Pub Co Inc. 7a Edição, 2019. ISBN-13 9788543025001.",
         "isbn": [
           "9788543025001"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=21905"
         ]
       },
       {
         "referencia": "HEUSER, Carlos Alberto. Projeto de Banco de Dados. Editora Bookman – Grupo a. 6a edição, 2009. ISBN-13 9798577803828.",
         "isbn": [
           "9798577803828"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2116"
         ]
       },
       {
         "referencia": "SILBERSCHATZ, Abraham; KORTH, S., SUDARSHAN, Henry. Sistema de Banco de Dados. Editora GEN LTC; 7ª edição, 2020. ISBN-13 9788595157330.",
         "isbn": [
           "9788595157330"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
@@ -1106,34 +1371,45 @@
         "referencia": "DATE, C.J. Projeto de Banco de Dados e Teoria Relacional : Formas Normais e Tudo o Mais. Editora Novatec; 1ª edição, 2015. ISBN-13 9788575224557.",
         "isbn": [
           "9788575224557"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9374"
         ]
       },
       {
         "referencia": "Documentação do MySQL. Disponível em https://dev.mysql.com/doc/. Último acesso em 16/06/2023.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Documentação do PostgreSQL. Disponível em https://www.postgresql.org/docs/. Último acesso em 16/06/2023.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Documentação da Oracle. Disponível em https://docs.oracle.com/en/database/. Último acesso em 16/06/2023.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Documentação do SQL Server. Disponível em https://docs.microsoft.com/pt-br/documentation/. Último acesso em 16/06/2023.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MACHADO, Felipe Nery. Banco De Dados - Projetos e Implementação. Editora Érica; 4ª edição, 2020. ISBN-13 9788536532684.",
         "isbn": [
           "9788536532684"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "NIELD, Thomas. Introdução à Linguagem SQL: Abordagem Prática Para Iniciantes. Editora Novatec Editora; 1ª edição, 2016. ISBN-13 9788575225011.",
         "isbn": [
           "9788575225011"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=29044"
         ]
       }
     ],
@@ -1161,37 +1437,57 @@
     "bibliografiaBasica": [
       {
         "referencia": "LIPSCHUTZ, S.; LIPSON, M. Álgebra Linear – Coleção Schaum. Porto Alegre: Bookman / Grupo A, 2011.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2094"
+        ]
       },
       {
         "referencia": "POOLE, D. Álgebra Linear. São Paulo: Cengage Learning, 2014.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17206"
+        ]
       },
       {
         "referencia": "STEINBRUCH, A.; WINTERLE, P. Álgebra Linear. São Paulo: Pearson, 1987.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2106"
+        ]
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "ANTON, H.; RORRES, C. Álgebra linear com aplicações. Porto Alegre: Bookman / Grupo A, 2012.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1082"
+        ]
       },
       {
         "referencia": "LEON, S. J. Álgebra Linear e Suas Aplicações. Rio de Janeiro: LTC / Grupo Gen, 2011.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "NICHOLSON, W. K. Álgebra Linear. São Paulo: McGraw-Hill / Grupo A, 2006.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17212"
+        ]
       },
       {
         "referencia": "SHIFRIN, T.; ADAMS, M. R. Álgebra Linear - Uma Abordagem Geométrica. Rio de Janeiro: LTC / Grupo Gen, 2013.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17210"
+        ]
       },
       {
         "referencia": "STRANG, G. Álgebra Linear. São Paulo: Cengage Learning, 2010.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -1216,45 +1512,61 @@
     "bibliografiaBasica": [
       {
         "referencia": "AZEREDO, José Carlos. Fundamentos de gramática do português. Jorge Zahar Editor Ltda, 2000.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BAGNO, Marcos. Preconceito linguístico – o que é, como se faz. 49.ed. São Paulo: Edições Loyola, 1999.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MARCUSCHI, LUIZ ANTÔNIO. Produção textual, análise de gêneros e compreensão. São Paulo: Parábola Editorial, 2008.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=13714"
+        ]
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "ALIENDE, Felipe; CONDEMAIR, Mabel. A leitura: teoria, avaliação e desenvolvimento. Trad. José Claudio de Almeida. Porto Alegre: Artes Médicas, 1987.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "COSSON, Rildo. Letramento literário: teoria e prática. São Paulo: Contexto, 2006.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1267"
+        ]
       },
       {
         "referencia": "DIONÍSIO, Ângela P. et al (Org.). Gêneros textuais e ensino. 2. ed. Rio de Janeiro: Lucerna, 2002. GUIMARÃES, Elisa. Texto, discurso e ensino. São Paulo: Contexto, 2009.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "LAJOLO, MARISA. Literatura: leitores e leitura. São Paulo: Moderna, 2001",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "AZEREDO, José Carlos. Fundamentos de gramática do português. Jorge Zahar Editor Ltda, 2000.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BAGNO, Marcos. Preconceito linguístico – o que é, como se faz. 49.ed. São Paulo: Edições Loyola, 1999.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MARCUSCHI, LUIZ ANTÔNIO. Produção textual, análise de gêneros e compreensão. São Paulo: Parábola Editorial, 2008.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=13714"
+        ]
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -1287,17 +1599,20 @@
         "referencia": "WAZLAWICK, Raul. Sidnei. Análise e projeto de sistemas de informação orientados a objetos para Sistemas de Informação. 3. ed. Rio de Janeiro: Elsevier, 2014. ISBN-13 9788535279849.",
         "isbn": [
           "9788535279849"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
         "isbn": [
           "9788580555332"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SOMMERVILLE, Ian. Engenharia de software. 10a. ed. São Paulo: Pearson, 2019. 768p.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
@@ -1305,31 +1620,40 @@
         "referencia": "WAZLAWICK, Raul Sidnei. Metodologia de Pesquisa para Ciência da Computação. 2. ed. Rio de Janeiro: Elsevier, 2014. ISBN-13 9788535277821.",
         "isbn": [
           "9788535277821"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "BEZERRA, E. Princípios de análise e projeto de sistemas com UML. 3. ed. Rio de Janeiro: Elsevier, 2015. ISBN-13 9788535226263.",
         "isbn": [
           "9788535226263"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6321"
         ]
       },
       {
         "referencia": "BLAHA, M. Modelagem e projetos baseados em objetos com UML 2. 2. ed. Rio de Janeiro: Elsevier, 2006. ISBN-13 9788535217537.",
         "isbn": [
           "9788535217537"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "LAKATOS, Eva Maria; MARCONI, Marina de Andrade. Fundamentos da Metodologia Científica. 7. ed. São Paulo: Atlas, 2010. ISBN-13 9788522457588.",
         "isbn": [
           "9788522457588"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2358"
         ]
       },
       {
         "referencia": "BROD, Cesar. Scrum: Guia Prático para Projetos Ágeis. 2. ed. São Paulo: Novatec, 2015. ISBN-13 9788575224410.",
         "isbn": [
           "9788575224410"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -1356,39 +1680,49 @@
     "bibliografiaBasica": [
       {
         "referencia": "MALDONADO, José C.; DELAMARO, Márcio E. e JINO, Mario. Introdução ao Teste de Software. ed. Campus. 2007.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3059"
+        ]
       },
       {
         "referencia": "SOMMERVILLE, I. Engenharia de Software. 10ª ed. São Paulo: Pearson, 2018.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
         "isbn": [
           "9788580555332"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "ANICHE, M. Test-Driven Development: Teste e Design no Mundo Real. Ed. Casa do Código. São Paulo: 2012.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "ENGHOLM JR, H. Engenharia de software na prática. Novatec. Rio de Janeiro: 2010.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MALDONADO, J. Automatização de Teste de Software com Ferramentas de Software Livre. GEN LTC. 2021.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "PERSIVAL, H. J .W. TDD com Python: Siga o Bode dos Testes: Usando Django, Selenium e JavaScript. Novatec. Rio de Janeiro: 2017.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "PIRES, A. Integração contínua com Jenkins: Automatize o ciclo de desenvolvimento, testes e implantação de aplicações. Novatec. Rio de Janeiro: 2017.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -1416,37 +1750,60 @@
     "bibliografiaBasica": [
       {
         "referencia": "MACHADO, Francis Berenger; MAIA, Luiz Paulo. Fundamentos de sistemas operacionais. Rio de Janeiro: LTC, 2011. 112 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9243"
+        ]
       },
       {
         "referencia": "SILBERSCHATZ, Abraham; GALVIN, Peter Baer; GAGNE, Greg. Fundamentos de sistemas operacionais. 8. ed. Rio de Janeiro: LTC, 2010. 515 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9355",
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5280"
+        ]
       },
       {
         "referencia": "TANENBAUM, Andrew S; WOODHULL, Albert S. Sistemas operacionais: projeto e implantação. 3. ed. São Paulo: Bookman, 2008. 990 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "DEITEL, Harvey M.; DEITEL, Paul J ; CHOFFNES, David R . Sistemas operacionais 3. ed. São Paulo: Pearson Prentice Hall, 2005. 760 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=595"
+        ]
       },
       {
         "referencia": "MACHADO, Francis Berenger; MAIA, Luiz Paulo. Arquitetura de sistemas operacionais. 5. ed. Rio de Janeiro: LTC, 2013. 250 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2927"
+        ]
       },
       {
         "referencia": "MARQUES, José Alves et al. Sistemas operacionais Rio de Janeiro: LTC, 2011. 375 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9322"
+        ]
       },
       {
         "referencia": "OLIVEIRA, Rômulo Silva de; CARISSIMI, Alexandre da Silva; TOSCANI, Simão Sirineo. Sistemas operacionais 3. ed. Porto Alegre: Sagra Luzzatto, 2004. 259 p. il. (Série Livros Didáticos; 11).",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SILBERSCHATZ, Abraham; GALVIN, Peter Baer; GAGNE, Greg. Fundamentos de sistemas operacionais princípios básicos. Rio de Janeiro: LTC, 2013. 432 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9355",
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5280",
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9336"
+        ]
       }
     ],
     "bibliografiaSuplementar": "",
@@ -1476,18 +1833,23 @@
         "referencia": "CASCIARO, Mario; MAMMINO, Luciano. Node.js Design Patterns: Design and implement production-grade Node.js applications using proven patterns and techniques. Packt Publishing, 2020. 3a Edição . ISBN-13 9781839214110",
         "isbn": [
           "9781839214110"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "HECKLER, Mark. Spring Boot: Up and Running: Building Cloud Native Java and Kotlin Applications. O'Reilly, 2021. ISBN-13 9781492076988",
         "isbn": [
           "9781492076988"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "MIKE, Keith; SCHINCARIOL, Merrick; KEITH, Jeremy. JPA 2: mastering the Java Persistence API. Apress, 2009. ISBN-13 9781430219569",
         "isbn": [
           "9781430219569"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8830"
         ]
       }
     ],
@@ -1496,37 +1858,47 @@
         "referencia": "BROWN, Ethan. Programação web com Node e Express: Beneficiando-se da Stack JavaScript. Novatec, 2020. ISBN-13 9786586057089.",
         "isbn": [
           "9786586057089"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=28963"
         ]
       },
       {
         "referencia": "LEONARD, Anghel. Spring Boot Persistence Best Practices: Optimize Java Persistence Performance in Spring Boot Applications. Apress, 2020. ISBN-10 1484256255",
         "isbn": [
           "1484256255"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "MIKE, Keith; SCHINCARIOL, Merrick. EJB 3 profissional: Java Persistence API. Ciência Moderna, 2008. ISBN-13 9788573936964",
         "isbn": [
           "9788573936964"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7736"
         ]
       },
       {
         "referencia": "MACHADO, Kheronn Khennedy. Angular 11 e Firebase: Construindo uma aplicação integrada com a plataforma do Google. Casa do Código, 2019. ISBN-13 9788572540360.",
         "isbn": [
           "9788572540360"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "RAUSHMAYER, Axel. JavaScript for impatient programmers. Independently Published, 2019. ISBN-13 9781091210097",
         "isbn": [
           "9781091210097"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "VANDERKAM, Dan. Effective TypeScript: 62 Specific Ways to Improve Your TypeScript (English Edition) . O'Reilly, 2019. ISBN-13 9781492053743",
         "isbn": [
           "9781492053743"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -1551,40 +1923,52 @@
     "bibliografiaBasica": [
       {
         "referencia": "DIAS, Alexandre Aparecido et al. Gestão da inovação e empreendedorismo. Rio de Janeiro: Elsevier, 2013. 364 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "CAMPOS, Newton M. \"The Lean Startup: How today's entrepreneurs use continuous innovation to create radically successful businesses.\" RAE 54.2 (2014): 243-244.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Galvão Filho, I. Criatividade e inovação - Entre na Era das Startups. 2020.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "RUNCO, Mark A. Creativity: Theories and themes: Research, development, and practice. Elsevier, 2014.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Knapp, Jake, John Zeratsky, and Braden Kowitz. Sprint: How to solve big problems and test new ideas in just five days. Simon and Schuster, 2016.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Pádua Filho, W. Inovação é Tudo. Atlas, 2015.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MARIANO, Sandra R. H. Empreendedorismo: fundamentos e técnicas para criatividade. Rio de Janeiro: LTC, 2011. 197p. ISBN-13 9788521617730",
         "isbn": [
           "9788521617730"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10594"
         ]
       },
       {
         "referencia": "STUART, Crainer. Inovação: como levar sua empresa para o próximo nível. Porto Alegre: Bookman, 2014.180 p. ISBN-13 9788582602218",
         "isbn": [
           "9788582602218"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10310"
         ]
       }
     ],
@@ -1615,19 +1999,26 @@
         "referencia": "ELMASRI, Ramez; Navathe, Shamkant B. Sistemas de Banco de Dados. Editora Pearson/Addison Wesley Pub Co Inc. 7a Edição, 2019. ISBN-13 9788543025001",
         "isbn": [
           "9788543025001"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=21905"
         ]
       },
       {
         "referencia": "RAMAKRISHNAN, Raghu e GEHRKE, Johannes. Sistemas de Gerenciamento de Banco de Dados. Editora Artmed. 3a Edição, 2008. ISBN-13 9788577260270",
         "isbn": [
           "9788577260270"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3744"
         ]
       },
       {
         "referencia": "SILBERSCHATZ, Abraham; KORTH, S., SUDARSHAN, Henry. Sistema de Banco de Dados. Editora GEN LTC; 7ª edição, 2020. ISBN-13 9788595157330",
         "isbn": [
           "9788595157330"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
@@ -1635,27 +2026,34 @@
         "referencia": "DATE, C.J., Introdução a Sistemas de Bancos de Dados. Editora Campus; 8ª edição, 2004. ISBN-13 9788535212730",
         "isbn": [
           "9788535212730"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9396"
         ]
       },
       {
         "referencia": "CARVALHO, Vinícius. PostgreSQL-Banco de dados para aplicações web modernas. Editora Casa do Código, 2017. ISBN-13 9788555192555",
         "isbn": [
           "9788555192555"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "Documentação do PostgreSQL. Disponível em https://www.postgresql.org/docs/. Último acesso em 16/06/2023.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Documentação da Oracle. Disponível em https://docs.oracle.com/en/database/. Último acesso em 11/03/2021.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "ROB, Peter e CORONEL, Carlos. Sistemas de Banco de Dados: Projeto, Implementação e Administração. Editora Cengage Learnin.1ª Edição, 2010. ISBN-13 9788522107865",
         "isbn": [
           "9788522107865"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -1680,61 +2078,81 @@
     "bibliografiaBasica": [
       {
         "referencia": "ANTUNES, Ricardo(org.). A dialética do trabalho. São Paulo, Expressão Popular, 2004.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BARGER, R. N. Ética na computação: uma abordagem baseada em casos. Rio de Janeiro: LTC, 2011. 174.90904 B251e",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=12610"
+        ]
       },
       {
         "referencia": "HALL, Stuart. A identidade cultural na pós-modernidade. 12. ed. Editora Lamparina, 2015.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "LARAIA, Roque de Barros. Cultura: um conceito antropológico. 24 ed. Rio de Janeiro: Zahar, 2009. 117 p. ISBN-13 9788571104389",
         "isbn": [
           "9788571104389"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=13077"
         ]
       },
       {
         "referencia": "MARTINS, Carlos Benedito. O que é sociologia. 57 ed. Editora Brasiliense. 2001. ISBN-10 8511010572",
         "isbn": [
           "8511010572"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=4930"
         ]
       },
       {
         "referencia": "SELL, Carlos Eduardo. Sociologia clássica: Marx, Durkheim e Weber. 7 ed. Editora Vozes. 2015. ISBN-10 8532639054.",
         "isbn": [
           "8532639054"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "BARTH, F. Etnicidade e o conceito de cultura. Antropolítica, Niterói, ano 19, n.2, p. 16-30, set. 2006.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BARTH, F. Os Grupos Étnicos e suas Fronteiras. In: O Guru, o Iniciador e Outras",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "CARDOSO DE OLIVEIRA, Roberto. Identidade, etnia e estrutura social. São Paulo: Pioneira, 1978.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "CANDAU, V. M. Somos todos iguais? Escola, discriminação e educação em direitos humanos. Rio de Janeiro: D\\&PA, 2003.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MASIERO, Paulo Cesar. Ética em computação. São Paulo, SP: EDUSP, 2008. 213 p. (Acadêmica; 32). ISBN-13 9788531405754",
         "isbn": [
           "9788531405754"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=29576"
         ]
       },
       {
         "referencia": "ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Declaração Universal dos Direitos Humanos, 1948. Disponível em: \\<https://www.unicef.org/brazil/declaracao-universal-dos-direitos-humanos>. Acesso em: 12 junho 2023.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "",
@@ -1761,53 +2179,77 @@
     "bibliografiaBasica": [
       {
         "referencia": "PAULA FILHO, Wilson de Pádua. Engenharia de software fundamentos, métodos e padrões. 3. ed. Rio de Janeiro: LTC, 2009. 1248 p.2.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3205"
+        ]
       },
       {
         "referencia": "PRESSMAN, R. S. Engenharia de Software - Uma Abordagem Profissional - 8ª Ed. 2016, Editora Amgh;",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SBROCCO, José Henrique Teixeira de Carvalho. Metodologias ágeis: engenharia de software sob medida. São Paulo: Érica, 2012. 254 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7883"
+        ]
       },
       {
         "referencia": "SOMMERVILLE, I. Engenharia De Software - 9ª Ed. 2011. Editora Pearson Prentice Hall;",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "FURGERI, Sérgio. Modelagem de sistemas orientados a objetos: ensino didático. 1. ed. São Paulo: Érica, 2013. 304 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8762"
+        ]
       },
       {
         "referencia": "GUEDES, Gilleanes T. A.. UML 2: uma abordagem prática. São Paulo: Novatec, 2009. 485 p. 08",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "LARMAN Craig. Utilizando UML e padrões: uma introdução à análise e ao projeto orientados a objetos e ao processo unificado. 2. ed. São Paulo: Bookman, 2004. 607 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7731"
+        ]
       },
       {
         "referencia": "LIMA, Adilson da Silva. Especificações técnicas de software. 1. ed. São Paulo: Érica, 2012. 384 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7700"
+        ]
       },
       {
         "referencia": "LIMA, Adilson da Silva. UML 2.5: do requisito à solução. São Paulo: Érica, 2014. 368 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MARTINS, José Carlos Cordeiro. Gerenciando projetos de desenvolvimento de software com PMI, RUP e UML. 5. ed. Rio de Janeiro: Brasport, 2010. 290 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7588"
+        ]
       },
       {
         "referencia": "PREECE, Jennifer; ROGERS, Yvonne; SHARP, Helen. Design de interação. Porto Alegre: Bookman, 2008. 548 p. 05",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SBROCCO, José Henrique Teixeira de Carvalho. UML 2.5 com enterprise architect: modelagem visual de projetos orientada a objetos. São Paulo: Érica, 2014. 320 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -1834,47 +2276,67 @@
     "bibliografiaBasica": [
       {
         "referencia": "LARMAN, Craig. Utilizando UML e Padrões – Uma introdução à análise e ao projeto orientados a objetos. Bookman, 2000",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7749"
+        ]
       },
       {
         "referencia": "GAMMA, Erich et al. Padrões de Projeto: Soluções reutilizáveis de software orientado a objetos. Bookman, 2000.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7690"
+        ]
       },
       {
         "referencia": "GUEDES, Gilleanes T. A.. UML 2: uma abordagem prática. São Paulo: Novatec, 2009. 485 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "GUERRA, Eduardo; Design Patterns com Java: projeto orientado a objetos guiado por padrões. Casa do Código. 2014. ISBN-13 9788566250114.",
         "isbn": [
           "9788566250114"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "FREEMEN, Eric; FREEMAN, Elisabeth. Use a cabeça: padrões e projetos. 2. ed. Rio de Janeiro: Alta Books, 2009. 478 p. il. (Use a cabeça!).",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SOMMERVILLE, Ian. Engenharia de software. 8. ed. São Paulo: Pearson Prentice Hall, 2007. 552 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7688"
+        ]
       },
       {
         "referencia": "PRESSMAN, Roger S. Engenharia de software. São Paulo: Pearson, 1995. 1056",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3299"
+        ]
       },
       {
         "referencia": "HORSTMANN, Cay S. Core Java: fundamentos. 8. ed. São Paulo: Pearson, 2010. 383 p. 1v. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SBROCCO, José Henrique Teixeira de Carvalho. UML 2.5 com enterprise architect 10: modelagem visual de projetos orientada a objetos São Paulo: Érica, 2014. 320 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7847"
+        ]
       },
       {
         "referencia": "ALUR, Deepak et al. Core J2EE Patterns: As melhores práticas e estratégias de design. Editora Campus, 2004.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -1903,41 +2365,51 @@
         "referencia": "CORMEN, T. H.; LEISERSON, C. E.; RIVEST R. L.; STEIN, C. Algoritmos: teoria e prática. 3. ed. Rio de Janeiro: Campus. 2012. ISBN-13 9788535236996.",
         "isbn": [
           "9788535236996"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2098"
         ]
       },
       {
         "referencia": "LEVITIN, Anany. Introduction to the design and analysis of algorithms (3rd ed). Addison Wesley, 2011. ISBN-10 0132316811",
         "isbn": [
           "0132316811"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SHAFFER, Clifford. Data Structures and Algorithm Analysis. Dover Publications, 2013. ISBN-13 9780486485829",
         "isbn": [
           "9780486485829"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "AHO, A. HOPCROFT, J. e ULLMAN, J. The Design and Analysis of Computer Algorithms. Addison-Wesley (1974).",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "DASGUPTA, S., PAPADIMITRIOU, C. VAZIRANI, U. Algorithms. McGraw-Hill Science/Engineering/Math; 1 edition (2006).",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "GAREY, M. e JOHHSON, D. Computers and Intractability: a Guide to the Theory of NP-Completeness. Freeman, 1979.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "KLEINBERG, J. e TARDOS, E. Algorithm Design, Addison Wesley, (2005).",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MANBER, U. Algorithms: A Creative Approach, Addison-Wesley (1989).",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -1966,55 +2438,70 @@
         "referencia": "FERREIRA, Simone Bacellar Leal; NUNES, Ricardo Rodrigues. e-Usabilidade. 1. ed. Rio de Janeiro: LTC, 2008. 179 p. il. ISBN-13 9788521616511.",
         "isbn": [
           "9788521616511"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9406"
         ]
       },
       {
         "referencia": "PREECE, Jennifer, ROGERS , Yvonne, SHARP, HELEN. Design de interação: além da interação homem-computador. Bookman, Porto Alegre, 2011.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "TIDWELL, Jenifer. Designing Interfaces. 2ª. Ed. O´Reilly, Canada. 2011. ISBN-13 9780596008031",
         "isbn": [
           "9780596008031"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "BARBOSA , S., SILVA, B. Interação humano-computador. Elsevier, 2010.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BEAIRD, Jason. Princípios do Web Design Maravilhoso. Alta Books, Rio de Janeiro, 2008.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BENYON, D. Interação Humano-Computador. 2ª Ed. Pearson, 2011.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BOULTON, M. Designing for the web. ISBN-10 0956174019. Disponível em: http://designingfortheweb.co.uk/",
         "isbn": [
           "0956174019"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "NIELSEN Jakob; BUDIU, Raluca. Usabilidade móvel. Rio de Janeiro: Elsevier, 2014. 203 p. il. ISBN-13 9788535264272.",
         "isbn": [
           "9788535264272"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7215"
         ]
       },
       {
         "referencia": "ROCHA, Heloísa Vieira da; BARANAUSKAS, Maria Cecília Calani. Design e avaliação de interfaces humano-computador. NIED-UNICAMP. Disponível em: http://www.nied.unicamp.br/?q=node/109/done\\&sid=29628",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SHNEIDERMAN, Ben. Designing the User Interface: strategies for efective human-computer interaction. 4ª Ed. EUA: Addison-Wesley, 2004.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "STEVE KRUG. Não me faça pensar - Atualizado. Alta Books, 2014.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -2041,41 +2528,62 @@
     "bibliografiaBasica": [
       {
         "referencia": "BUSSAB, Wilton O. MORETTIN, Pedro A. Estatística Básica. Editora Saraiva, 9ª edição, 2017.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "CRESPO, Antônio A. Estatística Fácil. Editora Saraiva, 19ª edição, 2009.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SPIEGEL, Murray. Estatística. Editora Bookman, 4ª edição, 2009",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9120"
+        ]
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "BARBETTA, Pedro Alberto; REIS Marcelo Menezes; BORNIA, Antonio Cezar. Estatística para Cursos de Engenharia e Informática. Editora Atlas, 2008.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17276"
+        ]
       },
       {
         "referencia": "DEVORE, JAY L. Probabilidade e Estatística para Engenheiros e Ciências. 2006 Editora L. Cengage.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17249"
+        ]
       },
       {
         "referencia": "FREUND, John E. Estatística Aplicada – Economia, Administração e Contabilidade. Editora Bookman, 11ª edição, 2006.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17284"
+        ]
       },
       {
         "referencia": "MAYER, P. L. Probabilidade: Aplicações à Estatística. Editora LTC, 2ª edição, 2000.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MORETTIN, Luiz G. Estatística Básica: Probabilidade e Inferência. Volume único. Ed. Pearson Prentice Hall, 2010.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2196"
+        ]
       },
       {
         "referencia": "TRIOLA, Mario F. Introdução à Estatística. Editora LTC, 9ª edição, 2005.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2225"
+        ]
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -2108,19 +2616,24 @@
         "referencia": "KOLLER, S. H.; COUTO, M. C.; VON HOHENDORFF, J. Manual de Produção Científica. Porto Alegre: Penso, 2014. ISBN-13 9788565848916.",
         "isbn": [
           "9788565848916"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=28050"
         ]
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
         "isbn": [
           "9788580555332"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "WAZLAWICK, Raul. Sidnei. Análise e projeto de sistemas de informação orientados a objetos para Sistemas de Informação. 3. ed. Rio de Janeiro: Elsevier, 2014. ISBN-13 9788535279849.",
         "isbn": [
           "9788535279849"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
@@ -2128,31 +2641,40 @@
         "referencia": "BEZERRA, E. Princípios de análise e projeto de sistemas com UML. 3. ed. Rio de Janeiro: Elsevier, 2015. ISBN-13 9788535226263.",
         "isbn": [
           "9788535226263"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6321"
         ]
       },
       {
         "referencia": "BLAHA, M. Modelagem e projetos baseados em objetos com UML 2. 2. ed. Rio de Janeiro: Elsevier, 2006. ISBN-13 9788535217537.",
         "isbn": [
           "9788535217537"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "BROD, Cesar. Scrum: Guia Prático para Projetos Ágeis. 2. ed. São Paulo: Novatec, 2015. ISBN-13 9788575224410.",
         "isbn": [
           "9788575224410"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "LAKATOS, Eva Maria; MARCONI, Marina de Andrade. Fundamentos da Metodologia Científica. 7. ed. São Paulo: Atlas, 2010. ISBN-13 9788522457588.",
         "isbn": [
           "9788522457588"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2358"
         ]
       },
       {
         "referencia": "WAZLAWICK, Raul Sidnei. Metodologia de Pesquisa para Ciência da Computação. 2. ed. Rio de Janeiro: Elsevier, 2014. ISBN-13 9788535277821.",
         "isbn": [
           "9788535277821"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -2181,19 +2703,24 @@
         "referencia": "KERZNER, Harold. Gerenciamento de projetos: uma abordagem sistêmica para planejamento, programação e controle. São Paulo: Blucher, 2011. 657 p. il. ISBN-13 9788521206033.",
         "isbn": [
           "9788521206033"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=11198"
         ]
       },
       {
         "referencia": "PMI - PROJECT MANAGEMENT INSTITUTE. Guia PMBOK®: Um Guia para o Conjunto de Conhecimentos em Gerenciamento de Projetos, Sexta edição, Pennsylvania: PMI, 2017. ISBN-13 9781628251845.",
         "isbn": [
           "9781628251845"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
         "isbn": [
           "9788580555332"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
@@ -2201,49 +2728,65 @@
         "referencia": "HELDMAN, Kim. Gerência de Projetos: Guia para o Exame Oficial do PMI. 7. ed. Rio de Janeiro: Campus, 2014. ISBN-13 9788535276152.",
         "isbn": [
           "9788535276152"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=11147"
         ]
       },
       {
         "referencia": "NOKES, Sebastian; KELLY, Sean . O guia definitivo do gerenciamento de projetos: como alcançar resultados dentro do prazo e do orçamento. 2. ed. Porto Alegre: Bookman, 2011. 357 p. il. ISBN-13 9788577809738.",
         "isbn": [
           "9788577809738"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=11188"
         ]
       },
       {
         "referencia": "SANTOS, Carlos Fernando da Rocha. Gerenciamento de projetos: conceitos e representações. 1. ed. Rio de Janeiro: LTC, 2014. 135 p. il. ISBN-13 9788521625735.",
         "isbn": [
           "9788521625735"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=11191"
         ]
       },
       {
         "referencia": "SBROCCO, José Henrique Teixeira de Carvalho. Metodologias ágeis: engenharia de software sob medida. São Paulo: Érica, 2012. 254 p. il. ISBN-13 9788536519418.",
         "isbn": [
           "9788536519418"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7883"
         ]
       },
       {
         "referencia": "SOMMERVILLE, Ian. Engenharia de software. 10. ed. São Paulo: Pearson Prentice Hall, 2019. 771 p. il. ISBN-10 8543024978.",
         "isbn": [
           "8543024978"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SWEBOK Guide V3.0. Guide to the Software Engineering Body of Knowledge, Version 3.0, P. Bourque and R.E. Fairley, eds., IEEE Computer Society, 2014. ISBN-13 9780769551661.",
         "isbn": [
           "9780769551661"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SWX PMBOK GUIDE. Project Management Institute and IEEE Computer Society. Software Extension to the PMBOK® Guide (SWX) Fifth Edition, Project Management Institute, 2013. ISBN-13 9781628250138.",
         "isbn": [
           "9781628250138"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "TRENTIN, Mário Henrique. Gerenciamento de Projetos. Guia para as Certificações CAPM e PMP. Atlas. 2014. ISBN-13 9788522490622.",
         "isbn": [
           "9788522490622"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -2272,41 +2815,50 @@
     "bibliografiaBasica": [
       {
         "referencia": "SUEHRING, Steve, Linux Firewalls: Enhancing Security with nftables and Beyond (4th Edition), Addison-Wesley Professional; 4 edition (February 8, 2015)",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "TANENBAUM, Andrew S., WETHERALL, David J. Computer Networks (5th Edition), Pearson; (October 7, 2010)",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "TOXEN, B. Real World Linux Security. 2nd ed., Prentice Hall PTR, 2002.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "DIERKS, T., RESCORLA, E., The Transport Layer Security (TLS) Protocol Version 1.2. RFC 5246. IETF. 2008. Disponível em https://www.ietf.org/rfc/rfc5246.txt",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "GARFINKEL, S. and SPAFFORD, G. Practical UNIX & Internet Security. Sebastopol, CA., O'Reilly & Associates, 1991.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "“SSL/TLS in Windows Server 2003” white paper at http://www.microsoft.com/downloads/details.aspx?displaylang=en\\&familyid=a9c6b790-050c-4ac8-b065-b166e8f7db0b.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "PRODROMOU, Agathoklis, TLS/SSL explained – a brief history of TLS/SSL, part 1, posted on january 17, 2017. Disponível em www.acunetix.com/blog/articles/ what-is-tls-sslpart-1/",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "PRODROMOU, Agathoklis, TLS/SSL explained – a brief history of TLS/SSL, part 2, posted on january 24, 2017. Disponível em https://www.acunetix.com/blog/articles/ history-of-tls-sslpart-2/",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Tutoriais sobre segurança em redes de computadores. Disponíveis em http://www.cert.org",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -2335,53 +2887,70 @@
         "referencia": "LEAL, Nelson Glauber de Vasconcelos. Dominando o Android com Kotlin. 3. ed. São Paulo: Novatec, 2019. 1061 p. il. ISBN-13 9788575227268",
         "isbn": [
           "9788575227268"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "LECHETA, Ricardo R. Android Essencial com Kotlin. 1. ed. São Paulo: Novatec, 2018. 536 p. il. ISBN-13 9788575226896",
         "isbn": [
           "9788575226896"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=28892"
         ]
       },
       {
         "referencia": "LECHETA, Ricardo R. Desenvolvendo para iPhone e iPad. 6. ed. São Paulo: Novatec, 2018. 520 p. il. ISBN-13 9788575226902",
         "isbn": [
           "9788575226902"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=29301"
         ]
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "Android Developer Guides, Google Inc. Disponível em: https://developer.android.com/guide",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "DEITEL, H. M.; DEITEL, P. J. Java: como programar. 8. ed. São Paulo: Bookman, 2010.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1079",
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6135"
+        ]
       },
       {
         "referencia": "LECHETA, R. R. Google Android: aprenda a criar aplicações para dispositivos móveis com o Android SDK. 3. ed. São Paulo: Novatec, 2013.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "LEE, V.; SCHENEIDER, H.; SCHELL, R. Aplicações móveis: arquitetura, projeto e desenvolvimento. São Paulo: Pearson Education: Makron Books, 2015. 328 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "NUDELMAN, Greg. Padrões de projeto para o Android:soluções de projetos de interação para desenvolvedores. São Paulo: Novatec, 2013. 456 p. ISBN-13 9788575223581 (broch.).",
         "isbn": [
           "9788575223581"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "HASEMAN, Chris. Android Essentials. Berkeley, CA: Apress, 2008. ISBN-13 9781430210634. Disponível em: http://dx.doi.org/10.1007/978-1-4302-1063-4.",
         "isbn": [
           "9781430210634"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "The Swift Programming Language (Swift 5.4), The Swift Programming Language. Disponível em: https://docs.swift.org/swift-book/",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -2411,18 +2980,27 @@
         "referencia": "CERVO Amado L.; BERVIAN, Pedro A.; SILVA, Roberto da. Metodologia científica 6. ed. São Paulo: Pearson, 2007. 162 p. il. ISBN-13 9788576050476.",
         "isbn": [
           "9788576050476"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6259"
         ]
       },
       {
         "referencia": "GIL, Antonio Carlos. Como elaborar projetos de pesquisa. São Paulo: Atlas, 2010. (ISBN-13 9788522458233)",
         "isbn": [
           "9788522458233"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3238"
         ]
       },
       {
         "referencia": "SEVERINO, Antônio Joaquim. Metodologia do trabalho científico 23. ed. rev. e atual, 2. reimpr. São Paulo: Cortez, 2008. 304 p. il. ISBN-13 9788524913112.",
         "isbn": [
           "9788524913112"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=593"
         ]
       }
     ],
@@ -2431,27 +3009,38 @@
         "referencia": "AQUINO, Italo de Souza. Como escrever artigos científicos sem rodeio e sem medo da ABNT. 8. ed. São Paulo: Saraiva, 2012. 126 p. il. ISBN-13 9788502160996.",
         "isbn": [
           "9788502160996"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2736"
         ]
       },
       {
         "referencia": "AQUINO, Italo de Souza. Como ler artigos científicos da graduação ao doutorado 3. ed. São Paulo: Saraiva, 2012. 126 p. il. ISBN-13 9788502160965.",
         "isbn": [
           "9788502160965"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "BARBETTA, Pedro Alberto; REIS, Marcelo Menezes; BORNIA, Antonio Cezar. Estatística para cursos de engenharia e informática 2. ed. São Paulo: Atlas, 2008. 410 p. il. ISBN-13 9788522449897.",
         "isbn": [
           "9788522449897"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17276"
         ]
       },
       {
         "referencia": "BORTONI-RICARDO, Stella Maris. O professor pesquisador: introdução à pesquisa qualitativa. São Paulo: Paábola, 2008. 135 p. il. (Série Esttratégia de Ensino ; 8).",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "REIZ, Pedro. Redação científica moderna São Paulo: Hyria, 2013. 157 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7072"
+        ]
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -2479,25 +3068,32 @@
     "bibliografiaBasica": [
       {
         "referencia": "AMARAL, F. Introdução à Ciência de Dados, Mineração de Dados e Big Data. Ed. Alta Books, 2016.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=29574"
+        ]
       },
       {
         "referencia": "BOAGLIO, F. MongoDB - Construa novas aplicações com novas tecnologias. São Paulo: Casa do Código, 2015.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "DENSMORE, J. Data Pipelines Pocket Reference: Moving and Processing Data for Analytics. 1 ed. O'Reilly Media, Inc. 2021.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "HOUSLEY, M., REIS, J. Fundamentals of Data Engineering. O'Reilly Media, Inc. 2022.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SADALAGE, P. J. NoSQL: um guia conciso para o mundo emergente da persistência poliglota. São Paulo: Novatec, 2013. 220p. ISBN-13 9788575223383",
         "isbn": [
           "9788575223383"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
@@ -2505,47 +3101,60 @@
         "referencia": "BAEZA-YATES, Ricardo; RIBEIRO-NETO, Berthier. Recuperação de Informação: Conceitos e Tecnologia das Máquinas de Busca. Editora Bookman; 2ª edição, 2013. ISBN-13 9788582600481",
         "isbn": [
           "9788582600481"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=31104"
         ]
       },
       {
         "referencia": "DAVID, H. Introdução ao MongoDB. São Paulo: Novatec, 2015. 167 p. ISBN-13 9788575224229",
         "isbn": [
           "9788575224229"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "Documentação do MongoDB. Disponível em https://docs.mongodb.com/. Último acesso em 11/03/2021.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "DOAN, A.; HALEVY, A. e IVES, Z. Principles of Data Integration.1. ed. [S.l.]: Morgan Kaufmann, 2012.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "DONG, X. L.; SRIVASTAVA, D. Big Data Integration. [S.l.]: Morgan & Claypool. 2015.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "ELMASRI, Ramez; Navathe, Shamkant B. Sistemas de Banco de Dados. Editora Pearson/Addison Wesley Pub Co Inc. 7a Edição, 2019. ISBN-13 9788543025001.",
         "isbn": [
           "9788543025001"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=21905"
         ]
       },
       {
         "referencia": "KELLEHER, J.; TIERNEY, B. Data Science. The MIT Press. 2018. ISBN-13 9780262347037.",
         "isbn": [
           "9780262347037"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "MACHADO, F. N. R, Big data : o futuro dos dados e aplicações. São Paulo : Érica, 2018. - 224 p. ISBN-13 9788536527000",
         "isbn": [
           "9788536527000"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "MCKINNEY, W. Python para análise de dados: Tratamento de dados com Pandas, NumPy e IPython. Editora : Novatec Editora; 1ª edição (10 maio 2019).",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -2572,53 +3181,66 @@
     "bibliografiaBasica": [
       {
         "referencia": "CMMI Institute. CMMI Development v2.0, acessado em 11 de outubro de 2019.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
         "isbn": [
           "9788580555332"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SOMMERVILE, I. Engenharia de Software. 10 ed. São Paulo: Pearson. 2018.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SOFTEX. Guia Geral de Melhoria Processos de Software Brasileiro (MPS-BR). Recife: 2021.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "ABNT – ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR ISO 9001:2015 – Sistemas de gestão da qualidade – Requisitos. Rio de Janeiro: ABNT, 2015.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "FUNDAÇÃO NACIONAL DA QUALIDADE. Critérios de Excelência. Critérios de Excelência 2011 - Avaliação e diagnóstico da gestão organizacional ISBN-13 9788560362790.19ª Edição. São Paulo: 2011.",
         "isbn": [
           "9788560362790"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "INTERNATIONAL ORGANIZATION FOR PROJECT Management Institute. A Guide To The Project Management Body of Knowledge. 6. ed. Newton Square: PMI Publications, 2017.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SCHWABER, K; SUTHERLAND, K. Guia do Scrum. Scrum.org and Scruminc. 2014.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SCHWABER, K; SUTHERLAND, K. A arte de fazer o dobro de trabalho na metade do tempo. Ed. Sextante. Rio de Janeiro: 2019.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=29017"
+        ]
       },
       {
         "referencia": "STANDARDIZATION/ INTERNATIONAL ELECTROTECHNICAL COMISSION/ Institute of Electrical and Electronics Engineers. ISO/IEC 12207 Systems and software engineering– Software life cycle processes, Geneve: ISO, 2017.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "WERKEMA, C. Criando a cultura Lean Seis Sigma. Editora Elsevier. São Paulo: 2004.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -2647,43 +3269,58 @@
         "referencia": "COULOURIS, George; DOLLIMORE, Jean; KINDBERG, Tim. BLAIR, Gordon. Sistemas Distribuídos: Conceitos e Projetos. 2013. 5a edição. ISBN-13 9788582600535.",
         "isbn": [
           "9788582600535"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "STEEN, Maarten Van; TANENBAUM, Andrew S. Distributed Systems 3. CreateSpace Independent Publishing, 2017 Platformhttps://www.distributed-systems.net/index.php/books/ds3/",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "NEWMAN, Sam. Building Microservices: Designing Fine-Grained Systems, 1a Edição. O'Reilly. ISBN13: 978-1491950357",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "BURKE, Bill; MONSON-HAEFEL, Richard. Enterprise JavaBeans 3.0. 5. ed. São Paulo: Pearson Prentice Hall, 2007. 538 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3409"
+        ]
       },
       {
         "referencia": "GOMES, Daniel Adorno. Web services SOAP em Java: guia prático para o desenvolvimento de web services em java. São Paulo: Novatec, 2010. 183 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8789"
+        ]
       },
       {
         "referencia": "RICHARDSON, Leonard; RUBY, Sam. RESTful serviços Web. Rio de Janeiro: Alta Books, 2007. 336 p.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SILBERSCHATZ, Abraham; GALVIN, Peter Baer; GAGNE, Greg. Fundamentos de sistemas operacionais 8. ed. Rio de Janeiro: LTC, 2010. 515 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9355"
+        ]
       },
       {
         "referencia": "TANENBAUM, Andrew S; WOODHULL, Albert S. Sistemas operacionais, projeto e implantação. 3. ed. São Paulo: Bookman, 2008. 990 p. il",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "TANENBAUM Andrew S. Distributed operating systems. Upper Saddle River, USA: Prentice Hall, 1995. 614 p. il. ISBN-10 0132199084.",
         "isbn": [
           "0132199084"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -2713,23 +3350,27 @@
         "referencia": "KANE, Sean P; MATTHIAS, K. Docker: Up & Running, 2nd Edition. 2018. O'Reilly Media, Inc. ISBN-13 9781492036739.",
         "isbn": [
           "9781492036739"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "LASTER, Brent. Jenkins 2: Up and Running- Evolve Your Deployment Pipeline for Next Generation Automation. 2018. O'Reilly Media, Inc. ISBN-13 9781491979563.",
         "isbn": [
           "9781491979563"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "BEDA, Joe; HIGHTOWER, Kelsey; Burns, Brendan. Kubernetes: Up and Running. 2017. O'Reilly Media, Inc. ISBN-13 9781491935675",
         "isbn": [
           "9781491935675"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SABHARWAL, Navin; Pandey, Piyush. Monitoring Microservices and Containerized Applications. 2020. Apress.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
@@ -2737,31 +3378,36 @@
         "referencia": "BRIKMAN, Yevgeniy. Terraform: Up & Running: Writing Infrastructure as Code 2nd Edition. 2 ed. O'Reilly Media. 2019. ISBN-10 1492046906",
         "isbn": [
           "1492046906"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "PIRES, Aécio; Militão, Janaína. Integração contínua com Jenkins. ISBN-13 9788575227220. Novatec. 2019.",
         "isbn": [
           "9788575227220"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "JULIAN, Mike. Practical Monitoring: Effective Strategies for the Real World. 2017. O'Reilly Media, Inc. ISBN-10 1491957352",
         "isbn": [
           "1491957352"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "BOAGLIO, Fernando. Jenkins: automatize tudo sem complicações. Casa do Código. 2016. ISBN-13 9788555191534",
         "isbn": [
           "9788555191534"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SANTOS, Lucas. Kubernetes: tudo sobre orquestração de contêiners. 2019. Casa do Código. ISBN-10 8572540245",
         "isbn": [
           "8572540245"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -2791,25 +3437,33 @@
         "referencia": "FACELI, K.; LORENA, A.C.; GAMA, J.; CARVALHO, A.C.P.L.F. Inteligência Artificial - Uma Abordagem de Aprendizado de Máquina, LTC, 2011. ISBN-10 8521618808.",
         "isbn": [
           "8521618808"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9808"
         ]
       },
       {
         "referencia": "GÉRON, A. Mãos à Obra: Aprendizado de Máquina com Scikit-Learn & TensorFlow, Alta Books, 2019. ISBN-10 8550803812",
         "isbn": [
           "8550803812"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "RUSSEL, S.J.; NORVIG, P. Inteligência Artificial, LTC, 2013. ISBN-10 8535237011",
         "isbn": [
           "8535237011"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=4070"
         ]
       },
       {
         "referencia": "MITCHELL, T.M. Machine learning. WCB/McGraw-Hill, 1997. ISBN-10 0070428077.",
         "isbn": [
           "0070428077"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
@@ -2817,25 +3471,30 @@
         "referencia": "GABRIEL, M.; Inteligência Artificial - Do Zero ao Metaverso. Atlas, 2022. ISBN-13 9786559773329.",
         "isbn": [
           "9786559773329"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "FREITAS, M; Inteligência Artificial e Machine Learning: Teoria e Aplicações. Ebook Kindle.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "RUSSEL, S; Inteligência artificial a nosso favor: Como manter o controle sobre a tecnologia. Companhia das Letras, 2012. ISBN-13 9786559213085.",
         "isbn": [
           "9786559213085"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "FELTRIN, F.; Inteligência Artificial com Python. Ebook Kindle.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MUELLER, J.P.; Inteligência Artificial Para Leigos. Alta Books, 2019",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -2867,19 +3526,24 @@
         "referencia": "KOLLER, S. H.; COUTO, M. C.; VON HOHENDORFF, J. Manual de Produção Científica. Porto Alegre: Penso, 2014. ISBN-13 9788565848916.",
         "isbn": [
           "9788565848916"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=28050"
         ]
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
         "isbn": [
           "9788580555332"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "WAZLAWICK, Raul. Sidnei. Análise e projeto de sistemas de informação orientados a objetos para Sistemas de Informação. 3. ed. Rio de Janeiro: Elsevier, 2014. ISBN-13 9788535279849.",
         "isbn": [
           "9788535279849"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
@@ -2887,31 +3551,40 @@
         "referencia": "BEZERRA, E. Princípios de análise e projeto de sistemas com UML. 3. ed. Rio de Janeiro: Elsevier, 2015. ISBN-13 9788535226263.",
         "isbn": [
           "9788535226263"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6321"
         ]
       },
       {
         "referencia": "BLAHA, M. Modelagem e projetos baseados em objetos com UML 2. 2. ed. Rio de Janeiro: Elsevier, 2006. ISBN-13 9788535217537.",
         "isbn": [
           "9788535217537"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "BROD, Cesar. Scrum: Guia Prático para Projetos Ágeis. 2. ed. São Paulo: Novatec, 2015. ISBN-13 9788575224410.",
         "isbn": [
           "9788575224410"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "LAKATOS, Eva Maria; MARCONI, Marina de Andrade. Fundamentos da Metodologia Científica. 7. ed. São Paulo: Atlas, 2010. ISBN-13 9788522457588.",
         "isbn": [
           "9788522457588"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2358"
         ]
       },
       {
         "referencia": "WAZLAWICK, Raul Sidnei. Metodologia de Pesquisa para Ciência da Computação. 2. ed. Rio de Janeiro: Elsevier, 2014. ISBN-13 9788535277821.",
         "isbn": [
           "9788535277821"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -2938,49 +3611,67 @@
     "bibliografiaBasica": [
       {
         "referencia": "ANEXO 06 da Resolução nº 03F, de 05 de março de 2009. Regulamenta o Trabalho de Conclusão de Cursos para as diversas modalidades de cursos de graduação do IFPB e dá outras providências.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "ANDRADE, M.M. Introdução à metodologia do trabalho científico: elaboração de trabalhos na graduação. São Paulo: Atlas, 2010.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3317"
+        ]
       },
       {
         "referencia": "ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 6023: Informação e documentação, referências – elaboração. Rio de Janeiro, 2002.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BARROS, A.; LEHFELD, N. Projeto de pesquisa: propostas metodológicas. 4. ed. Rio de Janeiro: Vozes, 1996.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "DUARTE, E. N.; NEVES, D. A.; SANTOS, B. de I. Manual técnico para elaboração de trabalhos monográficos: dissertações e teses. 4ed. João Pessoa: Ed. Universitária/UFPB, 2001.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "GODOY, A. S. Introdução à pesquisa qualitativa e suas possibilidades. Revista de Administração de Empresas, São Paulo, v. 35, n. 2, p. 57-83, mar/abr., 1995.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "KÖCHE, J. C. Fundamentos de metodologia científica: teoria da ciência e iniciação à pesquisa. 26. ed. Petrópolis: Vozes, 2009.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "LAKATOS, E. M.; MARCONI, M. de A. Fundamentos de metodologia científica. 3. ed. São Paulo: Atlas, 1991.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6965",
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7326"
+        ]
       },
       {
         "referencia": "MÁTTAR NETO, J. A. Metodologia cientifica na era da informática. São Paulo: Saraiva, 2007.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "NBR 14724: Informação e documentação, trabalhos acadêmicos – apresentação. Rio de Janeiro: ABNT, 2005.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "OLIVEIRA NETTO, A. A. Metodologia da pesquisa científica: guia prático para apresentação de trabalhos acadêmicos. 2. ed. Florianópolis: Visual Books, 2008.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3244"
+        ]
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -3007,52 +3698,72 @@
         "referencia": "CHIAVENATO, Idalberto. Empreendedorismo: dando asas ao espírito empreendedor. 4. ed. Barueri, SP: Manole, 2012. 315 p. il. ISBN-13 9788502032778.",
         "isbn": [
           "9788502032778"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2762"
         ]
       },
       {
         "referencia": "DORNELAS, José. Empreendedorismo: transformando ideias em negócios. 7. ed. Rio de Janeiro: Empreende, 2021 288 p. il. ISBN-13 9786587052083.",
         "isbn": [
           "9786587052083"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "DIAS, Alexandre Aparecido et al. Gestão da inovação e empreendedorismo. Rio de Janeiro: Elsevier, 2013. 364 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "BESSANT, John; TIDD, Joe. Inovação e empreendedorismo. Porto Alegre: Bookman, 2009. 511 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10328"
+        ]
       },
       {
         "referencia": "CAVALCANTI, Glauco; TOLOTI, Márcia. Empreendedorismo: decolando para o futuro. Rio de Janeiro: Elsevier, 2011. 176 p. il. ISBN-13 9788535252132.",
         "isbn": [
           "9788535252132"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9223"
         ]
       },
       {
         "referencia": "DOLABELA, Fernando. O Segredo de Luísa. 1. ed. Rio de Janeiro: Sextante. 2008. 304 p. ISBN-13 9788575423387.",
         "isbn": [
           "9788575423387"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "DORNELAS, José Carlos Assis; SPINELLI, Stephen; ADAMS, Robert. Criação de novos negócios: empreendedorismo para o século XXI. 9. ed. São Paulo: GEN Atlas, 2013. 480 p. il. ISBN-13 9788535264586.",
         "isbn": [
           "9788535264586"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "DRUCKER, Peter Ferdinand. Inovação e espírito empreendedor: prática e princípios. 1. ed. São Paulo: Cengage Learning, 2016. 400p. il. ISBN-13 9788522126682.",
         "isbn": [
           "9788522126682"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10650",
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10629"
         ]
       },
       {
         "referencia": "HISRICH, Robert D.; PETERS, Michael P; SHEPHERD, Dean A. Empreendedorismo. 9. ed. Porto Alegre, RS: AMGH, 2014. 480 p. il. ISBN-13 9788580553321.",
         "isbn": [
           "9788580553321"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10577"
         ]
       }
     ],
@@ -3078,41 +3789,49 @@
     "bibliografiaBasica": [
       {
         "referencia": "DONEDA, Danilo. Da Privacidade à Proteção de Dados Pessoais. 2 ed. São Paulo: Thomson Reuters Brasil, 2020",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "OLIVEIRA, Jose Antonio M; JESUS, Damásio. Manual de Crimes Informaticos. São Paulo: Saraiva JUR, 2016",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "PINHEIRO, Patrícia Peck. Direito Digital. 7 ed. São Paulo: Saraiva JUR, 2021",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "BARBOSA, Mafalda Miranda (coord.) Direito Digital e Inteligencia Artificial: Diálogos entre brasil e Europa. São Paulo: Editora Foco, 2021",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "DONEDA, Danilo [et al.] (coord.). Tratado de Proteção de Dados Pessoais. Rio de Janeiro: Editora Forense, 2021",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "GARRIDO, Patricia Peck. Direito Digital. 7 ed. Editora Saraiva. 2001. ISBN-10 6555594780",
         "isbn": [
           "6555594780"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "LEMOS, Ronaldo; LEITE, George Salomao. Marco Civil da Internet. 2014. Editora Atlas, 2019. ISBN-13 9788522493395.",
         "isbn": [
           "9788522493395"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "MALDONADO, Viviane; BLUM, Renato. LGPD: Lei Geral de Proteção de Dados Comentada. 2 ed. São Paulo: Thomson Reuters Brasil, 2020",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -3139,53 +3858,66 @@
     "bibliografiaBasica": [
       {
         "referencia": "KIRK, A. (2016). Data visualisation: A handbook for data driven design. Los Angeles, CA: Sage Publications.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "KNAFLIC, Cole N. Storytelling com Dados. Um Guia Sobre Visualização de Dados Para Profissionais de Negócios. Alta Books, 2017.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "YAU, N. (2011). Visualize this: The FlowingData guide to design, visualization, and statistics. Indianapolis, Ind: Wiley Pub.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "TOSI, Sandro. Matplotlib for Python developers. Packt Publishing Ltd, 2009.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "AMARAL, F. Introdução à Ciência de Dados, Mineração de Dados e Big Data. Ed. Alta Books, 2016.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=29574"
+        ]
       },
       {
         "referencia": "BERINATO, S. Good Charts: The HBR Guide to Making Smarter, More Persuasive Data Visualizations. Harvard Business Review Press, 2016. ISBN-13 9781633690714.",
         "isbn": [
           "9781633690714"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "CARD, Stuart K., Mackinlay, Jock D. and Shneiderman, Ben (eds.) (1999): Readings in Information Visualization: Using Vision to Think. Academic Press.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "FEW, Stephen (2013): Data Visualization for Human Perception. In: Soegaard, Mads and Dam, Rikke Friis (eds.). \"The Encyclopedia of Human-Computer Interaction, 2nd Ed.\". Aarhus, Denmark: The Interaction Design Foundation.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "FEW, Stephen. Information Dashboard Design: The Effective Visual Communication of Data. O’Reilly. 2016. ISBN-10 0596100167.",
         "isbn": [
           "0596100167"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "FEW, S. (2012). Show me the numbers: Designing tables and graphs to enlighten. Analytics Press.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "FEW, Stephen (2009): Now You See It: Simple Visualization Techniques for Quantitative Analysis. Analytics Press.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -3212,37 +3944,45 @@
     "bibliografiaBasica": [
       {
         "referencia": "FACELI, K., LORENA, A. C., GAMA, J., ALMEIDA, T. A., Carvalho, A.C.P.L.F. Inteligência Artificial: Uma Abordagem de Aprendizado de Máquina. 2ª Edição. LTC, 2024.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "ALPAYDIN, E. Introduction to Machine Learning. 3rd ed. Cambridge: The MIT Press, 2020.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "HAIBO, H.; YUNQIAN, M. Imbalanced Learning: Foundations, Algorithms, and Applications. New Jersey: John Wiley & Sons, 2013.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "ZHENG, A. Evaluating Machine Learning Models: A Beginner’s Guide to Key Concepts and Pitfalls. Sebastopol: O’Reilly Media, 2015",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "BRUCE, P.; BRUCE, A. Practical Statistics for Data Scientists: 50 Essential Concepts. 2nd ed. Sebastopol: O’Reilly Media, 2020.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "HARRINGTON, P. Machine Learning in Action. New York: Manning, 2012",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "WITTEN, I. H; FRANK, E; HALL, M. Data Mining: Practical Machine Learning Tools and Techniques with Java Implementations. 3rd. Ed. Burlington: Morgan Kaufmann, 2011.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MITCHELL, T. Machine Learning. New York: McGrow Hill, 1997.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -3269,37 +4009,45 @@
     "bibliografiaBasica": [
       {
         "referencia": "GOODFELLOW, I.; Bengio, Y.; COURVILLE, A. Deep Learning. Cambridge (MA): MIT Press, 2016.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "GÉRON, A. Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems. 3rd Edition. Sebastopol: O'Reilly Media, 2022.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "CHOLLET, François. Deep Learning with Python. 2. ed. Shelter Island, NY: Manning, 2021.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "DEVLIN, J. et al. BERT: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805, 2018. Disponível em: https://arxiv.org/abs/1810.04805 (https://arxiv.org/abs/1810.04805)",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "GOODFELLOW, I. et al. Generative adversarial nets. In: Advances in Neural Information Processing Systems. Red Hook, NY: Curran Associates Inc., 2014. p. 2672-2680.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "LECUN, Y.; BENGIO, Y.; HINTON, G. Deep learning. Nature, London, v. 521, n. 7553, p. 436-444, 2015.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "VASWANI, A. et al. Attention is all you need. In: Advances in Neural Information Processing Systems. Red Hook, NY: Curran Associates Inc., 2017. p. 5998-6008.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "ZHANG, A.; LIPTON, Z. C.; LI, M.; SMOLA, A. J. Dive into Deep Learning. 2021. Disponível em: https://d2l.ai/.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -3328,25 +4076,29 @@
         "referencia": "BASS, L.; CLEMENTS, P.; KAZMAN, R. Software Architecture in Practice. 3. ed. Boston: Addison-Wesley, 2012. 640 p. ISBN-13 9780321815736.",
         "isbn": [
           "9780321815736"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "RICHARDS, M.; FORD, N. Fundamentals of Software Architecture: A Comprehensive Guide to Patterns, Characteristics, and Best Practices. Sebastopol: O'Reilly Media, 2020. 432 p. ISBN-13 9781492043454.",
         "isbn": [
           "9781492043454"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "MARTIN, R. C. Clean Architecture: A Craftsman's Guide to Software Structure and Design. Boston: Prentice Hall, 2017. 432 p. ISBN-13 9780134494166.",
         "isbn": [
           "9780134494166"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "ROZANSKI, N.; WOODS, E. Software Systems Architecture: Working with Stakeholders Using Viewpoints and Perspectives. 2. ed. Boston: Addison-Wesley, 2011. 678 p. ISBN-13 9780321718334.",
         "isbn": [
           "9780321718334"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
@@ -3354,31 +4106,36 @@
         "referencia": "TAYLOR, R. N.; MEDVIDOVIC, N.; DASHOFY, E. M. Software Architecture: Foundations, Theory, and Practice. Hoboken: Wiley, 2010. 736 p. ISBN-13 9780470167748.",
         "isbn": [
           "9780470167748"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "VOGELSANG, S. Building Evolutionary Architectures: Support Constant Change. Sebastopol: O'Reilly Media, 2018. 190 p. ISBN-13 9781491986363.",
         "isbn": [
           "9781491986363"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "GARLAN, D.; SHAW, M. Software Architecture: Perspectives on an Emerging Discipline. Upper Saddle River: Prentice Hall, 1996. 256 p. ISBN-13 9780131829572.",
         "isbn": [
           "9780131829572"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "ERL, T. Service-Oriented Architecture: Concepts, Technology, and Design. Upper Saddle River: Prentice Hall, 2016. 792 p. ISBN-13 9780133858587.",
         "isbn": [
           "9780133858587"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "NEWMAN, S. Building Microservices: Designing Fine-Grained Systems. 2. ed. Sebastopol: O'Reilly Media, 2021. 616 p. ISBN-13 9781492034025.",
         "isbn": [
           "9781492034025"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -3406,45 +4163,55 @@
     "bibliografiaBasica": [
       {
         "referencia": "PETERSON, Larry, DAVIE, Bruce. Computer Networks: A Systems Approach. 6th Ed., Morgan Kaufmann, 2021.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "GREGG, B. Systems Performance. 2nd Ed., Pearson, 2020.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "FERNANDES, S. Performance Evaluation for Network Services, Systems and Protocols. Springer, 2017.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "CHEN, Ken, Performance Evaluation by Simulation and Analysis with Applications to Computer Networks. Wiley, 2015.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "JAIN, Raj. The art of computer systems performance analysis: techniques for experimental design, measurement, simulation, and modeling. John Wiley & Sons, 1990.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "GREGG, B. BPF Performance Tools. Addison-Wesley Professional, 2019.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "OBAIDAT, Mohammad, ZARAI, Faouzi, NICOPOLITIDIS, Petros. Modeling and Simulation of Computer Networks and Systems. Elsevier, 2015.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MERINO, Borja. Instant Traffic Analysis with Tshark How-to. Packt Publishing, 2013.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "FILHO, João Eriberto Mota. Análise de Tráfego em Redes TCP/IP. Novatec, 2013.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SADIKU, Matthew, MUSA, Sarhan. Performance Analysis of Computer Networks. Springer, 2013.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -3472,33 +4239,40 @@
     "bibliografiaBasica": [
       {
         "referencia": "OBAIDAT, M. S.; DENKO, M.; WOUNGANG, I. Pervasive Computing And Networking. ed. John Wiley & Sons, 2011.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "KRUMM, J. Design da Interação: Ubiquitous Computing Fundamentals. 1. ed. Chapman & Hall/CRC, 2010.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "GREENGARD, S. The Internet of Things. 1. ed. [S.l.]: The MIT Press, 2015.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "KARVINEN, T. Make: Sensors: A Hands-On Primer for Monitoring the Real World with Arduino and Raspberry Pi. 1. ed. [S.l.]: Maker Media, 2014.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BELL, C. Beginning Sensor Networks with Arduino and Raspberry Pi. 1. ed. Apress, 2013.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "POSLAD, Stefan. Ubiquitous computing: smart devices, environments and interactions. 1. ed. John Wiley & Sons, 2011.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "KRUMM, John. Ubiquitous computing fundamentals. 1. ed. Chapman and Hall/CRC, 2016.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -3528,53 +4302,63 @@
         "referencia": "WOHLIN, C.; RUNESON, P.; HÖST, M.; OHLSSON, M. C.; REGNELL, B.; WESSLÉN, A. Experimentation in Software Engineering. Springer, 2012. ISBN-13 9783642290434.",
         "isbn": [
           "9783642290434"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "FELDERER, M.; TRAVASSOS, G. H. Contemporary Empirical Methods in Software Engineering. Springer, 2020. ISBN-13 9783030304443.",
         "isbn": [
           "9783030304443"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "KITCHENHAM, B. A.; BUDGEN, D.; BRERETON, P. Evidence-Based Software Engineering and Systematic Reviews. CRC Press, 2015. ISBN-13 9781482228663.",
         "isbn": [
           "9781482228663"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "MUNDT, M.; SCHMIDT, T. S.; KUHRMANN, M. Guidelines for Conducting Empirical Studies in Software Engineering. Springer, 2022. ISBN-13 9783030856249.",
         "isbn": [
           "9783030856249"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "RAUSCH, A.; KUHRMANN, M.; O'CONNOR, R. V.; FELDERER, M. Empirical Research for Software Security: Foundations and Experience. Springer, 2021. ISBN-13 9783030625234.",
         "isbn": [
           "9783030625234"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "BALTES, S.; RALPH, P.; TREVOR, A. Ethics of Conducting Empirical Studies in Software Engineering. IEEE Transactions on Software Engineering, 2021. DOI: 10.1109/TSE.2021.3059864.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MOLLÉRI, J. S.; MAISONNAVE, M.; CONTE, T. A Systematic Mapping Study on the Use of Grounded Theory in Software Engineering. Information and Software Technology, 2020. DOI: 10.1016/j.infsof.2020.106397.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "CRUZ, S.; DA SILVA, F. Q. B.; MONTEIRO, C. V. F. A Tertiary Study on Mapping Studies and Systematic Literature Reviews in Software Engineering. Information and Software Technology, 2020. DOI: 10.1016/j.infsof.2020.106363.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "STOL, K.-J.; RALPH, P.; FITZGERALD, B. Grounded Theory in Software Engineering Research: A Critical Review and Guidelines. Proceedings of the 38th International Conference on Software Engineering, 2016. DOI: 10.1145/2884781.2884833.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SANTOS, A. L. M.; CRUZ, S.; SILVA, F. Q. B. Replication of Empirical Studies in Software Engineering: A Systematic Mapping Study. Empirical Software Engineering, 2021. DOI: 10.1007/s10664-021-09969-2.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -3603,41 +4387,49 @@
         "referencia": "NELSON, Catherine. Engenharia de Software para Cientistas de Dados: De Notebooks a Sistemas Escaláveis. Novatec, 2024. ISBN-13 9788575229170",
         "isbn": [
           "9788575229170"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "REIS, Joe; HOUSLEY, Matt. Fundamentos de Engenharia de Dados: Projete e Construa Sistemas de Dados Robustos. Novatec, 2023. ISBN-13 9788575228760",
         "isbn": [
           "9788575228760"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SERRA, James. Decifrando Arquiteturas de Dados: Escolhendo entre data warehouse moderno, data fabric, data lakehouse e data mesh. Novatec, 2024. ISBN-13 9788575229217",
         "isbn": [
           "9788575229217"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "AMARAL, Fernando. Aprenda mineração de dados ; teoria e prática / Fernando Amaral. Rio de Janeiro : Alta Books, 2016.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BENGFORT, Benjamin. Analítica de dados com Hadoop : introdução para cientistas de dados. São Paulo: Novatec, 2016.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "CHEN, Daniel. Análise de dados com Python e Pandas / Daniel Y. Chen.- São Paulo: Novatec, 2018.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MACHADO, Felipe Nery Rodrigues. Big data : o futuro dos dados e aplicações. São Paulo: Érica, 2018.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "RAMOS, Atos. Infraestrutura BIG DATA com OpenSource. Rio de Janeiro: Ciência Moderna, 2015.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -3667,37 +4459,43 @@
         "referencia": "AGILE ALLIANCE. Agile Practice Guide. 1. ed. Newtown Square: Project Management Institute, 2017. ISBN-13 9781628251999.",
         "isbn": [
           "9781628251999"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "COBB, Charles G. The Project Manager's Guide to Mastering Agile: Principles and Practices for an Adaptive Approach. 2. ed. Hoboken, NJ: Wiley, 2023. ISBN-13 9781119931379.",
         "isbn": [
           "9781119931379"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "KERZNER, H. Project Management: A Systems Approach to Planning, Scheduling, and Controlling. 13. ed. Hoboken: Wiley, 2022. ISBN-13 9781119821984.",
         "isbn": [
           "9781119821984"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "LOCK, D. Project Management. 12. ed. London: Routledge, 2020. ISBN-13 9780367271715.",
         "isbn": [
           "9780367271715"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "MARTINSUO, M.; KIVILA, J.; LETHONEN, P. Project Portfolio Management: Achieving Strategy Execution. London: Routledge, 2020. ISBN-13 9781138504565.",
         "isbn": [
           "9781138504565"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "PMI. A Guide to the Project Management Body of Knowledge (PMBOK Guide). 7. ed. Newtown Square: Project Management Institute, 2021. ISBN-13 9781628256642.",
         "isbn": [
           "9781628256642"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
@@ -3705,33 +4503,39 @@
         "referencia": "DEMARCO, T., & LISTER, T. (2013). Peopleware: Productive Projects and Teams. Addison-Wesley. ISBN-13 9780321934116",
         "isbn": [
           "9780321934116"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "LEFFINGWELL, D. (2020). SAFe 5.0 for Lean Enterprises: Achieving Business Agility with the Scaled Agile Framework. Addison-Wesley.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "LELAND, P.; LINDE, T. Leading and Managing Innovation: What Every Executive Team Must Know About Project, Program, and Portfolio Management. Boca Raton: CRC Press, 2021. ISBN-13 9780367359864.",
         "isbn": [
           "9780367359864"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "MULLER, R.; STANDISH, T. Governance and Leadership in Hybrid Project Management. London: Springer, 2021. ISBN-13 9783030686884.",
         "isbn": [
           "9783030686884"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SCHWABER, K.; SUTHERLAND, J.. The Scrum Guide: The Definitive Guide to Scrum [S.l.]: Scrum.org, 2020. Disponível em: https://scrumguides.org. Acesso em: 18 nov. 2024.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "TURNER, J. R. The Handbook of Project-Based Management. 5. ed. London: Routledge, 2022. ISBN-13 9781138363585.",
         "isbn": [
           "9781138363585"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -3758,65 +4562,76 @@
     "bibliografiaBasica": [
       {
         "referencia": "ISACA. COBIT 2019 Framework: Introduction and Methodology. Rolling Meadows: ISACA, 2019. Disponível em: https://www.isaca.org.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "OGC. ITIL Foundation: ITIL 4 Edition. Axelos, 2019. ISBN-13 9780113316076.",
         "isbn": [
           "9780113316076"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "ISO/IEC. ISO/IEC 38500: Governance of IT for the Organization. International Organization for Standardization, 2015. Disponível em: https://www.iso.org.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "TURBAN, E.; POLLARD, C.; WOOD, G. Information Technology for Management: On-Demand Strategies for Performance, Growth and Sustainability. 11. ed. Wiley, 2018. ISBN-13 9781118897782.",
         "isbn": [
           "9781118897782"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "VILLAS BÔAS, A. A.; MEIRELLES, F. S. Gestão de Tecnologia da Informação: Estratégia e Governança. 2. ed. São Paulo: Atlas, 2015. ISBN-13 9788522491767.",
         "isbn": [
           "9788522491767"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "ROSS, J. W.;",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "WEILL, P.; ROBERTSON, D. C. Enterprise Architecture as Strategy: Creating a Foundation for Business Execution. Harvard Business Review Press, 2006. ISBN-13 9781591398394.",
         "isbn": [
           "9781591398394"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "GREMILLION, R.; SMITH, M. SOX 404 for Small Publicly Held Companies: Risk-Based Compliance Strategies for Small Organizations. Auerbach Publications, 2019. ISBN-13 9781138584017.",
         "isbn": [
           "9781138584017"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "ISO/IEC. ISO/IEC 27001: Information Security Management Systems Requirements. International Organization for Standardization, 2013. Disponível em: https://www.iso.org. WEILL, P.; ROSS, J. W. IT Governance: How Top Performers Manage IT Decision Rights for Superior Results. Harvard Business Review Press, 2004. ISBN-13 9781591392538.",
         "isbn": [
           "9781591392538"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "FERREIRA, A. C. Governança de TI e Compliance: Uma Abordagem Prática. 1. ed. São Paulo: Novatec, 2020. ISBN-13 9788575228869.",
         "isbn": [
           "9788575228869"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "FERNANDES, Aguinaldo Aragon; DINIZ, Jose Luis; DE ABREU, Vladimir Ferraz. Governança Digital 4.0. Rio de Janeiro: Brasport, 2019. ISBN-13 9788574529431",
         "isbn": [
           "9788574529431"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -3843,29 +4658,35 @@
     "bibliografiaBasica": [
       {
         "referencia": "Barbosa, S. D. J., Silva, B. D., Silveira, M. S., Gasparini, I., Darin, T., & Barbosa, G. D. J. (2021). Interação humano-computador e experiência do usuario. https://leanpub.com/ihc-ux.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "PREECE, Jennifer, ROGERS, Yvonne, SHARP, HELEN. Interaction Design: Beyond Human-Computer Interaction. Wiley, 2019.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "Anais do Congresso Brasileiro de Informática na Educação: https://sol.sbc.org.br/index.php/cbie",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Anais do Workshop de Educação em Computação: https://sol.sbc.org.br/index.php/wei/issue/view/1332",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Anais do Simpósio de Educação em Computação: https://sol.sbc.org.br/index.php/educomp",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Revista Brasileira de Informática na Educação: https://journals-sol.sbc.org.br/index.php",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -3892,23 +4713,27 @@
     "bibliografiaBasica": [
       {
         "referencia": "NAVARRO, Danielle; WEED, Ethan; Learning Statistics with Python (Python Adaptation by Ethan Weed). 1a. ed. 2021. Disponível em https://ethanweed.github.io/pythonbook/landingpage.html.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "DIEZ, David; ÇETINKAYA-RUNDEL, Mine; BARR, Christopher. OpenIntro Statistics. 4 ed. 2022. Disponível em https://www.openintro.org/book/os/.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MORETTIN, P. A.; BUSSAB, W. O. Estatística Básica. 7. ed. São Paulo: Saraiva, 2012. ISBN-13 9788502136915.",
         "isbn": [
           "9788502136915"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "FIELD, A. Descobrindo a estatística usando o SPSS. 5. ed. Porto Alegre: Penso, 2020. ISBN-13 9788584292004.",
         "isbn": [
           "9788584292004"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
@@ -3916,25 +4741,29 @@
         "referencia": "MONTGOMERY, D. C.; RUNGER, G. C. Estatística Aplicada à Engenharia. 2. ed. Rio de Janeiro: LTC, 2014. ISBN-13 9788521613985.",
         "isbn": [
           "9788521613985"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "JAIN, Raj. The Art of Computer Systems Performance Analysis: Techniques for Experimental Design, Measurement, Simulation, and Modeling. 1 ed. 1991. ISBN-10 0471503363",
         "isbn": [
           "0471503363"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "PATEL, Ankur A. Hands-On Unsupervised Learning Using Python. 1 ed., O'Reilly Media, 2019. ISBN-13 9781492035640.",
         "isbn": [
           "9781492035640"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "NIELSEN, Aileen. Análise Prática de Séries Temporais: Predição com Estatística e Aprendizado de Máquina. 1 ed. Editora Alta Books, 2021. ISBN-10 8550815624",
         "isbn": [
           "8550815624"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -3961,49 +4790,60 @@
     "bibliografiaBasica": [
       {
         "referencia": "BECK, K. et al. Agile Manifesto. 2001. Disponível em: \\<http://agilemanifesto.org/>;",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MEYER, B. Agile!: The Good, the Hype and the Ugly. 1. ed. Springer, 2014.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SCHWABER, K.; BEEDLE, M. Agile Software Development with Scrum. New Jersey (USA): Prentice Hall PTR, 2001.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "RUBIN, Kenneth S. Scrum Essencial: um Guia Prático Para o Mais Popular Processo ágil. Alta Books. 2017;",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "SUTHERLAND, JEFF; SUTHERLAND, J.J. Scrum: A arte de fazer o dobro do trabalho na metade do tempo. Ed. Sextante. 2019.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "ELES, Vinícius Manhães. Extreme Programming: Aprenda Como Encantar Seus Usuários Desenvolvendo Software com Agilidade e Alta Qualidade. Novatec Editora. 2014",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "STELLMAN, Andrew; GREENE, J. Learning Agile: Understanding Scrum, XP, Lean, and Kanban. 1. ed. O'Reilly Media, 2014;",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "GOMES, André Faria. Agile: Desenvolvimento de software com entregas frequentes e foco no valor de negócio. Casa do Código, 2013;",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SHORE, J.; WARDEN, S. The Art of Agile Development. O'Reilly, 2007;",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BECK, K.; ANDRES, C. Extreme programming explained. 2. ed. Addison-Wesley, 2004;",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MARTIN, R. C. Agile Software Development: Principles, Patterns, and Practices. Prentice-Hall, 2002.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -4030,29 +4870,35 @@
     "bibliografiaBasica": [
       {
         "referencia": "Caseli, H.M.; Nunes, M.G.V. (org.) Processamento de Linguagem Natural: Conceitos, Técnicas e Aplicações em Português. 2 ed. BPLN, 2024. Disponível em: https://brasileiraspln.com/livro-pln/2a-edicao.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Jurafsky, D.; Martin, James H. Speech and Language Processing, 2nd ed. Prentice Hall, 2008.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Lane, H.; Dyshel, M. Natural Language Processing in Action, 2nd ed. Manning, 2025.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "Lee, R. S. T. Natural Language Processing: A Textbook with Python Implementation. Springer, 2024.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Vajjala S.; Majumder, B.; Gupta, A.; Surana, H. Practical Natural Language Processing: A Comprehensive Guide to Building Real-World NLP Systems. O’Reilly Media, 2020.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Khurana, D.; Koli, A.; Khatter, K.; Singh, S. Natural language processing: state of the art, current trends and challenges",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -4080,29 +4926,35 @@
     "bibliografiaBasica": [
       {
         "referencia": "STALLINGS, W. Foundations of Modern Networking: SDN, NFV, QoE, IoT, and Cloud. Addison-Wesley Professional, 1 edition, 2015.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "TANENBAUM, A. S.; WETHERRALL, D. Redes De Computadores. 5. ed. São Paulo: Pearson, 2011.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "FACELLI, K.; et al. Inteligência Artificial: uma abordagem de aprendizado de máquina. 2º edição, LTC, 2021.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "PETERSON, L. ; DAVIE, Bruce. Computer Networks: A Systems Approach. 6th edition. Morgan Kaufmann, 2021.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "HARRISSON, M.; Machine Learning – Guia de Referência Rápida: Trabalhando com Dados Estruturados em Python, Novatec Editora; 1ª edição (11 dezembro 2019).",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "GERON, A.; Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems, O'Reilly Media; 3ª edição (8 novembro 2022).",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -4130,33 +4982,40 @@
     "bibliografiaBasica": [
       {
         "referencia": "Gustavo Weber Denardin, Carlos Henrique Barriquello. Sistemas operacionais de tempo real e sua aplicação em sistemas embarcados. Editora Blucher, 1ª edição, 2019.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Elecia White. Making Embedded Systems: Design Patterns for Great Software O'Reilly Media. 2ª edição. 2024",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MAZIERES, David; SAKRA, Mahbubur. IoT Fundamentals: Networking Technologies, Protocols, and Use Cases for the Internet of Things. Indianapolis: Cisco Press, 2017.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "RAJKUMAR Buyya, Amir Vahid Dastjerdi. Internet of Things - Principles and Paradigms. 1. ed. Elsevier, 2016.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "David E. Simon. An Embedded Software Primer. Addison-Wesley Professional. 1ª edição, 1999.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "STALLINGS, W. Foundations of modern networking: SDN, NFV, QoE, IoT, and Cloud. Addison-Wesley Professional, 2016.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "HWAIYU, Geng; MCKEETH, J. Internet of Things and Data Analytics Handbook. 2016.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -4473,37 +5332,51 @@
     "bibliografiaBasica": [
       {
         "referencia": "SOUZA, Nali de Jesus de. Desenvolvimento Econômico. São Paulo: Atlas, 2005.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=13999"
+        ]
       },
       {
         "referencia": "ROSSETTI, José Paschola. Introdução à Economia. São Paulo: Atlas, 2003.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5714"
+        ]
       },
       {
         "referencia": "PIRES, Marcos Cordeiro; SANTOS. Sérgio Antonio dos; OLIVEIRA, Jayr Figueredo de. Economia para Administradores. São Paulo: Saraiva, 2005.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=13105"
+        ]
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "MENDONÇA, Sônia Regina de. Estado e Economia no Brasil . São Paulo: Paz e Terra, 2002.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "TAVARES, M. C. Planejamento Estratégico: a opção entre o sucesso e o fracasso empresarial. São Paulo: Harba, 1992.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "FURTADO, Celso. O capitalismo global. São Paulo: Paz e Terra, 2006",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "LOPES, Luiz Martins. VASCONSELOS; Marco Antônio. Manual de Macroeconomia. São Paulo: Siciliano, 2008.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MONNACOTT, Paul Ronald. Economia. São Paulo: Makron Books, 1994",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -4530,45 +5403,59 @@
     "bibliografiaBasica": [
       {
         "referencia": "ANTON, H. et al. Cálculo, Volume 1 e 2. Porto Alegre: Bookman / Grupo A, 2014.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2166"
+        ]
       },
       {
         "referencia": "STEWART, J. Cálculo, Volumes 1 e 2. São Paulo: Cengage Learning, 2013.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "THOMAS, G. B. Cálculo, Volume 1 e 2. São Paulo: Pearson, 2013.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "AYRES Jr., F.; MENDELSON, E. Cálculo – Coleção Schaum. Porto Alegre: Bookman / Grupo A, 2013.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "FLEMMING, D. M.; GONÇALVES, M. B. Cálculo A. São Paulo: Pearson, 2007.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "FLEMMING, D. M.; GONÇALVES, M. B. Cálculo B. São Paulo: Pearson, 2007.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=630"
+        ]
       },
       {
         "referencia": "GUIDORIZZI, H. L. Cálculo – Volume 4. Rio de Janeiro: LTC / Grupo Gen, 2001.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "HUGHES-HALLETT, D. et al. Cálculo – A Uma e a Várias Variáveis – Volume 1. Rio de Janeiro: LTC / Grupo Gen, 2011.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "LARSON, R. et al. Cálculo, Volumes 1 e 2. Porto Alegre: McGraw-Hill / Grupo A, 2006.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "ROGAWSKI, J. Cálculo, Volumes 1 e 2. Porto Alegre: Bookman / Grupo A, 2009.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -4593,39 +5480,47 @@
     "bibliografiaBasica": [
       {
         "referencia": "SEBESTA, R. W. Concepts of Programming Languages. 11ª edição. Addison-Wesley, 2015.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SIPSER, M. Introdução à teoria da computação. São Paulo: Cengage Learning, 2017. 459p. ISBN-13 9788522104994",
         "isbn": [
           "9788522104994"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "TUCKER, A.; NOONAN, R. Programming Languages: Principles and Paradigms. 2ª edição. McGraw-Hill, 2014.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "REYNOLDS, J. C. Theories of Programming Languages. Cambridge University Press, 2009.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "PRATT, T. W.; ZELKOWITZ, M. V. Programming Languages: Design and Implementation. 4ª edição. Prentice Hall, 2001.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SCOTT, M. L. Programming Language Pragmatics. 4ª edição. Morgan Kaufmann, 2015.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "VAN ROY, P.; HARIDI, S. Concepts, Techniques, and Models of Computer Programming. MIT Press, 2004.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "HOPCROFT, J. E.; MOTWANI, R.; ULLMAN, J. D. Introduction to Automata Theory, Languages, and Computation. 3ª edição. Pearson, 2006.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -4655,18 +5550,27 @@
         "referencia": "NEVES, Julio Cezar. Programação SHELL LINUX 7. ed. Rio de Janeiro: Brasport, 2008. 452 p. il. ISBN-13 9788574523453.",
         "isbn": [
           "9788574523453"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9341"
         ]
       },
       {
         "referencia": "FERREIRA, Rubem E. Linux guia do administrador do sistema. 2. ed. São Paulo: Novatec, 2008. 716 p. ISBN-13 9788575221778.",
         "isbn": [
           "9788575221778"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=513"
         ]
       },
       {
         "referencia": "JARGAS, Aurelio Marinho. Shell script profissional. São Paulo: Novatec, 2008. 480 p. il. ISBN-13 9788575221525.",
         "isbn": [
           "9788575221525"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8864"
         ]
       }
     ],
@@ -4675,26 +5579,37 @@
         "referencia": "BURTCH, Ken O. Scripts de shell linux com bash. Rio de Janeiro: Ciência Moderna, 2005. 522 p. ISBN-13 9788573934050.",
         "isbn": [
           "9788573934050"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9081"
         ]
       },
       {
         "referencia": "Foca GNU/Linux. Disponível em http://www.guiafoca.org/",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MOTA FILHO, João Eriberto. Descobrindo o Linux: Entenda o sistema operacional GNU/Linux. 3ª Edição. Novatec Editora, 2012. 928 p. ISBN-13 9788575222782.",
         "isbn": [
           "9788575222782"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1547"
         ]
       },
       {
         "referencia": "Tutoriais sobre Linux. Disponíveis em http://www.tldp.org",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "WARD, Brian. Como o linux funciona: o que todo superusuário deveria saber. São Paulo: Novatec, 2015. 440 p. il. ISBN-13 9788575224199",
         "isbn": [
           "9788575224199"
+        ],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9342"
         ]
       }
     ],
@@ -4720,37 +5635,45 @@
     "bibliografiaBasica": [
       {
         "referencia": "BERGAMINI, Cecília W. Psicologia aplicada a administração de empresas: psicologia do comportamento organizacional. São Paulo. Ed: Atlas. 2011.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "CHIAVENATO, Idalberto. Gestão de Pessoas: O novo papel dos recursos humanos nas organizações. Rio de Janeiro. Ed: Malone. 2014.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "ROBBINS Stephen P: JUDGE, Timonthy A; SOBRAL, Filipe. Comportamento Organizacional: Teoria e prática no contexto brasileiro. 14. São Paulo. Ed: Pearson Education. 2010.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "BOCK,A.M.B.; FURTADO,O.; TEIXEIRA,M.L. Psicologias: uma introdução ao estudo de psicologia. São Paulo: Saraiva, 2009.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "CHIAVENATO, Idalberto. Comportamento Organizacional: a dinâmica do sucesso das organizações. Barueri / SP: Malone, 2014.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "RODRIGUES, A.; ASSMAR, E. M. L.; JABLONSKI, B. Psicologia Social. Rio de Janeiro: Vozes, 2000.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SÁ, Antonio Lopes. Ética Profissional. São Paulo: Atlas, 6ª ed., 2007.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "ROTHMANN, Ian; COOPER, Cary . Fundamentos de psicologia organizacional e do trabalho. Rio de Janeiro: Elsevier, 2009. 331 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -4797,41 +5720,50 @@
     "bibliografiaBasica": [
       {
         "referencia": "BERTAGLIA, Paulo Roberto. Logística e gerenciamento da cadeia de abastecimento. 2. ed. São Paulo: Saraiva, 2009. 546 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "DEITEL, H. M.; DEITEL, P. J; STEINBUHLER, k. E-business e e-commerce para administradores. São Paulo: Pearson Education, 2004. 456 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "O´BRIEN, James A; MARAKAS, George M. Administração de sistemas de informação. 15. ed. Porto Alegre: AMGH, 2013. 590 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "ALBERTIN, Alberto Luiz. Comércio eletrônico: modelo, aspectos e contribuições de sua aplicação. 5. ed. São Paulo: Atlas, 2004. 318 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "FAGUNDES, Eduardo Mayer. Como ingressar nos negócios digitais. São Paulo: Edições inteligentes, 2004. 174 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "FINKELSTEIN, Maria Eugênia Reis. Aspectos jurídicos do comércio eletrônico. 1. ed. Porto Alegre: Síntese, 2004. 337 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "LEME FILHO, Trajano. BI business intelligence no excel. Rio de Janeiro: Novaterra, 2010. 406 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "LOPES, Rodrigo Sérgio Soares Correia. Aspectos e estratégias de implementação de ecommerce na Imobiliária Gomes de Sousa. João Pessoa: [s.n.], 2011. 49 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "VERAS, Paulo. Por dentro da bolha: tudo o que você sempre quis saber sobre as loucuras da Internet mas não tinha a quem perguntar. São Paulo: Edições inteligentes, 2004. 221 p. il.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -4860,33 +5792,39 @@
         "referencia": "SOUSA NETO, Manoel Veras de. Virtualização: Tecnologia Central do Datacenter. BRASPORT, 2ª edição. 2016. ISBN-13 9788574527611.",
         "isbn": [
           "9788574527611"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SOUSA NETO, Manoel Veras de. Computação em Nuvem. BRASPORT, 1ª edição. 2015. ISBN-13 9788574527475.",
         "isbn": [
           "9788574527475"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "PORTNOY, Matthew. Virtualization Essentials. Sybex, 2ª edição. 2016. ISBN-13 9781119267720.",
         "isbn": [
           "9781119267720"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "Kim, G., Humble, J., Debois, P., & Willis, J. The DevOps Handbook",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Burns, B., Beda, J., & Hightower, K. Kubernetes Up & Running",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Turnbull, J. The Docker Book",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -4915,19 +5853,22 @@
         "referencia": "SOUSA NETO, Manoel Veras de. Virtualização: Tecnologia Central do Datacenter. BRASPORT, 2ª edição. 2016. ISBN-13 9788574527611.",
         "isbn": [
           "9788574527611"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SOUSA NETO, Manoel Veras de. Computação em Nuvem. BRASPORT, 1ª edição. 2015. ISBN-13 9788574527475.",
         "isbn": [
           "9788574527475"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "PORTNOY, Matthew. Virtualization Essentials. Sybex, 2ª edição. 2016. ISBN-13 9781119267720.",
         "isbn": [
           "9781119267720"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
@@ -4935,13 +5876,15 @@
         "referencia": "VITALINO, Jeferson Fernando Noronha. Descomplicando o Docker. BRASPORT, 1ª edição. 2016. ISBN-13 9788574527970.",
         "isbn": [
           "9788574527970"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "ANTUNES, Jonathan Lamim. Amazon AWS: Descomplicando a computação na nuvem. Casa do Código, 1ª edição. 2016. ISBN-13 9788555192371.",
         "isbn": [
           "9788555192371"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -4970,19 +5913,22 @@
         "referencia": "SOUSA NETO, Manoel Veras de. Virtualização: Tecnologia Central do Datacenter. BRASPORT, 2ª edição. 2016. ISBN-13 9788574527611.",
         "isbn": [
           "9788574527611"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "SOUSA NETO, Manoel Veras de. Computação em Nuvem. BRASPORT, 1ª edição. 2015. ISBN-13 9788574527475.",
         "isbn": [
           "9788574527475"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "PORTNOY, Matthew. Virtualization Essentials. Sybex, 2ª edição. 2016. ISBN-13 9781119267720.",
         "isbn": [
           "9781119267720"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
@@ -4990,31 +5936,36 @@
         "referencia": "VITALINO, Jeferson Fernando Noronha. Descomplicando o Docker. BRASPORT, 1ª edição. 2016. ISBN-13 9788574527970.",
         "isbn": [
           "9788574527970"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "ANTUNES, Jonathan Lamim. Amazon AWS: Descomplicando a computação na nuvem. Casa do Código, 1ª edição. 2016. ISBN-13 9788555192371.",
         "isbn": [
           "9788555192371"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "ROMERO, Daniel. Containers com Docker: Do desenvolvimento à produção. Casa do Código, 1ª edição. 2015. ISBN-13 9788555191046.",
         "isbn": [
           "9788555191046"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "MARSHALL, Nick. Mastering VMware vSphere 6. Sybex, 1ª edição. 2015. ISBN-13 9781118925157.",
         "isbn": [
           "9781118925157"
-        ]
+        ],
+        "koha": []
       },
       {
         "referencia": "IVANOV, Konstantin. KVM Virtualization Cookbook. Packt Publishing. 2017. ISBN-13 9781788294676",
         "isbn": [
           "9781788294676"
-        ]
+        ],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -5041,41 +5992,50 @@
     "bibliografiaBasica": [
       {
         "referencia": "BECHARA. Evanildo. Gramática escolar da língua portuguesa. 2ª ed. ampliada e atualizada pelo Novo Acordo Ortográfico. Rio de Janeiro: Nova Fronteira, 2010.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "FLÔRES, Lúcia Locatelli. RedaçãoOficial. 3 ed. Florianópolis: Ed. da UFSC, 2002.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "KOCH, I. V. Ler e escrever: estratégias de produção textual. São Paulo: Editora Contexto, 2009.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "ANTUNES, I. Muito além da gramática: por um ensino de línguas sem pedras no caminho. São Paulo: Parábola, 2007.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BASTOS, L. K. A produção escrita e gramática. São Paulo: Martins Fontes, 2002.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "BERLO, L. O processo da comunicação. São Paulo: Martins Fontes, 2000.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "FERREIRA, M. Redação comercial e administrativa. São Paulo: FTD, 2001.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "FERREIRA, E. CAMBRUSSI, M. Redação Oficial. Departamento de Ciências da Administração/UFSC. Programa Nacional de Formação em Administração Pública. CAPES, UAB, 2011.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "FIORIN, J. L. & SAVIOLI, F. P. Para entender o texto. São Paulo: Ática, 1990.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -5102,37 +6062,47 @@
     "bibliografiaBasica": [
       {
         "referencia": "CRUZ. Décio Torres. Inglês instrumental para informática. São Paulo: Disal, 2013.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "DIONISIO, A. P.; MACHADO, A. R.; BEZERRA, M. A. (Orgs). Gêneros textuais e ensino. São Paulo: Parábola Editorial, 2010.",
-        "isbn": []
+        "isbn": [],
+        "koha": [
+          "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=167"
+        ]
       },
       {
         "referencia": "SOUZA, Adriana Grade Fiori et AL. Leitura em língua inglesa: uma abordagem instrumental. São Paulo: Disal, 2005.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "DICIONÁRIO LONGMAN ESCOLAR: para estudantes brasileiros. Português-Inglês / Inglês-Português. Pearson, 2008.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "DICIONÁRIO OXFORD ESCOLAR: para estudantes brasileiros. Português-Inglês / Inglês-Português. New York: Oxford University Press, 2007.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "GALLO, Lígia Razera. Inglês instrumental para informática. São Paulo: Ícone Editora, 2008.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MARCUSCHI, Luiz Antônio. Produção textual, análise de gêneros e compreensão. São Paulo: Parábola, 2008.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "MUNHOZ, Rosângela. Inglês instrumental: estratégias de leitura. Módulo 1. São Paulo: Texto novo, 2000.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",
@@ -5155,37 +6125,45 @@
     "bibliografiaBasica": [
       {
         "referencia": "BRITO, L. F. Por uma gramática de língua de sinais. Rio de Janeiro: Tempo Brasileiro, 1995.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "CAPOVILLA, F.; RAPHAEL, W. D. Dicionário Enciclopédico Ilustrado Trilíngue da Língua de Sinais. Imprensa Oficial. São Paulo: 2001.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "GESSER, A. Libras? Que língua é essa? São Paulo, Editora Parábola: 2009.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaComplementar": [
       {
         "referencia": "COUTINHO, D. Libras e língua portuguesa: semelhanças e diferenças. Vol. 1 João Pessoa: Ideia, 2009.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "Libras e língua portuguesa: semelhanças e diferenças. Vol.2 João Pessoa: Ideia, 2009.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "DINIZ, H. G. A história da Língua de Sinais Brasileira (Libras): Um estudo descritivo de mudanças fonológicas e lexicais. Dissertação de mestrado. 2010. 144 p. Dissertação (mestrado) - Universidade Federal de Santa Catarina, Centro de Comunicação e Expressão. Programa de Pós-Graduação em Linguística.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "PERLIN, G. O Lugar da Cultura Surda. In: THOMA, A. S; LOPES, M. C. (Org.). A Invenção da Surdez: Cultura, alteridade, Identidade e Diferença no campo da educação. Santa Cruz do Sul, EDUNISC, 2004.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       },
       {
         "referencia": "SACKS, O. Vendo vozes: Uma viagem ao mundo dos surdos. São Paulo: Companhia das Letras, 1998.",
-        "isbn": []
+        "isbn": [],
+        "koha": []
       }
     ],
     "bibliografiaSuplementar": "Publicações indexadas no Portal de Periódicos da CAPES (www.periodicos.capes.gov.br (http://www.periodicos.capes.gov.br/)), no Repositório Institucional do IFPB (repositorio.ifpb.edu.br (http://repositorio.ifpb.edu.br/)) e na Editora do IFPB (editora.ifpb.edu.br (http://editora.ifpb.edu.br/)).",

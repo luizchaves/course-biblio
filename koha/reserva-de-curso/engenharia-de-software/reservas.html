@@ -271,6 +271,13 @@ function formatIsbns(isbns) {
   }).join(' ');
 }
 
+function bookSortKey(book, bibCache) {
+  const fields = book.bibtex ? bibCache[book.bibtex] : null;
+  return [fields?.author || book.autor, fields?.title || book.titulo]
+    .filter(Boolean)
+    .join(' ');
+}
+
 function groupBy(arr, key) {
   return arr.reduce((acc, item) => {
     const k = key(item);
@@ -321,7 +328,9 @@ async function load() {
     section.appendChild(semTitle);
 
     for (const disc of bySemester[semester]) {
-      const books = disc.reservas ?? [];
+      const books = [...(disc.reservas ?? [])].sort((left, right) =>
+        bookSortKey(left, bibCache).localeCompare(bookSortKey(right, bibCache), 'pt-BR')
+      );
 
       const card = document.createElement('div');
       card.className = 'subject';
