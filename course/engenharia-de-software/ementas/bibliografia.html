@@ -562,7 +562,13 @@ async function load() {
       (groups[group] ??= []).push(subject);
     }
 
-    const getTabSlug = name => normalizeLabel(name).replace(/\s+/g, '-');
+    const getTabSlug = name => {
+      const match = name.match(/(\d+)/);
+      if (match) return 'p' + match[1];
+      const norm = normalizeLabel(name);
+      if (norm.includes('opt')) return 'opt';
+      return norm.replace(/\s+/g, '-');
+    };
     const urlParams = new URLSearchParams(window.location.search);
     const initialTabSlug = urlParams.get('tab');
 
