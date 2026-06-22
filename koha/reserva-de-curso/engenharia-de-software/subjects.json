@@ -13,7 +13,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 8,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2094",
-        "bibtex": "bibtex/LIPSCHUTZ2011.bib"
+        "bibtex": "bibtex/LIPSCHUTZ2011.bib",
+        "isbn": [
+          "9788577808335"
+        ]
       },
       {
         "titulo": "Álgebra linear",
@@ -26,7 +29,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 10,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17206",
-        "bibtex": "bibtex/POOLE2004.bib"
+        "bibtex": "bibtex/POOLE2004.bib",
+        "isbn": [
+          "9788522103591"
+        ]
       },
       {
         "titulo": "Álgebra linear",
@@ -39,7 +45,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 19,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2106",
-        "bibtex": "bibtex/STEINBRUCH1987.bib"
+        "bibtex": "bibtex/STEINBRUCH1987.bib",
+        "isbn": [
+          "9780074504123",
+          "0074504126"
+        ]
       },
       {
         "titulo": "Álgebra linear com aplicações",
@@ -52,7 +62,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1082",
-        "bibtex": "bibtex/ANTON2012.bib"
+        "bibtex": "bibtex/ANTON2012.bib",
+        "isbn": [
+          "9788540701694"
+        ]
       },
       {
         "titulo": "Álgebra linear",
@@ -65,7 +78,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 14,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17212",
-        "bibtex": "bibtex/NICHOLSON2006.bib"
+        "bibtex": "bibtex/NICHOLSON2006.bib",
+        "isbn": [
+          "8586804924"
+        ]
       },
       {
         "titulo": "Álgebra linear",
@@ -78,7 +94,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17210",
-        "bibtex": "bibtex/SHIFRIN2013.bib"
+        "bibtex": "bibtex/SHIFRIN2013.bib",
+        "isbn": [
+          "9788521622147"
+        ]
       },
       {
         "titulo": "Álgebra linear e suas aplicações",
@@ -91,7 +110,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 15,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17203",
-        "bibtex": "bibtex/STRANG2010.bib"
+        "bibtex": "bibtex/STRANG2010.bib",
+        "isbn": [
+          "9788522107445"
+        ]
       }
     ]
   },
@@ -109,7 +131,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1594",
-        "bibtex": "bibtex/FOROUZAN2011.bib"
+        "bibtex": "bibtex/FOROUZAN2011.bib",
+        "isbn": [
+          "9788522110537",
+          "8522110530"
+        ]
       },
       {
         "titulo": "Introdução à organização de computadores",
@@ -122,7 +148,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 9,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=346",
-        "bibtex": "bibtex/MONTEIRO2007.bib"
+        "bibtex": "bibtex/MONTEIRO2007.bib",
+        "isbn": [
+          "9788521615439"
+        ]
       },
       {
         "titulo": "Arquitetura e organização de computadores",
@@ -135,7 +164,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 15,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1625",
-        "bibtex": "bibtex/STALLINGS2010.bib"
+        "bibtex": "bibtex/STALLINGS2010.bib",
+        "isbn": [
+          "9788576055648"
+        ]
       },
       {
         "titulo": "Ciência da computação",
@@ -148,7 +180,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7059",
-        "bibtex": "bibtex/DALE2011.bib"
+        "bibtex": "bibtex/DALE2011.bib",
+        "isbn": [
+          "9788521617419"
+        ]
       },
       {
         "titulo": "Introdução à informática",
@@ -161,7 +196,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 12,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1225",
-        "bibtex": "bibtex/CAPRON2004.bib"
+        "bibtex": "bibtex/CAPRON2004.bib",
+        "isbn": [
+          "8587918885",
+          "9788587918888"
+        ]
       },
       {
         "titulo": "Informática",
@@ -174,7 +213,11 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7138",
-        "bibtex": "bibtex/VELLOSO2004.bib"
+        "bibtex": "bibtex/VELLOSO2004.bib",
+        "isbn": [
+          "9788535215366",
+          "8535215360"
+        ]
       },
       {
         "titulo": "Organização estruturada de computadores",
@@ -187,7 +230,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7227",
-        "bibtex": "bibtex/TANENBAUM2001.bib"
+        "bibtex": "bibtex/TANENBAUM2001.bib",
+        "isbn": [
+          "8521612532"
+        ]
       },
       {
         "titulo": "Organização estruturada de computadores",
@@ -200,7 +246,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2475",
-        "bibtex": "bibtex/TANENBAUM2007.bib"
+        "bibtex": "bibtex/TANENBAUM2007.bib",
+        "isbn": [
+          "9788576050674"
+        ]
       },
       {
         "titulo": "Organização estruturada de computadores",
@@ -213,7 +262,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2108",
-        "bibtex": "bibtex/TANENBAUM2013.bib"
+        "bibtex": "bibtex/TANENBAUM2013.bib",
+        "isbn": [
+          "9788581435398"
+        ]
       },
       {
         "titulo": "Sistemas digitais",
@@ -226,7 +278,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2066",
-        "bibtex": "bibtex/VAHID2008.bib"
+        "bibtex": "bibtex/VAHID2008.bib",
+        "isbn": [
+          "9788577801909"
+        ]
       }
     ]
   },
@@ -244,7 +299,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 16,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=266",
-        "bibtex": "bibtex/FLEMMING2006.bib"
+        "bibtex": "bibtex/FLEMMING2006.bib",
+        "isbn": [
+          "9788576051152",
+          "857605115X"
+        ]
       },
       {
         "titulo": "Cálculo, volume I",
@@ -257,7 +316,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 15,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2166",
-        "bibtex": "bibtex/ANTON2014.bib"
+        "bibtex": "bibtex/ANTON2014.bib",
+        "isbn": [
+          "9788582602256"
+        ]
       },
       {
         "titulo": "Cálculo, volume I",
@@ -270,7 +332,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 8,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=345",
-        "bibtex": "bibtex/ANTON2007.bib"
+        "bibtex": "bibtex/ANTON2007.bib",
+        "isbn": [
+          "8560031634"
+        ]
       },
       {
         "titulo": "Cálculo, volume 1",
@@ -283,7 +348,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 19,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2100",
-        "bibtex": "bibtex/STEWART2013.bib"
+        "bibtex": "bibtex/STEWART2013.bib",
+        "isbn": [
+          "9788522112586"
+        ]
       },
       {
         "titulo": "Cálculo, volume 1",
@@ -296,7 +364,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17092",
-        "bibtex": "bibtex/STEWART2009.bib"
+        "bibtex": "bibtex/STEWART2009.bib",
+        "isbn": [
+          "9788522106608"
+        ]
       },
       {
         "titulo": "Cálculo, volume 1",
@@ -309,7 +380,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=632",
-        "bibtex": "bibtex/STEWART2010.bib"
+        "bibtex": "bibtex/STEWART2010.bib",
+        "isbn": [
+          "9788522106608"
+        ]
       },
       {
         "titulo": "Cálculo, volume 1",
@@ -322,7 +396,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 23,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17235",
-        "bibtex": "bibtex/STEWART2016.bib"
+        "bibtex": "bibtex/STEWART2016.bib",
+        "isbn": [
+          "9788522125838",
+          "852212583X"
+        ]
       },
       {
         "titulo": "Cálculo [de] George B. Thomas, volume 1",
@@ -335,7 +413,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 15,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17086",
-        "bibtex": "bibtex/THOMAS2002.bib"
+        "bibtex": "bibtex/THOMAS2002.bib",
+        "isbn": [
+          "8588639068"
+        ]
       },
       {
         "titulo": "Um curso de cálculo, volume 1",
@@ -348,7 +429,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=24681",
-        "bibtex": "bibtex/GUIDORIZZI2018.bib"
+        "bibtex": "bibtex/GUIDORIZZI2018.bib",
+        "isbn": [
+          "9788521635437"
+        ]
       },
       {
         "titulo": "Um curso de cálculo, volume 1",
@@ -361,7 +445,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 12,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17095",
-        "bibtex": "bibtex/GUIDORIZZI2001.bib"
+        "bibtex": "bibtex/GUIDORIZZI2001.bib",
+        "isbn": [
+          "9788521612599",
+          "9788521630562"
+        ]
       },
       {
         "titulo": "O cálculo com geometria analítica, volume 1",
@@ -374,7 +462,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1531",
-        "bibtex": "bibtex/LEITHOLD1994.bib"
+        "bibtex": "bibtex/LEITHOLD1994.bib",
+        "isbn": [
+          "8529400941"
+        ]
       },
       {
         "titulo": "Cálculo, volume 1",
@@ -387,7 +478,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 10,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17137",
-        "bibtex": "bibtex/ROGAWSKI2009.bib"
+        "bibtex": "bibtex/ROGAWSKI2009.bib",
+        "isbn": [
+          "9788577802708"
+        ]
       },
       {
         "titulo": "Cálculo com geometria analítica, volume 1",
@@ -400,7 +494,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 16,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17163",
-        "bibtex": "bibtex/SWOKOWSKI1994.bib"
+        "bibtex": "bibtex/SWOKOWSKI1994.bib",
+        "isbn": [
+          "8534603081"
+        ]
       }
     ]
   },
@@ -418,7 +515,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=31541",
-        "bibtex": "bibtex/BARBIERI2023.bib"
+        "bibtex": "bibtex/BARBIERI2023.bib",
+        "isbn": [
+          "9788571441446"
+        ]
       },
       {
         "titulo": "Gestão ambiental empresarial : conceitos, modelos e instrumentos",
@@ -431,7 +531,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 26,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8224",
-        "bibtex": "bibtex/BARBIERI2016.bib"
+        "bibtex": "bibtex/BARBIERI2016.bib",
+        "isbn": [
+          "9788547208219"
+        ]
       },
       {
         "titulo": "Gestão ambiental empresarial : conceitos, modelos e instrumentos",
@@ -444,7 +547,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7112",
-        "bibtex": "bibtex/BARBIERI2011.bib"
+        "bibtex": "bibtex/BARBIERI2011.bib",
+        "isbn": [
+          "9788502141650"
+        ]
       },
       {
         "titulo": "Gestão ambiental empresarial : conceitos, modelos e instrumentos",
@@ -457,7 +563,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=16740",
-        "bibtex": "bibtex/BARBIERI2007.bib"
+        "bibtex": "bibtex/BARBIERI2007.bib",
+        "isbn": [
+          "9788502064485"
+        ]
       },
       {
         "titulo": "Introdução à engenharia ambiental : o desafio do desenvolvimento sustentável",
@@ -470,7 +579,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 12,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2154",
-        "bibtex": "bibtex/BRAGA2005.bib"
+        "bibtex": "bibtex/BRAGA2005.bib",
+        "isbn": [
+          "9788576050414"
+        ]
       },
       {
         "titulo": "Educação ambiental e sustentabilidade",
@@ -483,7 +595,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 10,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6749",
-        "bibtex": "bibtex/PHILIPPIJR2005.bib"
+        "bibtex": "bibtex/PHILIPPIJR2005.bib",
+        "isbn": [
+          "8520422071"
+        ]
       },
       {
         "titulo": "Educação ambiental : princípios e práticas",
@@ -496,7 +611,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=16570",
-        "bibtex": "bibtex/DIAS2003.bib"
+        "bibtex": "bibtex/DIAS2003.bib",
+        "isbn": [
+          "8585351098"
+        ]
       },
       {
         "titulo": "Educação ambiental : princípios e práticas",
@@ -509,7 +627,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3892",
-        "bibtex": "bibtex/DIAS2004.bib"
+        "bibtex": "bibtex/DIAS2004.bib",
+        "isbn": [
+          "9788585351090"
+        ]
       },
       {
         "titulo": "Gestão de resíduos sólidos urbanos no Brasil",
@@ -522,7 +643,8 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=19782",
-        "bibtex": "bibtex/LIMA0000.bib"
+        "bibtex": "bibtex/LIMA0000.bib",
+        "isbn": []
       },
       {
         "titulo": "Meio ambiente, poluição e reciclagem",
@@ -535,7 +657,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8002",
-        "bibtex": "bibtex/MANO2010.bib"
+        "bibtex": "bibtex/MANO2010.bib",
+        "isbn": [
+          "9788521205128"
+        ]
       },
       {
         "titulo": "Empresas, desenvolvimento e ambiente",
@@ -548,7 +673,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=14004",
-        "bibtex": "bibtex/MONTIBELLERFILHO2007.bib"
+        "bibtex": "bibtex/MONTIBELLERFILHO2007.bib",
+        "isbn": [
+          "9788520420591"
+        ]
       },
       {
         "titulo": "Unidades de conservação no Brasil : história e legislação",
@@ -561,7 +689,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=15339",
-        "bibtex": "bibtex/PAZ2006.bib"
+        "bibtex": "bibtex/PAZ2006.bib",
+        "isbn": [
+          "8599135066"
+        ]
       },
       {
         "titulo": "Saneamento, saúde e ambiente",
@@ -574,7 +705,8 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=11699",
-        "bibtex": "bibtex/PHILIPPIJUNIOR2005.bib"
+        "bibtex": "bibtex/PHILIPPIJUNIOR2005.bib",
+        "isbn": []
       }
     ]
   },
@@ -592,7 +724,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1169",
-        "bibtex": "bibtex/PRESSMAN2011.bib"
+        "bibtex": "bibtex/PRESSMAN2011.bib",
+        "isbn": [
+          "9788563308337"
+        ]
       },
       {
         "titulo": "Engenharia de software",
@@ -605,7 +740,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 16,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7688",
-        "bibtex": "bibtex/SOMMERVILLE2007.bib"
+        "bibtex": "bibtex/SOMMERVILLE2007.bib",
+        "isbn": [
+          "9788588639287"
+        ]
       },
       {
         "titulo": "Engenharia de software moderna : princípios e práticas para desenvolvimento de software com produtividade",
@@ -618,7 +756,10 @@
         "situacao": "Emprestado",
         "disponiveis": 1,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=31101",
-        "bibtex": "bibtex/VALENTE2020.bib"
+        "bibtex": "bibtex/VALENTE2020.bib",
+        "isbn": [
+          "9786500019506"
+        ]
       }
     ]
   },
@@ -636,7 +777,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 14,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2098",
-        "bibtex": "bibtex/CORMEN2012.bib"
+        "bibtex": "bibtex/CORMEN2012.bib",
+        "isbn": [
+          "9788535236996"
+        ]
       },
       {
         "titulo": "Algoritmos",
@@ -649,7 +793,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8700",
-        "bibtex": "bibtex/MANZANO2014.bib"
+        "bibtex": "bibtex/MANZANO2014.bib",
+        "isbn": [
+          "9788536502212"
+        ]
       },
       {
         "titulo": "Algoritmos",
@@ -662,7 +809,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=24685",
-        "bibtex": "bibtex/MANZANO2012.bib"
+        "bibtex": "bibtex/MANZANO2012.bib",
+        "isbn": [
+          "9788536502212"
+        ]
       },
       {
         "titulo": "Introdução à programação com Python : algoritmos e lógica de programação para iniciantes",
@@ -675,7 +825,8 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8974",
-        "bibtex": "bibtex/MENEZES2010.bib"
+        "bibtex": "bibtex/MENEZES2010.bib",
+        "isbn": []
       },
       {
         "titulo": "Aprendendo algoritmo com VisuAlg",
@@ -688,7 +839,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 8,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7480",
-        "bibtex": "bibtex/ALMEIDA2013.bib"
+        "bibtex": "bibtex/ALMEIDA2013.bib",
+        "isbn": [
+          "9788539903337"
+        ]
       },
       {
         "titulo": "Use a cabeça! Python",
@@ -701,7 +855,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2060",
-        "bibtex": "bibtex/BARRY2012.bib"
+        "bibtex": "bibtex/BARRY2012.bib",
+        "isbn": [
+          "9788576087434"
+        ]
       },
       {
         "titulo": "Use a cabeça! Python",
@@ -714,7 +871,10 @@
         "situacao": "Emprestado",
         "disponiveis": 1,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=23291",
-        "bibtex": "bibtex/BARRY2018.bib"
+        "bibtex": "bibtex/BARRY2018.bib",
+        "isbn": [
+          "9788550803401"
+        ]
       },
       {
         "titulo": "Lógica de programação",
@@ -727,7 +887,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7814",
-        "bibtex": "bibtex/FORBELLONE2000.bib"
+        "bibtex": "bibtex/FORBELLONE2000.bib",
+        "isbn": [
+          "8534611246"
+        ]
       },
       {
         "titulo": "Lógica de programação",
@@ -740,7 +903,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=268",
-        "bibtex": "bibtex/FORBELLONE2005.bib"
+        "bibtex": "bibtex/FORBELLONE2005.bib",
+        "isbn": [
+          "9788576050247"
+        ]
       },
       {
         "titulo": "Introdução à programação: 500 algorítmos",
@@ -753,7 +919,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7829",
-        "bibtex": "bibtex/LOPES2002.bib"
+        "bibtex": "bibtex/LOPES2002.bib",
+        "isbn": [
+          "8535210199"
+        ]
       },
       {
         "titulo": "Python fluente",
@@ -766,7 +935,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9092",
-        "bibtex": "bibtex/RAMALHO2015.bib"
+        "bibtex": "bibtex/RAMALHO2015.bib",
+        "isbn": [
+          "9788575224625"
+        ]
       }
     ]
   },
@@ -784,7 +956,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 18,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2096",
-        "bibtex": "bibtex/SANTOS2009.bib"
+        "bibtex": "bibtex/SANTOS2009.bib",
+        "isbn": [
+          "9788577804825"
+        ]
       },
       {
         "titulo": "Geometria analítica",
@@ -797,7 +972,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 20,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2111",
-        "bibtex": "bibtex/STEINBRUCH1987.bib"
+        "bibtex": "bibtex/STEINBRUCH1987.bib",
+        "isbn": [
+          "9780074504093",
+          "0074504096"
+        ]
       },
       {
         "titulo": "Vetores e geometria analítica",
@@ -810,7 +989,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 14,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17232",
-        "bibtex": "bibtex/WINTERLE2014.bib"
+        "bibtex": "bibtex/WINTERLE2014.bib",
+        "isbn": [
+          "9788543002392"
+        ]
       },
       {
         "titulo": "O cálculo com geometria analítica, volume 2",
@@ -823,7 +1005,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 14,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1530",
-        "bibtex": "bibtex/LEITHOLD1994.bib"
+        "bibtex": "bibtex/LEITHOLD1994.bib",
+        "isbn": [
+          "8529402065"
+        ]
       },
       {
         "titulo": "Geometria analítica : um tratamento vetorial",
@@ -836,7 +1021,10 @@
         "situacao": "Disponível",
         "disponiveis": 12,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=707",
-        "bibtex": "bibtex/CAMARGO2005.bib"
+        "bibtex": "bibtex/CAMARGO2005.bib",
+        "isbn": [
+          "9788587918918"
+        ]
       },
       {
         "titulo": "Geometria analítica",
@@ -849,7 +1037,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 13,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=641",
-        "bibtex": "bibtex/REIS1996.bib"
+        "bibtex": "bibtex/REIS1996.bib",
+        "isbn": [
+          "9788521610656"
+        ]
       },
       {
         "titulo": "Cálculo com geometria analítica, v. 2",
@@ -862,7 +1053,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 10,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=4916",
-        "bibtex": "bibtex/SIMMONS1988.bib"
+        "bibtex": "bibtex/SIMMONS1988.bib",
+        "isbn": [
+          "9788534614689"
+        ]
       },
       {
         "titulo": "Cálculo com geometria analítica, volume 2",
@@ -875,7 +1069,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 11,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17205",
-        "bibtex": "bibtex/SWOKOWSKI1994.bib"
+        "bibtex": "bibtex/SWOKOWSKI1994.bib",
+        "isbn": [
+          "8534603103"
+        ]
       }
     ]
   },
@@ -893,7 +1090,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=531",
-        "bibtex": "bibtex/CELES2004.bib"
+        "bibtex": "bibtex/CELES2004.bib",
+        "isbn": [
+          "8535212280"
+        ]
       },
       {
         "titulo": "Algoritmos",
@@ -906,7 +1106,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 14,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2098",
-        "bibtex": "bibtex/CORMEN2012.bib"
+        "bibtex": "bibtex/CORMEN2012.bib",
+        "isbn": [
+          "9788535236996"
+        ]
       },
       {
         "titulo": "Estruturas de dados usando C",
@@ -919,7 +1122,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=248",
-        "bibtex": "bibtex/TENENBAUM1995.bib"
+        "bibtex": "bibtex/TENENBAUM1995.bib",
+        "isbn": [
+          "8534603480",
+          "9788534603485"
+        ]
       },
       {
         "titulo": "Python Cookbook",
@@ -932,7 +1139,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=4383",
-        "bibtex": "bibtex/BEAZLEY2013.bib"
+        "bibtex": "bibtex/BEAZLEY2013.bib",
+        "isbn": [
+          "9788575223321"
+        ]
       },
       {
         "titulo": "Estruturas de dados lineares básica",
@@ -945,7 +1155,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3405",
-        "bibtex": "bibtex/CAVALCANTI2015.bib"
+        "bibtex": "bibtex/CAVALCANTI2015.bib",
+        "isbn": [
+          "9788563406613"
+        ]
       },
       {
         "titulo": "Algoritmos",
@@ -958,7 +1171,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=24685",
-        "bibtex": "bibtex/MANZANO2012.bib"
+        "bibtex": "bibtex/MANZANO2012.bib",
+        "isbn": [
+          "9788536502212"
+        ]
       },
       {
         "titulo": "Algoritmos",
@@ -971,7 +1187,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8700",
-        "bibtex": "bibtex/MANZANO2014.bib"
+        "bibtex": "bibtex/MANZANO2014.bib",
+        "isbn": [
+          "9788536502212"
+        ]
       },
       {
         "titulo": "Python fluente",
@@ -984,7 +1203,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9092",
-        "bibtex": "bibtex/RAMALHO2015.bib"
+        "bibtex": "bibtex/RAMALHO2015.bib",
+        "isbn": [
+          "9788575224625"
+        ]
       }
     ]
   },
@@ -1002,7 +1224,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7733",
-        "bibtex": "bibtex/GUEDES2009.bib"
+        "bibtex": "bibtex/GUEDES2009.bib",
+        "isbn": [
+          "9788575221938"
+        ]
       },
       {
         "titulo": "Utilizando UML e padrões",
@@ -1015,7 +1240,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 9,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7731",
-        "bibtex": "bibtex/LARMAN2004.bib"
+        "bibtex": "bibtex/LARMAN2004.bib",
+        "isbn": [
+          "8536303581"
+        ]
       },
       {
         "titulo": "Design de interação",
@@ -1028,7 +1256,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5834",
-        "bibtex": "bibtex/PREECE2005.bib"
+        "bibtex": "bibtex/PREECE2005.bib",
+        "isbn": [
+          "9788536304946"
+        ]
       },
       {
         "titulo": "Design de interação : além da interação humano-computador",
@@ -1041,7 +1272,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3636",
-        "bibtex": "bibtex/ROGERS2013.bib"
+        "bibtex": "bibtex/ROGERS2013.bib",
+        "isbn": [
+          "9788582600061"
+        ]
       },
       {
         "titulo": "Engenharia de software",
@@ -1054,7 +1288,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 16,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7688",
-        "bibtex": "bibtex/SOMMERVILLE2007.bib"
+        "bibtex": "bibtex/SOMMERVILLE2007.bib",
+        "isbn": [
+          "9788588639287"
+        ]
       },
       {
         "titulo": "Modelagem de sistemas orientados a objetos",
@@ -1067,7 +1304,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8762",
-        "bibtex": "bibtex/FURGERI2013.bib"
+        "bibtex": "bibtex/FURGERI2013.bib",
+        "isbn": [
+          "9788536504612"
+        ]
       },
       {
         "titulo": "Padrões de projeto : soluções reutilizáveis de software orientado a objetos",
@@ -1080,7 +1320,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 8,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7690",
-        "bibtex": "bibtex/GAMMA2000.bib"
+        "bibtex": "bibtex/GAMMA2000.bib",
+        "isbn": [
+          "8573076100"
+        ]
       },
       {
         "titulo": "Especificaçoes técnicas de software",
@@ -1093,7 +1336,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7700",
-        "bibtex": "bibtex/LIMA2012.bib"
+        "bibtex": "bibtex/LIMA2012.bib",
+        "isbn": [
+          "9788536504056"
+        ]
       },
       {
         "titulo": "UML 2.5",
@@ -1106,7 +1352,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7751",
-        "bibtex": "bibtex/LIMA2014.bib"
+        "bibtex": "bibtex/LIMA2014.bib",
+        "isbn": [
+          "9788536508320"
+        ]
       },
       {
         "titulo": "Engenharia de software",
@@ -1119,7 +1368,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3205",
-        "bibtex": "bibtex/PAULAFILHO2009.bib"
+        "bibtex": "bibtex/PAULAFILHO2009.bib",
+        "isbn": [
+          "9788521616504"
+        ]
       }
     ]
   },
@@ -1137,7 +1389,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 9,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=21119",
-        "bibtex": "bibtex/DOUGLAS2000.bib"
+        "bibtex": "bibtex/DOUGLAS2000.bib",
+        "isbn": [
+          "9780521585439",
+          "0521585430"
+        ]
       },
       {
         "titulo": "Developments in english for specific purposes",
@@ -1150,7 +1406,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 15,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=21441",
-        "bibtex": "bibtex/DUDLEYEVANS1998.bib"
+        "bibtex": "bibtex/DUDLEYEVANS1998.bib",
+        "isbn": [
+          "9780521596756"
+        ]
       },
       {
         "titulo": "Atividade de linguagem, textos e discursos : por um interacionismo sociodiscursivo",
@@ -1163,7 +1422,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 16,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1037",
-        "bibtex": "bibtex/BRONCKART2007.bib"
+        "bibtex": "bibtex/BRONCKART2007.bib",
+        "isbn": [
+          "8528301818"
+        ]
       },
       {
         "titulo": "Developing reading skills : a practical guide to reading comprehension exercises",
@@ -1176,7 +1438,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=21506",
-        "bibtex": "bibtex/GRELLET1981.bib"
+        "bibtex": "bibtex/GRELLET1981.bib",
+        "isbn": [
+          "0521283647",
+          "9780521283649"
+        ]
       },
       {
         "titulo": "English for specific purposes : learning-centred approach",
@@ -1189,7 +1455,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 12,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=21454",
-        "bibtex": "bibtex/HUTCHINSON1987.bib"
+        "bibtex": "bibtex/HUTCHINSON1987.bib",
+        "isbn": [
+          "9780521318372"
+        ]
       },
       {
         "titulo": "Leitura",
@@ -1202,7 +1471,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=12075",
-        "bibtex": "bibtex/KLEIMAN2008.bib"
+        "bibtex": "bibtex/KLEIMAN2008.bib",
+        "isbn": [
+          "9788571130173"
+        ]
       },
       {
         "titulo": "Ensino e aprendizagem de língua inglesa",
@@ -1215,7 +1487,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=821",
-        "bibtex": "bibtex/LIMA2009.bib"
+        "bibtex": "bibtex/LIMA2009.bib",
+        "isbn": [
+          "9788588456952"
+        ]
       },
       {
         "titulo": "Gêneros textuais &amp; ensino",
@@ -1228,7 +1503,10 @@
         "situacao": "Disponível",
         "disponiveis": 1,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=21354",
-        "bibtex": "bibtex/DIONÍSIO2005.bib"
+        "bibtex": "bibtex/DIONÍSIO2005.bib",
+        "isbn": [
+          "8586930180"
+        ]
       },
       {
         "titulo": "Gêneros textuais e ensino",
@@ -1241,7 +1519,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=167",
-        "bibtex": "bibtex/MACHADO2010.bib"
+        "bibtex": "bibtex/MACHADO2010.bib",
+        "isbn": [
+          "9788579340215"
+        ]
       }
     ]
   },
@@ -1259,7 +1540,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1547",
-        "bibtex": "bibtex/MOTAFILHO2012.bib"
+        "bibtex": "bibtex/MOTAFILHO2012.bib",
+        "isbn": [
+          "9788575222782"
+        ]
       },
       {
         "titulo": "Como o linux funciona : o que todo superusuário deveria saber",
@@ -1272,7 +1556,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9342",
-        "bibtex": "bibtex/WARD2015.bib"
+        "bibtex": "bibtex/WARD2015.bib",
+        "isbn": [
+          "9788575224199"
+        ]
       },
       {
         "titulo": "Serviços de redes em servidores Linux",
@@ -1285,7 +1572,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=28988",
-        "bibtex": "bibtex/BRITO2017.bib"
+        "bibtex": "bibtex/BRITO2017.bib",
+        "isbn": [
+          "9788575226193"
+        ]
       },
       {
         "titulo": "Manual completo do Linux : guia do administrador",
@@ -1298,7 +1588,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=287",
-        "bibtex": "bibtex/NEMETH2007.bib"
+        "bibtex": "bibtex/NEMETH2007.bib",
+        "isbn": [
+          "9788576051121"
+        ]
       }
     ]
   },
@@ -1316,7 +1609,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=28050",
-        "bibtex": "bibtex/KOLLER2014.bib"
+        "bibtex": "bibtex/KOLLER2014.bib",
+        "isbn": [
+          "9788565848916"
+        ]
       },
       {
         "titulo": "A história da extensão universitária",
@@ -1329,7 +1625,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=31325",
-        "bibtex": "bibtex/SOUSA2010.bib"
+        "bibtex": "bibtex/SOUSA2010.bib",
+        "isbn": [
+          "9788575164280"
+        ]
       }
     ]
   },
@@ -1347,7 +1646,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=25170",
-        "bibtex": "bibtex/FREEMAN2016.bib"
+        "bibtex": "bibtex/FREEMAN2016.bib",
+        "isbn": [
+          "9788576089902"
+        ]
       },
       {
         "titulo": "JavaScript",
@@ -1360,7 +1662,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8858",
-        "bibtex": "bibtex/SILVA2010.bib"
+        "bibtex": "bibtex/SILVA2010.bib",
+        "isbn": [
+          "9788575222485"
+        ]
       },
       {
         "titulo": "Programação web com Node e Express",
@@ -1373,7 +1678,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=28963",
-        "bibtex": "bibtex/BROWN2020.bib"
+        "bibtex": "bibtex/BROWN2020.bib",
+        "isbn": [
+          "9786586057089"
+        ]
       }
     ]
   },
@@ -1391,7 +1699,11 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9396",
-        "bibtex": "bibtex/DATE2004.bib"
+        "bibtex": "bibtex/DATE2004.bib",
+        "isbn": [
+          "8535212736",
+          "9788535212730"
+        ]
       },
       {
         "titulo": "Sistemas de banco de dados",
@@ -1404,7 +1716,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=21905",
-        "bibtex": "bibtex/ELMASRI2018.bib"
+        "bibtex": "bibtex/ELMASRI2018.bib",
+        "isbn": [
+          "9788543025001"
+        ]
       },
       {
         "titulo": "Sistemas de banco de dados",
@@ -1417,7 +1732,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5354",
-        "bibtex": "bibtex/ELMASRI2005.bib"
+        "bibtex": "bibtex/ELMASRI2005.bib",
+        "isbn": [
+          "8588639173"
+        ]
       },
       {
         "titulo": "Projeto de banco de dados",
@@ -1430,7 +1748,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 17,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2116",
-        "bibtex": "bibtex/HEUSER2009.bib"
+        "bibtex": "bibtex/HEUSER2009.bib",
+        "isbn": [
+          "9788577803828"
+        ]
       },
       {
         "titulo": "Projeto de banco de dados",
@@ -1443,7 +1764,10 @@
         "situacao": "Disponível",
         "disponiveis": 1,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9449",
-        "bibtex": "bibtex/HEUSER2004.bib"
+        "bibtex": "bibtex/HEUSER2004.bib",
+        "isbn": [
+          "8524105909"
+        ]
       },
       {
         "titulo": "Sistema de Banco de Dados",
@@ -1456,7 +1780,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=4157",
-        "bibtex": "bibtex/SILBERSCHATZ2012.bib"
+        "bibtex": "bibtex/SILBERSCHATZ2012.bib",
+        "isbn": [
+          "9788535245356"
+        ]
       },
       {
         "titulo": "Sistema de bancos de dados",
@@ -1469,7 +1796,10 @@
         "situacao": "Disponível",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2474",
-        "bibtex": "bibtex/SILBERSCHATZ0000.bib"
+        "bibtex": "bibtex/SILBERSCHATZ0000.bib",
+        "isbn": [
+          "9788535211078"
+        ]
       },
       {
         "titulo": "Projeto de banco de dados e teoria relacional",
@@ -1482,7 +1812,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9374",
-        "bibtex": "bibtex/DATE2015.bib"
+        "bibtex": "bibtex/DATE2015.bib",
+        "isbn": [
+          "9788575224557"
+        ]
       },
       {
         "titulo": "Introdução à linguagem SQL : abordagem prática para iniciantes",
@@ -1495,7 +1828,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=29044",
-        "bibtex": "bibtex/NIELDTHOMAS2016.bib"
+        "bibtex": "bibtex/NIELDTHOMAS2016.bib",
+        "isbn": [
+          "9788575225011"
+        ]
       }
     ]
   },
@@ -1513,7 +1849,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 11,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1613",
-        "bibtex": "bibtex/BAGNO2013.bib"
+        "bibtex": "bibtex/BAGNO2013.bib",
+        "isbn": [
+          "9788515018895"
+        ]
       },
       {
         "titulo": "Preconceito linguístico",
@@ -1526,7 +1865,10 @@
         "situacao": "Disponível",
         "disponiveis": 1,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=21243",
-        "bibtex": "bibtex/BAGNO2001.bib"
+        "bibtex": "bibtex/BAGNO2001.bib",
+        "isbn": [
+          "8515018896"
+        ]
       },
       {
         "titulo": "Produção textual, análise de gêneros e compreensão",
@@ -1539,7 +1881,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 8,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=13714",
-        "bibtex": "bibtex/MARCUSCHI2008.bib"
+        "bibtex": "bibtex/MARCUSCHI2008.bib",
+        "isbn": [
+          "9788588456747"
+        ]
       },
       {
         "titulo": "Letramento literário : teoria e prática",
@@ -1552,7 +1897,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 9,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1267",
-        "bibtex": "bibtex/COSSON2006.bib"
+        "bibtex": "bibtex/COSSON2006.bib",
+        "isbn": [
+          "9788572443098"
+        ]
       },
       {
         "titulo": "Gêneros textuais e ensino",
@@ -1565,7 +1913,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=167",
-        "bibtex": "bibtex/MACHADO2010.bib"
+        "bibtex": "bibtex/MACHADO2010.bib",
+        "isbn": [
+          "9788579340215"
+        ]
       },
       {
         "titulo": "Gêneros textuais &amp; ensino",
@@ -1578,7 +1929,10 @@
         "situacao": "Disponível",
         "disponiveis": 1,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=21354",
-        "bibtex": "bibtex/DIONÍSIO2005.bib"
+        "bibtex": "bibtex/DIONÍSIO2005.bib",
+        "isbn": [
+          "8586930180"
+        ]
       }
     ]
   },
@@ -1596,7 +1950,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8817",
-        "bibtex": "bibtex/DEITEL2005.bib"
+        "bibtex": "bibtex/DEITEL2005.bib",
+        "isbn": [
+          "8576050196",
+          "9788576050193"
+        ]
       },
       {
         "titulo": "Java: como programar",
@@ -1609,7 +1967,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6135",
-        "bibtex": "bibtex/DEITEL2017.bib"
+        "bibtex": "bibtex/DEITEL2017.bib",
+        "isbn": [
+          "9788543004792"
+        ]
       },
       {
         "titulo": "Java : como programar",
@@ -1622,7 +1983,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1079",
-        "bibtex": "bibtex/DEITEL2010.bib"
+        "bibtex": "bibtex/DEITEL2010.bib",
+        "isbn": [
+          "9788576055631"
+        ]
       },
       {
         "titulo": "CoreJAVA : volume I - fundamentos",
@@ -1635,7 +1999,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 10,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2463",
-        "bibtex": "bibtex/HORSTMANN2010.bib"
+        "bibtex": "bibtex/HORSTMANN2010.bib",
+        "isbn": [
+          "9788576053576"
+        ]
       },
       {
         "titulo": "Use a cabeça! Java",
@@ -1648,7 +2015,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 8,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9029",
-        "bibtex": "bibtex/SIERRA2007.bib"
+        "bibtex": "bibtex/SIERRA2007.bib",
+        "isbn": [
+          "9788576081739"
+        ]
       },
       {
         "titulo": "Use a cabeça! Java",
@@ -1661,7 +2031,10 @@
         "situacao": "Disponível",
         "disponiveis": 1,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=24697",
-        "bibtex": "bibtex/SIERRA2005.bib"
+        "bibtex": "bibtex/SIERRA2005.bib",
+        "isbn": [
+          "8576080842"
+        ]
       },
       {
         "titulo": "Java",
@@ -1674,7 +2047,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8721",
-        "bibtex": "bibtex/COSTA2009.bib"
+        "bibtex": "bibtex/COSTA2009.bib",
+        "isbn": [
+          "9788574524085"
+        ]
       },
       {
         "titulo": "Java 8",
@@ -1687,7 +2063,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8955",
-        "bibtex": "bibtex/MANZANO2014.bib"
+        "bibtex": "bibtex/MANZANO2014.bib",
+        "isbn": [
+          "9788536509266"
+        ]
       },
       {
         "titulo": "Introdução à programação orientada a objetos usando Java",
@@ -1700,7 +2079,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=24735",
-        "bibtex": "bibtex/SANTOS2013.bib"
+        "bibtex": "bibtex/SANTOS2013.bib",
+        "isbn": [
+          "9788535274332"
+        ]
       },
       {
         "titulo": "Desenvolvimento de aplicações comerciais com JAVA e NetBeans",
@@ -1713,7 +2095,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8978",
-        "bibtex": "bibtex/SANTOS2010.bib"
+        "bibtex": "bibtex/SANTOS2010.bib",
+        "isbn": [
+          "9788573938920"
+        ]
       }
     ]
   },
@@ -1731,7 +2116,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1169",
-        "bibtex": "bibtex/PRESSMAN2011.bib"
+        "bibtex": "bibtex/PRESSMAN2011.bib",
+        "isbn": [
+          "9788563308337"
+        ]
       },
       {
         "titulo": "Engenharia de software",
@@ -1744,7 +2132,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 16,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7688",
-        "bibtex": "bibtex/SOMMERVILLE2007.bib"
+        "bibtex": "bibtex/SOMMERVILLE2007.bib",
+        "isbn": [
+          "9788588639287"
+        ]
       },
       {
         "titulo": "Princípios de análise e projeto de sistemas com UML",
@@ -1757,7 +2148,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6321",
-        "bibtex": "bibtex/BEZERRA2015.bib"
+        "bibtex": "bibtex/BEZERRA2015.bib",
+        "isbn": [
+          "9788535226263"
+        ]
       },
       {
         "titulo": "Fundamentos de metodologia científica",
@@ -1770,7 +2164,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2358",
-        "bibtex": "bibtex/MARCONI2010.bib"
+        "bibtex": "bibtex/MARCONI2010.bib",
+        "isbn": [
+          "9788522457588"
+        ]
       }
     ]
   },
@@ -1788,7 +2185,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5451",
-        "bibtex": "bibtex/COMER2015.bib"
+        "bibtex": "bibtex/COMER2015.bib",
+        "isbn": [
+          "9788535278637"
+        ]
       },
       {
         "titulo": "Interligação em rede com TCP/IP",
@@ -1801,7 +2201,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9738",
-        "bibtex": "bibtex/COMER2006.bib"
+        "bibtex": "bibtex/COMER2006.bib",
+        "isbn": [
+          "8535220178"
+        ]
       },
       {
         "titulo": "Redes de computadores e a internet : uma abordagem top-down",
@@ -1814,7 +2217,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3783",
-        "bibtex": "bibtex/KUROSE2013.bib"
+        "bibtex": "bibtex/KUROSE2013.bib",
+        "isbn": [
+          "9788581436777"
+        ]
       },
       {
         "titulo": "Redes de computadores e a Internet",
@@ -1827,7 +2233,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 11,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=262",
-        "bibtex": "bibtex/KUROSE2006.bib"
+        "bibtex": "bibtex/KUROSE2006.bib",
+        "isbn": [
+          "9788588639188"
+        ]
       },
       {
         "titulo": "Redes de computadores",
@@ -1840,7 +2249,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1030",
-        "bibtex": "bibtex/TANENBAUM2011.bib"
+        "bibtex": "bibtex/TANENBAUM2011.bib",
+        "isbn": [
+          "9788576059240"
+        ]
       },
       {
         "titulo": "Redes de computadores",
@@ -1853,7 +2265,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 11,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6902",
-        "bibtex": "bibtex/TANENBAUM2003.bib"
+        "bibtex": "bibtex/TANENBAUM2003.bib",
+        "isbn": [
+          "8535211853"
+        ]
       }
     ]
   },
@@ -1871,7 +2286,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=21905",
-        "bibtex": "bibtex/ELMASRI2018.bib"
+        "bibtex": "bibtex/ELMASRI2018.bib",
+        "isbn": [
+          "9788543025001"
+        ]
       },
       {
         "titulo": "Sistemas de banco de dados",
@@ -1884,7 +2302,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5354",
-        "bibtex": "bibtex/ELMASRI2005.bib"
+        "bibtex": "bibtex/ELMASRI2005.bib",
+        "isbn": [
+          "8588639173"
+        ]
       },
       {
         "titulo": "Sistemas de gerenciamento de banco de dados",
@@ -1897,7 +2318,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3744",
-        "bibtex": "bibtex/RAMAKRISHNAN2008.bib"
+        "bibtex": "bibtex/RAMAKRISHNAN2008.bib",
+        "isbn": [
+          "9788577260270"
+        ]
       },
       {
         "titulo": "Sistema de Banco de Dados",
@@ -1910,7 +2334,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=4157",
-        "bibtex": "bibtex/SILBERSCHATZ2012.bib"
+        "bibtex": "bibtex/SILBERSCHATZ2012.bib",
+        "isbn": [
+          "9788535245356"
+        ]
       },
       {
         "titulo": "Introdução a sistemas de bancos de dados",
@@ -1923,7 +2350,11 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9396",
-        "bibtex": "bibtex/DATE2004.bib"
+        "bibtex": "bibtex/DATE2004.bib",
+        "isbn": [
+          "8535212736",
+          "9788535212730"
+        ]
       },
       {
         "titulo": "Introdução a sistemas de bancos de dados",
@@ -1936,7 +2367,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9401",
-        "bibtex": "bibtex/DATE2000.bib"
+        "bibtex": "bibtex/DATE2000.bib",
+        "isbn": [
+          "8535205608"
+        ]
       }
     ]
   },
@@ -1954,7 +2388,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 8,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8830",
-        "bibtex": "bibtex/KEITH2009.bib"
+        "bibtex": "bibtex/KEITH2009.bib",
+        "isbn": [
+          "9781430219569"
+        ]
       },
       {
         "titulo": "Programação web com Node e Express",
@@ -1967,7 +2404,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=28963",
-        "bibtex": "bibtex/BROWN2020.bib"
+        "bibtex": "bibtex/BROWN2020.bib",
+        "isbn": [
+          "9786586057089"
+        ]
       },
       {
         "titulo": "EJB 3 profissional",
@@ -1980,7 +2420,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7736",
-        "bibtex": "bibtex/KEITH2008.bib"
+        "bibtex": "bibtex/KEITH2008.bib",
+        "isbn": [
+          "9788573936964"
+        ]
       }
     ]
   },
@@ -1998,7 +2441,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9243",
-        "bibtex": "bibtex/MACHADO2011.bib"
+        "bibtex": "bibtex/MACHADO2011.bib",
+        "isbn": [
+          "9788521609490"
+        ]
       },
       {
         "titulo": "Fundamentos de sistemas operacionais",
@@ -2011,7 +2457,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9355",
-        "bibtex": "bibtex/SILBERSCHATZ2010.bib"
+        "bibtex": "bibtex/SILBERSCHATZ2010.bib",
+        "isbn": [
+          "9788521617471"
+        ]
       },
       {
         "titulo": "Fundamentos de sistemas operacionais",
@@ -2024,7 +2473,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5280",
-        "bibtex": "bibtex/SILBERSCHATZ2004.bib"
+        "bibtex": "bibtex/SILBERSCHATZ2004.bib",
+        "isbn": [
+          "8521614144"
+        ]
       },
       {
         "titulo": "Sistemas operacionais : projeto e implementação",
@@ -2037,7 +2489,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3648",
-        "bibtex": "bibtex/TANENBAUM2008.bib"
+        "bibtex": "bibtex/TANENBAUM2008.bib",
+        "isbn": [
+          "9788577800575"
+        ]
       },
       {
         "titulo": "Sistemas operacionais : projeto e implementação",
@@ -2050,7 +2505,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9345",
-        "bibtex": "bibtex/TANENBAUM1999.bib"
+        "bibtex": "bibtex/TANENBAUM1999.bib",
+        "isbn": [
+          "8573075309"
+        ]
       },
       {
         "titulo": "Sistemas operacionais",
@@ -2063,7 +2521,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=595",
-        "bibtex": "bibtex/DEITEL2005.bib"
+        "bibtex": "bibtex/DEITEL2005.bib",
+        "isbn": [
+          "9788576050117",
+          "8576050110"
+        ]
       },
       {
         "titulo": "Arquitetura de sistemas operacionais",
@@ -2076,7 +2538,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2927",
-        "bibtex": "bibtex/MACHADO2013.bib"
+        "bibtex": "bibtex/MACHADO2013.bib",
+        "isbn": [
+          "9788521622109"
+        ]
       },
       {
         "titulo": "Sistemas operacionais",
@@ -2089,7 +2554,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9322",
-        "bibtex": "bibtex/MARQUES2011.bib"
+        "bibtex": "bibtex/MARQUES2011.bib",
+        "isbn": [
+          "9788521618072"
+        ]
       },
       {
         "titulo": "Fundamentos de sistemas operacionais",
@@ -2102,7 +2570,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9336",
-        "bibtex": "bibtex/SILBERSCHATZ2013.bib"
+        "bibtex": "bibtex/SILBERSCHATZ2013.bib",
+        "isbn": [
+          "9788521622055"
+        ]
       }
     ]
   },
@@ -2120,7 +2591,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=12654",
-        "bibtex": "bibtex/ANTUNES2004.bib"
+        "bibtex": "bibtex/ANTUNES2004.bib",
+        "isbn": [
+          "8587394479"
+        ]
       },
       {
         "titulo": "A dialética do trabalho",
@@ -2133,7 +2607,10 @@
         "situacao": "Disponível",
         "disponiveis": 1,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=12651",
-        "bibtex": "bibtex/ANTUNES2013.bib"
+        "bibtex": "bibtex/ANTUNES2013.bib",
+        "isbn": [
+          "8587394479"
+        ]
       },
       {
         "titulo": "Ética na computação",
@@ -2146,7 +2623,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=12610",
-        "bibtex": "bibtex/BARGER2011.bib"
+        "bibtex": "bibtex/BARGER2011.bib",
+        "isbn": [
+          "9788521617761"
+        ]
       },
       {
         "titulo": "Cultura",
@@ -2159,7 +2639,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=13077",
-        "bibtex": "bibtex/LARAIA2005.bib"
+        "bibtex": "bibtex/LARAIA2005.bib",
+        "isbn": [
+          "8571104387"
+        ]
       },
       {
         "titulo": "O que é sociologia",
@@ -2172,7 +2655,10 @@
         "situacao": "Disponível",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=4930",
-        "bibtex": "bibtex/MARTINS1982.bib"
+        "bibtex": "bibtex/MARTINS1982.bib",
+        "isbn": [
+          "9788511010572"
+        ]
       },
       {
         "titulo": "Somos todos/as iguais? escola, discriminação e educação em direitos humanos",
@@ -2185,7 +2671,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=31600",
-        "bibtex": "bibtex/SACAVINO2012.bib"
+        "bibtex": "bibtex/SACAVINO2012.bib",
+        "isbn": [
+          "9788598271996"
+        ]
       },
       {
         "titulo": "Ética em computação",
@@ -2198,7 +2687,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=29576",
-        "bibtex": "bibtex/MASIERO2000.bib"
+        "bibtex": "bibtex/MASIERO2000.bib",
+        "isbn": [
+          "9788531405754"
+        ]
       }
     ]
   },
@@ -2216,7 +2708,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3059",
-        "bibtex": "bibtex/DELAMARO2007.bib"
+        "bibtex": "bibtex/DELAMARO2007.bib",
+        "isbn": [
+          "9788535226348"
+        ]
       },
       {
         "titulo": "Engenharia de software",
@@ -2229,7 +2724,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 16,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7688",
-        "bibtex": "bibtex/SOMMERVILLE2007.bib"
+        "bibtex": "bibtex/SOMMERVILLE2007.bib",
+        "isbn": [
+          "9788588639287"
+        ]
       },
       {
         "titulo": "Engenharia de software : uma abordagem profissional",
@@ -2242,7 +2740,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1169",
-        "bibtex": "bibtex/PRESSMAN2011.bib"
+        "bibtex": "bibtex/PRESSMAN2011.bib",
+        "isbn": [
+          "9788563308337"
+        ]
       }
     ]
   },
@@ -2260,7 +2761,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10436",
-        "bibtex": "bibtex/PORTO2013.bib"
+        "bibtex": "bibtex/PORTO2013.bib",
+        "isbn": [
+          "9788535272741"
+        ]
       },
       {
         "titulo": "Empreendedorismo",
@@ -2273,7 +2777,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10594",
-        "bibtex": "bibtex/MARIANO2011.bib"
+        "bibtex": "bibtex/MARIANO2011.bib",
+        "isbn": [
+          "9788521617730"
+        ]
       },
       {
         "titulo": "Inovação",
@@ -2286,7 +2793,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10310",
-        "bibtex": "bibtex/CRAINER2014.bib"
+        "bibtex": "bibtex/CRAINER2014.bib",
+        "isbn": [
+          "9788582602218"
+        ]
       }
     ]
   },
@@ -2304,7 +2814,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 14,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2098",
-        "bibtex": "bibtex/CORMEN2012.bib"
+        "bibtex": "bibtex/CORMEN2012.bib",
+        "isbn": [
+          "9788535236996"
+        ]
       },
       {
         "titulo": "Algoritmos",
@@ -2317,7 +2830,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=29741",
-        "bibtex": "bibtex/DASGUPTA2009.bib"
+        "bibtex": "bibtex/DASGUPTA2009.bib",
+        "isbn": [
+          "9788577260324"
+        ]
       }
     ]
   },
@@ -2335,7 +2851,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 9,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7731",
-        "bibtex": "bibtex/LARMAN2004.bib"
+        "bibtex": "bibtex/LARMAN2004.bib",
+        "isbn": [
+          "8536303581"
+        ]
       },
       {
         "titulo": "Utilizando UML e padrões",
@@ -2348,7 +2867,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7749",
-        "bibtex": "bibtex/LARMAN2000.bib"
+        "bibtex": "bibtex/LARMAN2000.bib",
+        "isbn": [
+          "8573076518"
+        ]
       },
       {
         "titulo": "Padrões de projeto : soluções reutilizáveis de software orientado a objetos",
@@ -2361,7 +2883,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 8,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7690",
-        "bibtex": "bibtex/GAMMA2000.bib"
+        "bibtex": "bibtex/GAMMA2000.bib",
+        "isbn": [
+          "8573076100"
+        ]
       },
       {
         "titulo": "UML 2",
@@ -2374,7 +2899,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7733",
-        "bibtex": "bibtex/GUEDES2009.bib"
+        "bibtex": "bibtex/GUEDES2009.bib",
+        "isbn": [
+          "9788575221938"
+        ]
       },
       {
         "titulo": "Engenharia de software",
@@ -2387,7 +2915,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 16,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7688",
-        "bibtex": "bibtex/SOMMERVILLE2007.bib"
+        "bibtex": "bibtex/SOMMERVILLE2007.bib",
+        "isbn": [
+          "9788588639287"
+        ]
       },
       {
         "titulo": "Engenharia de software",
@@ -2400,7 +2931,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3299",
-        "bibtex": "bibtex/PRESSMAN1995.bib"
+        "bibtex": "bibtex/PRESSMAN1995.bib",
+        "isbn": [
+          "8534602379",
+          "9788534602372"
+        ]
       },
       {
         "titulo": "Engenharia de software : uma abordagem profissional",
@@ -2413,7 +2948,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1169",
-        "bibtex": "bibtex/PRESSMAN2011.bib"
+        "bibtex": "bibtex/PRESSMAN2011.bib",
+        "isbn": [
+          "9788563308337"
+        ]
       },
       {
         "titulo": "CoreJAVA : volume I - fundamentos",
@@ -2426,7 +2964,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 10,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2463",
-        "bibtex": "bibtex/HORSTMANN2010.bib"
+        "bibtex": "bibtex/HORSTMANN2010.bib",
+        "isbn": [
+          "9788576053576"
+        ]
       },
       {
         "titulo": "UML 2.5 com enterprise architect 10",
@@ -2439,7 +2980,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7847",
-        "bibtex": "bibtex/SBROCCO2014.bib"
+        "bibtex": "bibtex/SBROCCO2014.bib",
+        "isbn": [
+          "9788536508337"
+        ]
       },
       {
         "titulo": "Core J2EE patterns : as melhores práticas e estratégias de design",
@@ -2452,7 +2996,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7848",
-        "bibtex": "bibtex/ALUR2002.bib"
+        "bibtex": "bibtex/ALUR2002.bib",
+        "isbn": [
+          "8535210040"
+        ]
       }
     ]
   },
@@ -2470,7 +3017,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9120",
-        "bibtex": "bibtex/SPIEGEL2009.bib"
+        "bibtex": "bibtex/SPIEGEL2009.bib",
+        "isbn": [
+          "9788577804610"
+        ]
       },
       {
         "titulo": "Estatística",
@@ -2483,7 +3033,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 8,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=15603",
-        "bibtex": "bibtex/SPIEGEL1994.bib"
+        "bibtex": "bibtex/SPIEGEL1994.bib",
+        "isbn": [
+          "9788534601207"
+        ]
       },
       {
         "titulo": "Estatística",
@@ -2496,7 +3049,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17276",
-        "bibtex": "bibtex/BARBETTA2008.bib"
+        "bibtex": "bibtex/BARBETTA2008.bib",
+        "isbn": [
+          "9788522449897"
+        ]
       },
       {
         "titulo": "Probabilidade e estatística",
@@ -2509,7 +3065,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 12,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17249",
-        "bibtex": "bibtex/DEVORE2006.bib"
+        "bibtex": "bibtex/DEVORE2006.bib",
+        "isbn": [
+          "9788522104598"
+        ]
       },
       {
         "titulo": "Estatística aplicada : economia, administração e contabilidade",
@@ -2522,7 +3081,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 10,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17284",
-        "bibtex": "bibtex/FREUND2006.bib"
+        "bibtex": "bibtex/FREUND2006.bib",
+        "isbn": [
+          "9788536306674"
+        ]
       },
       {
         "titulo": "Probabilidade : aplicações à estatística",
@@ -2535,7 +3097,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 10,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1033",
-        "bibtex": "bibtex/MEYER1983.bib"
+        "bibtex": "bibtex/MEYER1983.bib",
+        "isbn": [
+          "9788521602941"
+        ]
       },
       {
         "titulo": "Estatística básica",
@@ -2548,7 +3113,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2196",
-        "bibtex": "bibtex/MORETTIN2010.bib"
+        "bibtex": "bibtex/MORETTIN2010.bib",
+        "isbn": [
+          "9788576053705"
+        ]
       },
       {
         "titulo": "Introdução à estatística",
@@ -2561,7 +3129,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 14,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2225",
-        "bibtex": "bibtex/TRIOLA2008.bib"
+        "bibtex": "bibtex/TRIOLA2008.bib",
+        "isbn": [
+          "9788521615866"
+        ]
       }
     ]
   },
@@ -2579,7 +3150,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9406",
-        "bibtex": "bibtex/FERREIRA2008.bib"
+        "bibtex": "bibtex/FERREIRA2008.bib",
+        "isbn": [
+          "9788521616511"
+        ]
       },
       {
         "titulo": "Usabilidade móvel",
@@ -2592,7 +3166,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7215",
-        "bibtex": "bibtex/NIELSEN2014.bib"
+        "bibtex": "bibtex/NIELSEN2014.bib",
+        "isbn": [
+          "9788535264272"
+        ]
       }
     ]
   },
@@ -2610,7 +3187,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=28050",
-        "bibtex": "bibtex/KOLLER2014.bib"
+        "bibtex": "bibtex/KOLLER2014.bib",
+        "isbn": [
+          "9788565848916"
+        ]
       },
       {
         "titulo": "Engenharia de software : uma abordagem profissional",
@@ -2623,7 +3203,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1169",
-        "bibtex": "bibtex/PRESSMAN2011.bib"
+        "bibtex": "bibtex/PRESSMAN2011.bib",
+        "isbn": [
+          "9788563308337"
+        ]
       },
       {
         "titulo": "Princípios de análise e projeto de sistemas com UML",
@@ -2636,7 +3219,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6321",
-        "bibtex": "bibtex/BEZERRA2015.bib"
+        "bibtex": "bibtex/BEZERRA2015.bib",
+        "isbn": [
+          "9788535226263"
+        ]
       },
       {
         "titulo": "Fundamentos de metodologia científica",
@@ -2649,7 +3235,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2358",
-        "bibtex": "bibtex/MARCONI2010.bib"
+        "bibtex": "bibtex/MARCONI2010.bib",
+        "isbn": [
+          "9788522457588"
+        ]
       }
     ]
   },
@@ -2667,7 +3256,8 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=29574",
-        "bibtex": "bibtex/AMARAL2016.bib"
+        "bibtex": "bibtex/AMARAL2016.bib",
+        "isbn": []
       }
     ]
   },
@@ -2685,7 +3275,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3205",
-        "bibtex": "bibtex/PAULAFILHO2009.bib"
+        "bibtex": "bibtex/PAULAFILHO2009.bib",
+        "isbn": [
+          "9788521616504"
+        ]
       },
       {
         "titulo": "Metodologias ágeis",
@@ -2698,7 +3291,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7883",
-        "bibtex": "bibtex/SBROCCO2012.bib"
+        "bibtex": "bibtex/SBROCCO2012.bib",
+        "isbn": [
+          "9788536503981"
+        ]
       },
       {
         "titulo": "Modelagem de sistemas orientados a objetos",
@@ -2711,7 +3307,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8762",
-        "bibtex": "bibtex/FURGERI2013.bib"
+        "bibtex": "bibtex/FURGERI2013.bib",
+        "isbn": [
+          "9788536504612"
+        ]
       },
       {
         "titulo": "UML 2",
@@ -2724,7 +3323,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7733",
-        "bibtex": "bibtex/GUEDES2009.bib"
+        "bibtex": "bibtex/GUEDES2009.bib",
+        "isbn": [
+          "9788575221938"
+        ]
       },
       {
         "titulo": "Utilizando UML e padrões",
@@ -2737,7 +3339,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 9,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7731",
-        "bibtex": "bibtex/LARMAN2004.bib"
+        "bibtex": "bibtex/LARMAN2004.bib",
+        "isbn": [
+          "8536303581"
+        ]
       },
       {
         "titulo": "Especificaçoes técnicas de software",
@@ -2750,7 +3355,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7700",
-        "bibtex": "bibtex/LIMA2012.bib"
+        "bibtex": "bibtex/LIMA2012.bib",
+        "isbn": [
+          "9788536504056"
+        ]
       },
       {
         "titulo": "UML 2.5",
@@ -2763,7 +3371,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7751",
-        "bibtex": "bibtex/LIMA2014.bib"
+        "bibtex": "bibtex/LIMA2014.bib",
+        "isbn": [
+          "9788536508320"
+        ]
       },
       {
         "titulo": "Gerenciando projetos de desenvolvimento de software com PMI, RUP e UML",
@@ -2776,7 +3387,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7588",
-        "bibtex": "bibtex/MARTINS2010.bib"
+        "bibtex": "bibtex/MARTINS2010.bib",
+        "isbn": [
+          "9788574524511"
+        ]
       },
       {
         "titulo": "Design de interação : além da interação humano-computador",
@@ -2789,7 +3403,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3636",
-        "bibtex": "bibtex/ROGERS2013.bib"
+        "bibtex": "bibtex/ROGERS2013.bib",
+        "isbn": [
+          "9788582600061"
+        ]
       },
       {
         "titulo": "Design de interação",
@@ -2802,7 +3419,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5834",
-        "bibtex": "bibtex/PREECE2005.bib"
+        "bibtex": "bibtex/PREECE2005.bib",
+        "isbn": [
+          "9788536304946"
+        ]
       },
       {
         "titulo": "UML 2.5 com enterprise architect 10",
@@ -2815,7 +3435,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7847",
-        "bibtex": "bibtex/SBROCCO2014.bib"
+        "bibtex": "bibtex/SBROCCO2014.bib",
+        "isbn": [
+          "9788536508337"
+        ]
       }
     ]
   },
@@ -2833,7 +3456,8 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=29574",
-        "bibtex": "bibtex/AMARAL2016.bib"
+        "bibtex": "bibtex/AMARAL2016.bib",
+        "isbn": []
       },
       {
         "titulo": "Recuperação de informação : conceitos e tecnologia das máquinas de busca",
@@ -2846,7 +3470,10 @@
         "situacao": "Disponível",
         "disponiveis": 1,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=31104",
-        "bibtex": "bibtex/BAEZAYATES2013.bib"
+        "bibtex": "bibtex/BAEZAYATES2013.bib",
+        "isbn": [
+          "9788582600481"
+        ]
       }
     ]
   },
@@ -2864,7 +3491,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=11198",
-        "bibtex": "bibtex/KERZNER2011.bib"
+        "bibtex": "bibtex/KERZNER2011.bib",
+        "isbn": [
+          "9788521206033"
+        ]
       },
       {
         "titulo": "Engenharia de software : uma abordagem profissional",
@@ -2877,7 +3507,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1169",
-        "bibtex": "bibtex/PRESSMAN2011.bib"
+        "bibtex": "bibtex/PRESSMAN2011.bib",
+        "isbn": [
+          "9788563308337"
+        ]
       },
       {
         "titulo": "Gerência de projetos",
@@ -2890,7 +3523,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=11147",
-        "bibtex": "bibtex/HELDMAN2015.bib"
+        "bibtex": "bibtex/HELDMAN2015.bib",
+        "isbn": [
+          "9788535276152"
+        ]
       },
       {
         "titulo": "O guia definitivo do gerenciamento de projetos : como alcançar resultados dentro do prazo e do orçamento",
@@ -2903,7 +3539,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=11188",
-        "bibtex": "bibtex/NOKES2012.bib"
+        "bibtex": "bibtex/NOKES2012.bib",
+        "isbn": [
+          "9788577809738"
+        ]
       },
       {
         "titulo": "Gerenciamento de projetos",
@@ -2916,7 +3555,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=11191",
-        "bibtex": "bibtex/SANTOS2014.bib"
+        "bibtex": "bibtex/SANTOS2014.bib",
+        "isbn": [
+          "9788521625735"
+        ]
       },
       {
         "titulo": "Metodologias ágeis",
@@ -2929,7 +3571,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7883",
-        "bibtex": "bibtex/SBROCCO2012.bib"
+        "bibtex": "bibtex/SBROCCO2012.bib",
+        "isbn": [
+          "9788536503981"
+        ]
       },
       {
         "titulo": "Engenharia de software",
@@ -2942,7 +3587,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 16,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7688",
-        "bibtex": "bibtex/SOMMERVILLE2007.bib"
+        "bibtex": "bibtex/SOMMERVILLE2007.bib",
+        "isbn": [
+          "9788588639287"
+        ]
       }
     ]
   },
@@ -2960,7 +3608,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6259",
-        "bibtex": "bibtex/CERVO2007.bib"
+        "bibtex": "bibtex/CERVO2007.bib",
+        "isbn": [
+          "9788576050476"
+        ]
       },
       {
         "titulo": "Como elaborar projetos de pesquisa",
@@ -2973,7 +3624,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 14,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3238",
-        "bibtex": "bibtex/GIL2010.bib"
+        "bibtex": "bibtex/GIL2010.bib",
+        "isbn": [
+          "9788522458233"
+        ]
       },
       {
         "titulo": "Como elaborar projetos de pesquisa",
@@ -2986,7 +3640,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 23,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9678",
-        "bibtex": "bibtex/GIL2017.bib"
+        "bibtex": "bibtex/GIL2017.bib",
+        "isbn": [
+          "9788597012613"
+        ]
       },
       {
         "titulo": "Metodologia do trabalho científico",
@@ -2999,7 +3656,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=593",
-        "bibtex": "bibtex/SEVERINO2007.bib"
+        "bibtex": "bibtex/SEVERINO2007.bib",
+        "isbn": [
+          "9788524913112"
+        ]
       },
       {
         "titulo": "Como escrever artigos científicos",
@@ -3012,7 +3672,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2736",
-        "bibtex": "bibtex/AQUINO2012.bib"
+        "bibtex": "bibtex/AQUINO2012.bib",
+        "isbn": [
+          "9788502160996"
+        ]
       },
       {
         "titulo": "Estatística",
@@ -3025,7 +3688,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17276",
-        "bibtex": "bibtex/BARBETTA2008.bib"
+        "bibtex": "bibtex/BARBETTA2008.bib",
+        "isbn": [
+          "9788522449897"
+        ]
       },
       {
         "titulo": "Redação científica moderna",
@@ -3038,7 +3704,10 @@
         "situacao": "Disponível",
         "disponiveis": 1,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7072",
-        "bibtex": "bibtex/REIZ2013.bib"
+        "bibtex": "bibtex/REIZ2013.bib",
+        "isbn": [
+          "9788566442007"
+        ]
       }
     ]
   },
@@ -3056,7 +3725,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=28892",
-        "bibtex": "bibtex/LECHETA2018.bib"
+        "bibtex": "bibtex/LECHETA2018.bib",
+        "isbn": [
+          "9788575226896"
+        ]
       },
       {
         "titulo": "Desenvolvendo para iphone e ipad",
@@ -3069,7 +3741,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=29301",
-        "bibtex": "bibtex/LECHETA2018.bib"
+        "bibtex": "bibtex/LECHETA2018.bib",
+        "isbn": [
+          "9788575226902"
+        ]
       },
       {
         "titulo": "Java : como programar",
@@ -3082,7 +3757,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1079",
-        "bibtex": "bibtex/DEITEL2010.bib"
+        "bibtex": "bibtex/DEITEL2010.bib",
+        "isbn": [
+          "9788576055631"
+        ]
       },
       {
         "titulo": "Java: como programar",
@@ -3095,7 +3773,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6135",
-        "bibtex": "bibtex/DEITEL2017.bib"
+        "bibtex": "bibtex/DEITEL2017.bib",
+        "isbn": [
+          "9788543004792"
+        ]
       },
       {
         "titulo": "Google Android",
@@ -3108,7 +3789,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5160",
-        "bibtex": "bibtex/LECHETA2015.bib"
+        "bibtex": "bibtex/LECHETA2015.bib",
+        "isbn": [
+          "9788575224687"
+        ]
       }
     ]
   },
@@ -3126,7 +3810,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 0,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1030",
-        "bibtex": "bibtex/TANENBAUM2011.bib"
+        "bibtex": "bibtex/TANENBAUM2011.bib",
+        "isbn": [
+          "9788576059240"
+        ]
       }
     ]
   },
@@ -3144,7 +3831,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9808",
-        "bibtex": "bibtex/FACELI2011.bib"
+        "bibtex": "bibtex/FACELI2011.bib",
+        "isbn": [
+          "9788521618805"
+        ]
       },
       {
         "titulo": "Inteligência artificial",
@@ -3157,7 +3847,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=4070",
-        "bibtex": "bibtex/RUSSEL2013.bib"
+        "bibtex": "bibtex/RUSSEL2013.bib",
+        "isbn": [
+          "9788535237016",
+          "8535237011"
+        ]
       }
     ]
   },
@@ -3175,7 +3869,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=28050",
-        "bibtex": "bibtex/KOLLER2014.bib"
+        "bibtex": "bibtex/KOLLER2014.bib",
+        "isbn": [
+          "9788565848916"
+        ]
       },
       {
         "titulo": "Princípios de análise e projeto de sistemas com UML",
@@ -3188,7 +3885,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6321",
-        "bibtex": "bibtex/BEZERRA2015.bib"
+        "bibtex": "bibtex/BEZERRA2015.bib",
+        "isbn": [
+          "9788535226263"
+        ]
       },
       {
         "titulo": "Fundamentos de metodologia científica",
@@ -3201,7 +3901,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2358",
-        "bibtex": "bibtex/MARCONI2010.bib"
+        "bibtex": "bibtex/MARCONI2010.bib",
+        "isbn": [
+          "9788522457588"
+        ]
       }
     ]
   },
@@ -3219,7 +3922,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1169",
-        "bibtex": "bibtex/PRESSMAN2011.bib"
+        "bibtex": "bibtex/PRESSMAN2011.bib",
+        "isbn": [
+          "9788563308337"
+        ]
       },
       {
         "titulo": "Engenharia de software",
@@ -3232,7 +3938,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 16,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7688",
-        "bibtex": "bibtex/SOMMERVILLE2007.bib"
+        "bibtex": "bibtex/SOMMERVILLE2007.bib",
+        "isbn": [
+          "9788588639287"
+        ]
       },
       {
         "titulo": "Um guia do conhecimento em gerenciamento de projetos (guia PMBOK)",
@@ -3245,7 +3954,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=11362",
-        "bibtex": "bibtex/G2008.bib"
+        "bibtex": "bibtex/G2008.bib",
+        "isbn": [
+          "9781933890708"
+        ]
       },
       {
         "titulo": "Scrum : a arte de fazer o dobro do trabalho na metade do tempo",
@@ -3258,7 +3970,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=29017",
-        "bibtex": "bibtex/SUTHERLAND2019.bib"
+        "bibtex": "bibtex/SUTHERLAND2019.bib",
+        "isbn": [
+          "9788543107165"
+        ]
       },
       {
         "titulo": "Criando a cultura Lean Seis Sigma",
@@ -3271,7 +3986,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=11152",
-        "bibtex": "bibtex/WERKEMA2012.bib"
+        "bibtex": "bibtex/WERKEMA2012.bib",
+        "isbn": [
+          "9788535254259"
+        ]
       }
     ]
   },
@@ -3289,7 +4007,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3409",
-        "bibtex": "bibtex/BURKE2007.bib"
+        "bibtex": "bibtex/BURKE2007.bib",
+        "isbn": [
+          "9788576051268"
+        ]
       },
       {
         "titulo": "Web Services SOAP em java",
@@ -3302,7 +4023,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8789",
-        "bibtex": "bibtex/GOMES2010.bib"
+        "bibtex": "bibtex/GOMES2010.bib",
+        "isbn": [
+          "9788575222188"
+        ]
       },
       {
         "titulo": "RESTful",
@@ -3315,7 +4039,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=4634",
-        "bibtex": "bibtex/RICHARDSON2007.bib"
+        "bibtex": "bibtex/RICHARDSON2007.bib",
+        "isbn": [
+          "9788576081715"
+        ]
       },
       {
         "titulo": "Fundamentos de sistemas operacionais",
@@ -3328,7 +4055,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9355",
-        "bibtex": "bibtex/SILBERSCHATZ2010.bib"
+        "bibtex": "bibtex/SILBERSCHATZ2010.bib",
+        "isbn": [
+          "9788521617471"
+        ]
       },
       {
         "titulo": "Sistemas operacionais : projeto e implementação",
@@ -3341,7 +4071,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3648",
-        "bibtex": "bibtex/TANENBAUM2008.bib"
+        "bibtex": "bibtex/TANENBAUM2008.bib",
+        "isbn": [
+          "9788577800575"
+        ]
       }
     ]
   },
@@ -3359,7 +4092,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2762",
-        "bibtex": "bibtex/CHIAVENATO2012.bib"
+        "bibtex": "bibtex/CHIAVENATO2012.bib",
+        "isbn": [
+          "9788520432778"
+        ]
       },
       {
         "titulo": "Empreendedorismo : transformando ideias em negócios",
@@ -3372,7 +4108,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10609",
-        "bibtex": "bibtex/DORNELAS2014.bib"
+        "bibtex": "bibtex/DORNELAS2014.bib",
+        "isbn": [
+          "9788521624974"
+        ]
       },
       {
         "titulo": "Gestão da inovação e empreendedorismo",
@@ -3385,7 +4124,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10436",
-        "bibtex": "bibtex/PORTO2013.bib"
+        "bibtex": "bibtex/PORTO2013.bib",
+        "isbn": [
+          "9788535272741"
+        ]
       },
       {
         "titulo": "Inovação e empreendedorismo",
@@ -3398,7 +4140,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10328",
-        "bibtex": "bibtex/BESSANT2009.bib"
+        "bibtex": "bibtex/BESSANT2009.bib",
+        "isbn": [
+          "9788577804818"
+        ]
       },
       {
         "titulo": "Empreendedorismo",
@@ -3411,7 +4156,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9223",
-        "bibtex": "bibtex/CAVALCANTI2012.bib"
+        "bibtex": "bibtex/CAVALCANTI2012.bib",
+        "isbn": [
+          "9788535252132"
+        ]
       },
       {
         "titulo": "O segredo de Luísa",
@@ -3424,7 +4172,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=4425",
-        "bibtex": "bibtex/DOLABELA1999.bib"
+        "bibtex": "bibtex/DOLABELA1999.bib",
+        "isbn": [
+          "8529300459"
+        ]
       },
       {
         "titulo": "Criação de novos negócios : empreendedorismo para o século XXI",
@@ -3437,7 +4188,8 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10623",
-        "bibtex": "bibtex/DORNELAS2014.bib"
+        "bibtex": "bibtex/DORNELAS2014.bib",
+        "isbn": []
       },
       {
         "titulo": "Inovação e espírito empreendedor (entrepreneurship) : prática e príncipios",
@@ -3450,7 +4202,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10644",
-        "bibtex": "bibtex/DRUCKER1986.bib"
+        "bibtex": "bibtex/DRUCKER1986.bib",
+        "isbn": [
+          "9788522108595"
+        ]
       },
       {
         "titulo": "Inovação e espírito empreendedor (entrepreneurship) : prática e príncipios",
@@ -3463,7 +4218,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10650",
-        "bibtex": "bibtex/DRUCKER2000.bib"
+        "bibtex": "bibtex/DRUCKER2000.bib",
+        "isbn": [
+          "8522100853"
+        ]
       },
       {
         "titulo": "Inovação e espírito empreendedor (entrepreneurship) : prática e príncipios",
@@ -3476,7 +4234,11 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10629",
-        "bibtex": "bibtex/DRUCKER1986.bib"
+        "bibtex": "bibtex/DRUCKER1986.bib",
+        "isbn": [
+          "8522108595",
+          "9788522108596"
+        ]
       },
       {
         "titulo": "Empreendedorismo",
@@ -3489,7 +4251,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10577",
-        "bibtex": "bibtex/HISRICH2014.bib"
+        "bibtex": "bibtex/HISRICH2014.bib",
+        "isbn": [
+          "9788580553321"
+        ]
       }
     ]
   },
@@ -3507,7 +4272,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3317",
-        "bibtex": "bibtex/ANDRADE2010.bib"
+        "bibtex": "bibtex/ANDRADE2010.bib",
+        "isbn": [
+          "9788522458561"
+        ]
       },
       {
         "titulo": "Fundamentos de metodologia científica : teoria da ciência e iniciação à pesquisa",
@@ -3520,7 +4288,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=243",
-        "bibtex": "bibtex/KÖCHE2015.bib"
+        "bibtex": "bibtex/KÖCHE2015.bib",
+        "isbn": [
+          "9788532618047"
+        ]
       },
       {
         "titulo": "Fundamentos de metodologia científica",
@@ -3533,7 +4304,10 @@
         "situacao": "Disponível",
         "disponiveis": 1,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6965",
-        "bibtex": "bibtex/LAKATOS1991.bib"
+        "bibtex": "bibtex/LAKATOS1991.bib",
+        "isbn": [
+          "8522407142"
+        ]
       },
       {
         "titulo": "Fundamentos da metodologia científica",
@@ -3546,7 +4320,10 @@
         "situacao": "Disponível",
         "disponiveis": 1,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=24483",
-        "bibtex": "bibtex/MARCONI2003.bib"
+        "bibtex": "bibtex/MARCONI2003.bib",
+        "isbn": [
+          "8522433976"
+        ]
       },
       {
         "titulo": "Fundamentos da metodologia científica",
@@ -3559,7 +4336,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3240",
-        "bibtex": "bibtex/MARCONI2005.bib"
+        "bibtex": "bibtex/MARCONI2005.bib",
+        "isbn": [
+          "9788522440153"
+        ]
       },
       {
         "titulo": "Fundamentos de metodologia científica",
@@ -3572,7 +4352,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2358",
-        "bibtex": "bibtex/MARCONI2010.bib"
+        "bibtex": "bibtex/MARCONI2010.bib",
+        "isbn": [
+          "9788522457588"
+        ]
       },
       {
         "titulo": "Fundamentos de metodologia científica",
@@ -3585,7 +4368,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7326",
-        "bibtex": "bibtex/MARCONI2017.bib"
+        "bibtex": "bibtex/MARCONI2017.bib",
+        "isbn": [
+          "9788597010121"
+        ]
       },
       {
         "titulo": "Metodologia da pesquisa científica",
@@ -3598,7 +4384,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3244",
-        "bibtex": "bibtex/OLIVEIRANETTO2008.bib"
+        "bibtex": "bibtex/OLIVEIRANETTO2008.bib",
+        "isbn": [
+          "9788575022337"
+        ]
       }
     ]
   },
@@ -3616,7 +4405,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 15,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2166",
-        "bibtex": "bibtex/ANTON2014.bib"
+        "bibtex": "bibtex/ANTON2014.bib",
+        "isbn": [
+          "9788582602256"
+        ]
       },
       {
         "titulo": "Cálculo, volume II",
@@ -3629,7 +4421,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 15,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17051",
-        "bibtex": "bibtex/ANTON2014.bib"
+        "bibtex": "bibtex/ANTON2014.bib",
+        "isbn": [
+          "9788582602454"
+        ]
       },
       {
         "titulo": "Cálculo, volume I",
@@ -3642,7 +4437,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 8,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=345",
-        "bibtex": "bibtex/ANTON2007.bib"
+        "bibtex": "bibtex/ANTON2007.bib",
+        "isbn": [
+          "8560031634"
+        ]
       },
       {
         "titulo": "Cálculo, volume II",
@@ -3655,7 +4453,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 8,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1735",
-        "bibtex": "bibtex/ANTON2007.bib"
+        "bibtex": "bibtex/ANTON2007.bib",
+        "isbn": [
+          "9788560031801"
+        ]
       },
       {
         "titulo": "Cálculo, volume 1",
@@ -3668,7 +4469,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 20,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2100",
-        "bibtex": "bibtex/STEWART2013.bib"
+        "bibtex": "bibtex/STEWART2013.bib",
+        "isbn": [
+          "9788522112586"
+        ]
       },
       {
         "titulo": "Cálculo, volume 2",
@@ -3681,7 +4485,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 20,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1591",
-        "bibtex": "bibtex/STEWART2013.bib"
+        "bibtex": "bibtex/STEWART2013.bib",
+        "isbn": [
+          "9788522112593"
+        ]
       },
       {
         "titulo": "Cálculo [de] George B. Thomas, volume 1",
@@ -3694,7 +4501,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 15,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17086",
-        "bibtex": "bibtex/THOMAS2002.bib"
+        "bibtex": "bibtex/THOMAS2002.bib",
+        "isbn": [
+          "8588639068"
+        ]
       },
       {
         "titulo": "Cálculo [de] George B. Thomas, volume 2",
@@ -3707,7 +4517,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 19,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17081",
-        "bibtex": "bibtex/THOMAS2003.bib"
+        "bibtex": "bibtex/THOMAS2003.bib",
+        "isbn": [
+          "8588639114"
+        ]
       },
       {
         "titulo": "Cálculo",
@@ -3720,7 +4533,10 @@
         "situacao": "Disponível",
         "disponiveis": 12,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17087",
-        "bibtex": "bibtex/AYRES2013.bib"
+        "bibtex": "bibtex/AYRES2013.bib",
+        "isbn": [
+          "9788565837156"
+        ]
       },
       {
         "titulo": "Cálculo A : funções, limite, derivação e integração",
@@ -3733,7 +4549,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 17,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=266",
-        "bibtex": "bibtex/FLEMMING2006.bib"
+        "bibtex": "bibtex/FLEMMING2006.bib",
+        "isbn": [
+          "9788576051152",
+          "857605115X"
+        ]
       },
       {
         "titulo": "Cálculo B",
@@ -3746,7 +4566,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 16,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=630",
-        "bibtex": "bibtex/GONÇALVES2007.bib"
+        "bibtex": "bibtex/GONÇALVES2007.bib",
+        "isbn": [
+          "9788576051169"
+        ]
       },
       {
         "titulo": "Um curso de cálculo, volume 4",
@@ -3759,7 +4582,10 @@
         "situacao": "Emprestado",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=24680",
-        "bibtex": "bibtex/GUIDORIZZI2019.bib"
+        "bibtex": "bibtex/GUIDORIZZI2019.bib",
+        "isbn": [
+          "9788521635468"
+        ]
       },
       {
         "titulo": "Um curso de cálculo, volume 4",
@@ -3772,7 +4598,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=4913",
-        "bibtex": "bibtex/GUIDORIZZI2002.bib"
+        "bibtex": "bibtex/GUIDORIZZI2002.bib",
+        "isbn": [
+          "9788521613305"
+        ]
       },
       {
         "titulo": "Cálculo a uma e a várias variáveis, volume 1",
@@ -3785,7 +4614,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=4877",
-        "bibtex": "bibtex/HUGHESHALLETT2011.bib"
+        "bibtex": "bibtex/HUGHESHALLETT2011.bib",
+        "isbn": [
+          "9788521618058"
+        ]
       },
       {
         "titulo": "Cálculo",
@@ -3798,7 +4630,10 @@
         "situacao": "Disponível",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17085",
-        "bibtex": "bibtex/LARSON2006.bib"
+        "bibtex": "bibtex/LARSON2006.bib",
+        "isbn": [
+          "8586804568"
+        ]
       },
       {
         "titulo": "Cálculo, volume 1",
@@ -3811,7 +4646,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 10,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17137",
-        "bibtex": "bibtex/ROGAWSKI2009.bib"
+        "bibtex": "bibtex/ROGAWSKI2009.bib",
+        "isbn": [
+          "9788577802708"
+        ]
       },
       {
         "titulo": "Cálculo, volume 2",
@@ -3824,7 +4662,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 10,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17138",
-        "bibtex": "bibtex/ROGAWSKI2009.bib"
+        "bibtex": "bibtex/ROGAWSKI2009.bib",
+        "isbn": [
+          "9788577802715"
+        ]
       }
     ]
   },
@@ -3842,7 +4683,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=13999",
-        "bibtex": "bibtex/SOUZA2005.bib"
+        "bibtex": "bibtex/SOUZA2005.bib",
+        "isbn": [
+          "9788522440382"
+        ]
       },
       {
         "titulo": "Introdução à economia",
@@ -3855,7 +4699,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 17,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5714",
-        "bibtex": "bibtex/ROSSETTI2003.bib"
+        "bibtex": "bibtex/ROSSETTI2003.bib",
+        "isbn": [
+          "9788522434671"
+        ]
       },
       {
         "titulo": "Economia para administradores",
@@ -3868,7 +4715,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=13105",
-        "bibtex": "bibtex/OLIVEIRA2005.bib"
+        "bibtex": "bibtex/OLIVEIRA2005.bib",
+        "isbn": [
+          "9788502052031",
+          "8502052039"
+        ]
       },
       {
         "titulo": "Estado e economia no Brasil : opções de desenvolvimento",
@@ -3881,7 +4732,8 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5747",
-        "bibtex": "bibtex/MENDONÇA0000.bib"
+        "bibtex": "bibtex/MENDONÇA0000.bib",
+        "isbn": []
       },
       {
         "titulo": "O Capitalismo Global",
@@ -3894,7 +4746,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5782",
-        "bibtex": "bibtex/FURTADO2007.bib"
+        "bibtex": "bibtex/FURTADO2007.bib",
+        "isbn": [
+          "9788577530298"
+        ]
       },
       {
         "titulo": "Manual de macroeconomia : nível básico e nível intermediário",
@@ -3907,7 +4762,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5792",
-        "bibtex": "bibtex/LOPES2008.bib"
+        "bibtex": "bibtex/LOPES2008.bib",
+        "isbn": [
+          "9788522450572"
+        ]
       },
       {
         "titulo": "Economia",
@@ -3920,7 +4778,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=13119",
-        "bibtex": "bibtex/WONNACOTT2003.bib"
+        "bibtex": "bibtex/WONNACOTT2003.bib",
+        "isbn": [
+          "8534601496"
+        ]
       }
     ]
   },
@@ -3938,7 +4799,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=11362",
-        "bibtex": "bibtex/G2008.bib"
+        "bibtex": "bibtex/G2008.bib",
+        "isbn": [
+          "9781933890708"
+        ]
       },
       {
         "titulo": "Gerenciamento de projetos",
@@ -3951,7 +4815,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 4,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=11198",
-        "bibtex": "bibtex/KERZNER2011.bib"
+        "bibtex": "bibtex/KERZNER2011.bib",
+        "isbn": [
+          "9788521206033"
+        ]
       },
       {
         "titulo": "Manual prático do plano de projeto",
@@ -3964,7 +4831,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5411",
-        "bibtex": "bibtex/VARGAS2014.bib"
+        "bibtex": "bibtex/VARGAS2014.bib",
+        "isbn": [
+          "9788574526805"
+        ]
       },
       {
         "titulo": "Manual prático do plano de projeto : utilizando o PMBOK",
@@ -3977,7 +4847,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 8,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5406",
-        "bibtex": "bibtex/VARGAS2009.bib"
+        "bibtex": "bibtex/VARGAS2009.bib",
+        "isbn": [
+          "9788574524306"
+        ]
       }
     ]
   },
@@ -3995,7 +4868,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5354",
-        "bibtex": "bibtex/ELMASRI2005.bib"
+        "bibtex": "bibtex/ELMASRI2005.bib",
+        "isbn": [
+          "8588639173"
+        ]
       },
       {
         "titulo": "Sistemas de banco de dados",
@@ -4008,7 +4884,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=21905",
-        "bibtex": "bibtex/ELMASRI2018.bib"
+        "bibtex": "bibtex/ELMASRI2018.bib",
+        "isbn": [
+          "9788543025001"
+        ]
       }
     ]
   },
@@ -4026,7 +4905,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=21135",
-        "bibtex": "bibtex/LODI2014.bib"
+        "bibtex": "bibtex/LODI2014.bib",
+        "isbn": [
+          "9788587063649"
+        ]
       }
     ]
   },
@@ -4044,7 +4926,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9383",
-        "bibtex": "bibtex/HAN2001.bib"
+        "bibtex": "bibtex/HAN2001.bib",
+        "isbn": [
+          "1558604898"
+        ]
       }
     ]
   },
@@ -4062,7 +4947,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9341",
-        "bibtex": "bibtex/NEVES2008.bib"
+        "bibtex": "bibtex/NEVES2008.bib",
+        "isbn": [
+          "9788574523453"
+        ]
       },
       {
         "titulo": "Linux",
@@ -4075,7 +4963,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 13,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=513",
-        "bibtex": "bibtex/FERREIRA2008.bib"
+        "bibtex": "bibtex/FERREIRA2008.bib",
+        "isbn": [
+          "9788575221778"
+        ]
       },
       {
         "titulo": "Linux",
@@ -4088,7 +4979,8 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6925",
-        "bibtex": "bibtex/FERREIRA2003.bib"
+        "bibtex": "bibtex/FERREIRA2003.bib",
+        "isbn": []
       },
       {
         "titulo": "Shell Script Profissional",
@@ -4101,7 +4993,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8864",
-        "bibtex": "bibtex/JARGAS2008.bib"
+        "bibtex": "bibtex/JARGAS2008.bib",
+        "isbn": [
+          "9788575221525"
+        ]
       },
       {
         "titulo": "Scripts de shell linux com bash",
@@ -4114,7 +5009,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9081",
-        "bibtex": "bibtex/BURTCH2005.bib"
+        "bibtex": "bibtex/BURTCH2005.bib",
+        "isbn": [
+          "8573934050"
+        ]
       },
       {
         "titulo": "Descobrindo o Linux",
@@ -4127,7 +5025,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1547",
-        "bibtex": "bibtex/MOTAFILHO2012.bib"
+        "bibtex": "bibtex/MOTAFILHO2012.bib",
+        "isbn": [
+          "9788575222782"
+        ]
       },
       {
         "titulo": "Como o linux funciona : o que todo superusuário deveria saber",
@@ -4140,7 +5041,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9342",
-        "bibtex": "bibtex/WARD2015.bib"
+        "bibtex": "bibtex/WARD2015.bib",
+        "isbn": [
+          "9788575224199"
+        ]
       }
     ]
   },
@@ -4158,7 +5062,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 14,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2098",
-        "bibtex": "bibtex/CORMEN2012.bib"
+        "bibtex": "bibtex/CORMEN2012.bib",
+        "isbn": [
+          "9788535236996"
+        ]
       },
       {
         "titulo": "Estruturas de dados : algoritmos, análise da complexidade e implementações em JAVA e C/C++",
@@ -4171,7 +5078,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3712",
-        "bibtex": "bibtex/ASCENCIO2010.bib"
+        "bibtex": "bibtex/ASCENCIO2010.bib",
+        "isbn": [
+          "9788576058816"
+        ]
       },
       {
         "titulo": "Introdução a estruturas de dados",
@@ -4184,7 +5094,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=531",
-        "bibtex": "bibtex/CELES2004.bib"
+        "bibtex": "bibtex/CELES2004.bib",
+        "isbn": [
+          "8535212280"
+        ]
       },
       {
         "titulo": "Estruturas de dados e seus algoritmos",
@@ -4197,7 +5110,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=3061",
-        "bibtex": "bibtex/SZWARCFITER2010.bib"
+        "bibtex": "bibtex/SZWARCFITER2010.bib",
+        "isbn": [
+          "9788521617501"
+        ]
       },
       {
         "titulo": "Algoritmos",
@@ -4210,7 +5126,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8700",
-        "bibtex": "bibtex/MANZANO2014.bib"
+        "bibtex": "bibtex/MANZANO2014.bib",
+        "isbn": [
+          "9788536502212"
+        ]
       },
       {
         "titulo": "Algoritmos",
@@ -4223,7 +5142,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=24685",
-        "bibtex": "bibtex/MANZANO2012.bib"
+        "bibtex": "bibtex/MANZANO2012.bib",
+        "isbn": [
+          "9788536502212"
+        ]
       },
       {
         "titulo": "Lógica para computação",
@@ -4236,7 +5158,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=19595",
-        "bibtex": "bibtex/SILVA2018.bib"
+        "bibtex": "bibtex/SILVA2018.bib",
+        "isbn": [
+          "9788522127184"
+        ]
       },
       {
         "titulo": "Lógica para ciência da computação e áreas afins",
@@ -4249,7 +5174,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17215",
-        "bibtex": "bibtex/SOUZA2015.bib"
+        "bibtex": "bibtex/SOUZA2015.bib",
+        "isbn": [
+          "9788535278248"
+        ]
       }
     ]
   },
@@ -4267,7 +5195,10 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=8929",
-        "bibtex": "bibtex/HOPCROFT2003.bib"
+        "bibtex": "bibtex/HOPCROFT2003.bib",
+        "isbn": [
+          "9788535210729"
+        ]
       }
     ]
   },
@@ -4285,7 +5216,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9808",
-        "bibtex": "bibtex/FACELI2011.bib"
+        "bibtex": "bibtex/FACELI2011.bib",
+        "isbn": [
+          "9788521618805"
+        ]
       },
       {
         "titulo": "Inteligência artificial",
@@ -4298,7 +5232,11 @@
         "situacao": "Apenas consulta",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=4070",
-        "bibtex": "bibtex/RUSSEL2013.bib"
+        "bibtex": "bibtex/RUSSEL2013.bib",
+        "isbn": [
+          "9788535237016",
+          "8535237011"
+        ]
       }
     ]
   },
@@ -4316,7 +5254,10 @@
         "situacao": "Apenas consulta",
         "disponiveis": 6,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7081",
-        "bibtex": "bibtex/VERAS2011.bib"
+        "bibtex": "bibtex/VERAS2011.bib",
+        "isbn": [
+          "9788574524672"
+        ]
       }
     ]
   }

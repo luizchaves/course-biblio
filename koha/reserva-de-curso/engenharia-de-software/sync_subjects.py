@@ -2,6 +2,7 @@
 """
 Fetch course reserves from Koha for each discipline in reservas.json,
 update subjects.json, and download missing bibtex files.
+ISBNs are extracted from each book's opac-detail page.
 """
 
 import json
@@ -19,6 +20,9 @@ KOHA_BASE = "https://biblioteca.ifpb.edu.br/cgi-bin/koha/"
 # Runtime maps: bib (str) ↔ key (str), built at startup and updated as we go
 _bib_to_key: dict[str, str] = {}
 _key_to_bib: dict[str, str] = {}
+
+# Cache: url → isbn list, populated from existing subjects.json at startup
+_isbn_cache: dict[str, list[str]] = {}
 
 
 def fetch(url: str) -> str:
@@ -81,11 +85,56 @@ def assign_key(base_key: str, bib: str) -> str:
     return base_key  # should never reach here
 
 
+def extract_isbns(html: str) -> list[str]:
+    """Extract ISBNs from a Koha opac-detail page.
+
+    Primary source: <span property="isbn">VALUE</span>
+    Fallback:       data-isbn="VALUE" attribute on the cover slider div.
+    """
+    found = []
+
+    for m in re.finditer(r'<span\s+property="isbn">([^<]+)</span>', html, re.IGNORECASE):
+        raw = re.sub(r"[\s\-]", "", m.group(1))
+        digits = re.sub(r"[^0-9X]", "", raw.upper())
+        if len(digits) in (10, 13):
+            found.append(digits)
+
+    if not found:
+        m = re.search(r'data-isbn="([^"]+)"', html)
+        if m:
+            raw = re.sub(r"[\s\-]", "", m.group(1))
+            digits = re.sub(r"[^0-9X]", "", raw.upper())
+            if len(digits) in (10, 13):
+                found.append(digits)
+
+    return list(dict.fromkeys(found))
+
+
+def fetch_isbn(url: str) -> list[str]:
+    """Fetch a book detail page and return its ISBN list (cached)."""
+    if url in _isbn_cache:
+        return _isbn_cache[url]
+    try:
+        html = fetch(url)
+        isbns = extract_isbns(html)
+    except Exception as e:
+        print(f"    WARNING: ISBN fetch failed for {url}: {e}")
+        isbns = []
+    _isbn_cache[url] = isbns
+    return isbns
+
+
 def build_initial_maps(subjects: list[dict]) -> None:
-    """Populate _bib_to_key/_key_to_bib from subjects.json, skipping year-only keys."""
+    """Populate _bib_to_key/_key_to_bib and _isbn_cache from subjects.json."""
     for s in subjects:
         for r in s.get("reservas", []):
-            bib_m = re.search(r"biblionumber=(\d+)", r.get("url", ""))
+            # ISBN cache
+            url = r.get("url", "")
+            if url and "isbn" in r:
+                _isbn_cache[url] = r["isbn"]
+
+            # BibTeX key map
+            bib_m = re.search(r"biblionumber=(\d+)", url)
             bibtex_path = r.get("bibtex", "")
             if not (bib_m and bibtex_path):
                 continue
@@ -217,9 +266,10 @@ def main():
     reservas = json.loads(RESERVAS_FILE.read_text(encoding="utf-8"))
     subjects = json.loads(SUBJECTS_FILE.read_text(encoding="utf-8"))
 
-    print("Building bib↔key map from existing data…")
+    print("Building bib↔key map and ISBN cache from existing data…")
     build_initial_maps(subjects)
-    print(f"  {len(_bib_to_key)} existing valid bibtex entries loaded\n")
+    print(f"  {len(_bib_to_key)} existing valid bibtex entries loaded")
+    print(f"  {len(_isbn_cache)} existing ISBN entries cached\n")
 
     existing = {s["disciplina"]: s for s in subjects}
 
@@ -263,6 +313,16 @@ def main():
                     print(f"    Saved {result}")
                 else:
                     print(f"    WARNING: no bibtex for {entry['titulo']}")
+
+            # ISBN — use cache when available, otherwise fetch detail page
+            cached = entry["url"] in _isbn_cache
+            isbns = fetch_isbn(entry["url"])
+            entry["isbn"] = isbns
+            if cached:
+                print(f"    isbn (cached): {isbns or '—'}")
+            else:
+                print(f"    isbn: {isbns or '—'}")
+                time.sleep(0.3)
 
             reserve_list.append(entry)
             time.sleep(0.3)
