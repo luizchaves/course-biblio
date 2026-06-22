@@ -1,128 +1,5 @@
 [
   {
-    "disciplina": "Álgebra Linear",
-    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1931",
-    "instrutores": [
-      "Flavio Alves de Albuquerque"
-    ],
-    "notas": "03 Semestre",
-    "reservas": [
-      {
-        "titulo": "Álgebra linear",
-        "autor": "Lipschutz, Seymour",
-        "tipoExemplar": "Livro impresso",
-        "local": "Biblioteca João Pessoa Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "512.64 L767a 2011 4.ed.",
-        "exemplar": "ex. 1",
-        "situacao": "Apenas consulta",
-        "disponiveis": 8,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2094",
-        "bibtex": "bibtex/LIPSCHUTZ2011.bib",
-        "isbn": [
-          "9788577808335"
-        ]
-      },
-      {
-        "titulo": "Álgebra linear",
-        "autor": "Poole, David",
-        "tipoExemplar": "Livro impresso",
-        "local": "Biblioteca João Pessoa Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "512.64 P822a c2004",
-        "exemplar": "ex. 1",
-        "situacao": "Apenas consulta",
-        "disponiveis": 10,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17206",
-        "bibtex": "bibtex/POOLE2004.bib",
-        "isbn": [
-          "9788522103591"
-        ]
-      },
-      {
-        "titulo": "Álgebra linear",
-        "autor": "Steinbruch, Alfredo",
-        "tipoExemplar": "Livro impresso",
-        "local": "Biblioteca João Pessoa Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "512.64 S819a 1987 2.ed.",
-        "exemplar": "ex. 1",
-        "situacao": "Apenas consulta",
-        "disponiveis": 19,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2106",
-        "bibtex": "bibtex/STEINBRUCH1987.bib",
-        "isbn": [
-          "9780074504123",
-          "0074504126"
-        ]
-      },
-      {
-        "titulo": "Álgebra linear com aplicações",
-        "autor": "Anton, Howard",
-        "tipoExemplar": "Livro impresso",
-        "local": "Biblioteca João Pessoa Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "512.64 A634a 2012 10.ed.",
-        "exemplar": "ex. 1",
-        "situacao": "Apenas consulta",
-        "disponiveis": 5,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1082",
-        "bibtex": "bibtex/ANTON2012.bib",
-        "isbn": [
-          "9788540701694"
-        ]
-      },
-      {
-        "titulo": "Álgebra linear",
-        "autor": "Nicholson, W. Keith",
-        "tipoExemplar": "Livro impresso",
-        "local": "Biblioteca João Pessoa Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "512.64 N629a 2006 2.ed.",
-        "exemplar": "ex. 1",
-        "situacao": "Apenas consulta",
-        "disponiveis": 14,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17212",
-        "bibtex": "bibtex/NICHOLSON2006.bib",
-        "isbn": [
-          "8586804924"
-        ]
-      },
-      {
-        "titulo": "Álgebra linear",
-        "autor": "Shifrin, Theodore",
-        "tipoExemplar": "Livro impresso",
-        "local": "Biblioteca João Pessoa Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "512.64 S555a 2013 2.ed.",
-        "exemplar": "ex. 1",
-        "situacao": "Apenas consulta",
-        "disponiveis": 3,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17210",
-        "bibtex": "bibtex/SHIFRIN2013.bib",
-        "isbn": [
-          "9788521622147"
-        ]
-      },
-      {
-        "titulo": "Álgebra linear e suas aplicações",
-        "autor": "Strang, Gilbert",
-        "tipoExemplar": "Livro impresso",
-        "local": "Biblioteca João Pessoa Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "512.64 S897a c2010",
-        "exemplar": "ex. 1",
-        "situacao": "Apenas consulta",
-        "disponiveis": 15,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17203",
-        "bibtex": "bibtex/STRANG2010.bib",
-        "isbn": [
-          "9788522107445"
-        ]
-      }
-    ]
-  },
-  {
     "disciplina": "Arquitetura e organização de computadores",
     "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1915",
     "instrutores": [
@@ -1754,6 +1631,129 @@
     ]
   },
   {
+    "disciplina": "Álgebra Linear",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1931",
+    "instrutores": [
+      "Flavio Alves de Albuquerque"
+    ],
+    "notas": "03 Semestre",
+    "reservas": [
+      {
+        "titulo": "Álgebra linear",
+        "autor": "Lipschutz, Seymour",
+        "tipoExemplar": "Livro impresso",
+        "local": "Biblioteca João Pessoa Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "512.64 L767a 2011 4.ed.",
+        "exemplar": "ex. 1",
+        "situacao": "Apenas consulta",
+        "disponiveis": 8,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2094",
+        "bibtex": "bibtex/LIPSCHUTZ2011.bib",
+        "isbn": [
+          "9788577808335"
+        ]
+      },
+      {
+        "titulo": "Álgebra linear",
+        "autor": "Poole, David",
+        "tipoExemplar": "Livro impresso",
+        "local": "Biblioteca João Pessoa Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "512.64 P822a c2004",
+        "exemplar": "ex. 1",
+        "situacao": "Apenas consulta",
+        "disponiveis": 10,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17206",
+        "bibtex": "bibtex/POOLE2004.bib",
+        "isbn": [
+          "9788522103591"
+        ]
+      },
+      {
+        "titulo": "Álgebra linear",
+        "autor": "Steinbruch, Alfredo",
+        "tipoExemplar": "Livro impresso",
+        "local": "Biblioteca João Pessoa Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "512.64 S819a 1987 2.ed.",
+        "exemplar": "ex. 1",
+        "situacao": "Apenas consulta",
+        "disponiveis": 19,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2106",
+        "bibtex": "bibtex/STEINBRUCH1987.bib",
+        "isbn": [
+          "9780074504123",
+          "0074504126"
+        ]
+      },
+      {
+        "titulo": "Álgebra linear com aplicações",
+        "autor": "Anton, Howard",
+        "tipoExemplar": "Livro impresso",
+        "local": "Biblioteca João Pessoa Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "512.64 A634a 2012 10.ed.",
+        "exemplar": "ex. 1",
+        "situacao": "Apenas consulta",
+        "disponiveis": 5,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1082",
+        "bibtex": "bibtex/ANTON2012.bib",
+        "isbn": [
+          "9788540701694"
+        ]
+      },
+      {
+        "titulo": "Álgebra linear",
+        "autor": "Nicholson, W. Keith",
+        "tipoExemplar": "Livro impresso",
+        "local": "Biblioteca João Pessoa Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "512.64 N629a 2006 2.ed.",
+        "exemplar": "ex. 1",
+        "situacao": "Apenas consulta",
+        "disponiveis": 14,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17212",
+        "bibtex": "bibtex/NICHOLSON2006.bib",
+        "isbn": [
+          "8586804924"
+        ]
+      },
+      {
+        "titulo": "Álgebra linear",
+        "autor": "Shifrin, Theodore",
+        "tipoExemplar": "Livro impresso",
+        "local": "Biblioteca João Pessoa Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "512.64 S555a 2013 2.ed.",
+        "exemplar": "ex. 1",
+        "situacao": "Apenas consulta",
+        "disponiveis": 3,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17210",
+        "bibtex": "bibtex/SHIFRIN2013.bib",
+        "isbn": [
+          "9788521622147"
+        ]
+      },
+      {
+        "titulo": "Álgebra linear e suas aplicações",
+        "autor": "Strang, Gilbert",
+        "tipoExemplar": "Livro impresso",
+        "local": "Biblioteca João Pessoa Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "512.64 S897a c2010",
+        "exemplar": "ex. 1",
+        "situacao": "Apenas consulta",
+        "disponiveis": 15,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=17203",
+        "bibtex": "bibtex/STRANG2010.bib",
+        "isbn": [
+          "9788522107445"
+        ]
+      }
+    ]
+  },
+  {
     "disciplina": "Banco de dados I",
     "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1930",
     "instrutores": [
@@ -2477,6 +2477,64 @@
     ]
   },
   {
+    "disciplina": "Inovação e Criatividade",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1943",
+    "instrutores": [
+      "Francisco Petronio Alencar de Medeiros"
+    ],
+    "notas": "04 semestre",
+    "reservas": [
+      {
+        "titulo": "Gestão da inovação e empreendedorismo",
+        "autor": "",
+        "tipoExemplar": "Livro impresso",
+        "local": "Biblioteca João Pessoa Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "005.342 G393 2013",
+        "exemplar": "ex. 1",
+        "situacao": "Apenas consulta",
+        "disponiveis": 3,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10436",
+        "bibtex": "bibtex/PORTO2013.bib",
+        "isbn": [
+          "9788535272741"
+        ]
+      },
+      {
+        "titulo": "Empreendedorismo",
+        "autor": "Mariano, Sandra Regina Holanda",
+        "tipoExemplar": "Livro impresso",
+        "local": "Biblioteca João Pessoa Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "005.342 M333e c2011",
+        "exemplar": "ex. 1",
+        "situacao": "Apenas consulta",
+        "disponiveis": 4,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10594",
+        "bibtex": "bibtex/MARIANO2011.bib",
+        "isbn": [
+          "9788521617730"
+        ]
+      },
+      {
+        "titulo": "Inovação",
+        "autor": "Crainer, Stuart",
+        "tipoExemplar": "Livro impresso",
+        "local": "Biblioteca João Pessoa Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "005.342 C887i 2014",
+        "exemplar": "ex. 1",
+        "situacao": "Apenas consulta",
+        "disponiveis": 3,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10310",
+        "bibtex": "bibtex/CRAINER2014.bib",
+        "isbn": [
+          "9788582602218"
+        ]
+      }
+    ]
+  },
+  {
     "disciplina": "Programação para Web III",
     "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1942",
     "instrutores": [
@@ -2870,64 +2928,6 @@
     ]
   },
   {
-    "disciplina": "Inovação e Criatividade",
-    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1943",
-    "instrutores": [
-      "Francisco Petronio Alencar de Medeiros"
-    ],
-    "notas": "04 semestre",
-    "reservas": [
-      {
-        "titulo": "Gestão da inovação e empreendedorismo",
-        "autor": "",
-        "tipoExemplar": "Livro impresso",
-        "local": "Biblioteca João Pessoa Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "005.342 G393 2013",
-        "exemplar": "ex. 1",
-        "situacao": "Apenas consulta",
-        "disponiveis": 3,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10436",
-        "bibtex": "bibtex/PORTO2013.bib",
-        "isbn": [
-          "9788535272741"
-        ]
-      },
-      {
-        "titulo": "Empreendedorismo",
-        "autor": "Mariano, Sandra Regina Holanda",
-        "tipoExemplar": "Livro impresso",
-        "local": "Biblioteca João Pessoa Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "005.342 M333e c2011",
-        "exemplar": "ex. 1",
-        "situacao": "Apenas consulta",
-        "disponiveis": 4,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10594",
-        "bibtex": "bibtex/MARIANO2011.bib",
-        "isbn": [
-          "9788521617730"
-        ]
-      },
-      {
-        "titulo": "Inovação",
-        "autor": "Crainer, Stuart",
-        "tipoExemplar": "Livro impresso",
-        "local": "Biblioteca João Pessoa Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "005.342 C887i 2014",
-        "exemplar": "ex. 1",
-        "situacao": "Apenas consulta",
-        "disponiveis": 3,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=10310",
-        "bibtex": "bibtex/CRAINER2014.bib",
-        "isbn": [
-          "9788582602218"
-        ]
-      }
-    ]
-  },
-  {
     "disciplina": "Análise e Técnicas de Algoritmos",
     "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1952",
     "instrutores": [
@@ -3279,148 +3279,6 @@
     ]
   },
   {
-    "disciplina": "Projeto e avaliação de Interfaces do Usuário",
-    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1953",
-    "instrutores": [
-      "Francisco Petronio Alencar de Medeiros"
-    ],
-    "notas": "05 Semestre",
-    "reservas": [
-      {
-        "titulo": "e-Usabilidade",
-        "autor": "Ferreira, Simone Bacellar Lea",
-        "tipoExemplar": "Livro impresso",
-        "local": "Biblioteca João Pessoa Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "004.5 F383e 2008",
-        "exemplar": "ex. 1",
-        "situacao": "Disponível",
-        "disponiveis": 2,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9406",
-        "bibtex": "bibtex/FERREIRA2008.bib",
-        "isbn": [
-          "9788521616511"
-        ]
-      },
-      {
-        "titulo": "Usabilidade móvel",
-        "autor": "Nielsen, Jakob",
-        "tipoExemplar": "Livro impresso",
-        "local": "Biblioteca João Pessoa Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "004.2 N669u 2014",
-        "exemplar": "ex. 1",
-        "situacao": "Apenas consulta",
-        "disponiveis": 3,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7215",
-        "bibtex": "bibtex/NIELSEN2014.bib",
-        "isbn": [
-          "9788535264272"
-        ]
-      }
-    ]
-  },
-  {
-    "disciplina": "Projeto Integrador II",
-    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1955",
-    "instrutores": [
-      "Fausto Veras Maranhao Ayres",
-      "Frederico Costa Guedes Pereira",
-      "Edemberg Rocha da Silva"
-    ],
-    "notas": "05 Semestre",
-    "reservas": [
-      {
-        "titulo": "Manual de produção científica",
-        "autor": "",
-        "tipoExemplar": "Livro impresso",
-        "local": "Biblioteca João Pessoa Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "001.8 M294 2014",
-        "exemplar": "ex. 1",
-        "situacao": "Apenas consulta",
-        "disponiveis": 3,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=28050",
-        "bibtex": "bibtex/KOLLER2014.bib",
-        "isbn": [
-          "9788565848916"
-        ]
-      },
-      {
-        "titulo": "Engenharia de software : uma abordagem profissional",
-        "autor": "Pressman, Roger S.",
-        "tipoExemplar": "Livro impresso",
-        "local": "Biblioteca João Pessoa Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "004.41 P935e 2011 7.ed.",
-        "exemplar": "ex. 1",
-        "situacao": "Apenas consulta",
-        "disponiveis": 4,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1169",
-        "bibtex": "bibtex/PRESSMAN2011.bib",
-        "isbn": [
-          "9788563308337"
-        ]
-      },
-      {
-        "titulo": "Princípios de análise e projeto de sistemas com UML",
-        "autor": "Bezerra, Eduardo",
-        "tipoExemplar": "Livro impresso",
-        "local": "Biblioteca João Pessoa Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "004.414.23 B574p 2015 3.ed.",
-        "exemplar": "ex. 1",
-        "situacao": "Apenas consulta",
-        "disponiveis": 3,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6321",
-        "bibtex": "bibtex/BEZERRA2015.bib",
-        "isbn": [
-          "9788535226263"
-        ]
-      },
-      {
-        "titulo": "Fundamentos de metodologia científica",
-        "autor": "Marconi, Marina de Andrade",
-        "tipoExemplar": "Livro impresso",
-        "local": "Biblioteca João Pessoa Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "001.8 M321f 2010 7.ed.",
-        "exemplar": "ex. 1",
-        "situacao": "Apenas consulta",
-        "disponiveis": 7,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2358",
-        "bibtex": "bibtex/MARCONI2010.bib",
-        "isbn": [
-          "9788522457588"
-        ]
-      }
-    ]
-  },
-  {
-    "disciplina": "visualização de Dados ",
-    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1956",
-    "instrutores": [
-      "Paulo Roberto Santos Costa"
-    ],
-    "notas": "05 Semestre",
-    "reservas": [
-      {
-        "titulo": "Introdução à ciência de dados : mineração de dados e Big Data",
-        "autor": "Amaral, Fernando",
-        "tipoExemplar": "Livro impresso",
-        "local": "Acervo de livros",
-        "colecao": "",
-        "numeroChamada": "004.6 A485i 2016",
-        "exemplar": "ex. 1",
-        "situacao": "Apenas consulta",
-        "disponiveis": 3,
-        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=29574",
-        "bibtex": "bibtex/AMARAL2016.bib",
-        "isbn": []
-      }
-    ]
-  },
-  {
     "disciplina": "Processos de Desenvolvimento de Software",
     "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1948",
     "instrutores": [
@@ -3603,6 +3461,148 @@
         "isbn": [
           "9788536508337"
         ]
+      }
+    ]
+  },
+  {
+    "disciplina": "Projeto e avaliação de Interfaces do Usuário",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1953",
+    "instrutores": [
+      "Francisco Petronio Alencar de Medeiros"
+    ],
+    "notas": "05 Semestre",
+    "reservas": [
+      {
+        "titulo": "e-Usabilidade",
+        "autor": "Ferreira, Simone Bacellar Lea",
+        "tipoExemplar": "Livro impresso",
+        "local": "Biblioteca João Pessoa Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "004.5 F383e 2008",
+        "exemplar": "ex. 1",
+        "situacao": "Disponível",
+        "disponiveis": 2,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9406",
+        "bibtex": "bibtex/FERREIRA2008.bib",
+        "isbn": [
+          "9788521616511"
+        ]
+      },
+      {
+        "titulo": "Usabilidade móvel",
+        "autor": "Nielsen, Jakob",
+        "tipoExemplar": "Livro impresso",
+        "local": "Biblioteca João Pessoa Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "004.2 N669u 2014",
+        "exemplar": "ex. 1",
+        "situacao": "Apenas consulta",
+        "disponiveis": 3,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=7215",
+        "bibtex": "bibtex/NIELSEN2014.bib",
+        "isbn": [
+          "9788535264272"
+        ]
+      }
+    ]
+  },
+  {
+    "disciplina": "Projeto Integrador II",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1955",
+    "instrutores": [
+      "Fausto Veras Maranhao Ayres",
+      "Frederico Costa Guedes Pereira",
+      "Edemberg Rocha da Silva"
+    ],
+    "notas": "05 Semestre",
+    "reservas": [
+      {
+        "titulo": "Manual de produção científica",
+        "autor": "",
+        "tipoExemplar": "Livro impresso",
+        "local": "Biblioteca João Pessoa Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "001.8 M294 2014",
+        "exemplar": "ex. 1",
+        "situacao": "Apenas consulta",
+        "disponiveis": 3,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=28050",
+        "bibtex": "bibtex/KOLLER2014.bib",
+        "isbn": [
+          "9788565848916"
+        ]
+      },
+      {
+        "titulo": "Engenharia de software : uma abordagem profissional",
+        "autor": "Pressman, Roger S.",
+        "tipoExemplar": "Livro impresso",
+        "local": "Biblioteca João Pessoa Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "004.41 P935e 2011 7.ed.",
+        "exemplar": "ex. 1",
+        "situacao": "Apenas consulta",
+        "disponiveis": 4,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=1169",
+        "bibtex": "bibtex/PRESSMAN2011.bib",
+        "isbn": [
+          "9788563308337"
+        ]
+      },
+      {
+        "titulo": "Princípios de análise e projeto de sistemas com UML",
+        "autor": "Bezerra, Eduardo",
+        "tipoExemplar": "Livro impresso",
+        "local": "Biblioteca João Pessoa Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "004.414.23 B574p 2015 3.ed.",
+        "exemplar": "ex. 1",
+        "situacao": "Apenas consulta",
+        "disponiveis": 3,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=6321",
+        "bibtex": "bibtex/BEZERRA2015.bib",
+        "isbn": [
+          "9788535226263"
+        ]
+      },
+      {
+        "titulo": "Fundamentos de metodologia científica",
+        "autor": "Marconi, Marina de Andrade",
+        "tipoExemplar": "Livro impresso",
+        "local": "Biblioteca João Pessoa Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "001.8 M321f 2010 7.ed.",
+        "exemplar": "ex. 1",
+        "situacao": "Apenas consulta",
+        "disponiveis": 7,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2358",
+        "bibtex": "bibtex/MARCONI2010.bib",
+        "isbn": [
+          "9788522457588"
+        ]
+      }
+    ]
+  },
+  {
+    "disciplina": "visualização de Dados ",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1956",
+    "instrutores": [
+      "Paulo Roberto Santos Costa"
+    ],
+    "notas": "05 Semestre",
+    "reservas": [
+      {
+        "titulo": "Introdução à ciência de dados : mineração de dados e Big Data",
+        "autor": "Amaral, Fernando",
+        "tipoExemplar": "Livro impresso",
+        "local": "Acervo de livros",
+        "colecao": "",
+        "numeroChamada": "004.6 A485i 2016",
+        "exemplar": "ex. 1",
+        "situacao": "Apenas consulta",
+        "disponiveis": 3,
+        "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=29574",
+        "bibtex": "bibtex/AMARAL2016.bib",
+        "isbn": []
       }
     ]
   },
