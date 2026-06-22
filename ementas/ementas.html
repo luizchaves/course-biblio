@@ -193,11 +193,39 @@ function renderText(value) {
   return rendered;
 }
 
-function renderBibliography(entries) {
+function parseBibUrl(text) {
+  const m = text.match(/\burl\s*=\s*\{([^}]+)\}/i);
+  return m ? m[1].trim() : null;
+}
+
+async function fetchBibCache(subjects) {
+  const paths = new Set();
+  for (const subject of subjects) {
+    for (const section of ['bibliografiaBasica', 'bibliografiaComplementar']) {
+      for (const item of subject[section] ?? []) {
+        if (item.bibtex?.[0]) paths.add(item.bibtex[0]);
+      }
+    }
+  }
+  const cache = {};
+  await Promise.all([...paths].map(async path => {
+    try {
+      const r = await fetch('../' + path);
+      if (r.ok) {
+        const url = parseBibUrl(await r.text());
+        if (url) cache[path] = url;
+      }
+    } catch {}
+  }));
+  return cache;
+}
+
+function renderBibliography(entries, bibCache) {
   if (!entries?.length) return '';
   return `<ol>${entries.map(item => {
-    const kohaLinks = (item.koha ?? []).map((url, index) => {
-      const label = item.koha.length > 1
+    const urls = (item.bibtex ?? []).map(p => bibCache[p]).filter(Boolean);
+    const kohaLinks = urls.map((url, index) => {
+      const label = urls.length > 1
         ? `Abrir registro ${index + 1} no Koha`
         : 'Abrir registro no Koha';
       return `<a class="koha-link" href="${escapeHtml(url)}" target="_blank" rel="noopener" aria-label="${label}" title="${label}">
@@ -225,7 +253,7 @@ function semesterSort(keys) {
   });
 }
 
-function renderSubject(subject) {
+function renderSubject(subject, bibCache) {
   const type = subject.tipoDisciplina ?? '';
   const hours = subject.cargaHoraria;
   const prerequisites = subject.preRequisitos?.length
@@ -290,8 +318,8 @@ function renderSubject(subject) {
 
   const visibleSections = [
     { name: 'Ementa', html: subject.ementa ? `<p>${renderText(subject.ementa)}</p>` : '' },
-    { name: 'Bibliografia Básica', html: renderBibliography(subject.bibliografiaBasica) },
-    { name: 'Bibliografia Complementar', html: renderBibliography(subject.bibliografiaComplementar) },
+    { name: 'Bibliografia Básica', html: renderBibliography(subject.bibliografiaBasica, bibCache) },
+    { name: 'Bibliografia Complementar', html: renderBibliography(subject.bibliografiaComplementar, bibCache) },
     {
       name: 'Bibliografia Suplementar (Periódicos)',
       html: subject.bibliografiaSuplementar ? `<p>${renderText(subject.bibliografiaSuplementar)}</p>` : '',
@@ -328,6 +356,7 @@ async function load() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const subjects = await response.json();
+    const bibCache = await fetchBibCache(subjects);
     const groups = {};
 
     for (const subject of subjects) {
@@ -349,7 +378,7 @@ async function load() {
 
       groups[groupName]
         .sort((left, right) => left.disciplina.localeCompare(right.disciplina, 'pt-BR'))
-        .forEach(subject => wrapper.appendChild(renderSubject(subject)));
+        .forEach(subject => wrapper.appendChild(renderSubject(subject, bibCache)));
       content.appendChild(wrapper);
     }
   } catch (error) {

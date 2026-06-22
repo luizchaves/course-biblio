@@ -178,8 +178,36 @@ function renderText(value) {
   });
 }
 
-function renderKohaLinks(urls) {
-  if (!urls?.length) return '';
+function parseBibUrl(text) {
+  const m = text.match(/\burl\s*=\s*\{([^}]+)\}/i);
+  return m ? m[1].trim() : null;
+}
+
+async function fetchBibCache(subjects) {
+  const paths = new Set();
+  for (const subject of subjects) {
+    for (const section of ['bibliografiaBasica', 'bibliografiaComplementar']) {
+      for (const item of subject[section] ?? []) {
+        if (item.bibtex?.[0]) paths.add(item.bibtex[0]);
+      }
+    }
+  }
+  const cache = {};
+  await Promise.all([...paths].map(async path => {
+    try {
+      const r = await fetch('../' + path);
+      if (r.ok) {
+        const url = parseBibUrl(await r.text());
+        if (url) cache[path] = url;
+      }
+    } catch {}
+  }));
+  return cache;
+}
+
+function renderKohaLinks(bibPaths, bibCache) {
+  const urls = (bibPaths ?? []).map(p => bibCache[p]).filter(Boolean);
+  if (!urls.length) return '';
   return `<div class="koha-links">${urls.map((url, index) => {
     const label = urls.length > 1
       ? `Abrir registro ${index + 1} no Koha`
@@ -206,7 +234,7 @@ function semesterSort(keys) {
   });
 }
 
-function renderSubject(subject) {
+function renderSubject(subject, bibCache) {
   const references = [
     ...(subject.bibliografiaBasica ?? []).map(item => ({ ...item, type: 'Básica' })),
     ...(subject.bibliografiaComplementar ?? []).map(item => ({ ...item, type: 'Complementar' })),
@@ -260,7 +288,7 @@ function renderSubject(subject) {
     badge.textContent = reference.type;
     actions.appendChild(badge);
 
-    actions.insertAdjacentHTML('beforeend', renderKohaLinks(reference.koha));
+    actions.insertAdjacentHTML('beforeend', renderKohaLinks(reference.bibtex, bibCache));
     row.appendChild(actions);
     books.appendChild(row);
   }
@@ -278,6 +306,7 @@ async function load() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const subjects = await response.json();
+    const bibCache = await fetchBibCache(subjects);
     const groups = {};
 
     for (const subject of subjects) {
@@ -299,7 +328,7 @@ async function load() {
 
       groups[groupName]
         .sort((left, right) => left.disciplina.localeCompare(right.disciplina, 'pt-BR'))
-        .forEach(subject => section.appendChild(renderSubject(subject)));
+        .forEach(subject => section.appendChild(renderSubject(subject, bibCache)));
 
       content.appendChild(section);
     }
