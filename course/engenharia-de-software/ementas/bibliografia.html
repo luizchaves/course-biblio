@@ -87,29 +87,24 @@
 
     .book-citation a:hover { text-decoration: underline; color: #0060df; }
 
-    .book-actions {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 4px;
-      flex-shrink: 0;
-      padding-top: 2px;
-    }
-
     .badge {
       font-size: 0.7rem;
       padding: 1px 6px;
       border-radius: 10px;
       white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 2px;
     }
 
     .badge-basic { background: #d4edda; color: #155724; }
     .badge-complementary { background: #fff3cd; color: #856404; }
 
     .koha-links {
-      display: flex;
-      justify-content: flex-end;
+      display: inline-flex;
+      vertical-align: middle;
+      align-items: center;
       gap: 2px;
+      margin-left: 4px;
     }
 
     .koha-link {
@@ -236,8 +231,8 @@ function semesterSort(keys) {
 
 function renderSubject(subject, bibCache) {
   const references = [
-    ...(subject.bibliografiaBasica ?? []).map(item => ({ ...item, type: 'Básica' })),
-    ...(subject.bibliografiaComplementar ?? []).map(item => ({ ...item, type: 'Complementar' })),
+    ...(subject.bibliografiaBasica ?? []).map(item => ({ ...item, type: 'B' })),
+    ...(subject.bibliografiaComplementar ?? []).map(item => ({ ...item, type: 'C' })),
   ].sort((left, right) => left.referencia.localeCompare(right.referencia, 'pt-BR'));
 
   const card = document.createElement('div');
@@ -278,18 +273,14 @@ function renderSubject(subject, bibCache) {
     const citation = document.createElement('div');
     citation.className = 'book-citation';
     citation.innerHTML = renderText(reference.referencia);
+    citation.insertAdjacentHTML('beforeend', renderKohaLinks(reference.bibtex, bibCache));
     row.appendChild(citation);
 
-    const actions = document.createElement('div');
-    actions.className = 'book-actions';
-
     const badge = document.createElement('span');
-    badge.className = `badge ${reference.type === 'Básica' ? 'badge-basic' : 'badge-complementary'}`;
+    badge.className = `badge ${reference.type === 'B' ? 'badge-basic' : 'badge-complementary'}`;
     badge.textContent = reference.type;
-    actions.appendChild(badge);
+    row.appendChild(badge);
 
-    actions.insertAdjacentHTML('beforeend', renderKohaLinks(reference.bibtex, bibCache));
-    row.appendChild(actions);
     books.appendChild(row);
   }
 

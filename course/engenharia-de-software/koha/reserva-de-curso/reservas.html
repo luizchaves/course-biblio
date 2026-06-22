@@ -272,7 +272,7 @@ function formatIsbns(isbns) {
 }
 
 function bibtexUrl(path) {
-  return path.startsWith('bibtex/') ? `../../../${path}` : path;
+  return path.startsWith('bibtex/') ? `../../${path}` : path;
 }
 
 function bookSortKey(book, bibCache) {

@@ -12,8 +12,8 @@ import urllib.request
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
-PROJECT_ROOT = BASE_DIR.parents[2]
-SUBJECTS_FILE = BASE_DIR / "subjects.json"
+PROJECT_ROOT = BASE_DIR.parent / "course" / "engenharia-de-software"
+SUBJECTS_FILE = PROJECT_ROOT / "koha" / "reserva-de-curso" / "subjects.json"
 BIBTEX_DIR = PROJECT_ROOT / "bibtex"
 BIBTEX_RELATIVE_PREFIX = "bibtex"
 KOHA_BASE = "https://biblioteca.ifpb.edu.br/cgi-bin/koha/"
