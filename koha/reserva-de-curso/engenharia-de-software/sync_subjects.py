@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Fetch course reserves from Koha for each discipline in reservas.json,
-update subjects.json, and download missing bibtex files.
+Fetch the course list from Koha (opac-course-reserves.pl) via Playwright,
+then update subjects.json with reserves and bibtex files for each discipline.
 ISBNs are extracted from each book's opac-detail page.
 """
 
@@ -12,7 +12,6 @@ import urllib.request
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
-RESERVAS_FILE = BASE_DIR / "reservas.json"
 SUBJECTS_FILE = BASE_DIR / "subjects.json"
 BIBTEX_DIR = BASE_DIR / "bibtex"
 KOHA_BASE = "https://biblioteca.ifpb.edu.br/cgi-bin/koha/"
@@ -262,8 +261,54 @@ def parse_reserves(course_html: str) -> list[tuple[str, dict]]:
     return reserves
 
 
+def fetch_course_list() -> list[dict]:
+    """Fetch the list of disciplines from Koha using Playwright."""
+    from playwright.sync_api import sync_playwright
+
+    koha_base = KOHA_BASE
+    url = koha_base + "opac-course-reserves.pl"
+    search = "engenharia de software"
+
+    print(f"Buscando lista de disciplinas em {url} …")
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+        page.goto(url, wait_until="domcontentloaded", timeout=60_000)
+        page.wait_for_selector("input#dt-search-0", timeout=15_000)
+        page.fill("input#dt-search-0", search)
+        page.wait_for_timeout(1_200)
+
+        rows = page.query_selector_all("table tbody tr:not(.dataTables_empty)")
+        print(f"  {len(rows)} disciplinas encontradas.\n")
+
+        result = []
+        for row in rows:
+            cells = row.query_selector_all("td")
+            if len(cells) < 7:
+                continue
+            secao = cells[3].inner_text().strip()
+            raw_nome = cells[0].inner_text().strip()
+            nome = re.sub(rf"\s*-\s*{re.escape(secao)}\s*$", "", raw_nome).strip().rstrip(" .:;,")
+            link_el = cells[0].query_selector("a")
+            href = link_el.get_attribute("href") if link_el else None
+            url_reserva = (koha_base + href) if (href and not href.startswith("http")) else href
+            instrutores = list(dict.fromkeys(
+                x.strip()
+                for x in re.split(r"[\n,]+", cells[5].inner_text())
+                if x.strip()
+            ))
+            result.append({
+                "nome": nome,
+                "urlReserva": url_reserva,
+                "instrutores": instrutores,
+                "notas": cells[6].inner_text().strip(),
+            })
+        browser.close()
+    return result
+
+
 def main():
-    reservas = json.loads(RESERVAS_FILE.read_text(encoding="utf-8"))
+    reservas = fetch_course_list()
     subjects = json.loads(SUBJECTS_FILE.read_text(encoding="utf-8"))
 
     print("Building bib↔key map and ISBN cache from existing data…")
@@ -327,11 +372,16 @@ def main():
             reserve_list.append(entry)
             time.sleep(0.3)
 
+        meta = {
+            "urlReserva": reserva.get("urlReserva"),
+            "instrutores": reserva.get("instrutores", []),
+            "notas": reserva.get("notas", ""),
+        }
         if disciplina in existing:
-            existing[disciplina]["reservas"] = reserve_list
+            existing[disciplina].update({**meta, "reservas": reserve_list})
             print(f"    Updated ({len(reserve_list)} reservas)\n")
         else:
-            existing[disciplina] = {"disciplina": disciplina, "reservas": reserve_list}
+            existing[disciplina] = {"disciplina": disciplina, **meta, "reservas": reserve_list}
             print(f"    Added ({len(reserve_list)} reservas)\n")
 
         subjects_out = list(existing.values())

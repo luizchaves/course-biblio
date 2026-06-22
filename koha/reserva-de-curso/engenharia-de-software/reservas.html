@@ -274,16 +274,7 @@ function semesterSort(keys) {
 
 /* ── Main ─────────────────────────────────────────────────────── */
 async function load() {
-  const [reservasRes, subjectsRes] = await Promise.all([
-    fetch('reservas.json'),
-    fetch('subjects.json'),
-  ]);
-  const reservas = await reservasRes.json();
-  const subjects = await subjectsRes.json();
-
-  const booksByDiscipline = Object.fromEntries(
-    subjects.map(s => [normalize(s.disciplina), s.reservas])
-  );
+  const subjects = await fetch('subjects.json').then(r => r.json());
 
   // Collect all unique bib paths and fetch in parallel
   const allBibPaths = new Set();
@@ -297,7 +288,7 @@ async function load() {
     } catch (_) {}
   }));
 
-  const bySemester = groupBy(reservas, r => r.notas || 'Sem semestre');
+  const bySemester = groupBy(subjects, s => s.notas || 'Sem semestre');
   const semesterOrder = semesterSort(Object.keys(bySemester));
   const content = document.getElementById('content');
 
@@ -311,7 +302,7 @@ async function load() {
     section.appendChild(semTitle);
 
     for (const disc of bySemester[semester]) {
-      const books = booksByDiscipline[normalize(disc.nome)] ?? [];
+      const books = disc.reservas ?? [];
 
       const card = document.createElement('div');
       card.className = 'subject';
@@ -322,8 +313,8 @@ async function load() {
       const nameEl = document.createElement('div');
       nameEl.className = 'subject-name';
       nameEl.innerHTML = disc.urlReserva
-        ? `<a href="${disc.urlReserva}" target="_blank">${disc.nome}</a>`
-        : disc.nome;
+        ? `<a href="${disc.urlReserva}" target="_blank">${disc.disciplina}</a>`
+        : disc.disciplina;
       header.appendChild(nameEl);
 
       if (disc.instrutores?.length) {
@@ -372,15 +363,6 @@ async function load() {
             badge.textContent = `${book.disponiveis} ex.`;
             badge.title = book.situacao ?? '';
             actions.appendChild(badge);
-          }
-
-          if (book.bibtex) {
-            const bibLink = document.createElement('a');
-            bibLink.className = 'bib-link';
-            bibLink.href = book.bibtex;
-            bibLink.target = '_blank';
-            bibLink.textContent = '.bib';
-            actions.appendChild(bibLink);
           }
 
           row.appendChild(actions);

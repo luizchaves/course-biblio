@@ -1,6 +1,11 @@
 [
   {
     "disciplina": "Álgebra Linear",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1931",
+    "instrutores": [
+      "Flavio Alves de Albuquerque"
+    ],
+    "notas": "03 Semestre",
     "reservas": [
       {
         "titulo": "Álgebra linear",
@@ -119,6 +124,11 @@
   },
   {
     "disciplina": "Arquitetura e organização de computadores",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1915",
+    "instrutores": [
+      "Frederico Costa Guedes Pereira"
+    ],
+    "notas": "01 Semestre",
     "reservas": [
       {
         "titulo": "Fundamentos da ciência da computação",
@@ -287,6 +297,11 @@
   },
   {
     "disciplina": "Cálculo Diferencial e Integral I",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1916",
+    "instrutores": [
+      "Thiago Andrade Fernandes"
+    ],
+    "notas": "01 Semestre",
     "reservas": [
       {
         "titulo": "Cálculo A : funções, limite, derivação e integração",
@@ -503,6 +518,11 @@
   },
   {
     "disciplina": "Educação Ambiental e Sustentabilidade",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1917",
+    "instrutores": [
+      "Alexandre Fonseca D Andrea"
+    ],
+    "notas": "01 Semestre",
     "reservas": [
       {
         "titulo": "Gestão ambiental empresarial : conceitos, modelos e instrumentos",
@@ -712,6 +732,11 @@
   },
   {
     "disciplina": "Introdução à engenharia de Software",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1912",
+    "instrutores": [
+      "Juliana Dantas Ribeiro Viana de Medeiros"
+    ],
+    "notas": "01 Semestre",
     "reservas": [
       {
         "titulo": "Engenharia de software : uma abordagem profissional",
@@ -765,6 +790,12 @@
   },
   {
     "disciplina": "Introdução à Programação",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1914",
+    "instrutores": [
+      "Edemberg Rocha da Silva",
+      "Candido Jose Ramos do Egypto"
+    ],
+    "notas": "01 Semestre",
     "reservas": [
       {
         "titulo": "Algoritmos",
@@ -944,6 +975,11 @@
   },
   {
     "disciplina": "Álgebra Vetorial",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1923",
+    "instrutores": [
+      "Manoel Wallace Alves Ramos"
+    ],
+    "notas": "02 Semestre",
     "reservas": [
       {
         "titulo": "Geometria analítica",
@@ -1078,6 +1114,12 @@
   },
   {
     "disciplina": "Algoritmos e Estrutura de Dados",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1920",
+    "instrutores": [
+      "Alex Sandro da Cunha Rego",
+      "Thiago Jose Marques Moura"
+    ],
+    "notas": "02 Semestre",
     "reservas": [
       {
         "titulo": "Introdução a estruturas de dados",
@@ -1212,6 +1254,11 @@
   },
   {
     "disciplina": "Engenharia de Requesitos de Software",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1918",
+    "instrutores": [
+      "Juliana Dantas Ribeiro Viana de Medeiros"
+    ],
+    "notas": "02 Semestre",
     "reservas": [
       {
         "titulo": "UML 2",
@@ -1377,6 +1424,11 @@
   },
   {
     "disciplina": "Inglês Instrumental",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1924",
+    "instrutores": [
+      "Maria Theresa Targino de Araujo Rangel"
+    ],
+    "notas": "02 Semestre",
     "reservas": [
       {
         "titulo": "Assessing languages for specific purposes",
@@ -1528,6 +1580,11 @@
   },
   {
     "disciplina": "Introdução a sistemas Abertos",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1922",
+    "instrutores": [
+      "Rodrigo Pinheiro Marques de Araujo"
+    ],
+    "notas": "02 Semestre",
     "reservas": [
       {
         "titulo": "Descobrindo o Linux",
@@ -1597,6 +1654,11 @@
   },
   {
     "disciplina": "Práticas Curriculares de Extensão I",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1925",
+    "instrutores": [
+      "Francisco Dantas Nobre Neto"
+    ],
+    "notas": "02 Semestre",
     "reservas": [
       {
         "titulo": "Manual de produção científica",
@@ -1634,6 +1696,12 @@
   },
   {
     "disciplina": "Programação para Web II",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1919",
+    "instrutores": [
+      "Francisco Dantas Nobre Neto",
+      "Luiz Carlos Rodrigues Chaves"
+    ],
+    "notas": "02 Semestre",
     "reservas": [
       {
         "titulo": "Use a cabeça! : programação JavaScript",
@@ -1687,6 +1755,12 @@
   },
   {
     "disciplina": "Banco de dados I",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1930",
+    "instrutores": [
+      "Edemberg Rocha da Silva",
+      "Candido Jose Ramos do Egypto"
+    ],
+    "notas": "03 Semestre",
     "reservas": [
       {
         "titulo": "Introdução a sistemas de bancos de dados",
@@ -1837,6 +1911,11 @@
   },
   {
     "disciplina": "leitura e Produção de Textual",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1937",
+    "instrutores": [
+      "Manoel Lopes Brasileiro Neto"
+    ],
+    "notas": "03 Semestre",
     "reservas": [
       {
         "titulo": "Preconceito linguístico",
@@ -1938,6 +2017,11 @@
   },
   {
     "disciplina": "Programação Orientada a Objetos",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1929",
+    "instrutores": [
+      "Fausto Veras Maranhao Ayres"
+    ],
+    "notas": "03 Semestre",
     "reservas": [
       {
         "titulo": "Java : como programar",
@@ -2104,6 +2188,13 @@
   },
   {
     "disciplina": "Projeto Integrador I",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1938",
+    "instrutores": [
+      "Leonidas Francisco de Lima Junior",
+      "Luiz Carlos Rodrigues Chaves",
+      "Candido Jose Ramos do Egypto"
+    ],
+    "notas": "03 Semestre",
     "reservas": [
       {
         "titulo": "Engenharia de software : uma abordagem profissional",
@@ -2173,6 +2264,11 @@
   },
   {
     "disciplina": "Redes de Computadores",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1928",
+    "instrutores": [
+      "Leonidas Francisco de Lima Junior"
+    ],
+    "notas": "03 Semestre",
     "reservas": [
       {
         "titulo": "Interligação de Redes com TCP/IP : princípios, protocolos e arquitetura",
@@ -2274,6 +2370,12 @@
   },
   {
     "disciplina": "Banco de Dados II",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1945",
+    "instrutores": [
+      "Damires Yluska de Souza Fernandes",
+      "Crishane Azevedo Freire"
+    ],
+    "notas": "04 Semestre",
     "reservas": [
       {
         "titulo": "Sistemas de banco de dados",
@@ -2376,6 +2478,11 @@
   },
   {
     "disciplina": "Programação para Web III",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1942",
+    "instrutores": [
+      "Frederico Costa Guedes Pereira"
+    ],
+    "notas": "04 Semestre",
     "reservas": [
       {
         "titulo": "Pro JPA 2",
@@ -2429,6 +2536,11 @@
   },
   {
     "disciplina": "Sistemas Operacionais",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1940",
+    "instrutores": [
+      "Gustavo Wagner Diniz Mendes"
+    ],
+    "notas": "04 Semestre",
     "reservas": [
       {
         "titulo": "Fundamentos de sistemas operacionais",
@@ -2579,6 +2691,11 @@
   },
   {
     "disciplina": "Sociologia",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1947",
+    "instrutores": [
+      "Adolfo Wagner"
+    ],
+    "notas": "04 Semestre",
     "reservas": [
       {
         "titulo": "A dialética do trabalho : escritos de Marx e Engels",
@@ -2696,6 +2813,11 @@
   },
   {
     "disciplina": "Verificação, validação e Teste de Software",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1939",
+    "instrutores": [
+      "Maxwell Anderson Ielpo do Amaral"
+    ],
+    "notas": "04 Semestre",
     "reservas": [
       {
         "titulo": "Introdução ao teste de software",
@@ -2749,6 +2871,11 @@
   },
   {
     "disciplina": "Inovação e Criatividade",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1943",
+    "instrutores": [
+      "Francisco Petronio Alencar de Medeiros"
+    ],
+    "notas": "04 semestre",
     "reservas": [
       {
         "titulo": "Gestão da inovação e empreendedorismo",
@@ -2802,6 +2929,11 @@
   },
   {
     "disciplina": "Análise e Técnicas de Algoritmos",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1952",
+    "instrutores": [
+      "Thiago Gouveia da Silva"
+    ],
+    "notas": "05 Semestre",
     "reservas": [
       {
         "titulo": "Algoritmos",
@@ -2839,6 +2971,11 @@
   },
   {
     "disciplina": "Padrões de Projeto de Software",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1950",
+    "instrutores": [
+      "Alex Sandro da Cunha Rego"
+    ],
+    "notas": "05 Semestre",
     "reservas": [
       {
         "titulo": "Utilizando UML e padrões",
@@ -3005,6 +3142,11 @@
   },
   {
     "disciplina": "Probabilidade e Estatística",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1954",
+    "instrutores": [
+      "Ricardo Jose Ferreira"
+    ],
+    "notas": "05 Semestre",
     "reservas": [
       {
         "titulo": "Estatística",
@@ -3138,6 +3280,11 @@
   },
   {
     "disciplina": "Projeto e avaliação de Interfaces do Usuário",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1953",
+    "instrutores": [
+      "Francisco Petronio Alencar de Medeiros"
+    ],
+    "notas": "05 Semestre",
     "reservas": [
       {
         "titulo": "e-Usabilidade",
@@ -3175,6 +3322,13 @@
   },
   {
     "disciplina": "Projeto Integrador II",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1955",
+    "instrutores": [
+      "Fausto Veras Maranhao Ayres",
+      "Frederico Costa Guedes Pereira",
+      "Edemberg Rocha da Silva"
+    ],
+    "notas": "05 Semestre",
     "reservas": [
       {
         "titulo": "Manual de produção científica",
@@ -3244,6 +3398,11 @@
   },
   {
     "disciplina": "visualização de Dados ",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1956",
+    "instrutores": [
+      "Paulo Roberto Santos Costa"
+    ],
+    "notas": "05 Semestre",
     "reservas": [
       {
         "titulo": "Introdução à ciência de dados : mineração de dados e Big Data",
@@ -3263,6 +3422,11 @@
   },
   {
     "disciplina": "Processos de Desenvolvimento de Software",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1948",
+    "instrutores": [
+      "Nadja da Nobrega Rodrigues"
+    ],
+    "notas": "05 semestre",
     "reservas": [
       {
         "titulo": "Engenharia de software",
@@ -3444,6 +3608,11 @@
   },
   {
     "disciplina": "Engenharia de Dados",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1934",
+    "instrutores": [
+      "Diego Ernesto Rosa Pessoa"
+    ],
+    "notas": "06 Semestre",
     "reservas": [
       {
         "titulo": "Introdução à ciência de dados : mineração de dados e Big Data",
@@ -3479,6 +3648,11 @@
   },
   {
     "disciplina": "Gerência de Projetos de Software",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1921",
+    "instrutores": [
+      "Heremita Brasileiro Lira"
+    ],
+    "notas": "06 Semestre",
     "reservas": [
       {
         "titulo": "Gerenciamento de projetos",
@@ -3596,6 +3770,11 @@
   },
   {
     "disciplina": "Métodos e Técnicas de Pesquisa",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1933",
+    "instrutores": [
+      "Lafayette Batista Melo"
+    ],
+    "notas": "06 Semestre",
     "reservas": [
       {
         "titulo": "Metodologia científica",
@@ -3713,6 +3892,11 @@
   },
   {
     "disciplina": "Programação para Dispositivos Móveis",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1932",
+    "instrutores": [
+      "Valeria Maria Bezerra Cavalcanti Maciel"
+    ],
+    "notas": "06 Semestre",
     "reservas": [
       {
         "titulo": "Android essencial com Kotlin",
@@ -3798,6 +3982,11 @@
   },
   {
     "disciplina": "Segurança da Informação e de Sistemas",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1927",
+    "instrutores": [
+      "Leonidas Francisco de Lima Junior"
+    ],
+    "notas": "06 Semestre",
     "reservas": [
       {
         "titulo": "Redes de computadores",
@@ -3819,6 +4008,11 @@
   },
   {
     "disciplina": "Inteligência Artificial",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1944",
+    "instrutores": [
+      "Thiago Jose Marques Moura"
+    ],
+    "notas": "07 Semestre",
     "reservas": [
       {
         "titulo": "Inteligência artificial",
@@ -3857,6 +4051,13 @@
   },
   {
     "disciplina": "Projeto Integrador III",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1946",
+    "instrutores": [
+      "Gustavo Wagner Diniz Mendes",
+      "Diego Ernesto Rosa Pessoa",
+      "Maxwell Anderson Ielpo do Amaral"
+    ],
+    "notas": "07 Semestre",
     "reservas": [
       {
         "titulo": "Manual de produção científica",
@@ -3910,6 +4111,11 @@
   },
   {
     "disciplina": "Qualidade de Processo de Software",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1935",
+    "instrutores": [
+      "Maxwell Anderson Ielpo do Amaral"
+    ],
+    "notas": "07 Semestre",
     "reservas": [
       {
         "titulo": "Engenharia de software : uma abordagem profissional",
@@ -3995,6 +4201,11 @@
   },
   {
     "disciplina": "Sistemas Distribuídos",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1936",
+    "instrutores": [
+      "Gustavo Wagner Diniz Mendes"
+    ],
+    "notas": "07 Semestre",
     "reservas": [
       {
         "titulo": "Enterprise JavaBeans 3.0",
@@ -4080,6 +4291,11 @@
   },
   {
     "disciplina": "Empreendedorismo",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1951",
+    "instrutores": [
+      "Jaildo Tavares Pequeno"
+    ],
+    "notas": "08 Semestre",
     "reservas": [
       {
         "titulo": "Empreendedorismo : dando asas ao espírito empreendedor",
@@ -4260,6 +4476,11 @@
   },
   {
     "disciplina": "Trabalho de Conclusão de Curso",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1949",
+    "instrutores": [
+      "Heremita Brasileiro Lira"
+    ],
+    "notas": "08 Semestre",
     "reservas": [
       {
         "titulo": "Introdução à metodologia do trabalho científico : elaboração de trabalhos na graduação",
@@ -4393,6 +4614,11 @@
   },
   {
     "disciplina": "Cálculo Diferencial e integral II - Optativa",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1970",
+    "instrutores": [
+      "Thiago Andrade Fernandes"
+    ],
+    "notas": "Optativa",
     "reservas": [
       {
         "titulo": "Cálculo, volume I",
@@ -4671,6 +4897,11 @@
   },
   {
     "disciplina": "Economia e Mercado - Optativa",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1968",
+    "instrutores": [
+      "Patricia Soares de Araujo Carvalho"
+    ],
+    "notas": "Optativa",
     "reservas": [
       {
         "titulo": "Desenvolvimento Econômico",
@@ -4787,6 +5018,11 @@
   },
   {
     "disciplina": "Gerência de Projetos de Tecnologia da Informação - Optativa",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1962",
+    "instrutores": [
+      "Heremita Brasileiro Lira"
+    ],
+    "notas": "Optativa",
     "reservas": [
       {
         "titulo": "Um guia do conhecimento em gerenciamento de projetos (guia PMBOK)",
@@ -4856,6 +5092,11 @@
   },
   {
     "disciplina": "Integração de Dados - Optativa",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1958",
+    "instrutores": [
+      "Diego Ernesto Rosa Pessoa"
+    ],
+    "notas": "Optativa",
     "reservas": [
       {
         "titulo": "Sistemas de banco de dados",
@@ -4893,6 +5134,9 @@
   },
   {
     "disciplina": "Língua Brasileira de Sinais - Optativa",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1969",
+    "instrutores": [],
+    "notas": "Optativa",
     "reservas": [
       {
         "titulo": "Letramento e minorias",
@@ -4914,6 +5158,12 @@
   },
   {
     "disciplina": "Mineração de Dados - Optativa",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1960",
+    "instrutores": [
+      "Damires Yluska de Souza Fernandes",
+      "Thiago Jose Marques Moura"
+    ],
+    "notas": "Optativa",
     "reservas": [
       {
         "titulo": "Data mining",
@@ -4935,6 +5185,11 @@
   },
   {
     "disciplina": "Programação de Scripts - Optativa",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1965",
+    "instrutores": [
+      "Rodrigo Pinheiro Marques de Araujo"
+    ],
+    "notas": "Optativa",
     "reservas": [
       {
         "titulo": "Programação Shell Linux",
@@ -5050,6 +5305,11 @@
   },
   {
     "disciplina": "Técnicas Avançadas de Programação - Optativa",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1964",
+    "instrutores": [
+      "Thiago Gouveia da Silva"
+    ],
+    "notas": "Optativa",
     "reservas": [
       {
         "titulo": "Algoritmos",
@@ -5183,6 +5443,11 @@
   },
   {
     "disciplina": "Teoria e Paradigmas de Computação - Optatitva",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1971",
+    "instrutores": [
+      "Gustavo Wagner Diniz Mendes"
+    ],
+    "notas": "Optativa",
     "reservas": [
       {
         "titulo": "Introdução à teoria de autômatos, linguagens e computação",
@@ -5204,6 +5469,11 @@
   },
   {
     "disciplina": "Tópicos avançados em inteligência artificial - Optativa",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1966",
+    "instrutores": [
+      "Thiago Gouveia da Silva"
+    ],
+    "notas": "Optativa",
     "reservas": [
       {
         "titulo": "Inteligência artificial",
@@ -5242,6 +5512,11 @@
   },
   {
     "disciplina": "Virtualização - Optativa",
+    "urlReserva": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-course-details.pl?course_id=1967",
+    "instrutores": [
+      "Paulo Ditarso Maciel Junior"
+    ],
+    "notas": "Optativa",
     "reservas": [
       {
         "titulo": "Virtualização",
