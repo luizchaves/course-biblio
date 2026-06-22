@@ -133,7 +133,7 @@
 <div id="content"><div class="loading">Carregando ementas…</div></div>
 
 <script>
-/* ── Markdown parser ──────────────────────────────────────────── */
+/* ── Rendering helpers ───────────────────────────────────────── */
 function normalizeLabel(value) {
   return value
     .normalize('NFD')
@@ -142,68 +142,8 @@ function normalizeLabel(value) {
     .toLowerCase();
 }
 
-function parseEmentario(markdown) {
-  const periods = [];
-  let period = null;
-  let subject = null;
-  let section = null;
-
-  for (const rawLine of markdown.split(/\r?\n/)) {
-    const line = rawLine.trim();
-    let match;
-
-    if ((match = line.match(/^##\s+(.+)$/))) {
-      period = { name: match[1].trim(), subjects: [] };
-      periods.push(period);
-      subject = null;
-      section = null;
-      continue;
-    }
-
-    if ((match = line.match(/^###\s+(.+)$/))) {
-      if (!period) continue;
-      subject = {
-        name: match[1].trim(),
-        period: period.name,
-        metadata: {},
-        workload: {},
-        sections: [],
-      };
-      period.subjects.push(subject);
-      section = null;
-      continue;
-    }
-
-    if (!subject) continue;
-
-    if ((match = line.match(/^####\s+(.+)$/))) {
-      section = { name: match[1].trim(), lines: [] };
-      subject.sections.push(section);
-      continue;
-    }
-
-    if ((match = line.match(/^-\s+\*\*(.+?):\*\*\s*(.*)$/))) {
-      const label = match[1].trim();
-      const value = match[2].trim();
-      if (section && normalizeLabel(section.name) === 'distribuicao da carga horaria') {
-        subject.workload[label] = value;
-      } else if (!section) {
-        subject.metadata[label] = value;
-      } else {
-        section.lines.push(line);
-      }
-      continue;
-    }
-
-    if (section && line) section.lines.push(line);
-  }
-
-  return periods;
-}
-
-/* ── Rendering helpers ───────────────────────────────────────── */
 function escapeHtml(value) {
-  return value
+  return String(value ?? '')
     .replaceAll('&', '&amp;')
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;')
@@ -211,57 +151,29 @@ function escapeHtml(value) {
     .replaceAll("'", '&#039;');
 }
 
-function renderInline(markdown) {
+function renderText(value) {
   const links = [];
-  let value = markdown.replace(/\[([^\]]+)]\((https?:\/\/[^)]+)\)/g, (_, text, url) => {
+  let rendered = String(value ?? '').replace(/(\b(?:www\.)?[^\s()]+)[ \t]+\((https?:\/\/[^)]+)\)/g, (_, label, url) => {
     const token = `@@LINK${links.length}@@`;
-    links.push(`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(text)}</a>`);
+    links.push(`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(label)}</a>`);
     return token;
   });
 
-  value = escapeHtml(value)
-    .replace(/\\([\\`*{}\[\]()#+\-.!_>])/g, '$1')
-    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  rendered = escapeHtml(rendered).replace(/https?:\/\/[^\s<)]+/g, rawUrl => {
+    const suffix = rawUrl.match(/[.,;:]+$/)?.[0] ?? '';
+    const url = suffix ? rawUrl.slice(0, -suffix.length) : rawUrl;
+    return `<a href="${url}" target="_blank" rel="noopener">${url}</a>${suffix}`;
+  });
 
   links.forEach((link, index) => {
-    value = value.replace(`@@LINK${index}@@`, link);
+    rendered = rendered.replace(`@@LINK${index}@@`, link);
   });
-  return value;
+  return rendered;
 }
 
-function renderBlocks(lines) {
-  const blocks = [];
-  let list = null;
-
-  const flushList = () => {
-    if (!list) return;
-    blocks.push(`<${list.type}>${list.items.map(item => `<li>${renderInline(item)}</li>`).join('')}</${list.type}>`);
-    list = null;
-  };
-
-  for (const line of lines) {
-    let match = line.match(/^\d+\.\s+(.+)$/);
-    if (match) {
-      if (!list || list.type !== 'ol') flushList();
-      list ??= { type: 'ol', items: [] };
-      list.items.push(match[1]);
-      continue;
-    }
-
-    match = line.match(/^[-*]\s+(.+)$/);
-    if (match) {
-      if (!list || list.type !== 'ul') flushList();
-      list ??= { type: 'ul', items: [] };
-      list.items.push(match[1]);
-      continue;
-    }
-
-    flushList();
-    blocks.push(`<p>${renderInline(line)}</p>`);
-  }
-
-  flushList();
-  return blocks.join('');
+function renderBibliography(entries) {
+  if (!entries?.length) return '';
+  return `<ol>${entries.map(item => `<li>${renderText(item.referencia)}</li>`).join('')}</ol>`;
 }
 
 function semesterSort(keys) {
@@ -276,22 +188,13 @@ function semesterSort(keys) {
   });
 }
 
-function metadataValue(subject, label) {
-  const wanted = normalizeLabel(label);
-  const entry = Object.entries(subject.metadata)
-    .find(([key]) => normalizeLabel(key) === wanted);
-  return entry?.[1] ?? '';
-}
-
 function renderSubject(subject) {
-  const type = metadataValue(subject, 'Tipo de Disciplina');
-  const hours = metadataValue(subject, 'Carga Horária');
-  const prerequisites = metadataValue(subject, 'Pré-Requisitos');
-  const instructors = metadataValue(subject, 'Docente');
-  const visibleSections = subject.sections.filter(item => {
-    const name = normalizeLabel(item.name);
-    return item.lines.length && name !== 'distribuicao da carga horaria';
-  });
+  const type = subject.tipoDisciplina ?? '';
+  const hours = subject.cargaHoraria;
+  const prerequisites = subject.preRequisitos?.length
+    ? subject.preRequisitos.join(', ')
+    : 'Não há';
+  const instructors = subject.docentes?.join(', ') ?? '';
 
   const card = document.createElement('article');
   card.className = 'subject';
@@ -301,7 +204,7 @@ function renderSubject(subject) {
 
   const name = document.createElement('div');
   name.className = 'subject-name';
-  name.textContent = subject.name;
+  name.textContent = subject.disciplina;
   header.appendChild(name);
 
   if (instructors) {
@@ -323,7 +226,7 @@ function renderSubject(subject) {
     item.innerHTML = `<strong>Tipo:</strong> ${escapeHtml(type)}`;
     meta.appendChild(item);
   }
-  if (hours) {
+  if (hours != null) {
     const item = document.createElement('span');
     item.innerHTML = `<strong>Carga total:</strong> ${escapeHtml(hours)} h`;
     meta.appendChild(item);
@@ -334,12 +237,30 @@ function renderSubject(subject) {
     meta.appendChild(item);
   }
 
-  for (const [label, value] of Object.entries(subject.workload)) {
+  const workloadLabels = {
+    teorica: 'Teórica',
+    pratica: 'Prática',
+    ead: 'EaD',
+    extensao: 'Extensão',
+  };
+  for (const [key, value] of Object.entries(subject.distribuicaoCargaHoraria ?? {})) {
+    if (value == null) continue;
     const item = document.createElement('span');
-    item.innerHTML = `<strong>${escapeHtml(label)}:</strong> ${escapeHtml(value)} h`;
+    item.innerHTML = `<strong>${workloadLabels[key] ?? escapeHtml(key)}:</strong> ${escapeHtml(value)} h`;
     meta.appendChild(item);
   }
   if (meta.children.length) content.appendChild(meta);
+
+  const visibleSections = [
+    { name: 'Ementa', html: subject.ementa ? `<p>${renderText(subject.ementa)}</p>` : '' },
+    { name: 'Bibliografia Básica', html: renderBibliography(subject.bibliografiaBasica) },
+    { name: 'Bibliografia Complementar', html: renderBibliography(subject.bibliografiaComplementar) },
+    {
+      name: 'Bibliografia Suplementar (Periódicos)',
+      html: subject.bibliografiaSuplementar ? `<p>${renderText(subject.bibliografiaSuplementar)}</p>` : '',
+    },
+    { name: 'Observações', html: subject.observacoes ? `<p>${renderText(subject.observacoes)}</p>` : '' },
+  ].filter(item => item.html);
 
   for (const item of visibleSections) {
     const section = document.createElement('section');
@@ -352,7 +273,7 @@ function renderSubject(subject) {
 
     const body = document.createElement('div');
     body.className = 'section-content';
-    body.innerHTML = renderBlocks(item.lines);
+    body.innerHTML = item.html;
     section.appendChild(body);
     content.appendChild(section);
   }
@@ -366,20 +287,17 @@ async function load() {
   const content = document.getElementById('content');
 
   try {
-    const response = await fetch('ementario.md');
+    const response = await fetch('ementario.json');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
-    const periods = parseEmentario(await response.text());
+    const subjects = await response.json();
     const groups = {};
 
-    for (const period of periods) {
-      for (const subject of period.subjects) {
-        const type = metadataValue(subject, 'Tipo de Disciplina');
-        const group = normalizeLabel(type).includes('optativ')
-          ? 'Disciplinas optativas'
-          : period.name;
-        (groups[group] ??= []).push(subject);
-      }
+    for (const subject of subjects) {
+      const group = normalizeLabel(subject.tipoDisciplina).includes('optativ')
+        ? 'Disciplinas optativas'
+        : subject.periodo;
+      (groups[group] ??= []).push(subject);
     }
 
     content.replaceChildren();

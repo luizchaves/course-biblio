@@ -263,11 +263,11 @@ function bookIsbns(book, bibFields) {
 
 function formatIsbns(isbns) {
   return isbns.map(isbn => {
-    const normalized = isbn.replace(/[^0-9X]/gi, '');
+    const normalized = String(isbn).toUpperCase().replace(/[^0-9X]/g, '');
     const label = normalized.length === 13
       ? 'ISBN-13'
       : normalized.length === 10 ? 'ISBN-10' : 'ISBN';
-    return `${label} ${isbn}.`;
+    return `${label} ${normalized}.`;
   }).join(' ');
 }
 
