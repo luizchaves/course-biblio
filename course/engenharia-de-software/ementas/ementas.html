@@ -173,6 +173,10 @@
 
     .error { color: #c00; }
 
+    .ref-original { color: #aaa; text-decoration: line-through; }
+    .ref-abnt { margin-top: 4px; }
+    .ref-abnt strong { font-weight: 600; }
+
     .tabs-container {
       display: flex;
       flex-wrap: wrap;
@@ -259,9 +263,14 @@ function renderText(value) {
   return rendered;
 }
 
-function parseBibUrl(text) {
-  const m = text.match(/\burl\s*=\s*\{([^}]+)\}/i);
-  return m ? m[1].trim() : null;
+function parseBibtex(text) {
+  const result = {};
+  const re = /(\w+)\s*=\s*\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}/gi;
+  let m;
+  while ((m = re.exec(text)) !== null) {
+    result[m[1].toLowerCase()] = m[2].trim();
+  }
+  return result;
 }
 
 async function fetchBibCache(subjects) {
@@ -278,18 +287,58 @@ async function fetchBibCache(subjects) {
     try {
       const r = await fetch('../' + path);
       if (r.ok) {
-        const url = parseBibUrl(await r.text());
-        if (url) cache[path] = url;
+        const bib = parseBibtex(await r.text());
+        cache[path] = { url: bib.url ?? null, bib };
       }
     } catch {}
   }));
   return cache;
 }
 
+function formatABNT(bib) {
+  if (!bib?.title) return '';
+
+  const clean = s => (s ?? '').replace(/\s*[-,;:/\\]\s*$/, '').replace(/\s*\.\s*$/, '').trim();
+
+  const authorStr = (bib.author ?? '').replace(/\s+/g, ' ').trim();
+  let authorsABNT = '';
+  if (authorStr) {
+    const parts = authorStr.split(/\s+and\s+/i).map(a => a.trim()).filter(Boolean);
+    const fmt = parts.map(a => {
+      const [last, ...rest] = a.split(',').map(s => s.trim());
+      return rest.length > 0 ? `${last.toUpperCase()}, ${rest.join(' ')}` : a.toUpperCase();
+    });
+    authorsABNT = fmt.length > 3 ? fmt[0] + ' et al.' : fmt.join('; ');
+  }
+
+  const title     = clean(bib.title);
+  const edition   = clean(bib.edition ?? '');
+  const address   = clean(bib.address ?? '');
+  const publisher = clean(bib.publisher ?? '');
+  const year      = clean(bib.year ?? '');
+  const isbn      = bib.isbn ? bib.isbn.split(',')[0].trim() : '';
+
+  const parts = [];
+  if (authorsABNT) parts.push(escapeHtml(authorsABNT) + '.');
+  if (title)       parts.push(`<strong>${escapeHtml(title)}</strong>.`);
+  if (edition)     parts.push(escapeHtml(edition) + '.');
+  if (address && publisher) {
+    parts.push(`${escapeHtml(address)}: ${escapeHtml(publisher)}, ${escapeHtml(year)}.`);
+  } else if (publisher) {
+    parts.push(`${escapeHtml(publisher)}, ${escapeHtml(year)}.`);
+  } else if (year) {
+    parts.push(escapeHtml(year) + '.');
+  }
+  if (isbn) parts.push(`ISBN ${escapeHtml(isbn)}.`);
+
+  return parts.join(' ');
+}
+
 function renderBibliography(entries, bibCache) {
   if (!entries?.length) return '';
   return `<ol>${entries.map(item => {
-    const urls = (item.bibtex ?? []).map(p => bibCache[p]).filter(Boolean);
+    const urls = (item.bibtex ?? []).map(p => bibCache[p]?.url).filter(Boolean);
+    const firstBib = (item.bibtex ?? []).map(p => bibCache[p]?.bib).find(Boolean);
     let kohaLinks = '';
     if (urls.length > 0) {
       kohaLinks = urls.map((url, index) => {
@@ -328,7 +377,13 @@ function renderBibliography(entries, bibCache) {
       copiesBadge = `<span class="copies-badge ${cls}" title="${label}">${n} ex. JP</span>`;
     }
 
-    return `<li>${renderText(item.referencia)}${copiesBadge}${links}</li>`;
+    const hasJP = item.quantidadeEmJP != null && item.quantidadeEmJP > 0;
+    const abntHtml = hasJP ? formatABNT(firstBib) : '';
+    const refHtml = hasJP && abntHtml
+      ? `<span class="ref-original">${renderText(item.referencia)}</span><div class="ref-abnt">${abntHtml}</div>`
+      : renderText(item.referencia);
+
+    return `<li>${refHtml}${copiesBadge}${links}</li>`;
   }).join('')}</ol>`;
 }
 
