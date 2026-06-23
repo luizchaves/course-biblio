@@ -1870,7 +1870,7 @@
         "situacao": "Disponível",
         "disponiveis": 5,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=2474",
-        "bibtex": "bibtex/SILBERSCHATZ0000.bib",
+        "bibtex": "bibtex/SILBERSCHATZ2006.bib",
         "isbn": [
           "9788535211078"
         ]
@@ -2482,7 +2482,7 @@
     "instrutores": [
       "Francisco Petronio Alencar de Medeiros"
     ],
-    "notas": "04 semestre",
+    "notas": "04 Semestre",
     "reservas": [
       {
         "titulo": "Gestão da inovação e empreendedorismo",
@@ -3284,7 +3284,7 @@
     "instrutores": [
       "Nadja da Nobrega Rodrigues"
     ],
-    "notas": "05 semestre",
+    "notas": "05 Semestre",
     "reservas": [
       {
         "titulo": "Engenharia de software",
@@ -4963,7 +4963,7 @@
         "situacao": "Apenas consulta",
         "disponiveis": 3,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=5747",
-        "bibtex": "bibtex/MENDONÇA0000.bib",
+        "bibtex": "bibtex/MENDONÇA1988.bib",
         "isbn": []
       },
       {

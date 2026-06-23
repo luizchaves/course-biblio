@@ -493,7 +493,9 @@
       },
       {
         "referencia": "LEITHOLD, L. O Cálculo com Geometria Analítica, v. 2. São Paulo: Harbra, 1994.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/LEITHOLD1994.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -512,7 +514,9 @@
       },
       {
         "referencia": "SIMMONS, G. F. Cálculo com Geometria Analítica. São Paulo: Pearson, 1996.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SIMMONS1988.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -782,7 +786,9 @@
       },
       {
         "referencia": "HUTCHINSON, T.; WATERS, A. English for specific purposes. Cambridge: Cambridge University Press, 1987.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/HUTCHINSON1987.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -1094,7 +1100,9 @@
       },
       {
         "referencia": "STRANG, G. Álgebra Linear. São Paulo: Cengage Learning, 2010.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/STRANG2010.bib"
+        ],
         "tipo": "complementar"
       }
     ]
@@ -1158,14 +1166,16 @@
       {
         "referencia": "ELMASRI, Ramez; Navathe, Shamkant B. Sistemas de Banco de Dados. Editora Pearson/Addison Wesley Pub Co Inc. 7a Edição, 2019. ISBN-13 9788543025001.",
         "bibtex": [
-          "bibtex/ELMASRI2018.bib"
+          "bibtex/ELMASRI2018.bib",
+          "bibtex/ELMASRI2005.bib"
         ],
         "tipo": "basica"
       },
       {
         "referencia": "HEUSER, Carlos Alberto. Projeto de Banco de Dados. Editora Bookman – Grupo a. 6a edição, 2009. ISBN-13 9798577803828.",
         "bibtex": [
-          "bibtex/HEUSER2009.bib"
+          "bibtex/HEUSER2009.bib",
+          "bibtex/HEUSER2004.bib"
         ],
         "tipo": "basica"
       },
@@ -1184,7 +1194,8 @@
       {
         "referencia": "SILBERSCHATZ, Abraham; KORTH, S., SUDARSHAN, Henry. Sistema de Banco de Dados. Editora GEN LTC; 7ª edição, 2020. ISBN-13 9788595157330.",
         "bibtex": [
-          "bibtex/SILBERSCHATZ2012.bib"
+          "bibtex/SILBERSCHATZ2012.bib",
+          "bibtex/SILBERSCHATZ2006.bib"
         ],
         "tipo": "basica"
       }
@@ -1301,14 +1312,6 @@
           "bibtex/BAGNO2013.bib",
           "bibtex/BAGNO2001.bib"
         ],
-        "tipo": "basica"
-      },
-      {
-        "referencia": "BAGNO, Marcos. Preconceito linguístico – o que é, como se faz. 49.ed. São Paulo: Edições Loyola, 1999.",
-        "bibtex": [
-          "bibtex/BAGNO2013.bib",
-          "bibtex/BAGNO2001.bib"
-        ],
         "tipo": "complementar"
       },
       {
@@ -1377,7 +1380,9 @@
       {
         "referencia": "DEITEL, Paul; DEITEL, Harvey. Java: como programar. 10. ed. São Paulo: Pearson, 2016. ISBN-13 9788543004792",
         "bibtex": [
-          "bibtex/DEITEL2017.bib"
+          "bibtex/DEITEL2017.bib",
+          "bibtex/DEITEL2010.bib",
+          "bibtex/DEITEL2005.bib"
         ],
         "tipo": "complementar"
       },
@@ -1417,7 +1422,8 @@
       {
         "referencia": "SIERRA, Kathy; BATES, Bert. Use a cabeça: Java 2. ed. Rio de Janeiro: Alta Books, 2007. 470 p. il. (Use a cabeça!). ISBN-13 9788576081739.",
         "bibtex": [
-          "bibtex/SIERRA2007.bib"
+          "bibtex/SIERRA2007.bib",
+          "bibtex/SIERRA2005.bib"
         ],
         "tipo": "basica"
       },
@@ -1538,6 +1544,7 @@
       {
         "referencia": "KUROSE, James F. e ROSS, Keith W. Redes de computadores e a Internet: uma abordagem top down. 3ª Edição. Pearson, 2006",
         "bibtex": [
+          "bibtex/KUROSE2013.bib",
           "bibtex/KUROSE2006.bib"
         ],
         "tipo": "basica"
@@ -1560,7 +1567,8 @@
       {
         "referencia": "TANENBAUM, Andrew S; WETHERALL, David. Redes de computadores. 5ª Edição. São Paulo: Pearson, 2011",
         "bibtex": [
-          "bibtex/TANENBAUM2011.bib"
+          "bibtex/TANENBAUM2011.bib",
+          "bibtex/TANENBAUM2003.bib"
         ],
         "tipo": "basica"
       },
@@ -1601,7 +1609,8 @@
       {
         "referencia": "DATE, C.J., Introdução a Sistemas de Bancos de Dados. Editora Campus; 8ª edição, 2004. ISBN-13 9788535212730",
         "bibtex": [
-          "bibtex/DATE2004.bib"
+          "bibtex/DATE2004.bib",
+          "bibtex/DATE2000.bib"
         ],
         "tipo": "complementar"
       },
@@ -1618,7 +1627,8 @@
       {
         "referencia": "ELMASRI, Ramez; Navathe, Shamkant B. Sistemas de Banco de Dados. Editora Pearson/Addison Wesley Pub Co Inc. 7a Edição, 2019. ISBN-13 9788543025001",
         "bibtex": [
-          "bibtex/ELMASRI2018.bib"
+          "bibtex/ELMASRI2018.bib",
+          "bibtex/ELMASRI2005.bib"
         ],
         "tipo": "basica"
       },
@@ -1669,7 +1679,9 @@
       },
       {
         "referencia": "DIAS, Alexandre Aparecido et al. Gestão da inovação e empreendedorismo. Rio de Janeiro: Elsevier, 2013. 364 p. il.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/PORTO2013.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -1841,8 +1853,6 @@
       {
         "referencia": "SILBERSCHATZ, Abraham; GALVIN, Peter Baer; GAGNE, Greg. Fundamentos de sistemas operacionais princípios básicos. Rio de Janeiro: LTC, 2013. 432 p. il.",
         "bibtex": [
-          "bibtex/SILBERSCHATZ2010.bib",
-          "bibtex/SILBERSCHATZ2004.bib",
           "bibtex/SILBERSCHATZ2013.bib"
         ],
         "tipo": "complementar"
@@ -1911,7 +1921,9 @@
       },
       {
         "referencia": "CANDAU, V. M. Somos todos iguais? Escola, discriminação e educação em direitos humanos. Rio de Janeiro: D\\&PA, 2003.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SACAVINO2012.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -2019,7 +2031,9 @@
       },
       {
         "referencia": "SOMMERVILLE, I. Engenharia de Software. 10ª ed. São Paulo: Pearson, 2018.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SOMMERVILLE2007.bib"
+        ],
         "tipo": "basica"
       }
     ]
@@ -2059,7 +2073,9 @@
       },
       {
         "referencia": "DASGUPTA, S., PAPADIMITRIOU, C. VAZIRANI, U. Algorithms. McGraw-Hill Science/Engineering/Math; 1 edition (2006).",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/DASGUPTA2009.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -2145,12 +2161,15 @@
       },
       {
         "referencia": "HORSTMANN, Cay S. Core Java: fundamentos. 8. ed. São Paulo: Pearson, 2010. 383 p. 1v. il.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/HORSTMANN2010.bib"
+        ],
         "tipo": "complementar"
       },
       {
         "referencia": "LARMAN, Craig. Utilizando UML e Padrões – Uma introdução à análise e ao projeto orientados a objetos. Bookman, 2000",
         "bibtex": [
+          "bibtex/LARMAN2004.bib",
           "bibtex/LARMAN2000.bib"
         ],
         "tipo": "basica"
@@ -2158,6 +2177,7 @@
       {
         "referencia": "PRESSMAN, Roger S. Engenharia de software. São Paulo: Pearson, 1995. 1056",
         "bibtex": [
+          "bibtex/PRESSMAN2011.bib",
           "bibtex/PRESSMAN1995.bib"
         ],
         "tipo": "complementar"
@@ -2232,7 +2252,9 @@
       },
       {
         "referencia": "MAYER, P. L. Probabilidade: Aplicações à Estatística. Editora LTC, 2ª edição, 2000.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/MEYER1983.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -2245,7 +2267,8 @@
       {
         "referencia": "SPIEGEL, Murray. Estatística. Editora Bookman, 4ª edição, 2009",
         "bibtex": [
-          "bibtex/SPIEGEL2009.bib"
+          "bibtex/SPIEGEL2009.bib",
+          "bibtex/SPIEGEL1994.bib"
         ],
         "tipo": "basica"
       },
@@ -2331,8 +2354,8 @@
       {
         "referencia": "PREECE, Jennifer; ROGERS, Yvonne; SHARP, Helen. Design de interação. Porto Alegre: Bookman, 2008. 548 p. 05",
         "bibtex": [
-          "bibtex/ROGERS2013.bib",
-          "bibtex/PREECE2005.bib"
+          "bibtex/PREECE2005.bib",
+          "bibtex/ROGERS2013.bib"
         ],
         "tipo": "complementar"
       },
@@ -2360,7 +2383,9 @@
       },
       {
         "referencia": "SOMMERVILLE, I. Engenharia De Software - 9ª Ed. 2011. Editora Pearson Prentice Hall;",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SOMMERVILLE2007.bib"
+        ],
         "tipo": "basica"
       }
     ]
@@ -2777,6 +2802,7 @@
       {
         "referencia": "GIL, Antonio Carlos. Como elaborar projetos de pesquisa. São Paulo: Atlas, 2010. (ISBN-13 9788522458233)",
         "bibtex": [
+          "bibtex/GIL2017.bib",
           "bibtex/GIL2010.bib"
         ],
         "tipo": "basica"
@@ -2929,7 +2955,9 @@
       },
       {
         "referencia": "TANENBAUM, Andrew S., WETHERALL, David J. Computer Networks (5th Edition), Pearson; (October 7, 2010)",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/TANENBAUM2011.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -3233,7 +3261,9 @@
       },
       {
         "referencia": "SOMMERVILE, I. Engenharia de Software. 10 ed. São Paulo: Pearson. 2018.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SOMMERVILLE2007.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -3243,7 +3273,9 @@
       },
       {
         "referencia": "WERKEMA, C. Criando a cultura Lean Seis Sigma. Editora Elsevier. São Paulo: 2004.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/WERKEMA2012.bib"
+        ],
         "tipo": "complementar"
       }
     ]
@@ -3359,7 +3391,9 @@
       },
       {
         "referencia": "FACELI, K., LORENA, A. C., GAMA, J., ALMEIDA, T. A., Carvalho, A.C.P.L.F. Inteligência Artificial: Uma Abordagem de Aprendizado de Máquina. 2ª Edição. LTC, 2024.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/FACELI2011.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -3953,7 +3987,7 @@
       {
         "referencia": "MENDONÇA, Sônia Regina de. Estado e Economia no Brasil . São Paulo: Paz e Terra, 2002.",
         "bibtex": [
-          "bibtex/MENDONÇA0000.bib"
+          "bibtex/MENDONÇA1988.bib"
         ],
         "tipo": "complementar"
       },
@@ -4044,16 +4078,12 @@
       },
       {
         "referencia": "DORNELAS, José Carlos Assis; SPINELLI, Stephen; ADAMS, Robert. Criação de novos negócios: empreendedorismo para o século XXI. 9. ed. São Paulo: GEN Atlas, 2013. 480 p. il. ISBN-13 9788535264586.",
-        "bibtex": [
-          "bibtex/DORNELAS2014.bib",
-          "bibtex/DORNELAS2014.bib"
-        ],
+        "bibtex": [],
         "tipo": "complementar"
       },
       {
         "referencia": "DORNELAS, José. Empreendedorismo: transformando ideias em negócios. 7. ed. Rio de Janeiro: Empreende, 2021 288 p. il. ISBN-13 9786587052083.",
         "bibtex": [
-          "bibtex/DORNELAS2014.bib",
           "bibtex/DORNELAS2014.bib"
         ],
         "tipo": "basica"

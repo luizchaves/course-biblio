@@ -327,7 +327,10 @@ async function load() {
     } catch (_) {}
   }));
 
-  const bySemester = groupBy(subjects, s => s.notas || 'Sem semestre');
+  const bySemester = groupBy(subjects, s => {
+    const raw = s.notas?.trim() || 'Sem semestre';
+    return raw.replace(/(\d+)\s+semestre/i, (_, num) => `${num} Semestre`);
+  });
   const semesterOrder = semesterSort(Object.keys(bySemester));
   const content = document.getElementById('content');
 
