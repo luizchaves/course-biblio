@@ -22,7 +22,12 @@
       color: #111;
     }
 
-    .semester { margin-bottom: 32px; }
+    .semester { margin-bottom: 32px; display: none; }
+    .semester.active { display: block; animation: fadeIn 0.3s ease; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
     .semester-title {
       font-size: 1rem;
@@ -114,9 +119,10 @@
 
     .koha-links {
       display: inline-flex;
+      vertical-align: middle;
+      align-items: center;
       gap: 2px;
       margin-left: 4px;
-      vertical-align: text-bottom;
     }
 
     .koha-link {
@@ -124,9 +130,32 @@
       padding: 2px;
       border-radius: 3px;
       color: #0060df;
+      background: #eaf2ff;
+      text-decoration: none;
     }
 
-    .koha-link:hover { background: #eaf2ff; }
+    .koha-link:hover { background: #cfe2ff; }
+
+    .koha-link-disabled {
+      color: #d93025;
+      background: #fce8e6;
+      cursor: not-allowed;
+    }
+
+    .copies-badge {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 600;
+      padding: 1px 6px;
+      border-radius: 10px;
+      white-space: nowrap;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+
+    .copies-badge-none { background: #fce8e6; color: #c5221f; }
+    .copies-badge-few  { background: #fef7e0; color: #7a5100; }
+    .copies-badge-ok   { background: #e6f4ea; color: #1e6a35; }
 
     .koha-link svg {
       width: 13px;
@@ -144,6 +173,43 @@
 
     .error { color: #c00; }
 
+    .tabs-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 8px;
+    }
+
+    .tab-button {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #555;
+      background: transparent;
+      border: none;
+      padding: 5px 12px;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .tab-button:hover {
+      background: #eaf2ff;
+      color: #0060df;
+    }
+
+    .tab-button.active {
+      background: #0060df;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 96, 223, 0.2);
+    }
+
+    .tab-button.active .copies-badge {
+      background: rgba(255, 255, 255, 0.22);
+      color: #fff;
+    }
+
     @media (max-width: 640px) {
       body { padding: 14px; }
     }
@@ -151,7 +217,7 @@
 </head>
 <body>
 
-<h1>Ementas — Bacharelado em Engenharia de Software</h1>
+<h1 id="page-title">Ementas — Bacharelado em Engenharia de Software</h1>
 <div id="content"><div class="loading">Carregando ementas…</div></div>
 
 <script>
@@ -224,20 +290,45 @@ function renderBibliography(entries, bibCache) {
   if (!entries?.length) return '';
   return `<ol>${entries.map(item => {
     const urls = (item.bibtex ?? []).map(p => bibCache[p]).filter(Boolean);
-    const kohaLinks = urls.map((url, index) => {
-      const label = urls.length > 1
-        ? `Abrir registro ${index + 1} no Koha`
-        : 'Abrir registro no Koha';
-      return `<a class="koha-link" href="${escapeHtml(url)}" target="_blank" rel="noopener" aria-label="${label}" title="${label}">
-        <svg class="lucide lucide-external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M15 3h6v6"></path>
-          <path d="M10 14 21 3"></path>
-          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+    let kohaLinks = '';
+    if (urls.length > 0) {
+      kohaLinks = urls.map((url, index) => {
+        const label = urls.length > 1
+          ? `Abrir registro ${index + 1} no Koha`
+          : 'Abrir registro no Koha';
+        return `<a class="koha-link" href="${escapeHtml(url)}" target="_blank" rel="noopener" aria-label="${label}" title="${label}">
+          <svg class="lucide lucide-external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M15 3h6v6"></path>
+            <path d="M10 14 21 3"></path>
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          </svg>
+        </a>`;
+      }).join('');
+    } else {
+      const paths = item.bibtex ?? [];
+      const label = paths.length > 0
+        ? 'Registro indisponível no Koha'
+        : 'Sem registro BibTeX cadastrado';
+      kohaLinks = `<span class="koha-link koha-link-disabled" title="${label}" aria-label="${label}">
+        <svg class="lucide lucide-link-2-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
+          <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
+          <line x1="8" x2="16" y1="12" y2="12"></line>
+          <line x1="2" x2="22" y1="2" y2="22"></line>
         </svg>
-      </a>`;
-    }).join('');
-    const links = kohaLinks ? `<span class="koha-links">${kohaLinks}</span>` : '';
-    return `<li>${renderText(item.referencia)}${links}</li>`;
+      </span>`;
+    }
+    const links = `<span class="koha-links">${kohaLinks}</span>`;
+
+    let copiesBadge = '';
+    if (item.quantidadeEmJP != null) {
+      const n = item.quantidadeEmJP;
+      const cls = n === 0 ? 'copies-badge-none' : n <= 2 ? 'copies-badge-few' : 'copies-badge-ok';
+      const label = n === 0 ? 'Nenhum exemplar em JP' : n === 1 ? '1 exemplar em JP' : `${n} exemplares em JP`;
+      copiesBadge = `<span class="copies-badge ${cls}" title="${label}">${n} ex. JP</span>`;
+    }
+
+    return `<li>${renderText(item.referencia)}${copiesBadge}${links}</li>`;
   }).join('')}</ol>`;
 }
 
@@ -270,6 +361,20 @@ function renderSubject(subject, bibCache) {
   const name = document.createElement('div');
   name.className = 'subject-name';
   name.textContent = subject.disciplina;
+
+  const bibs = subject.bibliografias ?? [];
+  const total = bibs.length;
+  const withJP = bibs.filter(b => b.quantidadeEmJP != null && b.quantidadeEmJP > 0).length;
+  if (total > 0) {
+    const cls = withJP === 0 ? 'copies-badge-none' : withJP < total ? 'copies-badge-few' : 'copies-badge-ok';
+    const label = `${withJP} de ${total} referências com exemplares em João Pessoa`;
+    const badge = document.createElement('span');
+    badge.className = `copies-badge ${cls}`;
+    badge.title = label;
+    badge.textContent = `${withJP}/${total}`;
+    name.appendChild(badge);
+  }
+
   header.appendChild(name);
 
   if (instructors) {
@@ -357,29 +462,104 @@ async function load() {
 
     const subjects = await response.json();
     const bibCache = await fetchBibCache(subjects);
+
+    const allBibs = subjects.flatMap(s => s.bibliografias ?? []);
+    const totalBibs = allBibs.length;
+    const totalWithJP = allBibs.filter(b => b.quantidadeEmJP != null && b.quantidadeEmJP > 0).length;
+    if (totalBibs > 0) {
+      const cls = totalWithJP === 0 ? 'copies-badge-none' : totalWithJP < totalBibs ? 'copies-badge-few' : 'copies-badge-ok';
+      const badge = document.createElement('span');
+      badge.className = `copies-badge ${cls}`;
+      badge.title = `${totalWithJP} de ${totalBibs} referências com exemplares em João Pessoa`;
+      badge.textContent = `${totalWithJP}/${totalBibs}`;
+      document.getElementById('page-title').appendChild(badge);
+    }
     const groups = {};
 
     for (const subject of subjects) {
       const group = normalizeLabel(subject.tipoDisciplina).includes('optativ')
-        ? 'Disciplinas optativas'
+        ? 'Optativas'
         : subject.periodo;
       (groups[group] ??= []).push(subject);
     }
 
-    content.replaceChildren();
-    for (const groupName of semesterSort(Object.keys(groups))) {
-      const wrapper = document.createElement('section');
-      wrapper.className = 'semester';
+    const getTabSlug = name => {
+      const match = name.match(/(\d+)/);
+      if (match) return 'p' + match[1];
+      const norm = normalizeLabel(name);
+      if (norm.includes('opt')) return 'optativas';
+      return norm.replace(/\s+/g, '-');
+    };
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialTabSlug = urlParams.get('tab');
 
-      const title = document.createElement('div');
-      title.className = 'semester-title';
-      title.textContent = groupName;
-      wrapper.appendChild(title);
+    content.replaceChildren();
+
+    const tabsContainer = document.createElement('div');
+    tabsContainer.className = 'tabs-container';
+    content.appendChild(tabsContainer);
+
+    const semesterKeys = semesterSort(Object.keys(groups));
+    const sections = [];
+    const buttons = [];
+
+    semesterKeys.forEach((groupName, idx) => {
+      const section = document.createElement('section');
+      section.className = 'semester';
+      section.id = `semester-${idx}`;
 
       groups[groupName]
         .sort((left, right) => left.disciplina.localeCompare(right.disciplina, 'pt-BR'))
-        .forEach(subject => wrapper.appendChild(renderSubject(subject, bibCache)));
-      content.appendChild(wrapper);
+        .forEach(subject => section.appendChild(renderSubject(subject, bibCache)));
+
+      content.appendChild(section);
+      sections.push(section);
+
+      const btn = document.createElement('button');
+      btn.className = 'tab-button';
+      btn.textContent = groupName;
+
+      const groupBibs = groups[groupName].flatMap(s => s.bibliografias ?? []);
+      const gTotal = groupBibs.length;
+      const gWithJP = groupBibs.filter(b => b.quantidadeEmJP != null && b.quantidadeEmJP > 0).length;
+      if (gTotal > 0) {
+        const cls = gWithJP === 0 ? 'copies-badge-none' : gWithJP < gTotal ? 'copies-badge-few' : 'copies-badge-ok';
+        const gbadge = document.createElement('span');
+        gbadge.className = `copies-badge ${cls}`;
+        gbadge.title = `${gWithJP} de ${gTotal} referências com exemplares em João Pessoa`;
+        gbadge.textContent = `${gWithJP}/${gTotal}`;
+        btn.appendChild(gbadge);
+      }
+
+      const slug = getTabSlug(groupName);
+      btn.dataset.slug = slug;
+
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+        sections.forEach(s => s.classList.remove('active'));
+        btn.classList.add('active');
+        section.classList.add('active');
+
+        const url = new URL(window.location);
+        url.searchParams.set('tab', slug);
+        window.history.replaceState({}, '', url);
+      });
+
+      tabsContainer.appendChild(btn);
+      buttons.push(btn);
+    });
+
+    let activeIdx = 0;
+    if (initialTabSlug) {
+      const foundIdx = semesterKeys.findIndex(name => getTabSlug(name) === initialTabSlug);
+      if (foundIdx !== -1) {
+        activeIdx = foundIdx;
+      }
+    }
+
+    if (buttons[activeIdx]) {
+      buttons[activeIdx].classList.add('active');
+      sections[activeIdx].classList.add('active');
     }
   } catch (error) {
     content.innerHTML = '<div class="error">Não foi possível carregar o ementário.</div>';

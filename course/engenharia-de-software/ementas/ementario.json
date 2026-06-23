@@ -23,35 +23,40 @@
         "bibtex": [
           "bibtex/CAPRON2004.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "DALE, Nell; LEWIS, John. Ciência da computação. 4. ed. Rio de Janeiro: LTC, 4. ed. Rio de Janeiro: LTC, 2011. 436 p.",
         "bibtex": [
           "bibtex/DALE2011.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "FOROUZAN, Behrouz; MOSHARRAF, Firouz. Fundamentos da ciência da computação. São Paulo: Cengage Learning, 2011. 560 p. il.",
         "bibtex": [
           "bibtex/FOROUZAN2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "MONTEIRO, Mario Antonio. Introdução à organização de computadores. 5. ed. Rio de Janeiro: LTC, 5. ed. Rio de Janeiro: LTC, 2011. 698 p.",
         "bibtex": [
           "bibtex/MONTEIRO2007.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "STALLINGS, W. Arquitetura e Organização de Computadores. Pearson, 10.8. ed. São Paulo: Pearson, 20170. 864624 p. il.",
         "bibtex": [
           "bibtex/STALLINGS2010.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 15
       },
       {
         "referencia": "TANENBAUM, A.S. Organização estruturada de computadores. 4 ed. Rio de Janeiro: LTC, 2001. 398 p. ISBN-10 8521612532",
@@ -60,21 +65,24 @@
           "bibtex/TANENBAUM2007.bib",
           "bibtex/TANENBAUM2001.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 6
       },
       {
         "referencia": "VAHID, F. Sistemas digitais: projeto, otimização e HDLs. Porto Alegre: Artmed, 2008. 558 p. ISBN-13 9788577801909",
         "bibtex": [
           "bibtex/VAHID2008.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "VELLOSO, Fernando de Castro. Informática –Conceitos Básicos. Campus, 2004.",
         "bibtex": [
           "bibtex/VELLOSO2004.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 2
       }
     ]
   },
@@ -102,14 +110,16 @@
         "bibtex": [
           "bibtex/THOMAS2002.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 15
       },
       {
         "referencia": "FLEMMING, Diva Marília; Gonçalves, Mirian Buss. Cálculo A: funções, limite, derivação e integração. 6. ed.- São Paulo: Pearson Prentice Hall, 2006.",
         "bibtex": [
           "bibtex/FLEMMING2006.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "GUIDORIZZI, Hamilton Luiz, Um Curso de Cálculo. 5ª ed., Rio de Janeiro, LTC, 2001, v.1.",
@@ -117,7 +127,8 @@
           "bibtex/GUIDORIZZI2018.bib",
           "bibtex/GUIDORIZZI2001.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "HOWARD, Anton; Bivens Irl; Davis, Stephen. Cálculo. 10. ed. - Porto Alegre: Bookman, 2014. v.1.",
@@ -125,21 +136,24 @@
           "bibtex/ANTON2014.bib",
           "bibtex/ANTON2007.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "LEITHOLD, Louis. O Cálculo com Geometria Analítica. 3. ed. São Paulo: Harbra, 1994. v.1.",
         "bibtex": [
           "bibtex/LEITHOLD1994.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "ROGAWSKI, Jon. Cálculo. Porto Alegre: Bookman, 2009. v.1.",
         "bibtex": [
           "bibtex/ROGAWSKI2009.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 10
       },
       {
         "referencia": "STEWART, James. Cálculo. 7. ed. São Paulo: Cengage Learning, 2015. v.1.",
@@ -149,14 +163,16 @@
           "bibtex/STEWART2010.bib",
           "bibtex/STEWART2009.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "SWOKOWSKI, Earl. W. Cálculo com Geometria Analítica. 2. ed. São Paulo: Makron Books, 1994. v.1.",
         "bibtex": [
           "bibtex/SWOKOWSKI1994.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 17
       }
     ]
   },
@@ -187,14 +203,16 @@
           "bibtex/BARBIERI2011.bib",
           "bibtex/BARBIERI2007.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "BRAGA, B. Introdução à Engenharia Ambiental. São Paulo: Pearson, 2005.",
         "bibtex": [
           "bibtex/BRAGA2005.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "DIAS, Genebaldo Freire. Educação ambiental: princípios e práticas. 9ª ed. São Paulo: Gaia, 2004. 551 p. il.",
@@ -202,35 +220,40 @@
           "bibtex/DIAS2004.bib",
           "bibtex/DIAS2003.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "LIMA, José Dantas. Gestão de resíduos sólidos urbanos no Brasil. João Pessoa: Emlur, [200-]. 267 p. il.",
         "bibtex": [
           "bibtex/LIMA0000.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "MANO, E. B. et al. Meio Ambiente, Poluição e Reciclagem. São Paulo: Blucher, 2010.",
         "bibtex": [
           "bibtex/MANO2010.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "MONTIBELLER, F. G. Empresas, Desenvolvimento e Ambiente - Diagnóstico e Diretrizes de Sustentabilidade. São Paulo: Manole, 2006.",
         "bibtex": [
           "bibtex/MONTIBELLERFILHO2007.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "PAZ, Ronilson José da; FREITAS, Getúlio Luís de ; SOUZA, Elivan Arantes de . Unidades de conservação no Brasil: história e legislação. João Pessoa: Universitária /UFPB, 2006. 243 p.",
         "bibtex": [
           "bibtex/PAZ2006.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "PHILIPPI JR, A. Saneamento, Saúde e Ambiente. São Paulo: Manole, 2004.",
@@ -244,7 +267,8 @@
         "bibtex": [
           "bibtex/PHILIPPIJR2005.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 10
       }
     ]
   },
@@ -269,8 +293,11 @@
     "bibliografias": [
       {
         "referencia": "HIRAMA, K. Engenharia De Software - Qualidade E Produtividade Com Tecnologia. 2012. Editora Elsevier – Campus;",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/HIRAMA2012.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "JALOTE, P. A Concise Introduction to Software Engineering, 2008. ISBN-13 9781848003026;",
@@ -297,7 +324,8 @@
         "bibtex": [
           "bibtex/PRESSMAN2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "SCHACH, S. R. Object-Oriented and Classical Software Engineering, 8a edição, 2011. ISBN-13 9780073376189;",
@@ -309,14 +337,16 @@
         "bibtex": [
           "bibtex/SOMMERVILLE2007.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 16
       },
       {
         "referencia": "VALENTE, M.T. Engenharia de Software Moderna: Princípios e Práticas para Desenvolvimento de Software com Produtividade, eBook Kindle, ISBN-13 9786500019506.",
         "bibtex": [
           "bibtex/VALENTE2020.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 1
       }
     ]
   },
@@ -345,7 +375,8 @@
         "bibtex": [
           "bibtex/ALMEIDA2013.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 8
       },
       {
         "referencia": "BARRY, Paul. Use a cabeça: Python. Rio de Janeiro: Alta Books, 2012. 458 p. il. (Use a cabeça!).",
@@ -353,14 +384,16 @@
           "bibtex/BARRY2018.bib",
           "bibtex/BARRY2012.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 1
       },
       {
         "referencia": "CORMEN, Thomas H et al. Algoritmos: teoria e prática. 3. ed. Rio de Janeiro: Elsevier, 2012. 926 p. il.",
         "bibtex": [
           "bibtex/CORMEN2012.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "FORBELLONE, André Luiz Villar; EBERSPÄCHER, Henri Frederico. Lógica de programação: a construção de algoritmos e estruturas de dados. 3. ed. São Paulo: Makron Books, 2005. 218 p. il.",
@@ -368,14 +401,16 @@
           "bibtex/FORBELLONE2005.bib",
           "bibtex/FORBELLONE2000.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "LOPES, Anita; GARCIA, Guto. Introdução à programação: 500 algoritmos resolvidos. Rio de Janeiro: Campus, 2002. 469 p. il.",
         "bibtex": [
           "bibtex/LOPES2002.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "MANZANO, José Augusto N. G; OLIVEIRA, Jayr Figueiredo de. Algoritmos: lógica para desenvolvimento de programação de computadores. 27. ed. São Paulo: Érica, 2014. 328 p. il.",
@@ -383,21 +418,24 @@
           "bibtex/MANZANO2014.bib",
           "bibtex/MANZANO2012.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "MENEZES, Nilo Ney Coutinho. Introdução à programação com Python: algoritmos e lógica de programação para iniciantes. São Paulo: Novatec, 2010. 222 p. il.",
         "bibtex": [
           "bibtex/MENEZES2010.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "RAMALHO, Luciano. Python fluente: programação clara, concisa e eficaz. São Paulo: Novatec, 2015. 798 p.",
         "bibtex": [
           "bibtex/RAMALHO2015.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       }
     ]
   },
@@ -428,15 +466,19 @@
       },
       {
         "referencia": "DUCKETT, Jon. HTML e CSS: Projete e Construa Websites. Alta Books, 2016. ISBN-13 9788576089391",
-        "bibtex": [],
-        "tipo": "basica"
+        "bibtex": [
+          "bibtex/DUCKETT2016.bib"
+        ],
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "FREEMAN, Eric; ROBSON, Elisabeth. Use a Cabeça! HTML e CSS. Editora Alta Books, 2015. ISBN-13 9788576088622",
         "bibtex": [
           "bibtex/FREEMAN2016.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "MAZZA, Lucas. HTML5 e CSS3. Domine a Web do Futuro. Casa do Código, 2013. ISBN-13 9788566250053",
@@ -445,8 +487,11 @@
       },
       {
         "referencia": "MILETTO, Evandro Manara. Desenvolvimento de Software II: Introdução ao Desenvolvimento Web com HTML, CSS, JavaScript e PHP. Bookman, 2014. ISBN-13 9788582601952.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/MILETTO2014.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "SILVA, Maurício Samy. Construindo sites com CSS e XHTML: sites controlados por folhas de estilo em cascata. São Paulo: Novatec, 2007. ISBN: 978857522139.",
@@ -455,13 +500,19 @@
       },
       {
         "referencia": "SILVA, Maurício Samy. CSS3: desenvolva aplicações web profissionais com uso dos poderosos recursos de estilização das CSS3. São Paulo: Novatec, 2012. 494 p. il. ISBN-13 9788575222898.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/SILVA2011.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "SILVA, Maurício Samy. Fundamentos de HTML5 e CSS3. São Paulo: Novatec, 2015. ISBN-13 9788575224380",
-        "bibtex": [],
-        "tipo": "basica"
+        "bibtex": [
+          "bibtex/SILVA2015.bib"
+        ],
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       }
     ]
   },
@@ -489,56 +540,64 @@
         "bibtex": [
           "bibtex/CAMARGO2005.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "LEITHOLD, L. O Cálculo com Geometria Analítica, v. 2. São Paulo: Harbra, 1994.",
         "bibtex": [
           "bibtex/LEITHOLD1994.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "REIS, G. L.; SILVA, V. V. Geometria Analítica. Rio de Janeiro: LTC/Grupo Gen, 1996.",
         "bibtex": [
           "bibtex/REIS1996.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "SANTOS, F. J.; FERREIRA, S. F. Geometria Analítica. Porto Alegre: Bookman / Grupo A, 2009.",
         "bibtex": [
           "bibtex/SANTOS2009.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 18
       },
       {
         "referencia": "SIMMONS, G. F. Cálculo com Geometria Analítica. São Paulo: Pearson, 1996.",
         "bibtex": [
           "bibtex/SIMMONS1988.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 10
       },
       {
         "referencia": "STEINBRUCH, A.; WINTERLE, P. Geometria Analítica. São Paulo: Pearson, 1987.",
         "bibtex": [
           "bibtex/STEINBRUCH1987.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 20
       },
       {
         "referencia": "SWOKOWSKI, Earl W. Cálculo com Geometria Analítica – v.2, Makron Books, São Paulo – SP, 1994.",
         "bibtex": [
           "bibtex/SWOKOWSKI1994.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 17
       },
       {
         "referencia": "WINTERLE, P. Vetores e Geometria Analítica. São Paulo: Pearson, 2014.",
         "bibtex": [
           "bibtex/WINTERLE2014.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 14
       }
     ]
   },
@@ -569,28 +628,32 @@
         "bibtex": [
           "bibtex/BEAZLEY2013.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "CAVALCANTI, Valéria Maria Bezerra; RODRIGUES, Nadja da Nóbrega . Estruturas de dados lineares básicas: abordagem prática, com implementação em C e Java. João Pessoa: IFPB, 2015. 294 p. il.",
         "bibtex": [
           "bibtex/CAVALCANTI2015.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "CELES, Waldemar; CERQUEIRA, Renato ; RANGEL, José Lucas . Introdução a estruturas de dados: com técnicas de programação em C. Rio de Janeiro: Elsevier, 2004. 294 p. ISBN-13 9788535283457.",
         "bibtex": [
           "bibtex/CELES2004.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "CORMEN, T. H.; LEISERSON, C.; Algoritmos - Teoria e Prática. Elsevier. 2002. ISBN-10 8535209263",
         "bibtex": [
           "bibtex/CORMEN2012.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "GOODRICH, Michael, TAMASSIA, Roberto, GOLDWASSER, Michael. Data Structures and Algorithms in Python. Wiley. 2013. ISBN-13 9781118290279",
@@ -608,7 +671,8 @@
           "bibtex/MANZANO2014.bib",
           "bibtex/MANZANO2012.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "MILLER, Bradley. Problem Solving with Algorithms and Data Structures Using Python. 2013. ISBN-13 9781590282571.",
@@ -620,14 +684,16 @@
         "bibtex": [
           "bibtex/RAMALHO2015.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "TENENBAUM, Aaron M; LANGSAM, Yedidyah; AUGENSTEIN, Moshe J.. Estruturas de dados usando C. São Paulo: Makron Books, 1995. 884 p. ISBN-10 8534603480.",
         "bibtex": [
           "bibtex/TENENBAUM1995.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 4
       }
     ]
   },
@@ -657,49 +723,56 @@
         "bibtex": [
           "bibtex/FURGERI2013.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "GAMMA, Erich et al. Padrões de projeto: soluções reutilizáveis de software orientado a objetos. Porto Alegre: Bookman, 2000. 364 p.",
         "bibtex": [
           "bibtex/GAMMA2000.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 8
       },
       {
         "referencia": "GUEDES, Gilleanes T. A.. UML 2: uma abordagem prática. 3a. Edição. São Paulo: Novatec, 2018. 496p.",
         "bibtex": [
           "bibtex/GUEDES2009.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "LARMAN Craig. Utilizando UML e padrões: uma introdução à análise e ao projeto orientados a objetos e ao processo unificado. 3. ed. São Paulo: Bookman, 2007. 696p.",
         "bibtex": [
           "bibtex/LARMAN2004.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 9
       },
       {
         "referencia": "LIMA, Adilson da Silva. Especificações técnicas de software. 1. ed. São Paulo: Érica, 2012. 384 p.",
         "bibtex": [
           "bibtex/LIMA2012.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "LIMA, Adilson da Silva. UML 2.5: do requisito à solução. São Paulo: Érica, 2014. 368 p.",
         "bibtex": [
           "bibtex/LIMA2014.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "PAULA FILHO, Wilson de Pádua. Engenharia de software fundamentos, métodos e padrões. 3. ed. Rio de Janeiro: LTC, 2009. 1248 p.",
         "bibtex": [
           "bibtex/PAULAFILHO2009.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "PREECE, Jennifer; ROGERS, Yvonne; SHARP, Helen. Design de interação Porto Alegre: Bookman, 2013. 600p.",
@@ -707,14 +780,16 @@
           "bibtex/PREECE2005.bib",
           "bibtex/ROGERS2013.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 10
       },
       {
         "referencia": "SOMMERVILLE, Ian. Engenharia de software. 10a. ed. São Paulo: Pearson, 2019. 768p.",
         "bibtex": [
           "bibtex/SOMMERVILLE2007.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 16
       }
     ]
   },
@@ -742,7 +817,8 @@
         "bibtex": [
           "bibtex/BRONCKART2007.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "BROWN, Ann L. Metacognition: the development of selective attention strategies for learning from texts. In: SINGER, Harry; RUDDELL, Robert (Eds). Theoretical Models and Processes of Reading. Newark, Delaware International Reading Association, 1985, p. 501-526.",
@@ -754,54 +830,64 @@
         "bibtex": [
           "bibtex/DIONÍSIO2005.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 1
       },
       {
         "referencia": "DIÓGENES, Cândido de Lima (org.) Ensino e Aprendizagem de Língua Inglesa: conversa com especialistas. São Paulo: Parábola Editorial, 2009.",
         "bibtex": [
           "bibtex/LIMA2009.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "DOUGLAS, Dan. Assessing Languages for specific purposes. (2002)",
         "bibtex": [
           "bibtex/DOUGLAS2000.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 9
       },
       {
         "referencia": "DUDLEY-EVANS, TONY, ST John, Maggie Jo. Developments in English for specific purposes. (2003)",
         "bibtex": [
           "bibtex/DUDLEYEVANS1998.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 15
       },
       {
         "referencia": "GRELLET, Françoise. Developing readings kills: a practical guide to reading comprehension exercises. (2003).",
         "bibtex": [
           "bibtex/GRELLET1981.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "HUTCHINSON, T.; WATERS, A. English for specific purposes. Cambridge: Cambridge University Press, 1987.",
         "bibtex": [
           "bibtex/HUTCHINSON1987.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 12
       },
       {
         "referencia": "KLEIMAN, Angela. Leitura: ensino e pesquisa. Campinas: Editora Pontes, 1996.",
         "bibtex": [
           "bibtex/KLEIMAN2008.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "NUTTAL, Christine. Teaching readings kills in a foreign language. London: Heinemann, 1982.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/NUTTALL2014.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "PINTO, Abuêndia Padilha. É possível promover a autonomia na leitura em língua estrangeira? In: Passeggi, Luís (Org.). Abordagens em Lingüística aplicada. Natal: Editora da UFRN, 1998. p. 133-146.",
@@ -839,7 +925,8 @@
         "bibtex": [
           "bibtex/BRITO2017.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "MAZIOLI, Gleydson. Guia Foca Linux Avançado. Versão 6.42, 2007. Disponível em http://focalinux.cipsga.org.br",
@@ -861,14 +948,16 @@
         "bibtex": [
           "bibtex/MOTAFILHO2012.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 6
       },
       {
         "referencia": "NEMETH, Evi; SNYDER, Garth; HEIN, Trent R. Manual completo do Linux: Guia do administrador. 2. ed. São Paulo: Pearson, 2007. 684 p.",
         "bibtex": [
           "bibtex/NEMETH2007.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "NOAL, Luiz Antonio Jacques. Linux para Linuxers. 1ª ed. São Paulo: Novatec, 2016. 696 p. ISBN-13 9788575224724.",
@@ -890,7 +979,8 @@
         "bibtex": [
           "bibtex/WARD2015.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       }
     ]
   },
@@ -938,7 +1028,8 @@
         "bibtex": [
           "bibtex/KOLLER2014.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "MELO, José Francisco de. Extensão popular. 2 ed. João Pessoa: Editora da UFPB, 2014. 122 p. Disponível em: https://www.ufpb.br/redepopsaude/contents/biblioteca-1/extensao-popular/extensao-popular.pdf",
@@ -950,12 +1041,16 @@
         "bibtex": [
           "bibtex/SOUSA2010.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "WAZLAWICK, Raul Sidnei. Metodologia de Pesquisa para Ciência da Computação. 2. ed. Rio de Janeiro: Elsevier, 2014. ISBN-13 9788535277821.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/WAZLAWICK2014.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       }
     ]
   },
@@ -984,22 +1079,27 @@
     "bibliografias": [
       {
         "referencia": "ADRIANO, Thiago da Silva. Guia prático de TypeScript Melhore suas aplicações JavaScript. Casa do Código, 2021. ISBN-13 9786586110777.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/ADRIANO2021.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "BROWN, Ethan. Programação web com Node e Express: Beneficiando-se da Stack JavaScript. Novatec, 2020. ISBN-13 9786586057089.",
         "bibtex": [
           "bibtex/BROWN2020.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "FREEMAN, Eric T, ROBSON, Elisabeth. Use a cabeça! Programação JavaScript. Alta Books, 2016. ISBN-13 9788576089902.",
         "bibtex": [
           "bibtex/FREEMAN2016.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "HAVERBEKE, Marjin. Eloquent JavaScript: A Modern Introduction to Programming. No Starch Press, 2018. ISBN-13 9781593279509. Disponível em https://eloquentjavascript.net/.",
@@ -1021,7 +1121,8 @@
         "bibtex": [
           "bibtex/SILVA2010.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "SILVA, Maurício Samy. React Aprenda Praticando. São Paulo: Novatec, 2021. ISBN-13 9786586057393.",
@@ -1056,54 +1157,64 @@
         "bibtex": [
           "bibtex/ANTON2012.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "LEON, S. J. Álgebra Linear e Suas Aplicações. Rio de Janeiro: LTC / Grupo Gen, 2011.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/LEON2011.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 13
       },
       {
         "referencia": "LIPSCHUTZ, S.; LIPSON, M. Álgebra Linear – Coleção Schaum. Porto Alegre: Bookman / Grupo A, 2011.",
         "bibtex": [
           "bibtex/LIPSCHUTZ2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 8
       },
       {
         "referencia": "NICHOLSON, W. K. Álgebra Linear. São Paulo: McGraw-Hill / Grupo A, 2006.",
         "bibtex": [
           "bibtex/NICHOLSON2006.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 14
       },
       {
         "referencia": "POOLE, D. Álgebra Linear. São Paulo: Cengage Learning, 2014.",
         "bibtex": [
           "bibtex/POOLE2004.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 10
       },
       {
         "referencia": "SHIFRIN, T.; ADAMS, M. R. Álgebra Linear - Uma Abordagem Geométrica. Rio de Janeiro: LTC / Grupo Gen, 2013.",
         "bibtex": [
           "bibtex/SHIFRIN2013.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "STEINBRUCH, A.; WINTERLE, P. Álgebra Linear. São Paulo: Pearson, 1987.",
         "bibtex": [
           "bibtex/STEINBRUCH1987.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 20
       },
       {
         "referencia": "STRANG, G. Álgebra Linear. São Paulo: Cengage Learning, 2010.",
         "bibtex": [
           "bibtex/STRANG2010.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 15
       }
     ]
   },
@@ -1134,14 +1245,16 @@
         "bibtex": [
           "bibtex/DATE2004.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "DATE, C.J. Projeto de Banco de Dados e Teoria Relacional : Formas Normais e Tudo o Mais. Editora Novatec; 1ª edição, 2015. ISBN-13 9788575224557.",
         "bibtex": [
           "bibtex/DATE2015.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "Documentação da Oracle. Disponível em https://docs.oracle.com/en/database/. Último acesso em 16/06/2023.",
@@ -1169,7 +1282,8 @@
           "bibtex/ELMASRI2018.bib",
           "bibtex/ELMASRI2005.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "HEUSER, Carlos Alberto. Projeto de Banco de Dados. Editora Bookman – Grupo a. 6a edição, 2009. ISBN-13 9798577803828.",
@@ -1177,7 +1291,8 @@
           "bibtex/HEUSER2009.bib",
           "bibtex/HEUSER2004.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "MACHADO, Felipe Nery. Banco De Dados - Projetos e Implementação. Editora Érica; 4ª edição, 2020. ISBN-13 9788536532684.",
@@ -1189,7 +1304,8 @@
         "bibtex": [
           "bibtex/NIELDTHOMAS2016.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "SILBERSCHATZ, Abraham; KORTH, S., SUDARSHAN, Henry. Sistema de Banco de Dados. Editora GEN LTC; 7ª edição, 2020. ISBN-13 9788595157330.",
@@ -1197,7 +1313,8 @@
           "bibtex/SILBERSCHATZ2012.bib",
           "bibtex/SILBERSCHATZ2006.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       }
     ]
   },
@@ -1253,7 +1370,8 @@
           "bibtex/LARMAN2000.bib",
           "bibtex/LARMAN2004.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "Modelagem da Organização Uma Visão Integrada. Porto Alegre Bookman 2013 1 Recurso Online ISBN-13 9788582601068.",
@@ -1312,21 +1430,24 @@
           "bibtex/BAGNO2013.bib",
           "bibtex/BAGNO2001.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 11
       },
       {
         "referencia": "COSSON, Rildo. Letramento literário: teoria e prática. São Paulo: Contexto, 2006.",
         "bibtex": [
           "bibtex/COSSON2006.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 9
       },
       {
         "referencia": "DIONÍSIO, Ângela P. et al (Org.). Gêneros textuais e ensino. 2. ed. Rio de Janeiro: Lucerna, 2002. GUIMARÃES, Elisa. Texto, discurso e ensino. São Paulo: Contexto, 2009.",
         "bibtex": [
           "bibtex/DIONÍSIO2005.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 1
       },
       {
         "referencia": "LAJOLO, MARISA. Literatura: leitores e leitura. São Paulo: Moderna, 2001",
@@ -1338,14 +1459,16 @@
         "bibtex": [
           "bibtex/MARCUSCHI2008.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 8
       },
       {
         "referencia": "MARCUSCHI, LUIZ ANTÔNIO. Produção textual, análise de gêneros e compreensão. São Paulo: Parábola Editorial, 2008.",
         "bibtex": [
           "bibtex/MARCUSCHI2008.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 8
       }
     ]
   },
@@ -1375,7 +1498,8 @@
         "bibtex": [
           "bibtex/COSTA2009.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "DEITEL, Paul; DEITEL, Harvey. Java: como programar. 10. ed. São Paulo: Pearson, 2016. ISBN-13 9788543004792",
@@ -1384,40 +1508,48 @@
           "bibtex/DEITEL2010.bib",
           "bibtex/DEITEL2005.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "DEITEL, Paul; DEITEL, Harvey. Java: como programar. 8. ed. São Paulo: Pearson, 2010. ISBN-13 9788576055631.",
         "bibtex": [
           "bibtex/DEITEL2010.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "HORSTMANN, Cay; CORNELL, Gary. Core Java, Vol. I: Fundamentos, 8ª edição. Pearson Education, 2009. ISBN-13 9788576053576.",
         "bibtex": [
           "bibtex/HORSTMANN2010.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 10
       },
       {
         "referencia": "MANZANO, José Augusto N. G.; COSTA JUNIOR, Roberto Affonso da. Java 8 programação de computadores. São Paulo: Érica, 2014. 384 p. il.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/MANZANO2012.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "SANTOS, Ciro Meneses. Desenvolvimento de aplicações comerciais com JAVA e NetBeans. Rio de Janeiro: Ciência Moderna, 2010. 190 p. il. ISBN-13 9788573938920.",
         "bibtex": [
           "bibtex/SANTOS2010.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "SANTOS, Rafael. Introdução à programação orientada a objetos usando JAVA. 2.ed. Rio de Janeiro: Elsevier, 2013. 313 p. il. (SBC - sociedade brasileira de computação).",
         "bibtex": [
           "bibtex/SANTOS2013.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "SIERRA, Kathy; BATES, Bert. Use a cabeça: Java 2. ed. Rio de Janeiro: Alta Books, 2007. 470 p. il. (Use a cabeça!). ISBN-13 9788576081739.",
@@ -1425,7 +1557,8 @@
           "bibtex/SIERRA2007.bib",
           "bibtex/SIERRA2005.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 8
       },
       {
         "referencia": "SILVEIRA, Paulo; TURINI, Rodrigo. Java 8 Prático. Lambdas, Streams e os Novos Recursos da Linguagem. Casa do Código; 1ª ed. 2014. ISBN-13 9788566250466",
@@ -1464,12 +1597,16 @@
         "bibtex": [
           "bibtex/BEZERRA2015.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "BLAHA, M. Modelagem e projetos baseados em objetos com UML 2. 2. ed. Rio de Janeiro: Elsevier, 2006. ISBN-13 9788535217537.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/BLAHA2006.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "BROD, Cesar. Scrum: Guia Prático para Projetos Ágeis. 2. ed. São Paulo: Novatec, 2015. ISBN-13 9788575224410.",
@@ -1481,26 +1618,32 @@
         "bibtex": [
           "bibtex/MARCONI2010.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
         "bibtex": [
           "bibtex/PRESSMAN2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "SOMMERVILLE, Ian. Engenharia de software. 10a. ed. São Paulo: Pearson, 2019. 768p.",
         "bibtex": [
           "bibtex/SOMMERVILLE2007.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 16
       },
       {
         "referencia": "WAZLAWICK, Raul Sidnei. Metodologia de Pesquisa para Ciência da Computação. 2. ed. Rio de Janeiro: Elsevier, 2014. ISBN-13 9788535277821.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/WAZLAWICK2014.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "WAZLAWICK, Raul. Sidnei. Análise e projeto de sistemas de informação orientados a objetos para Sistemas de Informação. 3. ed. Rio de Janeiro: Elsevier, 2014. ISBN-13 9788535279849.",
@@ -1534,7 +1677,8 @@
           "bibtex/COMER2015.bib",
           "bibtex/COMER2006.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "KLENSIN, John C. Simple Mail Transfer Protocol, Internet RFC5321, October 2008. Disponível em https://www.ietf.org/rfc/rfc5321.txt",
@@ -1547,7 +1691,8 @@
           "bibtex/KUROSE2013.bib",
           "bibtex/KUROSE2006.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "Mockapetris, P. V. Domain Names - Implementation and Specification. Internet RFC1035, November 1987. Disponível em https://www.ietf.org/rfc/rfc1035.txt",
@@ -1570,7 +1715,8 @@
           "bibtex/TANENBAUM2011.bib",
           "bibtex/TANENBAUM2003.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "VIXIE, P. Extension Mechanisms for DNS (EDNS0). Internet RFC 2671, August 1997. Disponível em https://www.ietf.org/rfc/rfc2671.txt",
@@ -1612,7 +1758,8 @@
           "bibtex/DATE2004.bib",
           "bibtex/DATE2000.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "Documentação da Oracle. Disponível em https://docs.oracle.com/en/database/. Último acesso em 11/03/2021.",
@@ -1630,26 +1777,32 @@
           "bibtex/ELMASRI2018.bib",
           "bibtex/ELMASRI2005.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "RAMAKRISHNAN, Raghu e GEHRKE, Johannes. Sistemas de Gerenciamento de Banco de Dados. Editora Artmed. 3a Edição, 2008. ISBN-13 9788577260270",
         "bibtex": [
           "bibtex/RAMAKRISHNAN2008.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "ROB, Peter e CORONEL, Carlos. Sistemas de Banco de Dados: Projeto, Implementação e Administração. Editora Cengage Learnin.1ª Edição, 2010. ISBN-13 9788522107865",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/ROB2011.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "SILBERSCHATZ, Abraham; KORTH, S., SUDARSHAN, Henry. Sistema de Banco de Dados. Editora GEN LTC; 7ª edição, 2020. ISBN-13 9788595157330",
         "bibtex": [
           "bibtex/SILBERSCHATZ2012.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       }
     ]
   },
@@ -1682,7 +1835,8 @@
         "bibtex": [
           "bibtex/PORTO2013.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "Galvão Filho, I. Criatividade e inovação - Entre na Era das Startups. 2020.",
@@ -1699,7 +1853,8 @@
         "bibtex": [
           "bibtex/MARIANO2011.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "Pádua Filho, W. Inovação é Tudo. Atlas, 2015.",
@@ -1716,7 +1871,8 @@
         "bibtex": [
           "bibtex/CRAINER2014.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       }
     ]
   },
@@ -1747,7 +1903,8 @@
         "bibtex": [
           "bibtex/BROWN2020.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "CASCIARO, Mario; MAMMINO, Luciano. Node.js Design Patterns: Design and implement production-grade Node.js applications using proven patterns and techniques. Packt Publishing, 2020. 3a Edição . ISBN-13 9781839214110",
@@ -1774,14 +1931,16 @@
         "bibtex": [
           "bibtex/KEITH2008.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 6
       },
       {
         "referencia": "MIKE, Keith; SCHINCARIOL, Merrick; KEITH, Jeremy. JPA 2: mastering the Java Persistence API. Apress, 2009. ISBN-13 9781430219569",
         "bibtex": [
           "bibtex/KEITH2009.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 8
       },
       {
         "referencia": "RAUSHMAYER, Axel. JavaScript for impatient programmers. Independently Published, 2019. ISBN-13 9781091210097",
@@ -1822,40 +1981,48 @@
         "bibtex": [
           "bibtex/DEITEL2005.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 10
       },
       {
         "referencia": "MACHADO, Francis Berenger; MAIA, Luiz Paulo. Arquitetura de sistemas operacionais. 5. ed. Rio de Janeiro: LTC, 2013. 250 p. il.",
         "bibtex": [
           "bibtex/MACHADO2013.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "MACHADO, Francis Berenger; MAIA, Luiz Paulo. Fundamentos de sistemas operacionais. Rio de Janeiro: LTC, 2011. 112 p. il.",
         "bibtex": [
           "bibtex/MACHADO2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "MARQUES, José Alves et al. Sistemas operacionais Rio de Janeiro: LTC, 2011. 375 p. il.",
         "bibtex": [
           "bibtex/MARQUES2011.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "OLIVEIRA, Rômulo Silva de; CARISSIMI, Alexandre da Silva; TOSCANI, Simão Sirineo. Sistemas operacionais 3. ed. Porto Alegre: Sagra Luzzatto, 2004. 259 p. il. (Série Livros Didáticos; 11).",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/OLIVEIRA2001.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "SILBERSCHATZ, Abraham; GALVIN, Peter Baer; GAGNE, Greg. Fundamentos de sistemas operacionais princípios básicos. Rio de Janeiro: LTC, 2013. 432 p. il.",
         "bibtex": [
           "bibtex/SILBERSCHATZ2013.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 6
       },
       {
         "referencia": "SILBERSCHATZ, Abraham; GALVIN, Peter Baer; GAGNE, Greg. Fundamentos de sistemas operacionais. 8. ed. Rio de Janeiro: LTC, 2010. 515 p. il.",
@@ -1863,7 +2030,8 @@
           "bibtex/SILBERSCHATZ2010.bib",
           "bibtex/SILBERSCHATZ2004.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "TANENBAUM, Andrew S; WOODHULL, Albert S. Sistemas operacionais: projeto e implantação. 3. ed. São Paulo: Bookman, 2008. 990 p. il.",
@@ -1871,7 +2039,8 @@
           "bibtex/TANENBAUM2008.bib",
           "bibtex/TANENBAUM1999.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       }
     ]
   },
@@ -1900,14 +2069,16 @@
           "bibtex/ANTUNES2004.bib",
           "bibtex/ANTUNES2013.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "BARGER, R. N. Ética na computação: uma abordagem baseada em casos. Rio de Janeiro: LTC, 2011. 174.90904 B251e",
         "bibtex": [
           "bibtex/BARGER2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "BARTH, F. Etnicidade e o conceito de cultura. Antropolítica, Niterói, ano 19, n.2, p. 16-30, set. 2006.",
@@ -1924,7 +2095,8 @@
         "bibtex": [
           "bibtex/SACAVINO2012.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "CARDOSO DE OLIVEIRA, Roberto. Identidade, etnia e estrutura social. São Paulo: Pioneira, 1978.",
@@ -1933,29 +2105,35 @@
       },
       {
         "referencia": "HALL, Stuart. A identidade cultural na pós-modernidade. 12. ed. Editora Lamparina, 2015.",
-        "bibtex": [],
-        "tipo": "basica"
+        "bibtex": [
+          "bibtex/HALL2015.bib"
+        ],
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "LARAIA, Roque de Barros. Cultura: um conceito antropológico. 24 ed. Rio de Janeiro: Zahar, 2009. 117 p. ISBN-13 9788571104389",
         "bibtex": [
           "bibtex/LARAIA2005.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "MARTINS, Carlos Benedito. O que é sociologia. 57 ed. Editora Brasiliense. 2001. ISBN-10 8511010572",
         "bibtex": [
           "bibtex/MARTINS1982.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "MASIERO, Paulo Cesar. Ética em computação. São Paulo, SP: EDUSP, 2008. 213 p. (Acadêmica; 32). ISBN-13 9788531405754",
         "bibtex": [
           "bibtex/MASIERO2000.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Declaração Universal dos Direitos Humanos, 1948. Disponível em: \\<https://www.unicef.org/brazil/declaracao-universal-dos-direitos-humanos>. Acesso em: 12 junho 2023.",
@@ -1992,8 +2170,11 @@
     "bibliografias": [
       {
         "referencia": "ANICHE, M. Test-Driven Development: Teste e Design no Mundo Real. Ed. Casa do Código. São Paulo: 2012.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/ANICHE2017.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "ENGHOLM JR, H. Engenharia de software na prática. Novatec. Rio de Janeiro: 2010.",
@@ -2010,7 +2191,8 @@
         "bibtex": [
           "bibtex/DELAMARO2007.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "PERSIVAL, H. J .W. TDD com Python: Siga o Bode dos Testes: Usando Django, Selenium e JavaScript. Novatec. Rio de Janeiro: 2017.",
@@ -2027,14 +2209,16 @@
         "bibtex": [
           "bibtex/PRESSMAN2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "SOMMERVILLE, I. Engenharia de Software. 10ª ed. São Paulo: Pearson, 2018.",
         "bibtex": [
           "bibtex/SOMMERVILLE2007.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 16
       }
     ]
   },
@@ -2069,14 +2253,16 @@
         "bibtex": [
           "bibtex/CORMEN2012.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "DASGUPTA, S., PAPADIMITRIOU, C. VAZIRANI, U. Algorithms. McGraw-Hill Science/Engineering/Math; 1 edition (2006).",
         "bibtex": [
           "bibtex/DASGUPTA2009.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "GAREY, M. e JOHHSON, D. Computers and Intractability: a Guide to the Theory of NP-Completeness. Freeman, 1979.",
@@ -2131,40 +2317,48 @@
         "bibtex": [
           "bibtex/ALUR2002.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 6
       },
       {
         "referencia": "FREEMEN, Eric; FREEMAN, Elisabeth. Use a cabeça: padrões e projetos. 2. ed. Rio de Janeiro: Alta Books, 2009. 478 p. il. (Use a cabeça!).",
         "bibtex": [
           "bibtex/FREEMAN2016.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "GAMMA, Erich et al. Padrões de Projeto: Soluções reutilizáveis de software orientado a objetos. Bookman, 2000.",
         "bibtex": [
           "bibtex/GAMMA2000.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 8
       },
       {
         "referencia": "GUEDES, Gilleanes T. A.. UML 2: uma abordagem prática. São Paulo: Novatec, 2009. 485 p. il.",
         "bibtex": [
           "bibtex/GUEDES2009.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "GUERRA, Eduardo; Design Patterns com Java: projeto orientado a objetos guiado por padrões. Casa do Código. 2014. ISBN-13 9788566250114.",
-        "bibtex": [],
-        "tipo": "basica"
+        "bibtex": [
+          "bibtex/GUERRA2022.bib"
+        ],
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "HORSTMANN, Cay S. Core Java: fundamentos. 8. ed. São Paulo: Pearson, 2010. 383 p. 1v. il.",
         "bibtex": [
           "bibtex/HORSTMANN2010.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 10
       },
       {
         "referencia": "LARMAN, Craig. Utilizando UML e Padrões – Uma introdução à análise e ao projeto orientados a objetos. Bookman, 2000",
@@ -2172,7 +2366,8 @@
           "bibtex/LARMAN2004.bib",
           "bibtex/LARMAN2000.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 9
       },
       {
         "referencia": "PRESSMAN, Roger S. Engenharia de software. São Paulo: Pearson, 1995. 1056",
@@ -2180,21 +2375,24 @@
           "bibtex/PRESSMAN2011.bib",
           "bibtex/PRESSMAN1995.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "SBROCCO, José Henrique Teixeira de Carvalho. UML 2.5 com enterprise architect 10: modelagem visual de projetos orientada a objetos São Paulo: Érica, 2014. 320 p. il.",
         "bibtex": [
           "bibtex/SBROCCO2014.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "SOMMERVILLE, Ian. Engenharia de software. 8. ed. São Paulo: Pearson Prentice Hall, 2007. 552 p. il.",
         "bibtex": [
           "bibtex/SOMMERVILLE2007.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 16
       }
     ]
   },
@@ -2224,45 +2422,56 @@
         "bibtex": [
           "bibtex/BARBETTA2008.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 6
       },
       {
         "referencia": "BUSSAB, Wilton O. MORETTIN, Pedro A. Estatística Básica. Editora Saraiva, 9ª edição, 2017.",
-        "bibtex": [],
-        "tipo": "basica"
+        "bibtex": [
+          "bibtex/MORETTIN2017.bib"
+        ],
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "CRESPO, Antônio A. Estatística Fácil. Editora Saraiva, 19ª edição, 2009.",
-        "bibtex": [],
-        "tipo": "basica"
+        "bibtex": [
+          "bibtex/CRESPO2009.bib"
+        ],
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "DEVORE, JAY L. Probabilidade e Estatística para Engenheiros e Ciências. 2006 Editora L. Cengage.",
         "bibtex": [
           "bibtex/DEVORE2006.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 12
       },
       {
         "referencia": "FREUND, John E. Estatística Aplicada – Economia, Administração e Contabilidade. Editora Bookman, 11ª edição, 2006.",
         "bibtex": [
           "bibtex/FREUND2006.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 10
       },
       {
         "referencia": "MAYER, P. L. Probabilidade: Aplicações à Estatística. Editora LTC, 2ª edição, 2000.",
         "bibtex": [
           "bibtex/MEYER1983.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "MORETTIN, Luiz G. Estatística Básica: Probabilidade e Inferência. Volume único. Ed. Pearson Prentice Hall, 2010.",
         "bibtex": [
           "bibtex/MORETTIN2010.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "SPIEGEL, Murray. Estatística. Editora Bookman, 4ª edição, 2009",
@@ -2270,14 +2479,16 @@
           "bibtex/SPIEGEL2009.bib",
           "bibtex/SPIEGEL1994.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "TRIOLA, Mario F. Introdução à Estatística. Editora LTC, 9ª edição, 2005.",
         "bibtex": [
           "bibtex/TRIOLA2008.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 14
       }
     ]
   },
@@ -2307,49 +2518,56 @@
         "bibtex": [
           "bibtex/FURGERI2013.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "GUEDES, Gilleanes T. A.. UML 2: uma abordagem prática. São Paulo: Novatec, 2009. 485 p. 08",
         "bibtex": [
           "bibtex/GUEDES2009.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "LARMAN Craig. Utilizando UML e padrões: uma introdução à análise e ao projeto orientados a objetos e ao processo unificado. 2. ed. São Paulo: Bookman, 2004. 607 p.",
         "bibtex": [
           "bibtex/LARMAN2004.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 9
       },
       {
         "referencia": "LIMA, Adilson da Silva. Especificações técnicas de software. 1. ed. São Paulo: Érica, 2012. 384 p.",
         "bibtex": [
           "bibtex/LIMA2012.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "LIMA, Adilson da Silva. UML 2.5: do requisito à solução. São Paulo: Érica, 2014. 368 p.",
         "bibtex": [
           "bibtex/LIMA2014.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "MARTINS, José Carlos Cordeiro. Gerenciando projetos de desenvolvimento de software com PMI, RUP e UML. 5. ed. Rio de Janeiro: Brasport, 2010. 290 p.",
         "bibtex": [
           "bibtex/MARTINS2010.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "PAULA FILHO, Wilson de Pádua. Engenharia de software fundamentos, métodos e padrões. 3. ed. Rio de Janeiro: LTC, 2009. 1248 p.2.",
         "bibtex": [
           "bibtex/PAULAFILHO2009.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "PREECE, Jennifer; ROGERS, Yvonne; SHARP, Helen. Design de interação. Porto Alegre: Bookman, 2008. 548 p. 05",
@@ -2357,7 +2575,8 @@
           "bibtex/PREECE2005.bib",
           "bibtex/ROGERS2013.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 10
       },
       {
         "referencia": "PRESSMAN, R. S. Engenharia de Software - Uma Abordagem Profissional - 8ª Ed. 2016, Editora Amgh;",
@@ -2365,28 +2584,32 @@
           "bibtex/PRESSMAN1995.bib",
           "bibtex/PRESSMAN2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "SBROCCO, José Henrique Teixeira de Carvalho. Metodologias ágeis: engenharia de software sob medida. São Paulo: Érica, 2012. 254 p.",
         "bibtex": [
           "bibtex/SBROCCO2012.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "SBROCCO, José Henrique Teixeira de Carvalho. UML 2.5 com enterprise architect: modelagem visual de projetos orientada a objetos. São Paulo: Érica, 2014. 320 p.",
         "bibtex": [
           "bibtex/SBROCCO2014.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "SOMMERVILLE, I. Engenharia De Software - 9ª Ed. 2011. Editora Pearson Prentice Hall;",
         "bibtex": [
           "bibtex/SOMMERVILLE2007.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 16
       }
     ]
   },
@@ -2418,13 +2641,19 @@
       },
       {
         "referencia": "BEAIRD, Jason. Princípios do Web Design Maravilhoso. Alta Books, Rio de Janeiro, 2008.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/BEAIRD2016.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "BENYON, D. Interação Humano-Computador. 2ª Ed. Pearson, 2011.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/BENYON2011.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "BOULTON, M. Designing for the web. ISBN-10 0956174019. Disponível em: http://designingfortheweb.co.uk/",
@@ -2436,14 +2665,16 @@
         "bibtex": [
           "bibtex/FERREIRA2008.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "NIELSEN Jakob; BUDIU, Raluca. Usabilidade móvel. Rio de Janeiro: Elsevier, 2014. 203 p. il. ISBN-13 9788535264272.",
         "bibtex": [
           "bibtex/NIELSEN2014.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "PREECE, Jennifer, ROGERS , Yvonne, SHARP, HELEN. Design de interação: além da interação homem-computador. Bookman, Porto Alegre, 2011.",
@@ -2451,7 +2682,8 @@
           "bibtex/PREECE2005.bib",
           "bibtex/ROGERS2013.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 10
       },
       {
         "referencia": "ROCHA, Heloísa Vieira da; BARANAUSKAS, Maria Cecília Calani. Design e avaliação de interfaces humano-computador. NIED-UNICAMP. Disponível em: http://www.nied.unicamp.br/?q=node/109/done\\&sid=29628",
@@ -2505,12 +2737,16 @@
         "bibtex": [
           "bibtex/BEZERRA2015.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "BLAHA, M. Modelagem e projetos baseados em objetos com UML 2. 2. ed. Rio de Janeiro: Elsevier, 2006. ISBN-13 9788535217537.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/BLAHA2006.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "BROD, Cesar. Scrum: Guia Prático para Projetos Ágeis. 2. ed. São Paulo: Novatec, 2015. ISBN-13 9788575224410.",
@@ -2522,26 +2758,32 @@
         "bibtex": [
           "bibtex/KOLLER2014.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "LAKATOS, Eva Maria; MARCONI, Marina de Andrade. Fundamentos da Metodologia Científica. 7. ed. São Paulo: Atlas, 2010. ISBN-13 9788522457588.",
         "bibtex": [
           "bibtex/MARCONI2010.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
         "bibtex": [
           "bibtex/PRESSMAN2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "WAZLAWICK, Raul Sidnei. Metodologia de Pesquisa para Ciência da Computação. 2. ed. Rio de Janeiro: Elsevier, 2014. ISBN-13 9788535277821.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/WAZLAWICK2014.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "WAZLAWICK, Raul. Sidnei. Análise e projeto de sistemas de informação orientados a objetos para Sistemas de Informação. 3. ed. Rio de Janeiro: Elsevier, 2014. ISBN-13 9788535279849.",
@@ -2584,7 +2826,8 @@
         "bibtex": [
           "bibtex/BAEZAYATES2013.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 1
       },
       {
         "referencia": "BOAGLIO, F. MongoDB - Construa novas aplicações com novas tecnologias. São Paulo: Casa do Código, 2015.",
@@ -2593,8 +2836,11 @@
       },
       {
         "referencia": "DAVID, H. Introdução ao MongoDB. São Paulo: Novatec, 2015. 167 p. ISBN-13 9788575224229",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/HOWS2015.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "DENSMORE, J. Data Pipelines Pocket Reference: Moving and Processing Data for Analytics. 1 ed. O'Reilly Media, Inc. 2021.",
@@ -2621,7 +2867,8 @@
         "bibtex": [
           "bibtex/ELMASRI2018.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "HOUSLEY, M., REIS, J. Fundamentals of Data Engineering. O'Reilly Media, Inc. 2022.",
@@ -2635,18 +2882,27 @@
       },
       {
         "referencia": "MACHADO, F. N. R, Big data : o futuro dos dados e aplicações. São Paulo : Érica, 2018. - 224 p. ISBN-13 9788536527000",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/MACHADO2018.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 1
       },
       {
         "referencia": "MCKINNEY, W. Python para análise de dados: Tratamento de dados com Pandas, NumPy e IPython. Editora : Novatec Editora; 1ª edição (10 maio 2019).",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/MCKINNEY2018.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "SADALAGE, P. J. NoSQL: um guia conciso para o mundo emergente da persistência poliglota. São Paulo: Novatec, 2013. 220p. ISBN-13 9788575223383",
-        "bibtex": [],
-        "tipo": "basica"
+        "bibtex": [
+          "bibtex/SADALAGE2013.bib"
+        ],
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       }
     ]
   },
@@ -2676,56 +2932,64 @@
         "bibtex": [
           "bibtex/HELDMAN2015.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "KERZNER, Harold. Gerenciamento de projetos: uma abordagem sistêmica para planejamento, programação e controle. São Paulo: Blucher, 2011. 657 p. il. ISBN-13 9788521206033.",
         "bibtex": [
           "bibtex/KERZNER2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "NOKES, Sebastian; KELLY, Sean . O guia definitivo do gerenciamento de projetos: como alcançar resultados dentro do prazo e do orçamento. 2. ed. Porto Alegre: Bookman, 2011. 357 p. il. ISBN-13 9788577809738.",
         "bibtex": [
           "bibtex/NOKES2012.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "PMI - PROJECT MANAGEMENT INSTITUTE. Guia PMBOK®: Um Guia para o Conjunto de Conhecimentos em Gerenciamento de Projetos, Sexta edição, Pennsylvania: PMI, 2017. ISBN-13 9781628251845.",
         "bibtex": [
           "bibtex/G2008.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
         "bibtex": [
           "bibtex/PRESSMAN2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "SANTOS, Carlos Fernando da Rocha. Gerenciamento de projetos: conceitos e representações. 1. ed. Rio de Janeiro: LTC, 2014. 135 p. il. ISBN-13 9788521625735.",
         "bibtex": [
           "bibtex/SANTOS2014.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "SBROCCO, José Henrique Teixeira de Carvalho. Metodologias ágeis: engenharia de software sob medida. São Paulo: Érica, 2012. 254 p. il. ISBN-13 9788536519418.",
         "bibtex": [
           "bibtex/SBROCCO2012.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "SOMMERVILLE, Ian. Engenharia de software. 10. ed. São Paulo: Pearson Prentice Hall, 2019. 771 p. il. ISBN-10 8543024978.",
         "bibtex": [
           "bibtex/SOMMERVILLE2007.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 16
       },
       {
         "referencia": "SWEBOK Guide V3.0. Guide to the Software Engineering Body of Knowledge, Version 3.0, P. Bourque and R.E. Fairley, eds., IEEE Computer Society, 2014. ISBN-13 9780769551661.",
@@ -2771,33 +3035,40 @@
         "bibtex": [
           "bibtex/AQUINO2012.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "AQUINO, Italo de Souza. Como ler artigos científicos da graduação ao doutorado 3. ed. São Paulo: Saraiva, 2012. 126 p. il. ISBN-13 9788502160965.",
         "bibtex": [
           "bibtex/AQUINO2012.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "BARBETTA, Pedro Alberto; REIS, Marcelo Menezes; BORNIA, Antonio Cezar. Estatística para cursos de engenharia e informática 2. ed. São Paulo: Atlas, 2008. 410 p. il. ISBN-13 9788522449897.",
         "bibtex": [
           "bibtex/BARBETTA2008.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 6
       },
       {
         "referencia": "BORTONI-RICARDO, Stella Maris. O professor pesquisador: introdução à pesquisa qualitativa. São Paulo: Paábola, 2008. 135 p. il. (Série Esttratégia de Ensino ; 8).",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/BORTONIRICARDO2008.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "CERVO Amado L.; BERVIAN, Pedro A.; SILVA, Roberto da. Metodologia científica 6. ed. São Paulo: Pearson, 2007. 162 p. il. ISBN-13 9788576050476.",
         "bibtex": [
           "bibtex/CERVO2007.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "GIL, Antonio Carlos. Como elaborar projetos de pesquisa. São Paulo: Atlas, 2010. (ISBN-13 9788522458233)",
@@ -2805,21 +3076,24 @@
           "bibtex/GIL2017.bib",
           "bibtex/GIL2010.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "REIZ, Pedro. Redação científica moderna São Paulo: Hyria, 2013. 157 p.",
         "bibtex": [
           "bibtex/REIZ2013.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 1
       },
       {
         "referencia": "SEVERINO, Antônio Joaquim. Metodologia do trabalho científico 23. ed. rev. e atual, 2. reimpr. São Paulo: Cortez, 2008. 304 p. il. ISBN-13 9788524913112.",
         "bibtex": [
           "bibtex/SEVERINO2007.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       }
     ]
   },
@@ -2855,7 +3129,8 @@
           "bibtex/DEITEL2010.bib",
           "bibtex/DEITEL2017.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "HASEMAN, Chris. Android Essentials. Berkeley, CA: Apress, 2008. ISBN-13 9781430210634. Disponível em: http://dx.doi.org/10.1007/978-1-4302-1063-4.",
@@ -2872,21 +3147,24 @@
         "bibtex": [
           "bibtex/LECHETA2015.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "LECHETA, Ricardo R. Android Essencial com Kotlin. 1. ed. São Paulo: Novatec, 2018. 536 p. il. ISBN-13 9788575226896",
         "bibtex": [
           "bibtex/LECHETA2018.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "LECHETA, Ricardo R. Desenvolvendo para iPhone e iPad. 6. ed. São Paulo: Novatec, 2018. 520 p. il. ISBN-13 9788575226902",
         "bibtex": [
           "bibtex/LECHETA2018.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "LEE, V.; SCHENEIDER, H.; SCHELL, R. Aplicações móveis: arquitetura, projeto e desenvolvimento. São Paulo: Pearson Education: Makron Books, 2015. 328 p.",
@@ -2895,8 +3173,11 @@
       },
       {
         "referencia": "NUDELMAN, Greg. Padrões de projeto para o Android:soluções de projetos de interação para desenvolvedores. São Paulo: Novatec, 2013. 456 p. ISBN-13 9788575223581 (broch.).",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/NUDELMAN2013.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "The Swift Programming Language (Swift 5.4), The Swift Programming Language. Disponível em: https://docs.swift.org/swift-book/",
@@ -2958,7 +3239,8 @@
         "bibtex": [
           "bibtex/TANENBAUM2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "TOXEN, B. Real World Linux Security. 2nd ed., Prentice Hall PTR, 2002.",
@@ -3073,7 +3355,8 @@
         "bibtex": [
           "bibtex/FACELI2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "FELTRIN, F.; Inteligência Artificial com Python. Ebook Kindle.",
@@ -3110,7 +3393,8 @@
         "bibtex": [
           "bibtex/RUSSEL2013.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "RUSSEL, S; Inteligência artificial a nosso favor: Como manter o controle sobre a tecnologia. Companhia das Letras, 2012. ISBN-13 9786559213085.",
@@ -3148,12 +3432,16 @@
         "bibtex": [
           "bibtex/BEZERRA2015.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "BLAHA, M. Modelagem e projetos baseados em objetos com UML 2. 2. ed. Rio de Janeiro: Elsevier, 2006. ISBN-13 9788535217537.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/BLAHA2006.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "BROD, Cesar. Scrum: Guia Prático para Projetos Ágeis. 2. ed. São Paulo: Novatec, 2015. ISBN-13 9788575224410.",
@@ -3165,14 +3453,16 @@
         "bibtex": [
           "bibtex/KOLLER2014.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "LAKATOS, Eva Maria; MARCONI, Marina de Andrade. Fundamentos da Metodologia Científica. 7. ed. São Paulo: Atlas, 2010. ISBN-13 9788522457588.",
         "bibtex": [
           "bibtex/MARCONI2010.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
@@ -3180,12 +3470,16 @@
           "bibtex/PRESSMAN1995.bib",
           "bibtex/PRESSMAN2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "WAZLAWICK, Raul Sidnei. Metodologia de Pesquisa para Ciência da Computação. 2. ed. Rio de Janeiro: Elsevier, 2014. ISBN-13 9788535277821.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/WAZLAWICK2014.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "WAZLAWICK, Raul. Sidnei. Análise e projeto de sistemas de informação orientados a objetos para Sistemas de Informação. 3. ed. Rio de Janeiro: Elsevier, 2014. ISBN-13 9788535279849.",
@@ -3240,14 +3534,16 @@
         "bibtex": [
           "bibtex/PRESSMAN2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "SCHWABER, K; SUTHERLAND, K. A arte de fazer o dobro de trabalho na metade do tempo. Ed. Sextante. Rio de Janeiro: 2019.",
         "bibtex": [
           "bibtex/SUTHERLAND2019.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "SCHWABER, K; SUTHERLAND, K. Guia do Scrum. Scrum.org and Scruminc. 2014.",
@@ -3264,7 +3560,8 @@
         "bibtex": [
           "bibtex/SOMMERVILLE2007.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 16
       },
       {
         "referencia": "STANDARDIZATION/ INTERNATIONAL ELECTROTECHNICAL COMISSION/ Institute of Electrical and Electronics Engineers. ISO/IEC 12207 Systems and software engineering– Software life cycle processes, Geneve: ISO, 2017.",
@@ -3276,7 +3573,8 @@
         "bibtex": [
           "bibtex/WERKEMA2012.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       }
     ]
   },
@@ -3306,19 +3604,24 @@
         "bibtex": [
           "bibtex/BURKE2007.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "COULOURIS, George; DOLLIMORE, Jean; KINDBERG, Tim. BLAIR, Gordon. Sistemas Distribuídos: Conceitos e Projetos. 2013. 5a edição. ISBN-13 9788582600535.",
-        "bibtex": [],
-        "tipo": "basica"
+        "bibtex": [
+          "bibtex/TORTELLO2013.bib"
+        ],
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "GOMES, Daniel Adorno. Web services SOAP em Java: guia prático para o desenvolvimento de web services em java. São Paulo: Novatec, 2010. 183 p. il.",
         "bibtex": [
           "bibtex/GOMES2010.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "NEWMAN, Sam. Building Microservices: Designing Fine-Grained Systems, 1a Edição. O'Reilly. ISBN13: 978-1491950357",
@@ -3330,14 +3633,16 @@
         "bibtex": [
           "bibtex/RICHARDSON2007.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "SILBERSCHATZ, Abraham; GALVIN, Peter Baer; GAGNE, Greg. Fundamentos de sistemas operacionais 8. ed. Rio de Janeiro: LTC, 2010. 515 p. il.",
         "bibtex": [
           "bibtex/SILBERSCHATZ2010.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "STEEN, Maarten Van; TANENBAUM, Andrew S. Distributed Systems 3. CreateSpace Independent Publishing, 2017 Platformhttps://www.distributed-systems.net/index.php/books/ds3/",
@@ -3354,7 +3659,8 @@
         "bibtex": [
           "bibtex/TANENBAUM2008.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       }
     ]
   },
@@ -3394,7 +3700,8 @@
         "bibtex": [
           "bibtex/FACELI2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "HAIBO, H.; YUNQIAN, M. Imbalanced Learning: Foundations, Algorithms, and Applications. New Jersey: John Wiley & Sons, 2013.",
@@ -3654,7 +3961,8 @@
         "bibtex": [
           "bibtex/ANTON2014.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "AYRES Jr., F.; MENDELSON, E. Cálculo – Coleção Schaum. Porto Alegre: Bookman / Grupo A, 2013.",
@@ -3671,12 +3979,16 @@
         "bibtex": [
           "bibtex/GONÇALVES2007.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "GUIDORIZZI, H. L. Cálculo – Volume 4. Rio de Janeiro: LTC / Grupo Gen, 2001.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/GUIDORIZZI2001.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 12
       },
       {
         "referencia": "HUGHES-HALLETT, D. et al. Cálculo – A Uma e a Várias Variáveis – Volume 1. Rio de Janeiro: LTC / Grupo Gen, 2011.",
@@ -3690,8 +4002,11 @@
       },
       {
         "referencia": "ROGAWSKI, J. Cálculo, Volumes 1 e 2. Porto Alegre: Bookman / Grupo A, 2009.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/ROGAWSKI2009.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 10
       },
       {
         "referencia": "STEWART, J. Cálculo, Volumes 1 e 2. São Paulo: Cengage Learning, 2013.",
@@ -3703,7 +4018,8 @@
         "bibtex": [
           "bibtex/THOMAS2002.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 15
       }
     ]
   },
@@ -3756,8 +4072,11 @@
       },
       {
         "referencia": "LEME FILHO, Trajano. BI business intelligence no excel. Rio de Janeiro: Novaterra, 2010. 406 p. il.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/LEMEFILHO2010.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "LOPES, Rodrigo Sérgio Soares Correia. Aspectos e estratégias de implementação de ecommerce na Imobiliária Gomes de Sousa. João Pessoa: [s.n.], 2011. 49 p. il.",
@@ -3881,7 +4200,8 @@
         "bibtex": [
           "bibtex/VERAS2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 6
       },
       {
         "referencia": "Turnbull, J. The Docker Book",
@@ -4066,7 +4386,9 @@
       },
       {
         "referencia": "DIAS, Alexandre Aparecido et al. Gestão da inovação e empreendedorismo. Rio de Janeiro: Elsevier, 2013. 364 p. il.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/PORTO2013.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -4217,7 +4539,9 @@
       },
       {
         "referencia": "MACHADO, Felipe Nery Rodrigues. Big data : o futuro dos dados e aplicações. São Paulo: Érica, 2018.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/MACHADO2018.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -4356,7 +4680,9 @@
       },
       {
         "referencia": "FERREIRA, A. C. Governança de TI e Compliance: Uma Abordagem Prática. 1. ed. São Paulo: Novatec, 2020. ISBN-13 9788575228869.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/MENEZES2024.bib"
+        ],
         "tipo": "complementar"
       },
       {
@@ -4691,12 +5017,16 @@
       },
       {
         "referencia": "MONTGOMERY, D. C.; RUNGER, G. C. Estatística Aplicada à Engenharia. 2. ed. Rio de Janeiro: LTC, 2014. ISBN-13 9788521613985.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/CALADO2014.bib"
+        ],
         "tipo": "complementar"
       },
       {
         "referencia": "MORETTIN, P. A.; BUSSAB, W. O. Estatística Básica. 7. ed. São Paulo: Saraiva, 2012. ISBN-13 9788502136915.",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/MORETTIN2012.bib"
+        ],
         "tipo": "basica"
       },
       {
@@ -5216,7 +5546,9 @@
       },
       {
         "referencia": "SIPSER, M. Introdução à teoria da computação. São Paulo: Cengage Learning, 2017. 459p. ISBN-13 9788522104994",
-        "bibtex": [],
+        "bibtex": [
+          "bibtex/SIPSER2017.bib"
+        ],
         "tipo": "basica"
       },
       {
