@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livros - Bacharelado em Engenharia de Software</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 14px;
+      color: #1a1a1a;
+      background: #f5f5f5;
+      padding: 24px;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #111;
+    }
+
+    /* Controls container for search and filter */
+    .controls-container {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+
+    .search-container {
+      margin-bottom: 12px;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px;
+      font-size: 0.9rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .search-input:focus {
+      border-color: #0060df;
+      box-shadow: 0 0 0 3px rgba(0, 96, 223, 0.15);
+    }
+
+    .tabs-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .tab-button {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #555;
+      background: #f0f0f0;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .tab-button:hover {
+      background: #eaf2ff;
+      color: #0060df;
+    }
+
+    .tab-button.active {
+      background: #0060df;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 96, 223, 0.2);
+    }
+
+    .meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .results-count {
+      font-size: 0.8rem;
+      color: #666;
+      font-weight: 500;
+    }
+
+    .sort-container {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      color: #555;
+      font-weight: 600;
+    }
+
+    .sort-select {
+      padding: 4px 8px;
+      font-size: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #fff;
+      font-family: inherit;
+      outline: none;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .sort-select:focus {
+      border-color: #0060df;
+    }
+
+    /* Cards display container */
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .book-card {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .book-card-header {
+      padding: 12px 14px;
+      background: #fafafa;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .book-citation {
+      font-size: 0.84rem;
+      line-height: 1.55;
+      color: #222;
+    }
+
+    .book-citation a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .book-citation a:hover {
+      text-decoration: underline;
+      color: #0060df;
+    }
+
+    .ref-abnt {
+      margin-top: 4px;
+    }
+
+    .badge {
+      font-size: 0.7rem;
+      padding: 1px 6px;
+      border-radius: 10px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .badge-basic { background: #d4edda; color: #155724; }
+    .badge-complementary { background: #fff3cd; color: #856404; }
+
+    .koha-links {
+      display: inline-flex;
+      vertical-align: middle;
+      align-items: center;
+      gap: 2px;
+      margin-left: 4px;
+    }
+
+    .koha-link {
+      display: inline-flex;
+      padding: 2px;
+      border-radius: 3px;
+      color: #0060df;
+      background: #eaf2ff;
+      text-decoration: none;
+    }
+
+    .koha-link:hover { background: #cfe2ff; }
+
+    .bib-link {
+      font-size: 0.72rem;
+      font-family: monospace;
+      white-space: nowrap;
+      color: #0060df;
+      text-decoration: none;
+      border: 1px solid #c8d8f0;
+      background: #f0f5ff;
+      padding: 1px 6px;
+      border-radius: 3px;
+      display: inline-flex;
+      align-items: center;
+      vertical-align: middle;
+    }
+
+    .bib-link:hover { background: #dce9ff; }
+
+    .koha-link-disabled {
+      color: #d93025;
+      background: #fce8e6;
+      cursor: not-allowed;
+    }
+
+    .koha-link svg {
+      width: 13px;
+      height: 13px;
+      stroke-width: 2;
+    }
+
+    .book-card-body {
+      padding: 12px 14px;
+    }
+
+    .book-card-body-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .subjects-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .subject-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 0;
+      border-bottom: 1px solid #f0f0f0;
+      gap: 10px;
+    }
+
+    .subject-item:last-child {
+      border-bottom: none;
+    }
+
+    .subject-info {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .subject-name {
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: #333;
+    }
+
+    .subject-period {
+      font-size: 0.75rem;
+      color: #777;
+    }
+
+    .no-books,
+    .loading,
+    .error {
+      padding: 14px;
+      color: #999;
+      font-style: italic;
+      font-size: 0.85rem;
+    }
+
+    .error { color: #c00; }
+
+    @media (max-width: 640px) {
+      body { padding: 14px; }
+      .subject-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+      .badge {
+        align-self: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Livros — Bacharelado em Engenharia de Software</h1>
+<div id="content"><div class="loading">Carregando livros…</div></div>
+
+<script>
+/* ── Render helpers ───────────────────────────────────────────── */
+function normalizeLabel(value) {
+  return String(value ?? '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .trim()
+    .toLowerCase();
+}
+
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+}
+
+function renderText(value) {
+  return escapeHtml(value).replace(/https?:\/\/[^\s<)]+/g, rawUrl => {
+    const suffix = rawUrl.match(/[.,;:]+$/)?.[0] ?? '';
+    const url = suffix ? rawUrl.slice(0, -suffix.length) : rawUrl;
+    return `<a href="${url}" target="_blank" rel="noopener">${url}</a>${suffix}`;
+  });
+}
+
+function parseBibtex(raw) {
+  const headerMatch = raw.match(/@(\w+)\s*\{([^,\s]*)\s*,/);
+  if (!headerMatch) return {};
+
+  const fields = {
+    _type: headerMatch[1].toLowerCase(),
+    _key: headerMatch[2],
+  };
+
+  let pos = raw.indexOf(',', raw.indexOf('{')) + 1;
+
+  while (pos < raw.length) {
+    while (pos < raw.length && /\s/.test(raw[pos])) pos++;
+    if (raw[pos] === '}' || pos >= raw.length) break;
+
+    const nameStart = pos;
+    while (pos < raw.length && /\w/.test(raw[pos])) pos++;
+    const name = raw.slice(nameStart, pos).toLowerCase();
+    if (!name) break;
+
+    while (pos < raw.length && /[\s=]/.test(raw[pos])) pos++;
+
+    let value = '';
+    if (raw[pos] === '{') {
+      pos++;
+      let depth = 1;
+      const valStart = pos;
+      while (pos < raw.length && depth > 0) {
+        if (raw[pos] === '{') depth++;
+        else if (raw[pos] === '}') depth--;
+        pos++;
+      }
+      value = raw.slice(valStart, pos - 1).trim();
+    } else if (raw[pos] === '"') {
+      pos++;
+      const valStart = pos;
+      while (pos < raw.length && raw[pos] !== '"') pos++;
+      value = raw.slice(valStart, pos).trim();
+      pos++;
+    }
+
+    if (name) fields[name] = value;
+    while (pos < raw.length && (raw[pos] === ',' || /\s/.test(raw[pos]))) pos++;
+  }
+
+  return fields;
+}
+
+function formatIsbns(isbns) {
+  if (!isbns || isbns.length === 0) return '';
+  
+  let bestIsbn = isbns[0];
+  let bestLen = String(bestIsbn).replace(/[^0-9X]/gi, '').length;
+  
+  for (let i = 1; i < isbns.length; i++) {
+    const norm = String(isbns[i]).replace(/[^0-9X]/gi, '');
+    if (norm.length > bestLen) {
+      bestIsbn = isbns[i];
+      bestLen = norm.length;
+    }
+  }
+
+  const normalized = String(bestIsbn).toUpperCase().replace(/[^0-9X]/g, '');
+  return `ISBN ${normalized}.`;
+}
+
+function getBibIsbns(fields) {
+  const val = fields?.isbn;
+  if (!val) return [];
+  return [...new Set(val.split(/\s*[,;]\s*/).map(String).map(isbn => isbn.trim()).filter(Boolean))];
+}
+
+function formatAbnt(fields, kohaUrl, isbns = []) {
+  const clean = s => s ? s.replace(/[\/,]+$/, '').replace(/\s*:\s*$/, '').replace(/\s*-\s*$/, '').trim() : '';
+  const cleanYear = s => s ? s.replace(/^c/, '').replace(/\.$/, '').trim() : '';
+
+  let authorsHtml = '';
+  if (fields.author) {
+    const authors = fields.author.split(/\s+and\s+/i).map(a => a.replace(/,\s*$/, '').trim()).filter(Boolean);
+    const toAbnt = a => {
+      const i = a.indexOf(',');
+      if (i === -1) return a.toUpperCase();
+      return `${a.slice(0, i).trim().toUpperCase()}, ${a.slice(i + 1).trim()}`;
+    };
+    const list = authors.length > 3
+      ? [toAbnt(authors[0]), 'et al.']
+      : authors.map(toAbnt);
+    authorsHtml = list.join('; ');
+  }
+
+  const titleText = clean(fields.title);
+  let titleHtml = titleText ? `<strong>${titleText}</strong>` : '';
+  if (titleHtml && kohaUrl) {
+    titleHtml = `<strong><a href="${kohaUrl}" target="_blank">${titleText}</a></strong>`;
+  }
+
+  const edition = clean(fields.edition);
+  const address = clean(fields.address);
+  const publisher = clean(fields.publisher);
+  const year = cleanYear(fields.year);
+
+  const location = [address, [publisher, year].filter(Boolean).join(', ')].filter(Boolean).join(': ');
+
+  const parts = [authorsHtml, titleHtml, edition, location].filter(Boolean);
+  const citation = parts.reduce((acc, part, i) => {
+    if (i === 0) return part;
+    return acc + (acc.endsWith('.') ? ' ' : '. ') + part;
+  }, '');
+  const normalizedCitation = citation.endsWith('.') ? citation : citation + '.';
+  const isbnText = formatIsbns(isbns);
+  return [normalizedCitation, isbnText].filter(Boolean).join(' ');
+}
+
+async function fetchBibCache(subjects) {
+  const paths = new Set();
+  for (const subject of subjects) {
+    for (const item of subject.bibliografias ?? []) {
+      for (const path of item.bibtex ?? []) {
+        if (path) paths.add(path);
+      }
+    }
+  }
+  const cache = {};
+  await Promise.all([...paths].map(async path => {
+    try {
+      const r = await fetch('../' + path);
+      if (r.ok) {
+        cache[path] = parseBibtex(await r.text());
+      }
+    } catch {}
+  }));
+  return cache;
+}
+
+function renderKohaLinks(bibPaths, bibCache) {
+  const paths = bibPaths ?? [];
+  const activeUrls = [];
+  for (const path of paths) {
+    const bib = bibCache[path];
+    const url = bib?.url;
+    if (url) {
+      activeUrls.push(url);
+    }
+  }
+
+  if (activeUrls.length > 0) {
+    return `<div class="koha-links">${activeUrls.map((url, index) => {
+      const label = activeUrls.length > 1
+        ? `Abrir registro ${index + 1} no Koha`
+        : 'Abrir registro no Koha';
+      return `<a class="koha-link" href="${escapeHtml(url)}" target="_blank" rel="noopener" aria-label="${label}" title="${label}">
+        <svg class="lucide lucide-external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M15 3h6v6"></path>
+          <path d="M10 14 21 3"></path>
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+        </svg>
+      </a>`;
+    }).join('')}</div>`;
+  }
+
+  const label = paths.length > 0
+    ? 'Registro indisponível no Koha'
+    : 'Sem registro BibTeX cadastrado';
+
+  return `<div class="koha-links">
+    <span class="koha-link koha-link-disabled" title="${label}" aria-label="${label}">
+      <svg class="lucide lucide-link-2-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
+        <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
+        <line x1="8" x2="16" y1="12" y2="12"></line>
+        <line x1="2" x2="22" y1="2" y2="22"></line>
+      </svg>
+    </span>
+  </div>`;
+}
+
+function getBookPlainText(book, bibCache) {
+  if (book.bibtex && book.bibtex.length > 0) {
+    const firstPath = book.bibtex[0];
+    const bibFields = bibCache[firstPath];
+    if (bibFields) {
+      const clean = s => s ? s.replace(/[\/,]+$/, '').replace(/\s*:\s*$/, '').replace(/\s*-\s*$/, '').trim() : '';
+      const cleanYear = s => s ? s.replace(/^c/, '').replace(/\.$/, '').trim() : '';
+      
+      let authorsText = '';
+      if (bibFields.author) {
+        const authors = bibFields.author.split(/\s+and\s+/i).map(a => a.replace(/,\s*$/, '').trim()).filter(Boolean);
+        const toAbnt = a => {
+          const i = a.indexOf(',');
+          if (i === -1) return a.toUpperCase();
+          return `${a.slice(0, i).trim().toUpperCase()}, ${a.slice(i + 1).trim()}`;
+        };
+        const list = authors.length > 3
+          ? [toAbnt(authors[0]), 'et al.']
+          : authors.map(toAbnt);
+        authorsText = list.join('; ');
+      }
+      
+      const titleText = clean(bibFields.title);
+      const edition = clean(bibFields.edition);
+      const address = clean(bibFields.address);
+      const publisher = clean(bibFields.publisher);
+      const year = cleanYear(bibFields.year);
+      
+      const location = [address, [publisher, year].filter(Boolean).join(', ')].filter(Boolean).join(': ');
+      
+      const parts = [authorsText, titleText, edition, location].filter(Boolean);
+      const citation = parts.reduce((acc, part, i) => {
+        if (i === 0) return part;
+        return acc + (acc.endsWith('.') ? ' ' : '. ') + part;
+      }, '');
+      return citation.endsWith('.') ? citation : citation + '.';
+    }
+  }
+  return book.referencia;
+}
+
+function sortSubjects(subjectsList) {
+  return subjectsList.slice().sort((left, right) => {
+    const leftPeriod = left.period;
+    const rightPeriod = right.period;
+
+    const leftNumber = parseInt(leftPeriod) || 999;
+    const rightNumber = parseInt(rightPeriod) || 999;
+    if (leftNumber !== rightNumber) return leftNumber - rightNumber;
+
+    const leftElective = normalizeLabel(leftPeriod).includes('optativ');
+    const rightElective = normalizeLabel(rightPeriod).includes('optativ');
+    if (leftElective !== rightElective) return leftElective ? 1 : -1;
+
+    const periodComp = leftPeriod.localeCompare(rightPeriod, 'pt-BR');
+    if (periodComp !== 0) return periodComp;
+
+    return left.name.localeCompare(right.name, 'pt-BR');
+  });
+}
+
+function renderBookCard(book, bibCache) {
+  const card = document.createElement('div');
+  card.className = 'book-card';
+
+  const header = document.createElement('div');
+  header.className = 'book-card-header';
+
+  const citation = document.createElement('div');
+  citation.className = 'book-citation';
+
+  const originalBlock = document.createElement('div');
+  originalBlock.className = 'ref-original';
+  originalBlock.innerHTML = renderText(book.referencia);
+  citation.appendChild(originalBlock);
+
+  let abntRendered = false;
+
+  if (book.bibtex && book.bibtex.length > 0) {
+    const firstPath = book.bibtex[0];
+    const bibFields = bibCache[firstPath];
+    if (bibFields) {
+      abntRendered = true;
+      const abntBlock = document.createElement('div');
+      abntBlock.className = 'ref-abnt';
+
+      const abntTextSpan = document.createElement('span');
+      const kohaUrl = bibFields.url || null;
+      const isbns = getBibIsbns(bibFields);
+      abntTextSpan.innerHTML = formatAbnt(bibFields, kohaUrl, isbns);
+      abntBlock.appendChild(abntTextSpan);
+
+      abntBlock.insertAdjacentHTML('beforeend', renderKohaLinks(book.bibtex, bibCache));
+
+      for (const path of book.bibtex) {
+        if (!path) continue;
+        const bibLink = document.createElement('a');
+        bibLink.className = 'bib-link';
+        bibLink.style.marginLeft = '6px';
+        bibLink.href = '../' + path;
+        bibLink.target = '_blank';
+        bibLink.textContent = `(${path.split('/').pop()})`;
+        abntBlock.appendChild(bibLink);
+      }
+
+      citation.appendChild(abntBlock);
+    }
+  }
+
+  if (!abntRendered) {
+    originalBlock.insertAdjacentHTML('beforeend', renderKohaLinks(book.bibtex, bibCache));
+  }
+
+  header.appendChild(citation);
+  card.appendChild(header);
+
+  // Card Body: Associated Subjects
+  const body = document.createElement('div');
+  body.className = 'book-card-body';
+
+  const bodyTitle = document.createElement('div');
+  bodyTitle.className = 'book-card-body-title';
+  bodyTitle.textContent = 'Disciplinas associadas';
+  body.appendChild(bodyTitle);
+
+  const list = document.createElement('div');
+  list.className = 'subjects-list';
+
+  const sortedSubjects = sortSubjects(book.subjects);
+  for (const subject of sortedSubjects) {
+    const item = document.createElement('div');
+    item.className = 'subject-item';
+
+    const info = document.createElement('div');
+    info.className = 'subject-info';
+
+    const name = document.createElement('span');
+    name.className = 'subject-name';
+    name.textContent = subject.name;
+    info.appendChild(name);
+
+    const period = document.createElement('span');
+    period.className = 'subject-period';
+    period.textContent = `(${subject.period})`;
+    info.appendChild(period);
+
+    item.appendChild(info);
+
+    const badge = document.createElement('span');
+    badge.className = `badge ${subject.type === 'basica' ? 'badge-basic' : 'badge-complementary'}`;
+    badge.textContent = subject.type === 'basica' ? 'Básica' : 'Complementar';
+    item.appendChild(badge);
+
+    list.appendChild(item);
+  }
+
+  body.appendChild(list);
+  card.appendChild(body);
+
+  return card;
+}
+
+/* ── Global State & Filtering ───────────────────────────────────── */
+let allBooks = [];
+let activeFilter = 'all'; // 'all', 'basica', 'complementar'
+let searchQuery = '';
+let activeSort = 'name'; // 'name', 'usage'
+let globalBibCache = {};
+
+function sortBooksArray() {
+  if (activeSort === 'name') {
+    allBooks.sort((a, b) => a.plainTextCitation.localeCompare(b.plainTextCitation, 'pt-BR'));
+  } else if (activeSort === 'usage') {
+    allBooks.sort((a, b) => {
+      const diff = b.subjects.length - a.subjects.length;
+      if (diff !== 0) return diff;
+      return a.plainTextCitation.localeCompare(b.plainTextCitation, 'pt-BR');
+    });
+  }
+}
+
+function filterAndRender() {
+  const cardsContainer = document.querySelector('.cards-container');
+  const resultsCount = document.querySelector('.results-count');
+  if (!cardsContainer || !resultsCount) return;
+
+  cardsContainer.replaceChildren();
+
+  const query = normalizeLabel(searchQuery);
+
+  const filtered = allBooks.filter(book => {
+    // 1. Filter by tab (basica / complementar / all)
+    if (activeFilter === 'basica') {
+      const hasBasic = book.subjects.some(s => s.type === 'basica');
+      if (!hasBasic) return false;
+    } else if (activeFilter === 'complementar') {
+      const hasComplementary = book.subjects.some(s => s.type === 'complementar');
+      if (!hasComplementary) return false;
+    }
+
+    // 2. Filter by search query
+    if (query) {
+      const matchesText = normalizeLabel(book.referencia).includes(query) ||
+                          normalizeLabel(book.plainTextCitation).includes(query);
+      const matchesSubject = book.subjects.some(s => normalizeLabel(s.name).includes(query));
+      if (!matchesText && !matchesSubject) return false;
+    }
+
+    return true;
+  });
+
+  if (filtered.length === 0) {
+    const empty = document.createElement('div');
+    empty.className = 'no-books';
+    empty.textContent = 'Nenhum livro encontrado.';
+    cardsContainer.appendChild(empty);
+  } else {
+    filtered.forEach(book => {
+      cardsContainer.appendChild(renderBookCard(book, globalBibCache));
+    });
+  }
+
+  // Update results count text
+  const count = filtered.length;
+  let text = '';
+  if (count === 0) {
+    text = 'Nenhum livro encontrado';
+  } else if (count === 1) {
+    text = '1 livro encontrado';
+  } else {
+    text = `${count} livros encontrados`;
+  }
+  resultsCount.textContent = text;
+}
+
+/* ── Main ─────────────────────────────────────────────────────── */
+async function load() {
+  const content = document.getElementById('content');
+
+  try {
+    const response = await fetch('ementario.json');
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    const subjects = await response.json();
+    globalBibCache = await fetchBibCache(subjects);
+
+    // Group and unique books
+    const booksMap = new Map();
+
+    for (const subject of subjects) {
+      for (const bib of subject.bibliografias ?? []) {
+        let key = '';
+        if (bib.bibtex && bib.bibtex.length > 0) {
+          key = bib.bibtex[0];
+        } else {
+          key = normalizeLabel(bib.referencia);
+        }
+
+        if (!booksMap.has(key)) {
+          booksMap.set(key, {
+            referencia: bib.referencia,
+            bibtex: bib.bibtex || [],
+            subjects: []
+          });
+        }
+
+        const bookEntry = booksMap.get(key);
+
+        const alreadyAdded = bookEntry.subjects.some(
+          s => s.name === subject.disciplina && s.period === subject.periodo
+        );
+        if (!alreadyAdded) {
+          bookEntry.subjects.push({
+            name: subject.disciplina,
+            period: subject.periodo,
+            type: bib.tipo
+          });
+        }
+      }
+    }
+
+    // Convert map to array & compute plainTextCitation
+    allBooks = Array.from(booksMap.values());
+    allBooks.forEach(book => {
+      book.plainTextCitation = getBookPlainText(book, globalBibCache);
+    });
+
+    // Initial sort
+    sortBooksArray();
+
+    // Clear content loading message
+    content.replaceChildren();
+
+    // Render Controls UI
+    const controlsContainer = document.createElement('div');
+    controlsContainer.className = 'controls-container';
+
+    // Search input
+    const searchContainer = document.createElement('div');
+    searchContainer.className = 'search-container';
+    const searchInput = document.createElement('input');
+    searchInput.type = 'text';
+    searchInput.className = 'search-input';
+    searchInput.placeholder = 'Buscar por título, autor ou disciplina...';
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value;
+      filterAndRender();
+    });
+    searchContainer.appendChild(searchInput);
+    controlsContainer.appendChild(searchContainer);
+
+    // Filter tabs
+    const tabsContainer = document.createElement('div');
+    tabsContainer.className = 'tabs-container';
+
+    const tabOptions = [
+      { id: 'all', label: 'Todos' },
+      { id: 'basica', label: 'Básica' },
+      { id: 'complementar', label: 'Complementar' }
+    ];
+
+    const buttons = [];
+    tabOptions.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.className = 'tab-button';
+      if (opt.id === 'all') btn.classList.add('active');
+      btn.textContent = opt.label;
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeFilter = opt.id;
+        filterAndRender();
+      });
+      tabsContainer.appendChild(btn);
+      buttons.push(btn);
+    });
+    controlsContainer.appendChild(tabsContainer);
+
+    // Meta row (Results Count + Sorting Options)
+    const metaRow = document.createElement('div');
+    metaRow.className = 'meta-row';
+
+    // Results count
+    const resultsCount = document.createElement('div');
+    resultsCount.className = 'results-count';
+    metaRow.appendChild(resultsCount);
+
+    // Sort container
+    const sortContainer = document.createElement('div');
+    sortContainer.className = 'sort-container';
+
+    const sortLabel = document.createElement('label');
+    sortLabel.textContent = 'Ordenar por: ';
+    sortLabel.setAttribute('for', 'sort-select');
+    sortContainer.appendChild(sortLabel);
+
+    const sortSelect = document.createElement('select');
+    sortSelect.id = 'sort-select';
+    sortSelect.className = 'sort-select';
+
+    const optName = document.createElement('option');
+    optName.value = 'name';
+    optName.textContent = 'Nome (A-Z)';
+    sortSelect.appendChild(optName);
+
+    const optUsage = document.createElement('option');
+    optUsage.value = 'usage';
+    optUsage.textContent = 'Quantidade de disciplinas';
+    sortSelect.appendChild(optUsage);
+
+    sortSelect.addEventListener('change', (e) => {
+      activeSort = e.target.value;
+      sortBooksArray();
+      filterAndRender();
+    });
+
+    sortContainer.appendChild(sortSelect);
+    metaRow.appendChild(sortContainer);
+    controlsContainer.appendChild(metaRow);
+
+    content.appendChild(controlsContainer);
+
+    // Cards container
+    const cardsContainer = document.createElement('div');
+    cardsContainer.className = 'cards-container';
+    content.appendChild(cardsContainer);
+
+    // Initial render
+    filterAndRender();
+
+  } catch (error) {
+    content.innerHTML = '<div class="error">Não foi possível carregar os livros.</div>';
+    console.error(error);
+  }
+}
+
+load();
+</script>
+</body>
+</html>
