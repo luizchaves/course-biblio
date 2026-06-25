@@ -281,7 +281,9 @@ function extractOnlineUrl(reference) {
 }
 
 function isBibliographyAvailable(item) {
-  return item.online === true || (item.quantidadeEmJP != null && item.quantidadeEmJP > 0);
+  const onlineAvailable = item.online === true && item.onlineAcessivel !== false;
+  const physicalAvailable = item.quantidadeEmJP != null && item.quantidadeEmJP > 0;
+  return onlineAvailable || physicalAvailable;
 }
 
 function parseBibtex(text) {
@@ -316,7 +318,7 @@ async function fetchBibCache(subjects) {
   return cache;
 }
 
-function formatABNT(bib) {
+function formatABNT(bib, onlineUrl = null) {
   if (!bib?.title) return '';
 
   const clean = s => (s ?? '').replace(/\s*[-,;:/\\]\s*$/, '').replace(/\s*\.\s*$/, '').trim();
@@ -351,6 +353,10 @@ function formatABNT(bib) {
     parts.push(escapeHtml(year) + '.');
   }
   if (isbn) parts.push(`ISBN ${escapeHtml(isbn)}.`);
+  if (onlineUrl) {
+    const escapedUrl = escapeHtml(onlineUrl);
+    parts.push(`Disponível em: <a href="${escapedUrl}" target="_blank" rel="noopener">${escapedUrl}</a>.`);
+  }
 
   return parts.join(' ');
 }
@@ -358,24 +364,27 @@ function formatABNT(bib) {
 function renderBibliography(entries, bibCache) {
   if (!entries?.length) return '';
   return `<ol>${entries.map(item => {
-    const kohaUrls = (item.bibtex ?? []).map(p => bibCache[p]?.url).filter(Boolean);
+    const firstBib = (item.bibtex ?? []).map(p => bibCache[p]?.bib).find(Boolean);
+    const onlineUrl = item.online
+      ? extractOnlineUrl(item.referencia) ?? firstBib?.url ?? null
+      : null;
+    const onlineAvailable = item.online === true && item.onlineAcessivel !== false;
+    const kohaUrls = item.online
+      ? []
+      : (item.bibtex ?? []).map(p => bibCache[p]?.url).filter(Boolean);
     const externalLinks = kohaUrls.map((url, index) => ({
       url,
       label: kohaUrls.length > 1
         ? `Abrir registro ${index + 1} no Koha`
         : 'Abrir registro no Koha',
     }));
-    if (item.online) {
-      const onlineUrl = extractOnlineUrl(item.referencia);
-      if (onlineUrl) {
-        externalLinks.push({
-          url: onlineUrl,
-          label: 'Abrir referência online',
-        });
-      }
+    if (onlineUrl && onlineAvailable) {
+      externalLinks.push({
+        url: onlineUrl,
+        label: 'Abrir referência online',
+      });
     }
 
-    const firstBib = (item.bibtex ?? []).map(p => bibCache[p]?.bib).find(Boolean);
     let linksHtml = '';
     if (externalLinks.length > 0) {
       linksHtml = externalLinks.map(link => {
@@ -387,6 +396,16 @@ function renderBibliography(entries, bibCache) {
           </svg>
         </a>`;
       }).join('');
+    } else if (item.online && !onlineAvailable) {
+      const label = 'Referência online indisponível';
+      linksHtml = `<span class="koha-link koha-link-disabled" title="${label}" aria-label="${label}">
+        <svg class="lucide lucide-link-2-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
+          <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
+          <line x1="8" x2="16" y1="12" y2="12"></line>
+          <line x1="2" x2="22" y1="2" y2="22"></line>
+        </svg>
+      </span>`;
     } else {
       const paths = item.bibtex ?? [];
       const label = paths.length > 0
@@ -411,7 +430,7 @@ function renderBibliography(entries, bibCache) {
       copiesBadge = `<span class="copies-badge ${cls}" title="${label}">${n} ex. JP</span>`;
     }
 
-    const abntHtml = formatABNT(firstBib);
+    const abntHtml = formatABNT(firstBib, onlineUrl);
     const refHtml = abntHtml
       ? `<span class="ref-original">${renderText(item.referencia)}</span><div class="ref-abnt">${abntHtml}</div>`
       : renderText(item.referencia);
