@@ -102,6 +102,13 @@
       font-weight: 700;
     }
 
+    .subject-abbreviation {
+      margin-left: 5px;
+      color: #6b7280;
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+
     .subject-name {
       color: #111827;
       font-size: 0.86rem;
@@ -116,7 +123,7 @@
       line-height: 1.35;
     }
 
-    .offerings {
+    .syllabus {
       display: flex;
       flex-wrap: wrap;
       gap: 5px;
@@ -193,6 +200,8 @@
       'https://suap.ifpb.edu.br/documento_eletronico/imprimir_documento_pdf/';
     const SUAP_PAGE_URL =
       'https://suap.ifpb.edu.br/documento_eletronico/visualizar_documento/';
+    const SUAP_CLASS_RECORD_URL =
+      'https://suap.ifpb.edu.br/edu/diario/';
 
     function escapeHtml(value) {
       return String(value ?? '')
@@ -213,10 +222,10 @@
       };
     }
 
-    function renderOfferings(offerings) {
-      if (!offerings?.length) return '';
+    function renderSyllabus(syllabus) {
+      if (!syllabus?.length) return '';
 
-      const links = [...offerings]
+      const links = [...syllabus]
         .sort((left, right) =>
           String(right.semester).localeCompare(String(left.semester), 'pt-BR', { numeric: true })
         )
@@ -225,26 +234,35 @@
           const pageUrl = `${SUAP_PAGE_URL}${documentId}/`;
           const pdfUrl = `${SUAP_PDF_URL}${documentId}/carta/`;
           const semester = escapeHtml(offer.semester);
+          const classRecordLinks = (offer.classRecordId ?? [])
+            .slice(0, 2)
+            .map((classRecordId, index) => {
+              const label = index === 0 ? 'A' : 'B';
+              const url = `${SUAP_CLASS_RECORD_URL}${encodeURIComponent(classRecordId)}/`;
+              return `<a class="offering-link" href="${url}" target="_blank" rel="noopener" title="Abrir diário ${label} de ${semester}">${label}</a>`;
+            })
+            .join('');
           return `<li class="offering">
             <a class="offering-link" href="${pageUrl}" target="_blank" rel="noopener" title="Visualizar plano de ensino de ${semester}">${semester}</a>
             <a class="offering-link" href="${pdfUrl}" target="_blank" rel="noopener" title="Abrir PDF do plano de ensino de ${semester}">PDF</a>
+            ${classRecordLinks}
           </li>`;
         })
         .join('');
 
-      return `<ul class="offerings">${links}</ul>`;
+      return `<ul class="syllabus">${links}</ul>`;
     }
 
-    function renderLatestProfessors(offerings) {
-      if (!offerings?.length) return '';
+    function renderLatestProfessors(syllabus) {
+      if (!syllabus?.length) return '';
 
-      const latestOffering = [...offerings].sort((left, right) =>
+      const latestSyllabus = [...syllabus].sort((left, right) =>
         String(right.semester).localeCompare(String(left.semester), 'pt-BR', { numeric: true })
       )[0];
-      const professors = latestOffering.professors ?? [];
+      const professors = latestSyllabus.professors ?? [];
       if (professors.length === 0) return '';
 
-      return `<div class="subject-professors" title="Professores de ${escapeHtml(latestOffering.semester)}">${professors.map(escapeHtml).join('; ')}</div>`;
+      return `<div class="subject-professors" title="Professores de ${escapeHtml(latestSyllabus.semester)}">${professors.map(escapeHtml).join('; ')}</div>`;
     }
 
     function renderTable(subjects) {
@@ -281,10 +299,10 @@
           }
 
           return `<td>
-            <span class="subject-code">${escapeHtml(subject.code)}</span>
+            <span class="subject-code">${escapeHtml(subject.code)}</span><span class="subject-abbreviation">${escapeHtml(subject.abbreviation)}</span>
             <div class="subject-name">${escapeHtml(subject.subject)}</div>
-            ${renderLatestProfessors(subject.offerings)}
-            ${renderOfferings(subject.offerings)}
+            ${renderLatestProfessors(subject.syllabus)}
+            ${renderSyllabus(subject.syllabus)}
           </td>`;
         }).join('');
 

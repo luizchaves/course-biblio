@@ -1,12 +1,40 @@
 [
   {
     "code": "ES11",
+    "abbreviation": "TEC.2357",
+    "curriculumId": 766,
     "subject": "Introdução à Engenharia de Software",
     "period": "P1",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "20261.1.432.1D",
         "documentId": 835838,
+        "classRecordId": [
+          107866
+        ],
+        "professors": [
+          "Francisco Petrônio Alencar de Medeiros"
+        ]
+      },
+      {
+        "semester": "2025.2",
+        "classId": "20252.1.432.1D",
+        "documentId": 1508373,
+        "classRecordId": [
+          102395
+        ],
+        "professors": [
+          "Francisco Petrônio Alencar de Medeiros"
+        ]
+      },
+      {
+        "semester": "2025.1",
+        "classId": "20251.1.432.1D",
+        "documentId": 1508373,
+        "classRecordId": [
+          94883
+        ],
         "professors": [
           "Francisco Petrônio Alencar de Medeiros"
         ]
@@ -15,12 +43,45 @@
   },
   {
     "code": "ES12",
+    "abbreviation": "TEC.2515",
+    "curriculumId": 766,
     "subject": "Programação Para Web I",
     "period": "P1",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 835275,
+        "classRecordId": [
+          111424,
+          107871
+        ],
+        "professors": [
+          "Diego Ernesto Rosa Pessoa",
+          "Wallennon Germano Dunga"
+        ]
+      },
+      {
+        "semester": "2025.2",
+        "classId": "2025.2.432.1D",
+        "documentId": 1863442,
+        "classRecordId": [
+          103684,
+          102400
+        ],
+        "professors": [
+          "Diego Ernesto Rosa Pessoa",
+          "Wallennon Germano Dunga"
+        ]
+      },
+      {
+        "semester": "2025.1",
+        "classId": "2025.1.432.1D",
+        "documentId": 1863442,
+        "classRecordId": [
+          102934,
+          94884
+        ],
         "professors": [
           "Diego Ernesto Rosa Pessoa",
           "Wallennon Germano Dunga"
@@ -30,12 +91,45 @@
   },
   {
     "code": "ES13",
+    "abbreviation": "TEC.2358",
+    "curriculumId": 766,
     "subject": "Introdução à Programação",
     "period": "P1",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 836713,
+        "classRecordId": [
+          111423,
+          107867
+        ],
+        "professors": [
+          "Edemberg Rocha da Silva",
+          "Valéria Maria Bezerra Cavalcanti"
+        ]
+      },
+      {
+        "semester": "2025.2",
+        "classId": "2025.2.432.1D",
+        "documentId": 0,
+        "classRecordId": [
+          103685,
+          102396
+        ],
+        "professors": [
+          "Edemberg Rocha da Silva",
+          "Valéria Maria Bezerra Cavalcanti"
+        ]
+      },
+      {
+        "semester": "2025.1",
+        "classId": "2025.1.432.1D",
+        "documentId": 0,
+        "classRecordId": [
+          98689,
+          94885
+        ],
         "professors": [
           "Edemberg Rocha da Silva",
           "Valéria Maria Bezerra Cavalcanti"
@@ -45,12 +139,40 @@
   },
   {
     "code": "ES14",
+    "abbreviation": "TEC.2359",
+    "curriculumId": 766,
     "subject": "Arquitetura e Organização de Computadores",
     "period": "P1",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 833373,
+        "classRecordId": [
+          107868
+        ],
+        "professors": [
+          "Frederico Costa Guedes Pereira"
+        ]
+      },
+      {
+        "semester": "2025.2",
+        "classId": "2025.2.432.1D",
+        "documentId": 1200309,
+        "classRecordId": [
+          102397
+        ],
+        "professors": [
+          "Frederico Costa Guedes Pereira"
+        ]
+      },
+      {
+        "semester": "2025.1",
+        "classId": "2025.1.432.1D",
+        "documentId": 1200309,
+        "classRecordId": [
+          94886
+        ],
         "professors": [
           "Frederico Costa Guedes Pereira"
         ]
@@ -59,12 +181,40 @@
   },
   {
     "code": "ES15",
+    "abbreviation": "TEC.0524",
+    "curriculumId": 766,
     "subject": "Cálculo Diferencial e Integral I",
     "period": "P1",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 835600,
+        "classRecordId": [
+          107869
+        ],
+        "professors": [
+          "Thiago Andrade Fernandes"
+        ]
+      },
+      {
+        "semester": "2025.2",
+        "classId": "2025.2.432.1D",
+        "documentId": 2230000,
+        "classRecordId": [
+          102398
+        ],
+        "professors": [
+          "Thiago Andrade Fernandes"
+        ]
+      },
+      {
+        "semester": "2025.1",
+        "classId": "2025.1.432.1D",
+        "documentId": 2230000,
+        "classRecordId": [
+          94887
+        ],
         "professors": [
           "Thiago Andrade Fernandes"
         ]
@@ -73,12 +223,40 @@
   },
   {
     "code": "ES16",
+    "abbreviation": "TEC.1164",
+    "curriculumId": 766,
     "subject": "Educação Ambiental e Sustentabilidade",
     "period": "P1",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 829313,
+        "classRecordId": [
+          107870
+        ],
+        "professors": [
+          "Alexandre Fonseca D'Andrea"
+        ]
+      },
+      {
+        "semester": "2025.2",
+        "classId": "2025.2.432.1D",
+        "documentId": 1704307,
+        "classRecordId": [
+          102399
+        ],
+        "professors": [
+          "Alexandre Fonseca D'Andrea"
+        ]
+      },
+      {
+        "semester": "2025.1",
+        "classId": "2025.1.432.1D",
+        "documentId": 1105336,
+        "classRecordId": [
+          94888
+        ],
         "professors": [
           "Alexandre Fonseca D'Andrea"
         ]
@@ -87,12 +265,29 @@
   },
   {
     "code": "ES21",
+    "abbreviation": "TEC.2360",
+    "curriculumId": 766,
     "subject": "Engenharia de Requisitos de Software",
     "period": "P2",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 836680,
+        "classRecordId": [
+          107876
+        ],
+        "professors": [
+          "Juliana Dantas Ribeiro Viana de Medeiros"
+        ]
+      },
+      {
+        "semester": "2025.2",
+        "classId": "2025.2.432.1D",
+        "documentId": 1335300,
+        "classRecordId": [
+          102405
+        ],
         "professors": [
           "Juliana Dantas Ribeiro Viana de Medeiros"
         ]
@@ -101,20 +296,30 @@
   },
   {
     "code": "ES22",
+    "abbreviation": "TEC.2516",
+    "curriculumId": 766,
     "subject": "Programação Para Web II",
     "period": "P2",
-    "offerings": [
+    "syllabus": [
       {
-        "semester": "2025.2",
-        "documentId": 2680962,
+        "semester": "2026.1",
+        "classId": "2026.1.432.1D",
+        "documentId": 833320,
+        "classRecordId": [
+          103699
+        ],
         "professors": [
           "Luiz Carlos Rodrigues Chaves",
           "Francisco Dantas Nobre Neto"
         ]
       },
       {
-        "semester": "2026.1",
-        "documentId": 833320,
+        "semester": "2025.2",
+        "classId": "2025.2.432.1D",
+        "documentId": 2680962,
+        "classRecordId": [
+          102407
+        ],
         "professors": [
           "Luiz Carlos Rodrigues Chaves",
           "Francisco Dantas Nobre Neto"
@@ -124,12 +329,31 @@
   },
   {
     "code": "ES23",
+    "abbreviation": "TEC.2475",
+    "curriculumId": 766,
     "subject": "Algoritmos e Estruturas de Dados",
     "period": "P2",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 837140,
+        "classRecordId": [
+          111420,
+          107877
+        ],
+        "professors": [
+          "Cândido José Ramos do Egypto",
+          "Thiago José Marques Moura"
+        ]
+      },
+      {
+        "semester": "2025.2",
+        "classId": "2025.2.432.1D",
+        "documentId": 1550140,
+        "classRecordId": [
+          102406
+        ],
         "professors": [
           "Cândido José Ramos do Egypto",
           "Thiago José Marques Moura"
@@ -139,12 +363,29 @@
   },
   {
     "code": "ES24",
+    "abbreviation": "TEC.1419",
+    "curriculumId": 766,
     "subject": "Introdução a Sistemas Abertos",
     "period": "P2",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 832818,
+        "classRecordId": [
+          107872
+        ],
+        "professors": [
+          "José Raimundo Bezerra de Carvalho"
+        ]
+      },
+      {
+        "semester": "2025.2",
+        "classId": "2025.2.432.1D",
+        "documentId": 3488396,
+        "classRecordId": [
+          102401
+        ],
         "professors": [
           "José Raimundo Bezerra de Carvalho"
         ]
@@ -153,12 +394,29 @@
   },
   {
     "code": "ES25",
+    "abbreviation": "TEC.2362",
+    "curriculumId": 766,
     "subject": "Álgebra Vetorial",
     "period": "P2",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 837919,
+        "classRecordId": [
+          107873
+        ],
+        "professors": [
+          "Rômulo de Oliveira Lins Vieira de Melo"
+        ]
+      },
+      {
+        "semester": "2025.2",
+        "classId": "2025.2.432.1D",
+        "documentId": 1785946,
+        "classRecordId": [
+          102402
+        ],
         "professors": [
           "Rômulo de Oliveira Lins Vieira de Melo"
         ]
@@ -167,12 +425,29 @@
   },
   {
     "code": "ES26",
+    "abbreviation": "TEC.2363",
+    "curriculumId": 766,
     "subject": "Inglês Instrumental I",
     "period": "P2",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 831003,
+        "classRecordId": [
+          107874
+        ],
+        "professors": [
+          "Maria Theresa Targino de Araújo Rangel"
+        ]
+      },
+      {
+        "semester": "2025.2",
+        "classId": "2025.2.432.1D",
+        "documentId": 0,
+        "classRecordId": [
+          102403
+        ],
         "professors": [
           "Maria Theresa Targino de Araújo Rangel"
         ]
@@ -181,12 +456,29 @@
   },
   {
     "code": "ES27",
+    "abbreviation": "TEC.2364",
+    "curriculumId": 766,
     "subject": "Práticas Curriculares de Extensão",
     "period": "P2",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 835450,
+        "classRecordId": [
+          107875
+        ],
+        "professors": [
+          "Nadja da Nóbrega Rodrigues"
+        ]
+      },
+      {
+        "semester": "2025.2",
+        "classId": "2025.2.432.1D",
+        "documentId": 0,
+        "classRecordId": [
+          102404
+        ],
         "professors": [
           "Nadja da Nóbrega Rodrigues"
         ]
@@ -195,12 +487,18 @@
   },
   {
     "code": "ES31",
+    "abbreviation": "TEC.2365",
+    "curriculumId": 766,
     "subject": "Gestão de Processos de Negócio",
     "period": "P3",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 836247,
+        "classRecordId": [
+          107881
+        ],
         "professors": [
           "Nadja da Nóbrega Rodrigues"
         ]
@@ -209,12 +507,18 @@
   },
   {
     "code": "ES32",
+    "abbreviation": "TEC.2366",
+    "curriculumId": 766,
     "subject": "Redes de Computadores",
     "period": "P3",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 834451,
+        "classRecordId": [
+          107879
+        ],
         "professors": [
           "Leonidas Francisco de Lima Junior"
         ]
@@ -223,12 +527,18 @@
   },
   {
     "code": "ES33",
+    "abbreviation": "TEC.0428",
+    "curriculumId": 766,
     "subject": "Programação Orientada a Objetos",
     "period": "P3",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 840653,
+        "classRecordId": [
+          107882
+        ],
         "professors": [
           "Fausto Véras Maranhão Ayres"
         ]
@@ -237,12 +547,18 @@
   },
   {
     "code": "ES34",
+    "abbreviation": "TEC.0423",
+    "curriculumId": 766,
     "subject": "Banco de Dados I",
     "period": "P3",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 837125,
+        "classRecordId": [
+          107883
+        ],
         "professors": [
           "Cândido José Ramos do Egypto"
         ]
@@ -251,12 +567,18 @@
   },
   {
     "code": "ES35",
+    "abbreviation": "TEC.1077",
+    "curriculumId": 766,
     "subject": "Álgebra Linear",
     "period": "P3",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 836236,
+        "classRecordId": [
+          107884
+        ],
         "professors": [
           "Flávio Alves de Albuquerque"
         ]
@@ -265,12 +587,18 @@
   },
   {
     "code": "ES36",
+    "abbreviation": "TEC.2367",
+    "curriculumId": 766,
     "subject": "Leitura e Produção Textual I",
     "period": "P3",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 835676,
+        "classRecordId": [
+          107880
+        ],
         "professors": [
           "Francielly Alves Pessoa"
         ]
@@ -279,12 +607,18 @@
   },
   {
     "code": "ES37",
+    "abbreviation": "TEC.2476",
+    "curriculumId": 766,
     "subject": "Projeto Integrador I",
     "period": "P3",
-    "offerings": [
+    "syllabus": [
       {
         "semester": "2026.1",
+        "classId": "2026.1.432.1D",
         "documentId": 837397,
+        "classRecordId": [
+          107885
+        ],
         "professors": [
           "Nadja da Nóbrega Rodrigues",
           "Leônidas Francisco de Lima Júnior",
