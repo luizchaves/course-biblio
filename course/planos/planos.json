@@ -1,0 +1,296 @@
+[
+  {
+    "code": "ES11",
+    "subject": "Introdução à Engenharia de Software",
+    "period": "P1",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 835838,
+        "professors": [
+          "Francisco Petrônio Alencar de Medeiros"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES12",
+    "subject": "Programação Para Web I",
+    "period": "P1",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 835275,
+        "professors": [
+          "Diego Ernesto Rosa Pessoa",
+          "Wallennon Germano Dunga"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES13",
+    "subject": "Introdução à Programação",
+    "period": "P1",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 836713,
+        "professors": [
+          "Edemberg Rocha da Silva",
+          "Valéria Maria Bezerra Cavalcanti"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES14",
+    "subject": "Arquitetura e Organização de Computadores",
+    "period": "P1",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 833373,
+        "professors": [
+          "Frederico Costa Guedes Pereira"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES15",
+    "subject": "Cálculo Diferencial e Integral I",
+    "period": "P1",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 835600,
+        "professors": [
+          "Thiago Andrade Fernandes"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES16",
+    "subject": "Educação Ambiental e Sustentabilidade",
+    "period": "P1",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 829313,
+        "professors": [
+          "Alexandre Fonseca D'Andrea"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES21",
+    "subject": "Engenharia de Requisitos de Software",
+    "period": "P2",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 836680,
+        "professors": [
+          "Juliana Dantas Ribeiro Viana de Medeiros"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES22",
+    "subject": "Programação Para Web II",
+    "period": "P2",
+    "offerings": [
+      {
+        "semester": "2025.2",
+        "documentId": 2680962,
+        "professors": [
+          "Luiz Carlos Rodrigues Chaves",
+          "Francisco Dantas Nobre Neto"
+        ]
+      },
+      {
+        "semester": "2026.1",
+        "documentId": 833320,
+        "professors": [
+          "Luiz Carlos Rodrigues Chaves",
+          "Francisco Dantas Nobre Neto"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES23",
+    "subject": "Algoritmos e Estruturas de Dados",
+    "period": "P2",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 837140,
+        "professors": [
+          "Cândido José Ramos do Egypto",
+          "Thiago José Marques Moura"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES24",
+    "subject": "Introdução a Sistemas Abertos",
+    "period": "P2",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 832818,
+        "professors": [
+          "José Raimundo Bezerra de Carvalho"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES25",
+    "subject": "Álgebra Vetorial",
+    "period": "P2",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 837919,
+        "professors": [
+          "Rômulo de Oliveira Lins Vieira de Melo"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES26",
+    "subject": "Inglês Instrumental I",
+    "period": "P2",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 831003,
+        "professors": [
+          "Maria Theresa Targino de Araújo Rangel"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES27",
+    "subject": "Práticas Curriculares de Extensão",
+    "period": "P2",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 835450,
+        "professors": [
+          "Nadja da Nóbrega Rodrigues"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES31",
+    "subject": "Gestão de Processos de Negócio",
+    "period": "P3",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 836247,
+        "professors": [
+          "Nadja da Nóbrega Rodrigues"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES32",
+    "subject": "Redes de Computadores",
+    "period": "P3",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 834451,
+        "professors": [
+          "Leonidas Francisco de Lima Junior"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES33",
+    "subject": "Programação Orientada a Objetos",
+    "period": "P3",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 840653,
+        "professors": [
+          "Fausto Véras Maranhão Ayres"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES34",
+    "subject": "Banco de Dados I",
+    "period": "P3",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 837125,
+        "professors": [
+          "Cândido José Ramos do Egypto"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES35",
+    "subject": "Álgebra Linear",
+    "period": "P3",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 836236,
+        "professors": [
+          "Flávio Alves de Albuquerque"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES36",
+    "subject": "Leitura e Produção Textual I",
+    "period": "P3",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 835676,
+        "professors": [
+          "Francielly Alves Pessoa"
+        ]
+      }
+    ]
+  },
+  {
+    "code": "ES37",
+    "subject": "Projeto Integrador I",
+    "period": "P3",
+    "offerings": [
+      {
+        "semester": "2026.1",
+        "documentId": 837397,
+        "professors": [
+          "Nadja da Nóbrega Rodrigues",
+          "Leônidas Francisco de Lima Júnior",
+          "Fausto Véras Maranhão Ayres"
+        ]
+      }
+    ]
+  }
+]

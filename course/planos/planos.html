@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planos de Ensino — Engenharia de Software</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      color: #1f2937;
+      background: #f5f7fa;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(100%, 1200px);
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      color: #111827;
+      font-size: 1.5rem;
+    }
+
+    .subtitle {
+      margin: 0 0 20px;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      border: 1px solid #dbe1e8;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgb(15 23 42 / 6%);
+    }
+
+    table {
+      width: 100%;
+      min-width: 760px;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    th,
+    td {
+      border-right: 1px solid #e5e7eb;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    tr:last-child td,
+    tr:last-child th {
+      border-bottom: 0;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: 0;
+    }
+
+    thead th {
+      padding: 10px;
+      color: #374151;
+      background: #f3f4f6;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .row-header {
+      width: 54px;
+      padding: 8px;
+      color: #6b7280;
+      background: #fafafa;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    td {
+      height: 118px;
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    .subject-code {
+      display: inline-block;
+      margin-bottom: 5px;
+      padding: 2px 6px;
+      border-radius: 999px;
+      color: #1d4ed8;
+      background: #dbeafe;
+      font-size: 0.68rem;
+      font-weight: 700;
+    }
+
+    .subject-name {
+      margin-bottom: 9px;
+      color: #111827;
+      font-size: 0.86rem;
+      font-weight: 650;
+      line-height: 1.3;
+    }
+
+    .offerings {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .offering {
+      display: inline-flex;
+      overflow: hidden;
+      border: 1px solid #bfdbfe;
+      border-radius: 4px;
+      background: #eff6ff;
+    }
+
+    .offering-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 7px;
+      color: #1d4ed8;
+      font-size: 0.73rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .offering-link + .offering-link {
+      border-left: 1px solid #bfdbfe;
+    }
+
+    .offering-link:hover,
+    .offering-link:focus-visible {
+      background: #dbeafe;
+      text-decoration: underline;
+    }
+
+    .empty-cell {
+      background: #fafafa;
+    }
+
+    .loading,
+    .error {
+      padding: 20px;
+      color: #6b7280;
+      text-align: center;
+    }
+
+    .error {
+      color: #b91c1c;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 14px;
+      }
+
+      h1 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Planos de Ensino — Engenharia de Software</h1>
+    <p class="subtitle">Os planos estão organizados conforme a posição definida pelo código da disciplina.</p>
+    <div id="content" class="table-container">
+      <div class="loading">Carregando planos…</div>
+    </div>
+  </main>
+
+  <script>
+    const SUAP_PDF_URL =
+      'https://suap.ifpb.edu.br/documento_eletronico/imprimir_documento_pdf/';
+    const SUAP_PAGE_URL =
+      'https://suap.ifpb.edu.br/documento_eletronico/visualizar_documento/';
+
+    function escapeHtml(value) {
+      return String(value ?? '')
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#039;');
+    }
+
+    function parsePosition(code) {
+      const match = /^ES(\d)(\d)$/.exec(String(code ?? '').trim());
+      if (!match) return null;
+
+      return {
+        column: Number(match[1]),
+        row: Number(match[2]),
+      };
+    }
+
+    function renderOfferings(offerings) {
+      if (!offerings?.length) return '';
+
+      const links = [...offerings]
+        .sort((left, right) =>
+          String(right.semester).localeCompare(String(left.semester), 'pt-BR', { numeric: true })
+        )
+        .map(offer => {
+          const documentId = encodeURIComponent(offer.documentId);
+          const pageUrl = `${SUAP_PAGE_URL}${documentId}/`;
+          const pdfUrl = `${SUAP_PDF_URL}${documentId}/carta/`;
+          const semester = escapeHtml(offer.semester);
+          return `<li class="offering">
+            <a class="offering-link" href="${pageUrl}" target="_blank" rel="noopener" title="Visualizar plano de ensino de ${semester}">${semester}</a>
+            <a class="offering-link" href="${pdfUrl}" target="_blank" rel="noopener" title="Abrir PDF do plano de ensino de ${semester}">PDF</a>
+          </li>`;
+        })
+        .join('');
+
+      return `<ul class="offerings">${links}</ul>`;
+    }
+
+    function renderTable(subjects) {
+      const positionedSubjects = subjects
+        .map(subject => ({ subject, position: parsePosition(subject.code) }))
+        .filter(item => item.position);
+
+      if (positionedSubjects.length === 0) {
+        throw new Error('Nenhuma disciplina possui um código de posição válido.');
+      }
+
+      const maxColumn = Math.max(...positionedSubjects.map(item => item.position.column));
+      const maxRow = Math.max(...positionedSubjects.map(item => item.position.row));
+      const subjectByPosition = new Map(
+        positionedSubjects.map(item => [
+          `${item.position.column}:${item.position.row}`,
+          item.subject,
+        ])
+      );
+
+      const headers = Array.from(
+        { length: maxColumn },
+        (_, index) => `<th scope="col">${index + 1}º período</th>`
+      ).join('');
+
+      const rows = Array.from({ length: maxRow }, (_, rowIndex) => {
+        const row = rowIndex + 1;
+        const cells = Array.from({ length: maxColumn }, (_, columnIndex) => {
+          const column = columnIndex + 1;
+          const subject = subjectByPosition.get(`${column}:${row}`);
+
+          if (!subject) {
+            return '<td class="empty-cell" aria-label="Sem disciplina"></td>';
+          }
+
+          return `<td>
+            <span class="subject-code">${escapeHtml(subject.code)}</span>
+            <div class="subject-name">${escapeHtml(subject.subject)}</div>
+            ${renderOfferings(subject.offerings)}
+          </td>`;
+        }).join('');
+
+        return `<tr><th class="row-header" scope="row">${row}</th>${cells}</tr>`;
+      }).join('');
+
+      return `<table>
+        <thead>
+          <tr>
+            <th class="row-header" scope="col">Pos.</th>
+            ${headers}
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>`;
+    }
+
+    async function init() {
+      const content = document.getElementById('content');
+
+      try {
+        const response = await fetch('planos.json');
+        if (!response.ok) {
+          throw new Error(`Não foi possível carregar planos.json (${response.status}).`);
+        }
+
+        const subjects = await response.json();
+        content.innerHTML = renderTable(subjects);
+      } catch (error) {
+        content.innerHTML = `<div class="error">${escapeHtml(error.message)}</div>`;
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
