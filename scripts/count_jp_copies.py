@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Conta exemplares na Biblioteca de João Pessoa para cada bibliografia do ementario.json.
-Acessa os links do Koha (extraídos dos arquivos .bib) e conta os itens com
-localização "Biblioteca João Pessoa", salvando o resultado em quantidadeEmJP.
+Conta exemplares na Biblioteca de João Pessoa para bibliografias zeradas.
+Acessa os links do Koha (extraídos dos arquivos .bib), segue a página com todos
+os exemplares quando necessário e salva o resultado em quantidadeEmJP.
 """
 
 import json
@@ -10,14 +10,18 @@ import os
 import re
 import time
 import urllib.request
+import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
+from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EMENTARIO_PATH = os.path.join(BASE_DIR, 'course/engenharia-de-software/ementas/ementario.json')
 BIBTEX_DIR = os.path.join(BASE_DIR, 'course/engenharia-de-software/bibtex')
 
 LOCATION_JP = 'João Pessoa'
+BRANCH_CODE_JP = 'JP'
 REQUEST_DELAY = 0.4  # segundos entre requisições
+MARCXML_NAMESPACE = 'http://www.loc.gov/MARC21/slim'
 
 
 class HoldingsParser(HTMLParser):
@@ -30,10 +34,16 @@ class HoldingsParser(HTMLParser):
         self._depth = 0
         self._table_depth = 0
         self._current_row_has_jp = False
+        self.view_all_href = None
         self.jp_count = 0
 
     def handle_starttag(self, tag, attrs):
         attrs_dict = dict(attrs)
+
+        if tag == 'a':
+            href = attrs_dict.get('href', '')
+            if 'viewallitems=1' in href:
+                self.view_all_href = href
 
         if tag == 'table' and attrs_dict.get('id') == 'holdingst':
             self._in_holdingst = True
@@ -78,12 +88,66 @@ def fetch_html(url, timeout=15):
         return None
 
 
+def count_jp_copies_from_marcxml(koha_url):
+    """Usa a exportação MARCXML quando a página completa do Koha falha."""
+    query = parse_qs(urlsplit(koha_url).query)
+    biblionumber = query.get('biblionumber', [None])[0]
+    if not biblionumber:
+        return None
+
+    export_query = urlencode({
+        'op': 'export',
+        'bib': biblionumber,
+        'format': 'marcxml',
+    })
+    export_url = urljoin(koha_url, f'opac-export.pl?{export_query}')
+    print(f'    Usando exportação MARCXML: {export_url}')
+
+    xml = fetch_html(export_url)
+    if not xml:
+        return None
+
+    try:
+        root = ET.fromstring(xml)
+    except ET.ParseError as e:
+        print(f'    [ERRO] MARCXML inválido: {e}')
+        return None
+
+    count = 0
+    datafield_tag = f'{{{MARCXML_NAMESPACE}}}datafield'
+    subfield_tag = f'{{{MARCXML_NAMESPACE}}}subfield'
+    for field in root.iter(datafield_tag):
+        if field.get('tag') != '952':
+            continue
+
+        branches = {
+            (subfield.text or '').strip()
+            for subfield in field.findall(subfield_tag)
+            if subfield.get('code') in {'a', 'b'}
+        }
+        if BRANCH_CODE_JP in branches:
+            count += 1
+
+    return count
+
+
 def count_jp_copies(koha_url):
     html = fetch_html(koha_url)
     if not html:
         return None
+
     parser = HoldingsParser()
     parser.feed(html)
+
+    if parser.view_all_href:
+        view_all_url = urljoin(koha_url, parser.view_all_href)
+        print(f'    Muitos exemplares; buscando página completa: {view_all_url}')
+        html = fetch_html(view_all_url)
+        if not html:
+            return count_jp_copies_from_marcxml(koha_url)
+        parser = HoldingsParser()
+        parser.feed(html)
+
     return parser.jp_count
 
 
@@ -126,6 +190,10 @@ def main():
         bibliografias = disc.get('bibliografias', [])
 
         for bib in bibliografias:
+            if bib.get('quantidadeEmJP') != 0:
+                stats['ja_tinha'] += 1
+                continue
+
             bibtex_refs = bib.get('bibtex', [])
 
             if not bibtex_refs:
@@ -183,6 +251,7 @@ def main():
 
     print(f'\n=== CONCLUÍDO ===')
     print(f'Processados:  {stats["processados"]}')
+    print(f'Ignorados:   {stats["ja_tinha"]}')
     print(f'Sem bibtex:   {stats["sem_bibtex"]}')
     print(f'Sem URL Koha: {stats["sem_url"]}')
     print(f'Erros HTTP:   {stats["erros"]}')

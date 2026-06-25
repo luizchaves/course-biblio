@@ -24,7 +24,7 @@
           "bibtex/CAPRON2004.bib"
         ],
         "tipo": "complementar",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 12
       },
       {
         "referencia": "DALE, Nell; LEWIS, John. Ciência da computação. 4. ed. Rio de Janeiro: LTC, 4. ed. Rio de Janeiro: LTC, 2011. 436 p.",
@@ -48,7 +48,7 @@
           "bibtex/MONTEIRO2007.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 9
       },
       {
         "referencia": "STALLINGS, W. Arquitetura e Organização de Computadores. Pearson, 10.8. ed. São Paulo: Pearson, 20170. 864624 p. il.",
@@ -119,7 +119,7 @@
           "bibtex/FLEMMING2006.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 17
       },
       {
         "referencia": "GUIDORIZZI, Hamilton Luiz, Um Curso de Cálculo. 5ª ed., Rio de Janeiro, LTC, 2001, v.1.",
@@ -137,7 +137,7 @@
           "bibtex/ANTON2007.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 15
       },
       {
         "referencia": "LEITHOLD, Louis. O Cálculo com Geometria Analítica. 3. ed. São Paulo: Harbra, 1994. v.1.",
@@ -145,7 +145,7 @@
           "bibtex/LEITHOLD1994.bib"
         ],
         "tipo": "complementar",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "ROGAWSKI, Jon. Cálculo. Porto Alegre: Bookman, 2009. v.1.",
@@ -164,7 +164,7 @@
           "bibtex/STEWART2009.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 23
       },
       {
         "referencia": "SWOKOWSKI, Earl. W. Cálculo com Geometria Analítica. 2. ed. São Paulo: Makron Books, 1994. v.1.",
@@ -212,7 +212,7 @@
           "bibtex/BRAGA2005.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 12
       },
       {
         "referencia": "DIAS, Genebaldo Freire. Educação ambiental: princípios e práticas. 9ª ed. São Paulo: Gaia, 2004. 551 p. il.",
@@ -221,7 +221,7 @@
           "bibtex/DIAS2003.bib"
         ],
         "tipo": "complementar",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "LIMA, José Dantas. Gestão de resíduos sólidos urbanos no Brasil. João Pessoa: Emlur, [200-]. 267 p. il.",
@@ -322,10 +322,11 @@
       {
         "referencia": "PRESSMAN, R. S. Engenharia de Software - Uma Abordagem Profissional - 8ª Ed. 2016, Editora Amgh;",
         "bibtex": [
-          "bibtex/PRESSMAN2011.bib"
+          "bibtex/PRESSMAN2011.bib",
+          "bibtex/PRESSMAN1995.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "SCHACH, S. R. Object-Oriented and Classical Software Engineering, 8a edição, 2011. ISBN-13 9780073376189;",
@@ -393,7 +394,7 @@
           "bibtex/CORMEN2012.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 14
       },
       {
         "referencia": "FORBELLONE, André Luiz Villar; EBERSPÄCHER, Henri Frederico. Lógica de programação: a construção de algoritmos e estruturas de dados. 3. ed. São Paulo: Makron Books, 2005. 218 p. il.",
@@ -402,7 +403,7 @@
           "bibtex/FORBELLONE2000.bib"
         ],
         "tipo": "complementar",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "LOPES, Anita; GARCIA, Guto. Introdução à programação: 500 algoritmos resolvidos. Rio de Janeiro: Campus, 2002. 469 p. il.",
@@ -482,8 +483,11 @@
       },
       {
         "referencia": "MAZZA, Lucas. HTML5 e CSS3. Domine a Web do Futuro. Casa do Código, 2013. ISBN-13 9788566250053",
-        "bibtex": [],
-        "tipo": "basica"
+        "bibtex": [
+          "bibtex/MAZZA2016.bib"
+        ],
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "MILETTO, Evandro Manara. Desenvolvimento de Software II: Introdução ao Desenvolvimento Web com HTML, CSS, JavaScript e PHP. Bookman, 2014. ISBN-13 9788582601952.",
@@ -495,8 +499,11 @@
       },
       {
         "referencia": "SILVA, Maurício Samy. Construindo sites com CSS e XHTML: sites controlados por folhas de estilo em cascata. São Paulo: Novatec, 2007. ISBN: 978857522139.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/SILVA2007.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "SILVA, Maurício Samy. CSS3: desenvolva aplicações web profissionais com uso dos poderosos recursos de estilização das CSS3. São Paulo: Novatec, 2012. 494 p. il. ISBN-13 9788575222898.",
@@ -541,7 +548,7 @@
           "bibtex/CAMARGO2005.bib"
         ],
         "tipo": "complementar",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 13
       },
       {
         "referencia": "LEITHOLD, L. O Cálculo com Geometria Analítica, v. 2. São Paulo: Harbra, 1994.",
@@ -549,7 +556,7 @@
           "bibtex/LEITHOLD1994.bib"
         ],
         "tipo": "complementar",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "REIS, G. L.; SILVA, V. V. Geometria Analítica. Rio de Janeiro: LTC/Grupo Gen, 1996.",
@@ -557,7 +564,7 @@
           "bibtex/REIS1996.bib"
         ],
         "tipo": "complementar",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 13
       },
       {
         "referencia": "SANTOS, F. J.; FERREIRA, S. F. Geometria Analítica. Porto Alegre: Bookman / Grupo A, 2009.",
@@ -653,7 +660,7 @@
           "bibtex/CORMEN2012.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 14
       },
       {
         "referencia": "GOODRICH, Michael, TAMASSIA, Roberto, GOLDWASSER, Michael. Data Structures and Algorithms in Python. Wiley. 2013. ISBN-13 9781118290279",
@@ -818,7 +825,7 @@
           "bibtex/BRONCKART2007.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 16
       },
       {
         "referencia": "BROWN, Ann L. Metacognition: the development of selective attention strategies for learning from texts. In: SINGER, Harry; RUDDELL, Robert (Eds). Theoretical Models and Processes of Reading. Newark, Delaware International Reading Association, 1985, p. 501-526.",
@@ -1292,7 +1299,7 @@
           "bibtex/HEUSER2004.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 17
       },
       {
         "referencia": "MACHADO, Felipe Nery. Banco De Dados - Projetos e Implementação. Editora Érica; 4ª edição, 2020. ISBN-13 9788536532684.",
@@ -1517,7 +1524,7 @@
           "bibtex/DEITEL2010.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "HORSTMANN, Cay; CORNELL, Gary. Core Java, Vol. I: Fundamentos, 8ª edição. Pearson Education, 2009. ISBN-13 9788576053576.",
@@ -1619,15 +1626,16 @@
           "bibtex/MARCONI2010.bib"
         ],
         "tipo": "complementar",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
         "bibtex": [
-          "bibtex/PRESSMAN2011.bib"
+          "bibtex/PRESSMAN2011.bib",
+          "bibtex/PRESSMAN1995.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "SOMMERVILLE, Ian. Engenharia de software. 10a. ed. São Paulo: Pearson, 2019. 768p.",
@@ -1692,7 +1700,7 @@
           "bibtex/KUROSE2006.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "Mockapetris, P. V. Domain Names - Implementation and Specification. Internet RFC1035, November 1987. Disponível em https://www.ietf.org/rfc/rfc1035.txt",
@@ -1716,7 +1724,7 @@
           "bibtex/TANENBAUM2003.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "VIXIE, P. Extension Mechanisms for DNS (EDNS0). Internet RFC 2671, August 1997. Disponível em https://www.ietf.org/rfc/rfc2671.txt",
@@ -2207,10 +2215,11 @@
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
         "bibtex": [
-          "bibtex/PRESSMAN2011.bib"
+          "bibtex/PRESSMAN2011.bib",
+          "bibtex/PRESSMAN1995.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "SOMMERVILLE, I. Engenharia de Software. 10ª ed. São Paulo: Pearson, 2018.",
@@ -2254,7 +2263,7 @@
           "bibtex/CORMEN2012.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 14
       },
       {
         "referencia": "DASGUPTA, S., PAPADIMITRIOU, C. VAZIRANI, U. Algorithms. McGraw-Hill Science/Engineering/Math; 1 edition (2006).",
@@ -2376,7 +2385,7 @@
           "bibtex/PRESSMAN1995.bib"
         ],
         "tipo": "complementar",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "SBROCCO, José Henrique Teixeira de Carvalho. UML 2.5 com enterprise architect 10: modelagem visual de projetos orientada a objetos São Paulo: Érica, 2014. 320 p. il.",
@@ -2463,7 +2472,7 @@
           "bibtex/MEYER1983.bib"
         ],
         "tipo": "complementar",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 10
       },
       {
         "referencia": "MORETTIN, Luiz G. Estatística Básica: Probabilidade e Inferência. Volume único. Ed. Pearson Prentice Hall, 2010.",
@@ -2581,11 +2590,11 @@
       {
         "referencia": "PRESSMAN, R. S. Engenharia de Software - Uma Abordagem Profissional - 8ª Ed. 2016, Editora Amgh;",
         "bibtex": [
-          "bibtex/PRESSMAN1995.bib",
-          "bibtex/PRESSMAN2011.bib"
+          "bibtex/PRESSMAN2011.bib",
+          "bibtex/PRESSMAN1995.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 3
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "SBROCCO, José Henrique Teixeira de Carvalho. Metodologias ágeis: engenharia de software sob medida. São Paulo: Érica, 2012. 254 p.",
@@ -2767,15 +2776,16 @@
           "bibtex/MARCONI2010.bib"
         ],
         "tipo": "complementar",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
         "bibtex": [
-          "bibtex/PRESSMAN2011.bib"
+          "bibtex/PRESSMAN2011.bib",
+          "bibtex/PRESSMAN1995.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "WAZLAWICK, Raul Sidnei. Metodologia de Pesquisa para Ciência da Computação. 2. ed. Rio de Janeiro: Elsevier, 2014. ISBN-13 9788535277821.",
@@ -2962,10 +2972,11 @@
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
         "bibtex": [
-          "bibtex/PRESSMAN2011.bib"
+          "bibtex/PRESSMAN2011.bib",
+          "bibtex/PRESSMAN1995.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "SANTOS, Carlos Fernando da Rocha. Gerenciamento de projetos: conceitos e representações. 1. ed. Rio de Janeiro: LTC, 2014. 135 p. il. ISBN-13 9788521625735.",
@@ -3077,7 +3088,7 @@
           "bibtex/GIL2010.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 23
       },
       {
         "referencia": "REIZ, Pedro. Redação científica moderna São Paulo: Hyria, 2013. 157 p.",
@@ -3093,7 +3104,7 @@
           "bibtex/SEVERINO2007.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 2
       }
     ]
   },
@@ -3130,7 +3141,7 @@
           "bibtex/DEITEL2017.bib"
         ],
         "tipo": "complementar",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "HASEMAN, Chris. Android Essentials. Berkeley, CA: Apress, 2008. ISBN-13 9781430210634. Disponível em: http://dx.doi.org/10.1007/978-1-4302-1063-4.",
@@ -3240,7 +3251,7 @@
           "bibtex/TANENBAUM2011.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "TOXEN, B. Real World Linux Security. 2nd ed., Prentice Hall PTR, 2002.",
@@ -3462,16 +3473,16 @@
           "bibtex/MARCONI2010.bib"
         ],
         "tipo": "complementar",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
         "bibtex": [
-          "bibtex/PRESSMAN1995.bib",
-          "bibtex/PRESSMAN2011.bib"
+          "bibtex/PRESSMAN2011.bib",
+          "bibtex/PRESSMAN1995.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 3
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "WAZLAWICK, Raul Sidnei. Metodologia de Pesquisa para Ciência da Computação. 2. ed. Rio de Janeiro: Elsevier, 2014. ISBN-13 9788535277821.",
@@ -3532,10 +3543,11 @@
       {
         "referencia": "PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma abordagem profissional. 8. ed. São Paulo: Amgh, 2016. ISBN-13 9788580555332.",
         "bibtex": [
-          "bibtex/PRESSMAN2011.bib"
+          "bibtex/PRESSMAN2011.bib",
+          "bibtex/PRESSMAN1995.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "SCHWABER, K; SUTHERLAND, K. A arte de fazer o dobro de trabalho na metade do tempo. Ed. Sextante. Rio de Janeiro: 2019.",
@@ -3962,7 +3974,7 @@
           "bibtex/ANTON2014.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 15
       },
       {
         "referencia": "AYRES Jr., F.; MENDELSON, E. Cálculo – Coleção Schaum. Porto Alegre: Bookman / Grupo A, 2013.",
@@ -3980,7 +3992,7 @@
           "bibtex/GONÇALVES2007.bib"
         ],
         "tipo": "complementar",
-        "quantidadeEmJP": 0
+        "quantidadeEmJP": 16
       },
       {
         "referencia": "GUIDORIZZI, H. L. Cálculo – Volume 4. Rio de Janeiro: LTC / Grupo Gen, 2001.",
