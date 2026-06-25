@@ -364,14 +364,16 @@ function formatABNT(bib, onlineUrl = null) {
 function renderBibliography(entries, bibCache) {
   if (!entries?.length) return '';
   return `<ol>${entries.map(item => {
-    const firstBib = (item.bibtex ?? []).map(p => bibCache[p]?.bib).find(Boolean);
+    const bibtexPaths = item.bibtex ?? [];
+    const isBibtexMissing = bibtexPaths.length === 0;
+    const firstBib = bibtexPaths.map(p => bibCache[p]?.bib).find(Boolean);
     const onlineUrl = item.online
       ? extractOnlineUrl(item.referencia) ?? firstBib?.url ?? null
       : null;
     const onlineAvailable = item.online === true && item.onlineAcessivel !== false;
     const kohaUrls = item.online
       ? []
-      : (item.bibtex ?? []).map(p => bibCache[p]?.url).filter(Boolean);
+      : bibtexPaths.map(p => bibCache[p]?.url).filter(Boolean);
     const externalLinks = kohaUrls.map((url, index) => ({
       url,
       label: kohaUrls.length > 1
@@ -406,11 +408,8 @@ function renderBibliography(entries, bibCache) {
           <line x1="2" x2="22" y1="2" y2="22"></line>
         </svg>
       </span>`;
-    } else {
-      const paths = item.bibtex ?? [];
-      const label = paths.length > 0
-        ? 'Registro indisponível no Koha'
-        : 'Sem registro BibTeX cadastrado';
+    } else if (!isBibtexMissing) {
+      const label = 'Registro indisponível no Koha';
       linksHtml = `<span class="koha-link koha-link-disabled" title="${label}" aria-label="${label}">
         <svg class="lucide lucide-link-2-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
@@ -420,7 +419,7 @@ function renderBibliography(entries, bibCache) {
         </svg>
       </span>`;
     }
-    const links = `<span class="koha-links">${linksHtml}</span>`;
+    const links = linksHtml ? `<span class="koha-links">${linksHtml}</span>` : '';
 
     let copiesBadge = '';
     if (item.quantidadeEmJP != null) {
@@ -430,8 +429,15 @@ function renderBibliography(entries, bibCache) {
       copiesBadge = `<span class="copies-badge ${cls}" title="${label}">${n} ex. JP</span>`;
     }
 
-    const bibtexBadge = (item.bibtex ?? []).length === 0
-      ? '<span class="copies-badge copies-badge-none" title="Nenhum registro BibTeX cadastrado">Sem BibTeX</span>'
+    const hasLinkOff = !isBibtexMissing && externalLinks.length === 0;
+    const isAbsentInJP = item.quantidadeEmJP === 0;
+    const absentReason = isBibtexMissing
+      ? 'Nenhum registro BibTeX cadastrado'
+      : hasLinkOff
+        ? 'Link indisponível'
+        : 'Nenhum exemplar em JP';
+    const absentBadge = isBibtexMissing || hasLinkOff || isAbsentInJP
+      ? `<span class="copies-badge copies-badge-none" title="${absentReason}">Ausente</span>`
       : '';
 
     const abntHtml = formatABNT(firstBib, onlineUrl);
@@ -439,7 +445,7 @@ function renderBibliography(entries, bibCache) {
       ? `<span class="ref-original">${renderText(item.referencia)}</span><div class="ref-abnt">${abntHtml}</div>`
       : renderText(item.referencia);
 
-    return `<li>${refHtml}${copiesBadge}${bibtexBadge}${links}</li>`;
+    return `<li>${refHtml}${copiesBadge}${absentBadge}${links}</li>`;
   }).join('')}</ol>`;
 }
 
