@@ -603,7 +603,9 @@
         "disponiveis": 7,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=11699",
         "bibtex": "bibtex/PHILIPPIJUNIOR2005.bib",
-        "isbn": []
+        "isbn": [
+          "8520421881"
+        ]
       }
     ]
   },

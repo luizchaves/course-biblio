@@ -260,7 +260,8 @@
         "bibtex": [
           "bibtex/PHILIPPIJUNIOR2005.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 6
       },
       {
         "referencia": "PHILIPPI JR., A.; PELICIONI, M. C. F. Educação Ambiental e Sustentabilidade. Barueri, SP: Manole, 2014.",
