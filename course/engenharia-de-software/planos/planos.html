@@ -103,11 +103,17 @@
     }
 
     .subject-name {
-      margin-bottom: 9px;
       color: #111827;
       font-size: 0.86rem;
       font-weight: 650;
       line-height: 1.3;
+    }
+
+    .subject-professors {
+      margin: 4px 0 9px;
+      color: #6b7280;
+      font-size: 0.72rem;
+      line-height: 1.35;
     }
 
     .offerings {
@@ -229,6 +235,18 @@
       return `<ul class="offerings">${links}</ul>`;
     }
 
+    function renderLatestProfessors(offerings) {
+      if (!offerings?.length) return '';
+
+      const latestOffering = [...offerings].sort((left, right) =>
+        String(right.semester).localeCompare(String(left.semester), 'pt-BR', { numeric: true })
+      )[0];
+      const professors = latestOffering.professors ?? [];
+      if (professors.length === 0) return '';
+
+      return `<div class="subject-professors" title="Professores de ${escapeHtml(latestOffering.semester)}">${professors.map(escapeHtml).join('; ')}</div>`;
+    }
+
     function renderTable(subjects) {
       const positionedSubjects = subjects
         .map(subject => ({ subject, position: parsePosition(subject.code) }))
@@ -265,6 +283,7 @@
           return `<td>
             <span class="subject-code">${escapeHtml(subject.code)}</span>
             <div class="subject-name">${escapeHtml(subject.subject)}</div>
+            ${renderLatestProfessors(subject.offerings)}
             ${renderOfferings(subject.offerings)}
           </td>`;
         }).join('');
