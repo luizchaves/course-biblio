@@ -263,6 +263,27 @@ function renderText(value) {
   return rendered;
 }
 
+function extractOnlineUrl(reference) {
+  const marker = 'Disponível em';
+  const text = String(reference ?? '');
+  const markerIndex = text.indexOf(marker);
+  if (markerIndex === -1) return null;
+
+  const onlinePart = text
+    .slice(markerIndex + marker.length)
+    .replace(/\\([<&])/g, '$1')
+    .replace(/([/-])\s+(?=[\w])/g, '$1');
+  const match = onlinePart.match(/(?:https?:\/\/|www\.)[^\s<>()]+/i);
+  if (!match) return null;
+
+  const url = match[0].replace(/[.,;:]+$/, '');
+  return url.startsWith('www.') ? `https://${url}` : url;
+}
+
+function isBibliographyAvailable(item) {
+  return item.online === true || (item.quantidadeEmJP != null && item.quantidadeEmJP > 0);
+}
+
 function parseBibtex(text) {
   const result = {};
   const re = /(\w+)\s*=\s*\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}/gi;
@@ -337,15 +358,28 @@ function formatABNT(bib) {
 function renderBibliography(entries, bibCache) {
   if (!entries?.length) return '';
   return `<ol>${entries.map(item => {
-    const urls = (item.bibtex ?? []).map(p => bibCache[p]?.url).filter(Boolean);
+    const kohaUrls = (item.bibtex ?? []).map(p => bibCache[p]?.url).filter(Boolean);
+    const externalLinks = kohaUrls.map((url, index) => ({
+      url,
+      label: kohaUrls.length > 1
+        ? `Abrir registro ${index + 1} no Koha`
+        : 'Abrir registro no Koha',
+    }));
+    if (item.online) {
+      const onlineUrl = extractOnlineUrl(item.referencia);
+      if (onlineUrl) {
+        externalLinks.push({
+          url: onlineUrl,
+          label: 'Abrir referência online',
+        });
+      }
+    }
+
     const firstBib = (item.bibtex ?? []).map(p => bibCache[p]?.bib).find(Boolean);
-    let kohaLinks = '';
-    if (urls.length > 0) {
-      kohaLinks = urls.map((url, index) => {
-        const label = urls.length > 1
-          ? `Abrir registro ${index + 1} no Koha`
-          : 'Abrir registro no Koha';
-        return `<a class="koha-link" href="${escapeHtml(url)}" target="_blank" rel="noopener" aria-label="${label}" title="${label}">
+    let linksHtml = '';
+    if (externalLinks.length > 0) {
+      linksHtml = externalLinks.map(link => {
+        return `<a class="koha-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener" aria-label="${link.label}" title="${link.label}">
           <svg class="lucide lucide-external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M15 3h6v6"></path>
             <path d="M10 14 21 3"></path>
@@ -358,7 +392,7 @@ function renderBibliography(entries, bibCache) {
       const label = paths.length > 0
         ? 'Registro indisponível no Koha'
         : 'Sem registro BibTeX cadastrado';
-      kohaLinks = `<span class="koha-link koha-link-disabled" title="${label}" aria-label="${label}">
+      linksHtml = `<span class="koha-link koha-link-disabled" title="${label}" aria-label="${label}">
         <svg class="lucide lucide-link-2-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
           <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
@@ -367,7 +401,7 @@ function renderBibliography(entries, bibCache) {
         </svg>
       </span>`;
     }
-    const links = `<span class="koha-links">${kohaLinks}</span>`;
+    const links = `<span class="koha-links">${linksHtml}</span>`;
 
     let copiesBadge = '';
     if (item.quantidadeEmJP != null) {
@@ -418,14 +452,14 @@ function renderSubject(subject, bibCache) {
 
   const bibs = subject.bibliografias ?? [];
   const total = bibs.length;
-  const withJP = bibs.filter(b => b.quantidadeEmJP != null && b.quantidadeEmJP > 0).length;
+  const available = bibs.filter(isBibliographyAvailable).length;
   if (total > 0) {
-    const cls = withJP === 0 ? 'copies-badge-none' : withJP < total ? 'copies-badge-few' : 'copies-badge-ok';
-    const label = `${withJP} de ${total} referências com exemplares em João Pessoa`;
+    const cls = available === 0 ? 'copies-badge-none' : available < total ? 'copies-badge-few' : 'copies-badge-ok';
+    const label = `${available} de ${total} referências disponíveis em João Pessoa ou online`;
     const badge = document.createElement('span');
     badge.className = `copies-badge ${cls}`;
     badge.title = label;
-    badge.textContent = `${withJP}/${total}`;
+    badge.textContent = `${available}/${total}`;
     name.appendChild(badge);
   }
 
@@ -519,13 +553,13 @@ async function load() {
 
     const allBibs = subjects.flatMap(s => s.bibliografias ?? []);
     const totalBibs = allBibs.length;
-    const totalWithJP = allBibs.filter(b => b.quantidadeEmJP != null && b.quantidadeEmJP > 0).length;
+    const totalAvailable = allBibs.filter(isBibliographyAvailable).length;
     if (totalBibs > 0) {
-      const cls = totalWithJP === 0 ? 'copies-badge-none' : totalWithJP < totalBibs ? 'copies-badge-few' : 'copies-badge-ok';
+      const cls = totalAvailable === 0 ? 'copies-badge-none' : totalAvailable < totalBibs ? 'copies-badge-few' : 'copies-badge-ok';
       const badge = document.createElement('span');
       badge.className = `copies-badge ${cls}`;
-      badge.title = `${totalWithJP} de ${totalBibs} referências com exemplares em João Pessoa`;
-      badge.textContent = `${totalWithJP}/${totalBibs}`;
+      badge.title = `${totalAvailable} de ${totalBibs} referências disponíveis em João Pessoa ou online`;
+      badge.textContent = `${totalAvailable}/${totalBibs}`;
       document.getElementById('page-title').appendChild(badge);
     }
     const groups = {};
@@ -575,13 +609,13 @@ async function load() {
 
       const groupBibs = groups[groupName].flatMap(s => s.bibliografias ?? []);
       const gTotal = groupBibs.length;
-      const gWithJP = groupBibs.filter(b => b.quantidadeEmJP != null && b.quantidadeEmJP > 0).length;
+      const gAvailable = groupBibs.filter(isBibliographyAvailable).length;
       if (gTotal > 0) {
-        const cls = gWithJP === 0 ? 'copies-badge-none' : gWithJP < gTotal ? 'copies-badge-few' : 'copies-badge-ok';
+        const cls = gAvailable === 0 ? 'copies-badge-none' : gAvailable < gTotal ? 'copies-badge-few' : 'copies-badge-ok';
         const gbadge = document.createElement('span');
         gbadge.className = `copies-badge ${cls}`;
-        gbadge.title = `${gWithJP} de ${gTotal} referências com exemplares em João Pessoa`;
-        gbadge.textContent = `${gWithJP}/${gTotal}`;
+        gbadge.title = `${gAvailable} de ${gTotal} referências disponíveis em João Pessoa ou online`;
+        gbadge.textContent = `${gAvailable}/${gTotal}`;
         btn.appendChild(gbadge);
       }
 

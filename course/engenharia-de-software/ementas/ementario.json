@@ -937,11 +937,13 @@
       },
       {
         "referencia": "MAZIOLI, Gleydson. Guia Foca Linux Avançado. Versão 6.42, 2007. Disponível em http://focalinux.cipsga.org.br",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
       {
         "referencia": "MAZIOLI, Gleydson. Guia Foca Linux Intermediário. Versão 5.60, 2007. Disponível em http://focalinux.cipsga.org.br",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
@@ -1012,11 +1014,13 @@
     "bibliografias": [
       {
         "referencia": "ARAÚJO FILHO, T.; THIOLLENT, M.J. Metodologia para projetos de extensão: apresentação e discussão. Universidade Federal de São Carlos (UFSCar) – São Carlos: Cubo Multimídia, 2008. 666 p. Disponível em: http://beu.extension.unicen.edu.ar/xmlui/handle/123456789/198.",
+        "online": true,
         "bibtex": [],
         "tipo": "basica"
       },
       {
         "referencia": "BRASIL, Conselho Nacional de Educação. Resolução CNE/CES nº7, de 18 de dezembro de 2018. Estabelece as Diretrizes para a Extensão na Educação Superior Brasileira e regimenta o disposto na Meta 12.7 da Lei nº 13.005/2014. Brasília: Diário Oficial da União, 19/dez, 2018. Disponível em: https://www.in.gov.br/materia/-/asset_publisher/Kujrw0TZC2Mb/content/id/55877808",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
@@ -1027,6 +1031,7 @@
       },
       {
         "referencia": "INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DA PARAÍBA. CONSUPER/DAAOC/REITORIA/IFPB. Resolução nº 96/2021. Dispõe sobre aprovação da Política de Extensão do Instituto Federal de Educação, Ciência e Tecnologia da Paraíba - IFPB. João Pessoa: IFPB, 2021. Disponível em: https://www.ifpb.edu.br/proexc/sobre/politica",
+        "online": true,
         "bibtex": [],
         "tipo": "basica"
       },
@@ -1040,6 +1045,7 @@
       },
       {
         "referencia": "MELO, José Francisco de. Extensão popular. 2 ed. João Pessoa: Editora da UFPB, 2014. 122 p. Disponível em: https://www.ufpb.br/redepopsaude/contents/biblioteca-1/extensao-popular/extensao-popular.pdf",
+        "online": true,
         "bibtex": [],
         "tipo": "basica"
       },
@@ -1110,6 +1116,7 @@
       },
       {
         "referencia": "HAVERBEKE, Marjin. Eloquent JavaScript: A Modern Introduction to Programming. No Starch Press, 2018. ISBN-13 9781593279509. Disponível em https://eloquentjavascript.net/.",
+        "online": true,
         "bibtex": [],
         "tipo": "basica"
       },
@@ -1120,6 +1127,7 @@
       },
       {
         "referencia": "RAUSHMAYER, Axel. JavaScript for impatient programmers. Independently Published, 2019. ISBN-13 9781091210097. Disponível em https://exploringjs.com/impatient- js/toc.html.",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
@@ -1265,21 +1273,25 @@
       },
       {
         "referencia": "Documentação da Oracle. Disponível em https://docs.oracle.com/en/database/. Último acesso em 16/06/2023.",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
       {
         "referencia": "Documentação do MySQL. Disponível em https://dev.mysql.com/doc/. Último acesso em 16/06/2023.",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
       {
         "referencia": "Documentação do PostgreSQL. Disponível em https://www.postgresql.org/docs/. Último acesso em 16/06/2023.",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
       {
         "referencia": "Documentação do SQL Server. Disponível em https://docs.microsoft.com/pt-br/documentation/. Último acesso em 16/06/2023.",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
@@ -1358,6 +1370,7 @@
       },
       {
         "referencia": "Business Process Model And Notation (Bpmn) Specification, Version 2.0.2. 2014. Disponível em: https://www.omg.org/spec/BPMN/2.0.2/PDF. Acesso em: março, 2021.",
+        "online": true,
         "bibtex": [],
         "tipo": "basica"
       },
@@ -1690,6 +1703,7 @@
       },
       {
         "referencia": "KLENSIN, John C. Simple Mail Transfer Protocol, Internet RFC5321, October 2008. Disponível em https://www.ietf.org/rfc/rfc5321.txt",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
@@ -1704,16 +1718,19 @@
       },
       {
         "referencia": "Mockapetris, P. V. Domain Names - Implementation and Specification. Internet RFC1035, November 1987. Disponível em https://www.ietf.org/rfc/rfc1035.txt",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
       {
         "referencia": "POSTEL, J. \"Transmission Control Protocol\", Internet RFC793, USC/Information Sciences Institute, September 1981. Disponível em https://www.ietf.org/rfc/rfc793.txt",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
       {
         "referencia": "POSTEL, J. \"User Datagram Protocol\", Internet RFC768, USC/Information Sciences Institute, August 1980. Disponível em https://www.ietf.org/rfc/rfc768.txt",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
@@ -1728,6 +1745,7 @@
       },
       {
         "referencia": "VIXIE, P. Extension Mechanisms for DNS (EDNS0). Internet RFC 2671, August 1997. Disponível em https://www.ietf.org/rfc/rfc2671.txt",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       }
@@ -1771,11 +1789,13 @@
       },
       {
         "referencia": "Documentação da Oracle. Disponível em https://docs.oracle.com/en/database/. Último acesso em 11/03/2021.",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
       {
         "referencia": "Documentação do PostgreSQL. Disponível em https://www.postgresql.org/docs/. Último acesso em 16/06/2023.",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
@@ -2145,6 +2165,7 @@
       },
       {
         "referencia": "ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Declaração Universal dos Direitos Humanos, 1948. Disponível em: \\<https://www.unicef.org/brazil/declaracao-universal-dos-direitos-humanos>. Acesso em: 12 junho 2023.",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
@@ -2666,6 +2687,7 @@
       },
       {
         "referencia": "BOULTON, M. Designing for the web. ISBN-10 0956174019. Disponível em: http://designingfortheweb.co.uk/",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
@@ -2696,6 +2718,7 @@
       },
       {
         "referencia": "ROCHA, Heloísa Vieira da; BARANAUSKAS, Maria Cecília Calani. Design e avaliação de interfaces humano-computador. NIED-UNICAMP. Disponível em: http://www.nied.unicamp.br/?q=node/109/done\\&sid=29628",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
@@ -2864,6 +2887,7 @@
       },
       {
         "referencia": "Documentação do MongoDB. Disponível em https://docs.mongodb.com/. Último acesso em 11/03/2021.",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
@@ -3131,6 +3155,7 @@
     "bibliografias": [
       {
         "referencia": "Android Developer Guides, Google Inc. Disponível em: https://developer.android.com/guide",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
@@ -3145,6 +3170,7 @@
       },
       {
         "referencia": "HASEMAN, Chris. Android Essentials. Berkeley, CA: Apress, 2008. ISBN-13 9781430210634. Disponível em: http://dx.doi.org/10.1007/978-1-4302-1063-4.",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
@@ -3222,6 +3248,7 @@
     "bibliografias": [
       {
         "referencia": "DIERKS, T., RESCORLA, E., The Transport Layer Security (TLS) Protocol Version 1.2. RFC 5246. IETF. 2008. Disponível em https://www.ietf.org/rfc/rfc5246.txt",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
@@ -3232,11 +3259,13 @@
       },
       {
         "referencia": "PRODROMOU, Agathoklis, TLS/SSL explained – a brief history of TLS/SSL, part 1, posted on january 17, 2017. Disponível em www.acunetix.com/blog/articles/ what-is-tls-sslpart-1/",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
       {
         "referencia": "PRODROMOU, Agathoklis, TLS/SSL explained – a brief history of TLS/SSL, part 2, posted on january 24, 2017. Disponível em https://www.acunetix.com/blog/articles/ history-of-tls-sslpart-2/",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
@@ -3770,6 +3799,7 @@
       },
       {
         "referencia": "DEVLIN, J. et al. BERT: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805, 2018. Disponível em: https://arxiv.org/abs/1810.04805 (https://arxiv.org/abs/1810.04805)",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
@@ -3800,6 +3830,7 @@
       },
       {
         "referencia": "ZHANG, A.; LIPTON, Z. C.; LI, M.; SMOLA, A. J. Dive into Deep Learning. 2021. Disponível em: https://d2l.ai/.",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       }
@@ -4652,6 +4683,7 @@
       },
       {
         "referencia": "SCHWABER, K.; SUTHERLAND, J.. The Scrum Guide: The Definitive Guide to Scrum [S.l.]: Scrum.org, 2020. Disponível em: https://scrumguides.org. Acesso em: 18 nov. 2024.",
+        "online": true,
         "bibtex": [
           "bibtex/SUTHERLAND2019.bib"
         ],
@@ -4704,16 +4736,19 @@
       },
       {
         "referencia": "ISACA. COBIT 2019 Framework: Introduction and Methodology. Rolling Meadows: ISACA, 2019. Disponível em: https://www.isaca.org.",
+        "online": true,
         "bibtex": [],
         "tipo": "basica"
       },
       {
         "referencia": "ISO/IEC. ISO/IEC 27001: Information Security Management Systems Requirements. International Organization for Standardization, 2013. Disponível em: https://www.iso.org. WEILL, P.; ROSS, J. W. IT Governance: How Top Performers Manage IT Decision Rights for Superior Results. Harvard Business Review Press, 2004. ISBN-13 9781591392538.",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
       {
         "referencia": "ISO/IEC. ISO/IEC 38500: Governance of IT for the Organization. International Organization for Standardization, 2015. Disponível em: https://www.iso.org.",
+        "online": true,
         "bibtex": [],
         "tipo": "basica"
       },
@@ -5014,6 +5049,7 @@
     "bibliografias": [
       {
         "referencia": "DIEZ, David; ÇETINKAYA-RUNDEL, Mine; BARR, Christopher. OpenIntro Statistics. 4 ed. 2022. Disponível em https://www.openintro.org/book/os/.",
+        "online": true,
         "bibtex": [],
         "tipo": "basica"
       },
@@ -5043,6 +5079,7 @@
       },
       {
         "referencia": "NAVARRO, Danielle; WEED, Ethan; Learning Statistics with Python (Python Adaptation by Ethan Weed). 1a. ed. 2021. Disponível em https://ethanweed.github.io/pythonbook/landingpage.html.",
+        "online": true,
         "bibtex": [],
         "tipo": "basica"
       },
@@ -5081,6 +5118,7 @@
     "bibliografias": [
       {
         "referencia": "BECK, K. et al. Agile Manifesto. 2001. Disponível em: \\<http://agilemanifesto.org/>;",
+        "online": true,
         "bibtex": [],
         "tipo": "basica"
       },
@@ -5211,6 +5249,7 @@
     "bibliografias": [
       {
         "referencia": "Caseli, H.M.; Nunes, M.G.V. (org.) Processamento de Linguagem Natural: Conceitos, Técnicas e Aplicações em Português. 2 ed. BPLN, 2024. Disponível em: https://brasileiraspln.com/livro-pln/2a-edicao.",
+        "online": true,
         "bibtex": [],
         "tipo": "basica"
       },
@@ -5279,6 +5318,7 @@
       },
       {
         "referencia": "Foca GNU/Linux. Disponível em http://www.guiafoca.org/",
+        "online": true,
         "bibtex": [],
         "tipo": "complementar"
       },
