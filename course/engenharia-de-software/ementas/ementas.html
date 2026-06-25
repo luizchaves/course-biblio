@@ -430,12 +430,16 @@ function renderBibliography(entries, bibCache) {
       copiesBadge = `<span class="copies-badge ${cls}" title="${label}">${n} ex. JP</span>`;
     }
 
+    const bibtexBadge = (item.bibtex ?? []).length === 0
+      ? '<span class="copies-badge copies-badge-none" title="Nenhum registro BibTeX cadastrado">Sem BibTeX</span>'
+      : '';
+
     const abntHtml = formatABNT(firstBib, onlineUrl);
     const refHtml = abntHtml
       ? `<span class="ref-original">${renderText(item.referencia)}</span><div class="ref-abnt">${abntHtml}</div>`
       : renderText(item.referencia);
 
-    return `<li>${refHtml}${copiesBadge}${links}</li>`;
+    return `<li>${refHtml}${copiesBadge}${bibtexBadge}${links}</li>`;
   }).join('')}</ol>`;
 }
 
