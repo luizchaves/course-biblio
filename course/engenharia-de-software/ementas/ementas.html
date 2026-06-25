@@ -377,9 +377,8 @@ function renderBibliography(entries, bibCache) {
       copiesBadge = `<span class="copies-badge ${cls}" title="${label}">${n} ex. JP</span>`;
     }
 
-    const hasJP = item.quantidadeEmJP != null && item.quantidadeEmJP > 0;
-    const abntHtml = hasJP ? formatABNT(firstBib) : '';
-    const refHtml = hasJP && abntHtml
+    const abntHtml = formatABNT(firstBib);
+    const refHtml = abntHtml
       ? `<span class="ref-original">${renderText(item.referencia)}</span><div class="ref-abnt">${abntHtml}</div>`
       : renderText(item.referencia);
 
@@ -477,14 +476,14 @@ function renderSubject(subject, bibCache) {
   if (meta.children.length) content.appendChild(meta);
 
   const visibleSections = [
-    { name: 'Ementa', html: subject.ementa ? `<p>${renderText(subject.ementa)}</p>` : '' },
-    { name: 'Bibliografia Básica', html: renderBibliography((subject.bibliografias ?? []).filter(item => item.tipo === 'basica'), bibCache) },
-    { name: 'Bibliografia Complementar', html: renderBibliography((subject.bibliografias ?? []).filter(item => item.tipo === 'complementar'), bibCache) },
+    { name: 'Ementa', html: subject.ementa ? `<p>${renderText(subject.ementa)}</p>` : ''},
+    { name: 'Bibliografia Básica', html: renderBibliography((subject.bibliografias ?? []).filter(item => item.tipo === 'basica'), bibCache)},
+    { name: 'Bibliografia Complementar', html: renderBibliography((subject.bibliografias ?? []).filter(item => item.tipo === 'complementar'), bibCache)},
     {
       name: 'Bibliografia Suplementar (Periódicos)',
       html: subject.bibliografiaSuplementar ? `<p>${renderText(subject.bibliografiaSuplementar)}</p>` : '',
-    },
-    { name: 'Observações', html: subject.observacoes ? `<p>${renderText(subject.observacoes)}</p>` : '' },
+   },
+    { name: 'Observações', html: subject.observacoes ? `<p>${renderText(subject.observacoes)}</p>` : ''},
   ].filter(item => item.html);
 
   for (const item of visibleSections) {
