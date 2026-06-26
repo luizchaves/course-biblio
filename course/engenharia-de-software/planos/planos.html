@@ -116,47 +116,71 @@
       line-height: 1.3;
     }
 
-    .subject-professors {
-      margin: 4px 0 9px;
-      color: #6b7280;
-      font-size: 0.72rem;
-      line-height: 1.35;
-    }
-
     .syllabus {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      margin: 0;
+      display: grid;
+      gap: 8px;
+      margin: 9px 0 0;
       padding: 0;
       list-style: none;
     }
 
-    .offering {
-      display: inline-flex;
-      overflow: hidden;
-      border: 1px solid #bfdbfe;
-      border-radius: 4px;
-      background: #eff6ff;
+    .syllabus-semester {
+      padding-top: 7px;
+      border-top: 1px solid #e5e7eb;
     }
 
-    .offering-link {
-      display: inline-flex;
-      align-items: center;
-      padding: 3px 7px;
-      color: #1d4ed8;
+    .semester-label {
+      cursor: pointer;
+      list-style: none;
+      color: #374151;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+    .semester-label::-webkit-details-marker {
+      display: none;
+    }
+
+    .semester-label::before {
+      display: inline-block;
+      width: 12px;
+      margin-right: 3px;
+      color: #6b7280;
+      content: "▸";
+    }
+
+    .syllabus-semester[open] .semester-label::before {
+      content: "▾";
+    }
+
+    .semester-content {
+      margin-top: 5px;
+    }
+
+    .document-row + .document-row {
+      margin-top: 6px;
+    }
+
+    .document-professor {
+      margin-bottom: 3px;
+      color: #6b7280;
+      font-size: 0.7rem;
+      line-height: 1.3;
+    }
+
+    .document-links {
+      color: #374151;
       font-size: 0.73rem;
+    }
+
+    .document-link {
+      color: #1d4ed8;
       font-weight: 600;
       text-decoration: none;
     }
 
-    .offering-link + .offering-link {
-      border-left: 1px solid #bfdbfe;
-    }
-
-    .offering-link:hover,
-    .offering-link:focus-visible {
-      background: #dbeafe;
+    .document-link:hover,
+    .document-link:focus-visible {
       text-decoration: underline;
     }
 
@@ -225,44 +249,39 @@
     function renderSyllabus(syllabus) {
       if (!syllabus?.length) return '';
 
-      const links = [...syllabus]
+      const periods = [...syllabus]
         .sort((left, right) =>
           String(right.semester).localeCompare(String(left.semester), 'pt-BR', { numeric: true })
         )
-        .map(offer => {
-          const documentId = encodeURIComponent(offer.documentId);
-          const pageUrl = `${SUAP_PAGE_URL}${documentId}/`;
-          const pdfUrl = `${SUAP_PDF_URL}${documentId}/carta/`;
-          const semester = escapeHtml(offer.semester);
-          const classRecordLinks = (offer.classRecordId ?? [])
-            .slice(0, 2)
-            .map((classRecordId, index) => {
-              const label = index === 0 ? 'A' : 'B';
-              const url = `${SUAP_CLASS_RECORD_URL}${encodeURIComponent(classRecordId)}/`;
-              return `<a class="offering-link" href="${url}" target="_blank" rel="noopener" title="Abrir diário ${label} de ${semester}">${label}</a>`;
+        .map((item, index) => {
+          const documents = item.documents ?? [];
+          const semester = escapeHtml(item.semester);
+          const documentRows = documents
+            .map(document => {
+              const documentId = encodeURIComponent(document.documentId);
+              const classRecordId = encodeURIComponent(document.classRecordId);
+              const planLinks = document.documentId
+                ? `Plano (<a class="document-link" href="${SUAP_PAGE_URL}${documentId}/" target="_blank" rel="noopener" title="Visualizar plano de ensino de ${semester}">Web</a>, <a class="document-link" href="${SUAP_PDF_URL}${documentId}/carta/" target="_blank" rel="noopener" title="Abrir PDF do plano de ensino de ${semester}">PDF</a>) · `
+                : '';
+              return `<div class="document-row">
+                <div class="document-professor">${escapeHtml(document.professor)}</div>
+                <div class="document-links">
+                  ${planLinks}
+                  <a class="document-link" href="${SUAP_CLASS_RECORD_URL}${classRecordId}/" target="_blank" rel="noopener" title="Abrir diário de ${semester}">Diário</a>
+                </div>
+              </div>`;
             })
             .join('');
-          return `<li class="offering">
-            <a class="offering-link" href="${pageUrl}" target="_blank" rel="noopener" title="Visualizar plano de ensino de ${semester}">${semester}</a>
-            <a class="offering-link" href="${pdfUrl}" target="_blank" rel="noopener" title="Abrir PDF do plano de ensino de ${semester}">PDF</a>
-            ${classRecordLinks}
+          return `<li>
+            <details class="syllabus-semester"${index === 0 ? ' open' : ''}>
+              <summary class="semester-label">${semester}</summary>
+              <div class="semester-content">${documentRows}</div>
+            </details>
           </li>`;
         })
         .join('');
 
-      return `<ul class="syllabus">${links}</ul>`;
-    }
-
-    function renderLatestProfessors(syllabus) {
-      if (!syllabus?.length) return '';
-
-      const latestSyllabus = [...syllabus].sort((left, right) =>
-        String(right.semester).localeCompare(String(left.semester), 'pt-BR', { numeric: true })
-      )[0];
-      const professors = latestSyllabus.professors ?? [];
-      if (professors.length === 0) return '';
-
-      return `<div class="subject-professors" title="Professores de ${escapeHtml(latestSyllabus.semester)}">${professors.map(escapeHtml).join('; ')}</div>`;
+      return `<ul class="syllabus">${periods}</ul>`;
     }
 
     function renderTable(subjects) {
@@ -301,7 +320,6 @@
           return `<td>
             <span class="subject-code">${escapeHtml(subject.code)}</span><span class="subject-abbreviation">${escapeHtml(subject.abbreviation)}</span>
             <div class="subject-name">${escapeHtml(subject.subject)}</div>
-            ${renderLatestProfessors(subject.syllabus)}
             ${renderSyllabus(subject.syllabus)}
           </td>`;
         }).join('');

@@ -9,34 +9,34 @@
       {
         "semester": "2026.1",
         "classId": "20261.1.432.1D",
-        "documentId": 835838,
-        "classRecordId": [
-          107866
-        ],
-        "professors": [
-          "Francisco Petrônio Alencar de Medeiros"
+        "documents": [
+          {
+            "documentId": 835838,
+            "classRecordId": 107866,
+            "professor": "Francisco Petrônio Alencar de Medeiros"
+          }
         ]
       },
       {
         "semester": "2025.2",
         "classId": "20252.1.432.1D",
-        "documentId": 1508373,
-        "classRecordId": [
-          102395
-        ],
-        "professors": [
-          "Francisco Petrônio Alencar de Medeiros"
+        "documents": [
+          {
+            "documentId": 759845,
+            "classRecordId": 102395,
+            "professor": "Francisco Petrônio Alencar de Medeiros"
+          }
         ]
       },
       {
         "semester": "2025.1",
         "classId": "20251.1.432.1D",
-        "documentId": 1508373,
-        "classRecordId": [
-          94883
-        ],
-        "professors": [
-          "Francisco Petrônio Alencar de Medeiros"
+        "documents": [
+          {
+            "documentId": 689023,
+            "classRecordId": 94883,
+            "professor": "Francisco Petrônio Alencar de Medeiros"
+          }
         ]
       }
     ]
@@ -51,40 +51,49 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 835275,
-        "classRecordId": [
-          111424,
-          107871
-        ],
-        "professors": [
-          "Diego Ernesto Rosa Pessoa",
-          "Wallennon Germano Dunga"
+        "documents": [
+          {
+            "documentId": 834374,
+            "classRecordId": 107871,
+            "professor": "Diego Ernesto Rosa Pessoa"
+          },
+          {
+            "documentId": 835275,
+            "classRecordId": 111424,
+            "professor": "Wallennon Germano Dunga"
+          }
         ]
       },
       {
         "semester": "2025.2",
         "classId": "2025.2.432.1D",
-        "documentId": 1863442,
-        "classRecordId": [
-          103684,
-          102400
-        ],
-        "professors": [
-          "Diego Ernesto Rosa Pessoa",
-          "Wallennon Germano Dunga"
+        "documents": [
+          {
+            "documentId": 762138,
+            "classRecordId": 102400,
+            "professor": "Diego Ernesto Rosa Pessoa"
+          },
+          {
+            "documentId": 753891,
+            "classRecordId": 103684,
+            "professor": "Wallennon Germano Dunga"
+          }
         ]
       },
       {
         "semester": "2025.1",
         "classId": "2025.1.432.1D",
-        "documentId": 1863442,
-        "classRecordId": [
-          102934,
-          94884
-        ],
-        "professors": [
-          "Diego Ernesto Rosa Pessoa",
-          "Wallennon Germano Dunga"
+        "documents": [
+          {
+            "documentId": 695010,
+            "classRecordId": 94884,
+            "professor": "Diego Ernesto Rosa Pessoa"
+          },
+          {
+            "documentId": 753891,
+            "classRecordId": 102934,
+            "professor": "Wallennon Germano Dunga"
+          }
         ]
       }
     ]
@@ -99,40 +108,49 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 836713,
-        "classRecordId": [
-          111423,
-          107867
-        ],
-        "professors": [
-          "Edemberg Rocha da Silva",
-          "Valéria Maria Bezerra Cavalcanti"
+        "documents": [
+          {
+            "documentId": 836713,
+            "classRecordId": 111423,
+            "professor": "Edemberg Rocha da Silva"
+          },
+          {
+            "documentId": 836713,
+            "classRecordId": 107867,
+            "professor": "Valéria Maria Bezerra Cavalcanti"
+          }
         ]
       },
       {
         "semester": "2025.2",
         "classId": "2025.2.432.1D",
-        "documentId": 0,
-        "classRecordId": [
-          103685,
-          102396
-        ],
-        "professors": [
-          "Edemberg Rocha da Silva",
-          "Valéria Maria Bezerra Cavalcanti"
+        "documents": [
+          {
+            "documentId": 763018,
+            "classRecordId": 103685,
+            "professor": "Edemberg Rocha da Silva"
+          },
+          {
+            "documentId": 761981,
+            "classRecordId": 102396,
+            "professor": "Valéria Maria Bezerra Cavalcanti"
+          }
         ]
       },
       {
         "semester": "2025.1",
         "classId": "2025.1.432.1D",
-        "documentId": 0,
-        "classRecordId": [
-          98689,
-          94885
-        ],
-        "professors": [
-          "Edemberg Rocha da Silva",
-          "Valéria Maria Bezerra Cavalcanti"
+        "documents": [
+          {
+            "documentId": 688062,
+            "classRecordId": 98689,
+            "professor": "Edemberg Rocha da Silva"
+          },
+          {
+            "documentId": 688062,
+            "classRecordId": 94885,
+            "professor": "Valéria Maria Bezerra Cavalcanti"
+          }
         ]
       }
     ]
@@ -147,34 +165,34 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 833373,
-        "classRecordId": [
-          107868
-        ],
-        "professors": [
-          "Frederico Costa Guedes Pereira"
+        "documents": [
+          {
+            "documentId": 833373,
+            "classRecordId": 107868,
+            "professor": "Frederico Costa Guedes Pereira"
+          }
         ]
       },
       {
         "semester": "2025.2",
         "classId": "2025.2.432.1D",
-        "documentId": 1200309,
-        "classRecordId": [
-          102397
-        ],
-        "professors": [
-          "Frederico Costa Guedes Pereira"
+        "documents": [
+          {
+            "documentId": 761190,
+            "classRecordId": 102397,
+            "professor": "Frederico Costa Guedes Pereira"
+          }
         ]
       },
       {
         "semester": "2025.1",
         "classId": "2025.1.432.1D",
-        "documentId": 1200309,
-        "classRecordId": [
-          94886
-        ],
-        "professors": [
-          "Frederico Costa Guedes Pereira"
+        "documents": [
+          {
+            "documentId": 688642,
+            "classRecordId": 94886,
+            "professor": "Frederico Costa Guedes Pereira"
+          }
         ]
       }
     ]
@@ -189,34 +207,34 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 835600,
-        "classRecordId": [
-          107869
-        ],
-        "professors": [
-          "Thiago Andrade Fernandes"
+        "documents": [
+          {
+            "documentId": 835600,
+            "classRecordId": 107869,
+            "professor": "Thiago Andrade Fernandes"
+          }
         ]
       },
       {
         "semester": "2025.2",
         "classId": "2025.2.432.1D",
-        "documentId": 2230000,
-        "classRecordId": [
-          102398
-        ],
-        "professors": [
-          "Thiago Andrade Fernandes"
+        "documents": [
+          {
+            "documentId": 761142,
+            "classRecordId": 102398,
+            "professor": "Thiago Andrade Fernandes"
+          }
         ]
       },
       {
         "semester": "2025.1",
         "classId": "2025.1.432.1D",
-        "documentId": 2230000,
-        "classRecordId": [
-          94887
-        ],
-        "professors": [
-          "Thiago Andrade Fernandes"
+        "documents": [
+          {
+            "documentId": 687627,
+            "classRecordId": 94887,
+            "professor": "Thiago Andrade Fernandes"
+          }
         ]
       }
     ]
@@ -231,34 +249,34 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 829313,
-        "classRecordId": [
-          107870
-        ],
-        "professors": [
-          "Alexandre Fonseca D'Andrea"
+        "documents": [
+          {
+            "documentId": 829313,
+            "classRecordId": 107870,
+            "professor": "Alexandre Fonseca D'Andrea"
+          }
         ]
       },
       {
         "semester": "2025.2",
         "classId": "2025.2.432.1D",
-        "documentId": 1704307,
-        "classRecordId": [
-          102399
-        ],
-        "professors": [
-          "Alexandre Fonseca D'Andrea"
+        "documents": [
+          {
+            "documentId": 753675,
+            "classRecordId": 102399,
+            "professor": "Keliana Dantas Santos"
+          }
         ]
       },
       {
         "semester": "2025.1",
         "classId": "2025.1.432.1D",
-        "documentId": 1105336,
-        "classRecordId": [
-          94888
-        ],
-        "professors": [
-          "Alexandre Fonseca D'Andrea"
+        "documents": [
+          {
+            "documentId": 688821,
+            "classRecordId": 94888,
+            "professor": "Alexandre Fonseca D'Andrea"
+          }
         ]
       }
     ]
@@ -273,23 +291,23 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 836680,
-        "classRecordId": [
-          107876
-        ],
-        "professors": [
-          "Juliana Dantas Ribeiro Viana de Medeiros"
+        "documents": [
+          {
+            "documentId": 836680,
+            "classRecordId": 107876,
+            "professor": "Juliana Dantas Ribeiro Viana de Medeiros"
+          }
         ]
       },
       {
         "semester": "2025.2",
         "classId": "2025.2.432.1D",
-        "documentId": 1335300,
-        "classRecordId": [
-          102405
-        ],
-        "professors": [
-          "Juliana Dantas Ribeiro Viana de Medeiros"
+        "documents": [
+          {
+            "documentId": 761911,
+            "classRecordId": 102405,
+            "professor": "Juliana Dantas Ribeiro Viana de Medeiros"
+          }
         ]
       }
     ]
@@ -304,25 +322,33 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 833320,
-        "classRecordId": [
-          103699
-        ],
-        "professors": [
-          "Luiz Carlos Rodrigues Chaves",
-          "Francisco Dantas Nobre Neto"
+        "documents": [
+          {
+            "documentId": 836528,
+            "classRecordId": 111419,
+            "professor": "Francisco Dantas Nobre Neto"
+          },
+          {
+            "documentId": 833320,
+            "classRecordId": 103699,
+            "professor": "Luiz Carlos Rodrigues Chaves"
+          }
         ]
       },
       {
         "semester": "2025.2",
         "classId": "2025.2.432.1D",
-        "documentId": 2680962,
-        "classRecordId": [
-          102407
-        ],
-        "professors": [
-          "Luiz Carlos Rodrigues Chaves",
-          "Francisco Dantas Nobre Neto"
+        "documents": [
+          {
+            "documentId": 760347,
+            "classRecordId": 103699,
+            "professor": "Francisco Dantas Nobre Neto"
+          },
+          {
+            "documentId": 760642,
+            "classRecordId": 102407,
+            "professor": "Luiz Carlos Rodrigues Chaves"
+          }
         ]
       }
     ]
@@ -337,26 +363,28 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 837140,
-        "classRecordId": [
-          111420,
-          107877
-        ],
-        "professors": [
-          "Cândido José Ramos do Egypto",
-          "Thiago José Marques Moura"
+        "documents": [
+          {
+            "documentId": 837140,
+            "classRecordId": 837140,
+            "professor": "Cândido José Ramos do Egypto"
+          },
+          {
+            "documentId": 838537,
+            "classRecordId": 111420,
+            "professor": "Thiago José Marques Moura"
+          }
         ]
       },
       {
         "semester": "2025.2",
         "classId": "2025.2.432.1D",
-        "documentId": 1550140,
-        "classRecordId": [
-          102406
-        ],
-        "professors": [
-          "Cândido José Ramos do Egypto",
-          "Thiago José Marques Moura"
+        "documents": [
+          {
+            "documentId": 838537,
+            "classRecordId": 102406,
+            "professor": "Thiago José Marques Moura"
+          }
         ]
       }
     ]
@@ -371,23 +399,23 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 832818,
-        "classRecordId": [
-          107872
-        ],
-        "professors": [
-          "José Raimundo Bezerra de Carvalho"
+        "documents": [
+          {
+            "documentId": 832818,
+            "classRecordId": 107872,
+            "professor": "José Raimundo Bezerra de Carvalho"
+          }
         ]
       },
       {
         "semester": "2025.2",
         "classId": "2025.2.432.1D",
-        "documentId": 3488396,
-        "classRecordId": [
-          102401
-        ],
-        "professors": [
-          "José Raimundo Bezerra de Carvalho"
+        "documents": [
+          {
+            "documentId": 758139,
+            "classRecordId": 102401,
+            "professor": "José Raimundo Bezerra de Carvalho"
+          }
         ]
       }
     ]
@@ -402,23 +430,23 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 837919,
-        "classRecordId": [
-          107873
-        ],
-        "professors": [
-          "Rômulo de Oliveira Lins Vieira de Melo"
+        "documents": [
+          {
+            "documentId": 837919,
+            "classRecordId": 107873,
+            "professor": "Rômulo de Oliveira Lins Vieira de Melo"
+          }
         ]
       },
       {
         "semester": "2025.2",
         "classId": "2025.2.432.1D",
-        "documentId": 1785946,
-        "classRecordId": [
-          102402
-        ],
-        "professors": [
-          "Rômulo de Oliveira Lins Vieira de Melo"
+        "documents": [
+          {
+            "documentId": 761281,
+            "classRecordId": 102402,
+            "professor": "Kerly Monroe Pontes"
+          }
         ]
       }
     ]
@@ -433,23 +461,23 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 831003,
-        "classRecordId": [
-          107874
-        ],
-        "professors": [
-          "Maria Theresa Targino de Araújo Rangel"
+        "documents": [
+          {
+            "documentId": 831003,
+            "classRecordId": 107874,
+            "professor": "Maria Theresa Targino de Araújo Rangel"
+          }
         ]
       },
       {
         "semester": "2025.2",
         "classId": "2025.2.432.1D",
-        "documentId": 0,
-        "classRecordId": [
-          102403
-        ],
-        "professors": [
-          "Maria Theresa Targino de Araújo Rangel"
+        "documents": [
+          {
+            "documentId": 758403,
+            "classRecordId": 102403,
+            "professor": "Maria Theresa Targino de Araújo Rangel"
+          }
         ]
       }
     ]
@@ -464,23 +492,23 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 835450,
-        "classRecordId": [
-          107875
-        ],
-        "professors": [
-          "Nadja da Nóbrega Rodrigues"
+        "documents": [
+          {
+            "documentId": 835450,
+            "classRecordId": 107875,
+            "professor": "Nadja da Nóbrega Rodrigues"
+          }
         ]
       },
       {
         "semester": "2025.2",
         "classId": "2025.2.432.1D",
-        "documentId": 0,
-        "classRecordId": [
-          102404
-        ],
-        "professors": [
-          "Nadja da Nóbrega Rodrigues"
+        "documents": [
+          {
+            "documentId": 760539,
+            "classRecordId": 102404,
+            "professor": "Nadja da Nóbrega Rodrigues"
+          }
         ]
       }
     ]
@@ -495,12 +523,12 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 836247,
-        "classRecordId": [
-          107881
-        ],
-        "professors": [
-          "Nadja da Nóbrega Rodrigues"
+        "documents": [
+          {
+            "documentId": 836247,
+            "classRecordId": 107881,
+            "professor": "Nadja da Nóbrega Rodrigues"
+          }
         ]
       }
     ]
@@ -515,12 +543,12 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 834451,
-        "classRecordId": [
-          107879
-        ],
-        "professors": [
-          "Leonidas Francisco de Lima Junior"
+        "documents": [
+          {
+            "documentId": 834451,
+            "classRecordId": 107879,
+            "professor": "Leonidas Francisco de Lima Junior"
+          }
         ]
       }
     ]
@@ -535,12 +563,12 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 840653,
-        "classRecordId": [
-          107882
-        ],
-        "professors": [
-          "Fausto Véras Maranhão Ayres"
+        "documents": [
+          {
+            "documentId": 840653,
+            "classRecordId": 107882,
+            "professor": "Fausto Véras Maranhão Ayres"
+          }
         ]
       }
     ]
@@ -555,12 +583,12 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 837125,
-        "classRecordId": [
-          107883
-        ],
-        "professors": [
-          "Cândido José Ramos do Egypto"
+        "documents": [
+          {
+            "documentId": 837125,
+            "classRecordId": 107883,
+            "professor": "Cândido José Ramos do Egypto"
+          }
         ]
       }
     ]
@@ -575,12 +603,12 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 836236,
-        "classRecordId": [
-          107884
-        ],
-        "professors": [
-          "Flávio Alves de Albuquerque"
+        "documents": [
+          {
+            "documentId": 836236,
+            "classRecordId": 107884,
+            "professor": "Flávio Alves de Albuquerque"
+          }
         ]
       }
     ]
@@ -595,12 +623,12 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 835676,
-        "classRecordId": [
-          107880
-        ],
-        "professors": [
-          "Francielly Alves Pessoa"
+        "documents": [
+          {
+            "documentId": 835676,
+            "classRecordId": 107880,
+            "professor": "Francielly Alves Pessoa"
+          }
         ]
       }
     ]
@@ -615,14 +643,12 @@
       {
         "semester": "2026.1",
         "classId": "2026.1.432.1D",
-        "documentId": 837397,
-        "classRecordId": [
-          107885
-        ],
-        "professors": [
-          "Nadja da Nóbrega Rodrigues",
-          "Leônidas Francisco de Lima Júnior",
-          "Fausto Véras Maranhão Ayres"
+        "documents": [
+          {
+            "documentId": 837397,
+            "classRecordId": 107885,
+            "professor": "Nadja da Nóbrega Rodrigues; Leônidas Francisco de Lima Júnior; Fausto Véras Maranhão Ayres"
+          }
         ]
       }
     ]
