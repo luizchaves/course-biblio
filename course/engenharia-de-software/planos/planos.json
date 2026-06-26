@@ -309,7 +309,7 @@
           },
           {
             "documentId": 833320,
-            "classRecordId": 103699,
+            "classRecordId": 107878,
             "professor": "Luiz Carlos Rodrigues Chaves"
           }
         ]
@@ -343,7 +343,7 @@
         "documents": [
           {
             "documentId": 837140,
-            "classRecordId": 837140,
+            "classRecordId": 107877,
             "professor": "Cândido José Ramos do Egypto"
           },
           {
@@ -530,9 +530,14 @@
         "classId": "20261.3.432.1D",
         "documents": [
           {
-            "documentId": 840653,
+            "documentId": 833317,
+            "classRecordId": 111405,
+            "professor": "Frederico Costa Guedes Pereira"
+          },
+          {
+            "documentId": 833669,
             "classRecordId": 107882,
-            "professor": "Fausto Véras Maranhão Ayres"
+            "professor": "Fausto Veras Maranhão Ayres"
           }
         ]
       }
