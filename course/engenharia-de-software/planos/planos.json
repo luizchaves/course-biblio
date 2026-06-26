@@ -821,5 +821,23 @@
     "subject": "Direito na Informática",
     "period": "P8",
     "syllabus": []
+  },
+  {
+    "abbreviation": "TEC.2392",
+    "curriculumId": 766,
+    "subject": "Tópicos Avançados em Banco de Dados",
+    "period": "Optativa",
+    "syllabus": [
+      {
+        "classId": "20261.3.432.1N",
+        "documents": [
+          {
+            "documentId": 835676,
+            "classRecordId": 109872,
+            "professor": "Diego Ernesto Rosa Pessoa"
+          }
+        ]
+      }
+    ]
   }
 ]

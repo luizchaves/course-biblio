@@ -148,7 +148,7 @@
       vertical-align: top;
     }
 
-    .subject-code {
+    .subject-abbreviation {
       display: inline-block;
       margin-bottom: 5px;
       padding: 2px 6px;
@@ -157,13 +157,6 @@
       background: #dbeafe;
       font-size: 0.68rem;
       font-weight: 700;
-    }
-
-    .subject-abbreviation {
-      margin-left: 5px;
-      color: #6b7280;
-      font-size: 0.7rem;
-      font-weight: 600;
     }
 
     .subject-name {
@@ -399,6 +392,10 @@
       return addTerms(classFilter, period - 1);
     }
 
+    function isElective(subject) {
+      return String(subject?.period ?? '').toLowerCase().includes('optativa');
+    }
+
     function getFilteredSyllabus(subject, semesterFilter, classFilter) {
       const syllabus = subject.syllabus ?? [];
       const expectedClassTerm = getExpectedClassTerm(classFilter, subject);
@@ -482,15 +479,28 @@
 
     function renderTable(subjects, sortField = 'code', semesterFilter = 'all', classFilter = 'all') {
       const filteredSubjects = getFilteredSubjects(subjects, semesterFilter, classFilter);
-      const positionedSubjects = filteredSubjects
-        .map(subject => ({ subject, position: parsePosition(subject.code) }))
-        .filter(item => item.position);
+      const positionedSubjects = [];
+      const electiveSubjects = [];
 
-      if (positionedSubjects.length === 0) {
+      for (const subject of filteredSubjects) {
+        const position = parsePosition(subject.code);
+
+        if (position && !isElective(subject)) {
+          positionedSubjects.push({ subject, position });
+        } else {
+          electiveSubjects.push(subject);
+        }
+      }
+
+      if (positionedSubjects.length === 0 && electiveSubjects.length === 0) {
         return '<div class="loading">Nenhum plano encontrado para os filtros selecionados.</div>';
       }
 
-      const maxColumn = Math.max(...positionedSubjects.map(item => item.position.column));
+      const maxPeriodColumn = positionedSubjects.length
+        ? Math.max(...positionedSubjects.map(item => item.position.column))
+        : 8;
+      const maxColumn = Math.max(maxPeriodColumn, 8) + 1;
+      const electiveColumn = maxColumn;
       const subjectsByColumn = new Map();
 
       for (const item of positionedSubjects) {
@@ -498,6 +508,8 @@
         columnSubjects.push(item.subject);
         subjectsByColumn.set(item.position.column, columnSubjects);
       }
+
+      subjectsByColumn.set(electiveColumn, electiveSubjects);
 
       for (const columnSubjects of subjectsByColumn.values()) {
         columnSubjects.sort(compareSubjects(sortField));
@@ -507,7 +519,9 @@
 
       const headers = Array.from(
         { length: maxColumn },
-        (_, index) => `<th scope="col">${index + 1}º período</th>`
+        (_, index) => index + 1 === electiveColumn
+          ? '<th scope="col">Optativas</th>'
+          : `<th scope="col">${index + 1}º período</th>`
       ).join('');
       const colgroup = `<colgroup>
         <col style="width: ${ROW_HEADER_WIDTH}px">
@@ -526,7 +540,7 @@
           }
 
           return `<td>
-            <span class="subject-code">${escapeHtml(subject.code)}</span><span class="subject-abbreviation">${escapeHtml(subject.abbreviation)}</span>
+            <span class="subject-abbreviation">${escapeHtml(subject.abbreviation)}</span>
             <div class="subject-name" title="${escapeHtml(subject.subject)}">${escapeHtml(subject.subject)}</div>
             ${renderSyllabus(subject.syllabus)}
           </td>`;
