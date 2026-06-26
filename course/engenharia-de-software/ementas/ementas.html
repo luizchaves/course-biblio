@@ -214,6 +214,65 @@
       color: #fff;
     }
 
+    .filters-container {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: -4px 0 16px;
+    }
+
+    .filter-label {
+      color: #666;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .filter-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      color: #555;
+      background: #fff;
+      border: 1px solid #d8d8d8;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      transition: all 0.2s ease;
+    }
+
+    .filter-button:hover {
+      background: #eaf2ff;
+      color: #0060df;
+    }
+
+    .filter-button.active {
+      background: #0060df;
+      color: #fff;
+    }
+
+    .filter-button.active .copies-badge {
+      background: rgba(255, 255, 255, 0.22);
+      color: #fff;
+    }
+
+    .filter-empty {
+      padding: 14px;
+      color: #777;
+      font-style: italic;
+      font-size: 0.85rem;
+    }
+
     @media (max-width: 640px) {
       body { padding: 14px; }
     }
@@ -284,6 +343,91 @@ function isBibliographyAvailable(item) {
   const onlineAvailable = item.online === true && item.onlineAcessivel !== false;
   const physicalAvailable = item.quantidadeEmJP != null && item.quantidadeEmJP > 0;
   return onlineAvailable || physicalAvailable;
+}
+
+function getBibliographyState(item, bibCache) {
+  const bibtexPaths = item.bibtex ?? [];
+  const isBibtexMissing = bibtexPaths.length === 0;
+  const firstBib = bibtexPaths.map(p => bibCache[p]?.bib).find(Boolean);
+  const onlineUrl = item.online
+    ? extractOnlineUrl(item.referencia) ?? firstBib?.url ?? null
+    : null;
+  const onlineAvailable = item.online === true && item.onlineAcessivel !== false;
+  const kohaUrls = item.online
+    ? []
+    : bibtexPaths.map(p => bibCache[p]?.url).filter(Boolean);
+  const externalLinks = kohaUrls.map((url, index) => ({
+    url,
+    label: kohaUrls.length > 1
+      ? `Abrir registro ${index + 1} no Koha`
+      : 'Abrir registro no Koha',
+  }));
+  if (onlineUrl && onlineAvailable) {
+    externalLinks.push({
+      url: onlineUrl,
+      label: 'Abrir referência online',
+    });
+  }
+
+  const hasLinkOff = !isBibtexMissing && externalLinks.length === 0;
+  const isAbsentInJP = item.quantidadeEmJP === 0;
+  const isAbsent = isBibtexMissing || hasLinkOff || isAbsentInJP;
+  const absentReason = isBibtexMissing
+    ? 'Nenhum registro BibTeX cadastrado'
+    : hasLinkOff
+      ? 'Link indisponível'
+      : 'Nenhum exemplar em JP';
+
+  return {
+    bibtexPaths,
+    isBibtexMissing,
+    firstBib,
+    onlineUrl,
+    onlineAvailable,
+    externalLinks,
+    hasLinkOff,
+    isAbsentInJP,
+    isAbsent,
+    absentReason,
+  };
+}
+
+function isBibliographyAbsent(item, bibCache) {
+  return getBibliographyState(item, bibCache).isAbsent;
+}
+
+function getBibliographyFilterValue(filterId) {
+  const values = {
+    absent: 'ausentes',
+    nonAbsent: 'nao-ausentes',
+    missingBibtex: 'sem-bibtex',
+    linkOff: '404',
+    noCopies: 'sem-exemplar',
+  };
+  return values[filterId] ?? null;
+}
+
+function getBibliographyFilterId(value) {
+  const filterIds = {
+    ausentes: 'absent',
+    'nao-ausentes': 'nonAbsent',
+    'sem-bibtex': 'missingBibtex',
+    '404': 'linkOff',
+    'sem-exemplar': 'noCopies',
+  };
+  return filterIds[value] ?? 'all';
+}
+
+function matchesBibliographyFilter(item, bibCache, bibliographyFilter) {
+  if (bibliographyFilter === 'all') return true;
+
+  const state = getBibliographyState(item, bibCache);
+  if (bibliographyFilter === 'absent') return state.isAbsent;
+  if (bibliographyFilter === 'nonAbsent') return !state.isAbsent;
+  if (bibliographyFilter === 'missingBibtex') return state.isBibtexMissing;
+  if (bibliographyFilter === 'linkOff') return state.hasLinkOff;
+  if (bibliographyFilter === 'noCopies') return state.isAbsentInJP;
+  return true;
 }
 
 function parseBibtex(text) {
@@ -364,32 +508,11 @@ function formatABNT(bib, onlineUrl = null) {
 function renderBibliography(entries, bibCache) {
   if (!entries?.length) return '';
   return `<ol>${entries.map(item => {
-    const bibtexPaths = item.bibtex ?? [];
-    const isBibtexMissing = bibtexPaths.length === 0;
-    const firstBib = bibtexPaths.map(p => bibCache[p]?.bib).find(Boolean);
-    const onlineUrl = item.online
-      ? extractOnlineUrl(item.referencia) ?? firstBib?.url ?? null
-      : null;
-    const onlineAvailable = item.online === true && item.onlineAcessivel !== false;
-    const kohaUrls = item.online
-      ? []
-      : bibtexPaths.map(p => bibCache[p]?.url).filter(Boolean);
-    const externalLinks = kohaUrls.map((url, index) => ({
-      url,
-      label: kohaUrls.length > 1
-        ? `Abrir registro ${index + 1} no Koha`
-        : 'Abrir registro no Koha',
-    }));
-    if (onlineUrl && onlineAvailable) {
-      externalLinks.push({
-        url: onlineUrl,
-        label: 'Abrir referência online',
-      });
-    }
+    const state = getBibliographyState(item, bibCache);
 
     let linksHtml = '';
-    if (externalLinks.length > 0) {
-      linksHtml = externalLinks.map(link => {
+    if (state.externalLinks.length > 0) {
+      linksHtml = state.externalLinks.map(link => {
         return `<a class="koha-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener" aria-label="${link.label}" title="${link.label}">
           <svg class="lucide lucide-external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M15 3h6v6"></path>
@@ -398,7 +521,7 @@ function renderBibliography(entries, bibCache) {
           </svg>
         </a>`;
       }).join('');
-    } else if (item.online && !onlineAvailable) {
+    } else if (item.online && !state.onlineAvailable) {
       const label = 'Referência online indisponível';
       linksHtml = `<span class="koha-link koha-link-disabled" title="${label}" aria-label="${label}">
         <svg class="lucide lucide-link-2-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -408,7 +531,7 @@ function renderBibliography(entries, bibCache) {
           <line x1="2" x2="22" y1="2" y2="22"></line>
         </svg>
       </span>`;
-    } else if (!isBibtexMissing) {
+    } else if (!state.isBibtexMissing) {
       const label = 'Registro indisponível no Koha';
       linksHtml = `<span class="koha-link koha-link-disabled" title="${label}" aria-label="${label}">
         <svg class="lucide lucide-link-2-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -429,18 +552,11 @@ function renderBibliography(entries, bibCache) {
       copiesBadge = `<span class="copies-badge ${cls}" title="${label}">${n} ex. JP</span>`;
     }
 
-    const hasLinkOff = !isBibtexMissing && externalLinks.length === 0;
-    const isAbsentInJP = item.quantidadeEmJP === 0;
-    const absentReason = isBibtexMissing
-      ? 'Nenhum registro BibTeX cadastrado'
-      : hasLinkOff
-        ? 'Link indisponível'
-        : 'Nenhum exemplar em JP';
-    const absentBadge = isBibtexMissing || hasLinkOff || isAbsentInJP
-      ? `<span class="copies-badge copies-badge-none" title="${absentReason}">Ausente</span>`
+    const absentBadge = state.isAbsent
+      ? `<span class="copies-badge copies-badge-none" title="${state.absentReason}">Ausente</span>`
       : '';
 
-    const abntHtml = formatABNT(firstBib, onlineUrl);
+    const abntHtml = formatABNT(state.firstBib, state.onlineUrl);
     const refHtml = abntHtml
       ? `<span class="ref-original">${renderText(item.referencia)}</span><div class="ref-abnt">${abntHtml}</div>`
       : renderText(item.referencia);
@@ -461,7 +577,12 @@ function semesterSort(keys) {
   });
 }
 
-function renderSubject(subject, bibCache) {
+function getVisibleBibliographies(subject, bibCache, bibliographyFilter) {
+  const bibliographies = subject.bibliografias ?? [];
+  return bibliographies.filter(item => matchesBibliographyFilter(item, bibCache, bibliographyFilter));
+}
+
+function renderSubject(subject, bibCache, bibliographyFilter = 'all') {
   const type = subject.tipoDisciplina ?? '';
   const hours = subject.cargaHoraria;
   const prerequisites = subject.preRequisitos?.length
@@ -538,15 +659,17 @@ function renderSubject(subject, bibCache) {
   }
   if (meta.children.length) content.appendChild(meta);
 
+  const visibleBibliographies = getVisibleBibliographies(subject, bibCache, bibliographyFilter);
+  const showOnlyFilteredBibliographies = bibliographyFilter !== 'all';
   const visibleSections = [
-    { name: 'Ementa', html: subject.ementa ? `<p>${renderText(subject.ementa)}</p>` : ''},
-    { name: 'Bibliografia Básica', html: renderBibliography((subject.bibliografias ?? []).filter(item => item.tipo === 'basica'), bibCache)},
-    { name: 'Bibliografia Complementar', html: renderBibliography((subject.bibliografias ?? []).filter(item => item.tipo === 'complementar'), bibCache)},
+    { name: 'Ementa', html: !showOnlyFilteredBibliographies && subject.ementa ? `<p>${renderText(subject.ementa)}</p>` : ''},
+    { name: 'Bibliografia Básica', html: renderBibliography(visibleBibliographies.filter(item => item.tipo === 'basica'), bibCache)},
+    { name: 'Bibliografia Complementar', html: renderBibliography(visibleBibliographies.filter(item => item.tipo === 'complementar'), bibCache)},
     {
       name: 'Bibliografia Suplementar (Periódicos)',
-      html: subject.bibliografiaSuplementar ? `<p>${renderText(subject.bibliografiaSuplementar)}</p>` : '',
-   },
-    { name: 'Observações', html: subject.observacoes ? `<p>${renderText(subject.observacoes)}</p>` : ''},
+      html: !showOnlyFilteredBibliographies && subject.bibliografiaSuplementar ? `<p>${renderText(subject.bibliografiaSuplementar)}</p>` : '',
+    },
+    { name: 'Observações', html: !showOnlyFilteredBibliographies && subject.observacoes ? `<p>${renderText(subject.observacoes)}</p>` : ''},
   ].filter(item => item.html);
 
   for (const item of visibleSections) {
@@ -567,6 +690,28 @@ function renderSubject(subject, bibCache) {
 
   card.appendChild(content);
   return card;
+}
+
+function renderSemesterSection(section, subjects, bibCache, bibliographyFilter) {
+  section.replaceChildren();
+  const sortedSubjects = subjects
+    .slice()
+    .sort((left, right) => left.disciplina.localeCompare(right.disciplina, 'pt-BR'));
+  const visibleSubjects = bibliographyFilter !== 'all'
+    ? sortedSubjects.filter(subject => getVisibleBibliographies(subject, bibCache, bibliographyFilter).length > 0)
+    : sortedSubjects;
+
+  if (visibleSubjects.length === 0) {
+    const empty = document.createElement('div');
+    empty.className = 'filter-empty';
+    empty.textContent = 'Nenhuma bibliografia para este filtro neste período.';
+    section.appendChild(empty);
+    return;
+  }
+
+  visibleSubjects.forEach(subject => {
+    section.appendChild(renderSubject(subject, bibCache, bibliographyFilter));
+  });
 }
 
 /* ── Main ─────────────────────────────────────────────────────── */
@@ -609,6 +754,7 @@ async function load() {
     };
     const urlParams = new URLSearchParams(window.location.search);
     const initialTabSlug = urlParams.get('tab');
+    let activeBibliographyFilter = getBibliographyFilterId(urlParams.get('bibliografias'));
 
     content.replaceChildren();
 
@@ -616,18 +762,110 @@ async function load() {
     tabsContainer.className = 'tabs-container';
     content.appendChild(tabsContainer);
 
+    const filtersContainer = document.createElement('div');
+    filtersContainer.className = 'filters-container';
+
+    const filterLabel = document.createElement('span');
+    filterLabel.className = 'filter-label';
+    filterLabel.textContent = 'Bibliografias';
+    filtersContainer.appendChild(filterLabel);
+
+    const filterGroup = document.createElement('div');
+    filterGroup.className = 'filter-group';
+    filtersContainer.appendChild(filterGroup);
+    content.appendChild(filtersContainer);
+
     const semesterKeys = semesterSort(Object.keys(groups));
     const sections = [];
     const buttons = [];
+    const filterButtons = [];
+
+    const renderAllSemesterSections = () => {
+      semesterKeys.forEach((groupName, index) => {
+        renderSemesterSection(sections[index], groups[groupName], bibCache, activeBibliographyFilter);
+      });
+    };
+
+    const updateFilterButtons = () => {
+      filterButtons.forEach(button => {
+        const active = button.dataset.filter === activeBibliographyFilter;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
+    };
+
+    const bibliographyFilterOptions = [
+      { id: 'all', label: 'Todas', count: totalBibs, badgeClass: 'copies-badge-ok' },
+      {
+        id: 'nonAbsent',
+        label: 'Não ausentes',
+        count: allBibs.filter(item => matchesBibliographyFilter(item, bibCache, 'nonAbsent')).length,
+        badgeClass: 'copies-badge-ok',
+      },
+      {
+        id: 'absent',
+        label: 'Ausentes',
+        count: allBibs.filter(item => matchesBibliographyFilter(item, bibCache, 'absent')).length,
+        badgeClass: 'copies-badge-none',
+      },
+      {
+        id: 'missingBibtex',
+        label: 'Ausente s/ BibTeX',
+        count: allBibs.filter(item => matchesBibliographyFilter(item, bibCache, 'missingBibtex')).length,
+        badgeClass: 'copies-badge-none',
+      },
+      {
+        id: 'linkOff',
+        label: 'Ausente 404',
+        count: allBibs.filter(item => matchesBibliographyFilter(item, bibCache, 'linkOff')).length,
+        badgeClass: 'copies-badge-none',
+      },
+      {
+        id: 'noCopies',
+        label: 'Ausente s/ exemplar',
+        count: allBibs.filter(item => matchesBibliographyFilter(item, bibCache, 'noCopies')).length,
+        badgeClass: 'copies-badge-none',
+      },
+    ];
+
+    bibliographyFilterOptions.forEach(option => {
+      const btn = document.createElement('button');
+      btn.className = 'filter-button';
+      btn.type = 'button';
+      btn.dataset.filter = option.id;
+      btn.textContent = option.label;
+      btn.setAttribute('aria-label', `${option.label}: ${option.count}`);
+
+      const badge = document.createElement('span');
+      badge.className = `copies-badge ${option.badgeClass}`;
+      badge.setAttribute('aria-hidden', 'true');
+      badge.textContent = option.count;
+      btn.appendChild(badge);
+
+      btn.addEventListener('click', () => {
+        if (activeBibliographyFilter === option.id) return;
+        activeBibliographyFilter = option.id;
+        updateFilterButtons();
+        renderAllSemesterSections();
+
+        const url = new URL(window.location);
+        const filterValue = getBibliographyFilterValue(activeBibliographyFilter);
+        if (filterValue) {
+          url.searchParams.set('bibliografias', filterValue);
+        } else {
+          url.searchParams.delete('bibliografias');
+        }
+        window.history.replaceState({}, '', url);
+      });
+
+      filterGroup.appendChild(btn);
+      filterButtons.push(btn);
+    });
 
     semesterKeys.forEach((groupName, idx) => {
       const section = document.createElement('section');
       section.className = 'semester';
       section.id = `semester-${idx}`;
-
-      groups[groupName]
-        .sort((left, right) => left.disciplina.localeCompare(right.disciplina, 'pt-BR'))
-        .forEach(subject => section.appendChild(renderSubject(subject, bibCache)));
 
       content.appendChild(section);
       sections.push(section);
@@ -665,6 +903,9 @@ async function load() {
       tabsContainer.appendChild(btn);
       buttons.push(btn);
     });
+
+    renderAllSemesterSections();
+    updateFilterButtons();
 
     let activeIdx = 0;
     if (initialTabSlug) {

@@ -3485,7 +3485,7 @@
         "situacao": "Disponível",
         "disponiveis": 2,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=9406",
-        "bibtex": "bibtex/FERREIRA2008.bib",
+        "bibtex": "bibtex/FERREIRA2008A.bib",
         "isbn": [
           "9788521616511"
         ]
@@ -5220,7 +5220,7 @@
         "situacao": "Apenas consulta",
         "disponiveis": 13,
         "url": "https://biblioteca.ifpb.edu.br/cgi-bin/koha/opac-detail.pl?biblionumber=513",
-        "bibtex": "bibtex/FERREIRA2008.bib",
+        "bibtex": "bibtex/FERREIRA2008B.bib",
         "isbn": [
           "9788575221778"
         ]

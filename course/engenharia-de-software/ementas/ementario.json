@@ -429,7 +429,7 @@
           "bibtex/MENEZES2010.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 5
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "RAMALHO, Luciano. Python fluente: programação clara, concisa e eficaz. São Paulo: Novatec, 2015. 798 p.",
@@ -1512,14 +1512,6 @@
           "bibtex/MARCUSCHI2008.bib"
         ],
         "tipo": "basica",
-        "quantidadeEmJP": 8
-      },
-      {
-        "referencia": "MARCUSCHI, LUIZ ANTÔNIO. Produção textual, análise de gêneros e compreensão. São Paulo: Parábola Editorial, 2008.",
-        "bibtex": [
-          "bibtex/MARCUSCHI2008.bib"
-        ],
-        "tipo": "complementar",
         "quantidadeEmJP": 8
       }
     ]
@@ -2744,7 +2736,7 @@
       {
         "referencia": "FERREIRA, Simone Bacellar Leal; NUNES, Ricardo Rodrigues. e-Usabilidade. 1. ed. Rio de Janeiro: LTC, 2008. 179 p. il. ISBN-13 9788521616511.",
         "bibtex": [
-          "bibtex/FERREIRA2008.bib"
+          "bibtex/FERREIRA2008A.bib"
         ],
         "tipo": "basica",
         "quantidadeEmJP": 2
@@ -2904,7 +2896,8 @@
         "bibtex": [
           "bibtex/AMARAL2016.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 1
       },
       {
         "referencia": "BAEZA-YATES, Ricardo; RIBEIRO-NETO, Berthier. Recuperação de Informação: Conceitos e Tecnologia das Máquinas de Busca. Editora Bookman; 2ª edição, 2013. ISBN-13 9788582600481",
@@ -3343,7 +3336,8 @@
       {
         "referencia": "TANENBAUM, Andrew S., WETHERALL, David J. Computer Networks (5th Edition), Pearson; (October 7, 2010)",
         "bibtex": [
-          "bibtex/TANENBAUM2011.bib"
+          "bibtex/TANENBAUM2011.bib",
+          "bibtex/TANENBAUM2003.bib"
         ],
         "tipo": "basica",
         "quantidadeEmJP": 5
@@ -4408,21 +4402,24 @@
         "bibtex": [
           "bibtex/FURTADO2007.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "LOPES, Luiz Martins. VASCONSELOS; Marco Antônio. Manual de Macroeconomia. São Paulo: Siciliano, 2008.",
         "bibtex": [
           "bibtex/LOPES2008.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "MENDONÇA, Sônia Regina de. Estado e Economia no Brasil . São Paulo: Paz e Terra, 2002.",
         "bibtex": [
           "bibtex/MENDONÇA1988.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "MONNACOTT, Paul Ronald. Economia. São Paulo: Makron Books, 1994",
@@ -4434,21 +4431,24 @@
         "bibtex": [
           "bibtex/OLIVEIRA2005.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "ROSSETTI, José Paschola. Introdução à Economia. São Paulo: Atlas, 2003.",
         "bibtex": [
           "bibtex/ROSSETTI2003.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 17
       },
       {
         "referencia": "SOUZA, Nali de Jesus de. Desenvolvimento Econômico. São Paulo: Atlas, 2005.",
         "bibtex": [
           "bibtex/SOUZA2005.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 7
       },
       {
         "referencia": "TAVARES, M. C. Planejamento Estratégico: a opção entre o sucesso e o fracasso empresarial. São Paulo: Harba, 1992.",
@@ -4481,35 +4481,40 @@
         "bibtex": [
           "bibtex/BESSANT2009.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "CAVALCANTI, Glauco; TOLOTI, Márcia. Empreendedorismo: decolando para o futuro. Rio de Janeiro: Elsevier, 2011. 176 p. il. ISBN-13 9788535252132.",
         "bibtex": [
           "bibtex/CAVALCANTI2012.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 2
       },
       {
         "referencia": "CHIAVENATO, Idalberto. Empreendedorismo: dando asas ao espírito empreendedor. 4. ed. Barueri, SP: Manole, 2012. 315 p. il. ISBN-13 9788502032778.",
         "bibtex": [
           "bibtex/CHIAVENATO2012.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 36
       },
       {
         "referencia": "DIAS, Alexandre Aparecido et al. Gestão da inovação e empreendedorismo. Rio de Janeiro: Elsevier, 2013. 364 p. il.",
         "bibtex": [
           "bibtex/PORTO2013.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "DOLABELA, Fernando. O Segredo de Luísa. 1. ed. Rio de Janeiro: Sextante. 2008. 304 p. ISBN-13 9788575423387.",
         "bibtex": [
           "bibtex/DOLABELA1999.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "DORNELAS, José Carlos Assis; SPINELLI, Stephen; ADAMS, Robert. Criação de novos negócios: empreendedorismo para o século XXI. 9. ed. São Paulo: GEN Atlas, 2013. 480 p. il. ISBN-13 9788535264586.",
@@ -4521,7 +4526,8 @@
         "bibtex": [
           "bibtex/DORNELAS2014.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "DRUCKER, Peter Ferdinand. Inovação e espírito empreendedor: prática e princípios. 1. ed. São Paulo: Cengage Learning, 2016. 400p. il. ISBN-13 9788522126682.",
@@ -4529,14 +4535,16 @@
           "bibtex/DRUCKER2000.bib",
           "bibtex/DRUCKER1986.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 8
       },
       {
         "referencia": "HISRICH, Robert D.; PETERS, Michael P; SHEPHERD, Dean A. Empreendedorismo. 9. ed. Porto Alegre, RS: AMGH, 2014. 480 p. il. ISBN-13 9788580553321.",
         "bibtex": [
           "bibtex/HISRICH2014.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 4
       }
     ]
   },
@@ -4655,7 +4663,8 @@
         "bibtex": [
           "bibtex/MACHADO2018.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 1
       },
       {
         "referencia": "NELSON, Catherine. Engenharia de Software para Cientistas de Dados: De Notebooks a Sistemas Escaláveis. Novatec, 2024. ISBN-13 9788575229170",
@@ -4797,7 +4806,8 @@
         "bibtex": [
           "bibtex/MENEZES2024.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "GREMILLION, R.; SMITH, M. SOX 404 for Small Publicly Held Companies: Risk-Based Compliance Strategies for Small Organizations. Auerbach Publications, 2019. ISBN-13 9781138584017.",
@@ -4952,7 +4962,8 @@
         "bibtex": [
           "bibtex/MACHADO2010.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "GALLO, Lígia Razera. Inglês instrumental para informática. São Paulo: Ícone Editora, 2008.",
@@ -4964,7 +4975,8 @@
         "bibtex": [
           "bibtex/MARCUSCHI2008.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 8
       },
       {
         "referencia": "MUNHOZ, Rosângela. Inglês instrumental: estratégias de leitura. Módulo 1. São Paulo: Texto novo, 2000.",
@@ -5149,14 +5161,16 @@
         "bibtex": [
           "bibtex/CALADO2014.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "MORETTIN, P. A.; BUSSAB, W. O. Estatística Básica. 7. ed. São Paulo: Saraiva, 2012. ISBN-13 9788502136915.",
         "bibtex": [
           "bibtex/MORETTIN2012.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "NAVARRO, Danielle; WEED, Ethan; Learning Statistics with Python (Python Adaptation by Ethan Weed). 1a. ed. 2021. Disponível em https://ethanweed.github.io/pythonbook/landingpage.html.",
@@ -5257,7 +5271,8 @@
         "bibtex": [
           "bibtex/SUTHERLAND2019.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 2
       }
     ]
   },
@@ -5302,7 +5317,8 @@
         "bibtex": [
           "bibtex/VERAS2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 6
       },
       {
         "referencia": "VITALINO, Jeferson Fernando Noronha. Descomplicando o Docker. BRASPORT, 1ª edição. 2016. ISBN-13 9788574527970.",
@@ -5394,14 +5410,17 @@
         "bibtex": [
           "bibtex/BURTCH2005.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       },
       {
         "referencia": "FERREIRA, Rubem E. Linux guia do administrador do sistema. 2. ed. São Paulo: Novatec, 2008. 716 p. ISBN-13 9788575221778.",
         "bibtex": [
-          "bibtex/FERREIRA2008.bib"
+          "bibtex/FERREIRA2008B.bib",
+          "bibtex/FERREIRA2003.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 23
       },
       {
         "referencia": "Foca GNU/Linux. Disponível em http://www.guiafoca.org/",
@@ -5416,21 +5435,24 @@
         "bibtex": [
           "bibtex/JARGAS2008.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 6
       },
       {
         "referencia": "MOTA FILHO, João Eriberto. Descobrindo o Linux: Entenda o sistema operacional GNU/Linux. 3ª Edição. Novatec Editora, 2012. 928 p. ISBN-13 9788575222782.",
         "bibtex": [
           "bibtex/MOTAFILHO2012.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 6
       },
       {
         "referencia": "NEVES, Julio Cezar. Programação SHELL LINUX 7. ed. Rio de Janeiro: Brasport, 2008. 452 p. il. ISBN-13 9788574523453.",
         "bibtex": [
           "bibtex/NEVES2008.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "Tutoriais sobre Linux. Disponíveis em http://www.tldp.org",
@@ -5442,7 +5464,8 @@
         "bibtex": [
           "bibtex/WARD2015.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 3
       }
     ]
   },
@@ -5560,7 +5583,8 @@
           "bibtex/TANENBAUM2011.bib",
           "bibtex/TANENBAUM2003.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 5
       }
     ]
   },
@@ -5690,7 +5714,8 @@
         "bibtex": [
           "bibtex/SIPSER2017.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "TUCKER, A.; NOONAN, R. Programming Languages: Principles and Paradigms. 2ª edição. McGraw-Hill, 2014.",
@@ -6008,7 +6033,8 @@
         "bibtex": [
           "bibtex/ANDRADE2010.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 4
       },
       {
         "referencia": "ANEXO 06 da Resolução nº 03F, de 05 de março de 2009. Regulamenta o Trabalho de Conclusão de Cursos para as diversas modalidades de cursos de graduação do IFPB e dá outras providências.",
@@ -6046,7 +6072,8 @@
           "bibtex/LAKATOS1991.bib",
           "bibtex/MARCONI2017.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 5
       },
       {
         "referencia": "MÁTTAR NETO, J. A. Metodologia cientifica na era da informática. São Paulo: Saraiva, 2007.",
@@ -6063,7 +6090,8 @@
         "bibtex": [
           "bibtex/OLIVEIRANETTO2008.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 4
       }
     ]
   },
@@ -6123,7 +6151,8 @@
         "bibtex": [
           "bibtex/VERAS2011.bib"
         ],
-        "tipo": "basica"
+        "tipo": "basica",
+        "quantidadeEmJP": 6
       },
       {
         "referencia": "VITALINO, Jeferson Fernando Noronha. Descomplicando o Docker. BRASPORT, 1ª edição. 2016. ISBN-13 9788574527970.",
@@ -6158,7 +6187,8 @@
         "bibtex": [
           "bibtex/AMARAL2016.bib"
         ],
-        "tipo": "complementar"
+        "tipo": "complementar",
+        "quantidadeEmJP": 1
       },
       {
         "referencia": "BERINATO, S. Good Charts: The HBR Guide to Making Smarter, More Persuasive Data Visualizations. Harvard Business Review Press, 2016. ISBN-13 9781633690714.",
