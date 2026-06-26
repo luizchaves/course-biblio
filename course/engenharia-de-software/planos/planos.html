@@ -439,6 +439,25 @@
       return buttons.join('');
     }
 
+    function hasValidId(value) {
+      return Number(value) > 0;
+    }
+
+    function renderDocumentLinks(document, semester) {
+      const hasPlan = hasValidId(document.documentId);
+      const hasClassRecord = hasValidId(document.classRecordId);
+      const documentId = encodeURIComponent(document.documentId);
+      const classRecordId = encodeURIComponent(document.classRecordId);
+      const plan = hasPlan
+        ? `Plano (<a class="document-link" href="${SUAP_PAGE_URL}${documentId}/" target="_blank" rel="noopener" title="Visualizar plano de ensino de ${semester}">Web</a>, <a class="document-link" href="${SUAP_PDF_URL}${documentId}/carta/" target="_blank" rel="noopener" title="Abrir PDF do plano de ensino de ${semester}">PDF</a>)`
+        : 'Plano (Web, PDF)';
+      const classRecord = hasClassRecord
+        ? `<a class="document-link" href="${SUAP_CLASS_RECORD_URL}${classRecordId}/" target="_blank" rel="noopener" title="Abrir diário de ${semester}">Diário</a>`
+        : 'Diário';
+
+      return `${plan} · ${classRecord}`;
+    }
+
     function renderSyllabus(syllabus) {
       if (!syllabus?.length) return '';
 
@@ -451,16 +470,10 @@
           const semester = escapeHtml(getSemesterLabel(item));
           const documentRows = documents
             .map(document => {
-              const documentId = encodeURIComponent(document.documentId);
-              const classRecordId = encodeURIComponent(document.classRecordId);
-              const planLinks = document.documentId
-                ? `Plano (<a class="document-link" href="${SUAP_PAGE_URL}${documentId}/" target="_blank" rel="noopener" title="Visualizar plano de ensino de ${semester}">Web</a>, <a class="document-link" href="${SUAP_PDF_URL}${documentId}/carta/" target="_blank" rel="noopener" title="Abrir PDF do plano de ensino de ${semester}">PDF</a>) · `
-                : '';
               return `<div class="document-row">
                 <div class="document-professor">${escapeHtml(document.professor)}</div>
                 <div class="document-links">
-                  ${planLinks}
-                  <a class="document-link" href="${SUAP_CLASS_RECORD_URL}${classRecordId}/" target="_blank" rel="noopener" title="Abrir diário de ${semester}">Diário</a>
+                  ${renderDocumentLinks(document, semester)}
                 </div>
               </div>`;
             })
