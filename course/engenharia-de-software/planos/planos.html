@@ -34,6 +34,62 @@
       font-size: 0.9rem;
     }
 
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .toolbar-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toolbar-label {
+      color: #4b5563;
+      font-size: 0.82rem;
+      font-weight: 650;
+    }
+
+    .sort-toggle {
+      display: inline-flex;
+      border: 1px solid #cfd8e3;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .sort-toggle-button {
+      min-width: 74px;
+      padding: 7px 12px;
+      border: 0;
+      border-right: 1px solid #cfd8e3;
+      color: #374151;
+      background: #fff;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.82rem;
+      font-weight: 650;
+    }
+
+    .sort-toggle-button:last-child {
+      border-right: 0;
+    }
+
+    .sort-toggle-button:hover,
+    .sort-toggle-button:focus-visible {
+      background: #f3f4f6;
+    }
+
+    .sort-toggle-button.is-active {
+      color: #fff;
+      background: #1d4ed8;
+    }
+
     .table-container {
       overflow-x: auto;
       border: 1px solid #dbe1e8;
@@ -77,6 +133,7 @@
 
     .row-header {
       width: 54px;
+      min-width: 54px;
       padding: 8px;
       color: #6b7280;
       background: #fafafa;
@@ -110,10 +167,14 @@
     }
 
     .subject-name {
+      display: -webkit-box;
+      overflow: hidden;
       color: #111827;
       font-size: 0.86rem;
       font-weight: 650;
       line-height: 1.3;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
     }
 
     .syllabus {
@@ -204,6 +265,10 @@
         padding: 14px;
       }
 
+      .toolbar {
+        justify-content: flex-start;
+      }
+
       h1 {
         font-size: 1.25rem;
       }
@@ -213,7 +278,24 @@
 <body>
   <main>
     <h1>Planos de Ensino — Engenharia de Software</h1>
-    <p class="subtitle">Os planos estão organizados conforme a posição definida pelo código da disciplina.</p>
+    <p class="subtitle">Os planos estão organizados por período e podem ser ordenados por código ou nome da disciplina.</p>
+    <div class="toolbar">
+      <div class="toolbar-group">
+        <span class="toolbar-label" id="semester-label">Semestre</span>
+        <div class="sort-toggle" id="semester-toggle" role="group" aria-labelledby="semester-label"></div>
+      </div>
+      <div class="toolbar-group">
+        <span class="toolbar-label" id="class-label">Turma</span>
+        <div class="sort-toggle" id="class-toggle" role="group" aria-labelledby="class-label"></div>
+      </div>
+      <div class="toolbar-group">
+        <span class="toolbar-label" id="sort-label">Ordenar por</span>
+        <div class="sort-toggle" role="group" aria-labelledby="sort-label">
+          <button class="sort-toggle-button is-active" type="button" data-sort-field="code" aria-pressed="true">Código</button>
+          <button class="sort-toggle-button" type="button" data-sort-field="name" aria-pressed="false">Nome</button>
+        </div>
+      </div>
+    </div>
     <div id="content" class="table-container">
       <div class="loading">Carregando planos…</div>
     </div>
@@ -226,6 +308,8 @@
       'https://suap.ifpb.edu.br/documento_eletronico/visualizar_documento/';
     const SUAP_CLASS_RECORD_URL =
       'https://suap.ifpb.edu.br/edu/diario/';
+    const ROW_HEADER_WIDTH = 54;
+    const PERIOD_COLUMN_MIN_WIDTH = 230;
 
     function escapeHtml(value) {
       return String(value ?? '')
@@ -246,6 +330,118 @@
       };
     }
 
+    function compareSubjects(sortField) {
+      return (left, right) => {
+        if (sortField === 'name') {
+          const byName = String(left.subject ?? '').localeCompare(String(right.subject ?? ''), 'pt-BR', {
+            sensitivity: 'base',
+          });
+          if (byName !== 0) return byName;
+        }
+
+        const byCode = String(left.code ?? '').localeCompare(String(right.code ?? ''), 'pt-BR', {
+          numeric: true,
+          sensitivity: 'base',
+        });
+        if (byCode !== 0) return byCode;
+
+        return String(left.subject ?? '').localeCompare(String(right.subject ?? ''), 'pt-BR', {
+          sensitivity: 'base',
+        });
+      };
+    }
+
+    function getClassTerm(classId) {
+      return String(classId ?? '').split('.')[0];
+    }
+
+    function getSemesterLabel(syllabusItem) {
+      return String(syllabusItem?.semester ?? '');
+    }
+
+    function formatTerm(term) {
+      const match = /^(\d{4})([12])$/.exec(String(term ?? ''));
+      return match ? `${match[1]}.${match[2]}` : String(term ?? '');
+    }
+
+    function getTerms(subjects) {
+      const terms = subjects.flatMap(subject =>
+        (subject.syllabus ?? []).map(item => getClassTerm(item.classId))
+      );
+      return [...new Set(terms)]
+        .filter(Boolean)
+        .sort((left, right) => String(right).localeCompare(String(left), 'pt-BR', { numeric: true }))
+        .map(term => ({
+          id: term,
+          label: formatTerm(term),
+        }));
+    }
+
+    function getSubjectPeriod(subject) {
+      return Number(String(subject?.period ?? '').replace(/^P/i, ''));
+    }
+
+    function addTerms(term, offset) {
+      const match = /^(\d{4})([12])$/.exec(String(term ?? ''));
+      if (!match) return term;
+
+      const startYear = Number(match[1]);
+      const startHalf = Number(match[2]);
+      const halfIndex = (startYear * 2) + (startHalf - 1) + offset;
+      const year = Math.floor(halfIndex / 2);
+      const half = (halfIndex % 2) + 1;
+      return `${year}${half}`;
+    }
+
+    function getExpectedClassTerm(classFilter, subject) {
+      const period = getSubjectPeriod(subject);
+      if (classFilter === 'all' || !period) return classFilter;
+      return addTerms(classFilter, period - 1);
+    }
+
+    function getFilteredSyllabus(subject, semesterFilter, classFilter) {
+      const syllabus = subject.syllabus ?? [];
+      const expectedClassTerm = getExpectedClassTerm(classFilter, subject);
+
+      return (syllabus ?? []).filter(item => {
+        const term = getClassTerm(item.classId);
+        const matchesSemester = semesterFilter === 'all' || term === semesterFilter;
+        const matchesClass = classFilter === 'all' || term === expectedClassTerm;
+        return matchesSemester && matchesClass;
+      });
+    }
+
+    function getFilteredSubjects(subjects, semesterFilter, classFilter) {
+      if (semesterFilter === 'all' && classFilter === 'all') return subjects;
+
+      return subjects
+        .map(subject => ({
+          ...subject,
+          syllabus: getFilteredSyllabus(subject, semesterFilter, classFilter),
+        }))
+        .filter(subject => subject.syllabus.length > 0);
+    }
+
+    function renderSemesterFilter(terms) {
+      const buttons = [
+        '<button class="sort-toggle-button is-active" type="button" data-semester-filter="all" aria-pressed="true">Todos</button>',
+        ...terms.map(term =>
+          `<button class="sort-toggle-button" type="button" data-semester-filter="${escapeHtml(term.id)}" aria-pressed="false">${escapeHtml(term.label)}</button>`
+        ),
+      ];
+      return buttons.join('');
+    }
+
+    function renderClassFilter(terms) {
+      const buttons = [
+        '<button class="sort-toggle-button is-active" type="button" data-class-filter="all" aria-pressed="true">Todas</button>',
+        ...terms.map(term =>
+          `<button class="sort-toggle-button" type="button" data-class-filter="${escapeHtml(term.id)}" aria-pressed="false">${escapeHtml(term.label)}</button>`
+        ),
+      ];
+      return buttons.join('');
+    }
+
     function renderSyllabus(syllabus) {
       if (!syllabus?.length) return '';
 
@@ -255,7 +451,7 @@
         )
         .map((item, index) => {
           const documents = item.documents ?? [];
-          const semester = escapeHtml(item.semester);
+          const semester = escapeHtml(getSemesterLabel(item));
           const documentRows = documents
             .map(document => {
               const documentId = encodeURIComponent(document.documentId);
@@ -284,34 +480,46 @@
       return `<ul class="syllabus">${periods}</ul>`;
     }
 
-    function renderTable(subjects) {
-      const positionedSubjects = subjects
+    function renderTable(subjects, sortField = 'code', semesterFilter = 'all', classFilter = 'all') {
+      const filteredSubjects = getFilteredSubjects(subjects, semesterFilter, classFilter);
+      const positionedSubjects = filteredSubjects
         .map(subject => ({ subject, position: parsePosition(subject.code) }))
         .filter(item => item.position);
 
       if (positionedSubjects.length === 0) {
-        throw new Error('Nenhuma disciplina possui um código de posição válido.');
+        return '<div class="loading">Nenhum plano encontrado para os filtros selecionados.</div>';
       }
 
       const maxColumn = Math.max(...positionedSubjects.map(item => item.position.column));
-      const maxRow = Math.max(...positionedSubjects.map(item => item.position.row));
-      const subjectByPosition = new Map(
-        positionedSubjects.map(item => [
-          `${item.position.column}:${item.position.row}`,
-          item.subject,
-        ])
-      );
+      const subjectsByColumn = new Map();
+
+      for (const item of positionedSubjects) {
+        const columnSubjects = subjectsByColumn.get(item.position.column) ?? [];
+        columnSubjects.push(item.subject);
+        subjectsByColumn.set(item.position.column, columnSubjects);
+      }
+
+      for (const columnSubjects of subjectsByColumn.values()) {
+        columnSubjects.sort(compareSubjects(sortField));
+      }
+
+      const maxRow = Math.max(...Array.from(subjectsByColumn.values(), columnSubjects => columnSubjects.length));
 
       const headers = Array.from(
         { length: maxColumn },
         (_, index) => `<th scope="col">${index + 1}º período</th>`
       ).join('');
+      const colgroup = `<colgroup>
+        <col style="width: ${ROW_HEADER_WIDTH}px">
+        ${Array.from({ length: maxColumn }, () => `<col style="width: ${PERIOD_COLUMN_MIN_WIDTH}px">`).join('')}
+      </colgroup>`;
+      const tableMinWidth = ROW_HEADER_WIDTH + (maxColumn * PERIOD_COLUMN_MIN_WIDTH);
 
       const rows = Array.from({ length: maxRow }, (_, rowIndex) => {
         const row = rowIndex + 1;
         const cells = Array.from({ length: maxColumn }, (_, columnIndex) => {
           const column = columnIndex + 1;
-          const subject = subjectByPosition.get(`${column}:${row}`);
+          const subject = subjectsByColumn.get(column)?.[rowIndex];
 
           if (!subject) {
             return '<td class="empty-cell" aria-label="Sem disciplina"></td>';
@@ -319,7 +527,7 @@
 
           return `<td>
             <span class="subject-code">${escapeHtml(subject.code)}</span><span class="subject-abbreviation">${escapeHtml(subject.abbreviation)}</span>
-            <div class="subject-name">${escapeHtml(subject.subject)}</div>
+            <div class="subject-name" title="${escapeHtml(subject.subject)}">${escapeHtml(subject.subject)}</div>
             ${renderSyllabus(subject.syllabus)}
           </td>`;
         }).join('');
@@ -327,10 +535,11 @@
         return `<tr><th class="row-header" scope="row">${row}</th>${cells}</tr>`;
       }).join('');
 
-      return `<table>
+      return `<table style="min-width: ${tableMinWidth}px">
+        ${colgroup}
         <thead>
           <tr>
-            <th class="row-header" scope="col">Pos.</th>
+            <th class="row-header" scope="col">Ordem</th>
             ${headers}
           </tr>
         </thead>
@@ -340,6 +549,11 @@
 
     async function init() {
       const content = document.getElementById('content');
+      const semesterToggle = document.getElementById('semester-toggle');
+      const classToggle = document.getElementById('class-toggle');
+      let currentSortField = 'code';
+      let currentSemesterFilter = 'all';
+      let currentClassFilter = 'all';
 
       try {
         const response = await fetch('planos.json');
@@ -348,7 +562,50 @@
         }
 
         const subjects = await response.json();
-        content.innerHTML = renderTable(subjects);
+        const terms = getTerms(subjects);
+        semesterToggle.innerHTML = renderSemesterFilter(terms);
+        classToggle.innerHTML = renderClassFilter(terms);
+        const sortButtons = Array.from(document.querySelectorAll('[data-sort-field]'));
+        const semesterButtons = Array.from(document.querySelectorAll('[data-semester-filter]'));
+        const classButtons = Array.from(document.querySelectorAll('[data-class-filter]'));
+
+        const render = () => {
+          content.innerHTML = renderTable(subjects, currentSortField, currentSemesterFilter, currentClassFilter);
+        };
+
+        const updatePressedState = (buttons, activeButton) => {
+          buttons.forEach(button => {
+            const isActive = button === activeButton;
+            button.classList.toggle('is-active', isActive);
+            button.setAttribute('aria-pressed', String(isActive));
+          });
+        };
+
+        sortButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            currentSortField = button.dataset.sortField;
+            updatePressedState(sortButtons, button);
+            render();
+          });
+        });
+
+        semesterButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            currentSemesterFilter = button.dataset.semesterFilter;
+            updatePressedState(semesterButtons, button);
+            render();
+          });
+        });
+
+        classButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            currentClassFilter = button.dataset.classFilter;
+            updatePressedState(classButtons, button);
+            render();
+          });
+        });
+
+        render();
       } catch (error) {
         content.innerHTML = `<div class="error">${escapeHtml(error.message)}</div>`;
       }
