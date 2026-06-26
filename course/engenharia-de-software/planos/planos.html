@@ -356,7 +356,7 @@
     }
 
     function getSemesterLabel(syllabusItem) {
-      return String(syllabusItem?.semester ?? '');
+      return formatTerm(getClassTerm(syllabusItem?.classId));
     }
 
     function formatTerm(term) {
@@ -447,7 +447,7 @@
 
       const periods = [...syllabus]
         .sort((left, right) =>
-          String(right.semester).localeCompare(String(left.semester), 'pt-BR', { numeric: true })
+          getClassTerm(right.classId).localeCompare(getClassTerm(left.classId), 'pt-BR', { numeric: true })
         )
         .map((item, index) => {
           const documents = item.documents ?? [];

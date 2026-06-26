@@ -1141,8 +1141,11 @@
       },
       {
         "referencia": "MACHADO, Kheronn Khennedy. Angular 11 e Firebase: Construindo uma aplicação integrada com a plataforma do Google. Casa do Código, 2021. ISBN-13 9788572540360.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/MACHADO2021.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       },
       {
         "referencia": "RAUSHMAYER, Axel. JavaScript for impatient programmers. Independently Published, 2019. ISBN-13 9781091210097. Disponível em https://exploringjs.com/impatient- js/toc.html.",
@@ -1163,8 +1166,11 @@
       },
       {
         "referencia": "SILVA, Maurício Samy. React Aprenda Praticando. São Paulo: Novatec, 2021. ISBN-13 9786586057393.",
-        "bibtex": [],
-        "tipo": "complementar"
+        "bibtex": [
+          "bibtex/SILVA2021.bib"
+        ],
+        "tipo": "complementar",
+        "quantidadeEmJP": 0
       }
     ]
   },
