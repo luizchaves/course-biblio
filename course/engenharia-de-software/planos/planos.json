@@ -652,5 +652,213 @@
         ]
       }
     ]
+  },
+  {
+    "code": "ES41",
+    "abbreviation": "TEC.0556",
+    "curriculumId": 766,
+    "subject": "Verificação, Validação e Teste de Software",
+    "period": "P4",
+    "syllabus": []
+  },
+  {
+    "code": "ES42",
+    "abbreviation": "TEC.0424",
+    "curriculumId": 766,
+    "subject": "Sistemas Operacionais",
+    "period": "P4",
+    "syllabus": []
+  },
+  {
+    "code": "ES43",
+    "abbreviation": "TEC.2517",
+    "curriculumId": 766,
+    "subject": "Programação para Web 3",
+    "period": "P4",
+    "syllabus": []
+  },
+  {
+    "code": "ES44",
+    "abbreviation": "TEC.2369",
+    "curriculumId": 766,
+    "subject": "Inovação e Criatividade",
+    "period": "P4",
+    "syllabus": []
+  },
+  {
+    "code": "ES45",
+    "abbreviation": "TEC.0877",
+    "curriculumId": 766,
+    "subject": "Banco de Dados II",
+    "period": "P4",
+    "syllabus": []
+  },
+  {
+    "code": "ES46",
+    "abbreviation": "TEC.0262",
+    "curriculumId": 766,
+    "subject": "Sociologia",
+    "period": "P4",
+    "syllabus": []
+  },
+  {
+    "code": "ES51",
+    "abbreviation": "TEC.1574",
+    "curriculumId": 766,
+    "subject": "Processos de Desenvolvimento de Software",
+    "period": "P5",
+    "syllabus": []
+  },
+  {
+    "code": "ES52",
+    "abbreviation": "TEC.0439",
+    "curriculumId": 766,
+    "subject": "Padrões de Projeto de Software",
+    "period": "P5",
+    "syllabus": []
+  },
+  {
+    "code": "ES53",
+    "abbreviation": "TEC.0551",
+    "curriculumId": 766,
+    "subject": "Análise e Técnicas de Algoritmos",
+    "period": "P5",
+    "syllabus": []
+  },
+  {
+    "code": "ES54",
+    "abbreviation": "TEC.2370",
+    "curriculumId": 766,
+    "subject": "Projeto e Avaliação de Interfaces do Usuário",
+    "period": "P5",
+    "syllabus": []
+  },
+  {
+    "code": "ES55",
+    "abbreviation": "TEC.0430",
+    "curriculumId": 766,
+    "subject": "Probabilidade e Estatística",
+    "period": "P5",
+    "syllabus": []
+  },
+  {
+    "code": "ES56",
+    "abbreviation": "TEC.2371",
+    "curriculumId": 766,
+    "subject": "Projeto Integrador II",
+    "period": "P5",
+    "syllabus": []
+  },
+  {
+    "code": "ES61",
+    "abbreviation": "TEC.0599",
+    "curriculumId": 766,
+    "subject": "Gerência de Projetos de Software",
+    "period": "P6",
+    "syllabus": []
+  },
+  {
+    "code": "ES62",
+    "abbreviation": "TEC.2372",
+    "curriculumId": 766,
+    "subject": "Segurança da Informação e de Sistemas",
+    "period": "P6",
+    "syllabus": []
+  },
+  {
+    "code": "ES63",
+    "abbreviation": "TEC.0438",
+    "curriculumId": 766,
+    "subject": "Programação para Dispositivos Móveis",
+    "period": "P6",
+    "syllabus": []
+  },
+  {
+    "code": "ES64",
+    "abbreviation": "TEC.0281",
+    "curriculumId": 766,
+    "subject": "Métodos e Técnicas de Pesquisa",
+    "period": "P6",
+    "syllabus": []
+  },
+  {
+    "code": "ES65",
+    "abbreviation": "TEC.2373",
+    "curriculumId": 766,
+    "subject": "Engenharia de Dados",
+    "period": "P6",
+    "syllabus": []
+  },
+  {
+    "code": "ES71",
+    "abbreviation": "TEC.1638",
+    "curriculumId": 766,
+    "subject": "Qualidade de Processo de Software",
+    "period": "P7",
+    "syllabus": []
+  },
+  {
+    "code": "ES72",
+    "abbreviation": "TEC.1637",
+    "curriculumId": 766,
+    "subject": "Sistemas Distribuídos",
+    "period": "P7",
+    "syllabus": []
+  },
+  {
+    "code": "ES74",
+    "abbreviation": "TEC.2374",
+    "curriculumId": 766,
+    "subject": "Infraestrutura e Monitoramento de Sistemas",
+    "period": "P7",
+    "syllabus": []
+  },
+  {
+    "code": "ES75",
+    "abbreviation": "TEC.0564",
+    "curriculumId": 766,
+    "subject": "Inteligência Artificial",
+    "period": "P7",
+    "syllabus": []
+  },
+  {
+    "code": "ES76",
+    "abbreviation": "TEC.2375",
+    "curriculumId": 766,
+    "subject": "Projeto Integrador III",
+    "period": "P7",
+    "syllabus": []
+  },
+  {
+    "code": "ES81",
+    "abbreviation": "TEC.0568",
+    "curriculumId": 766,
+    "subject": "Trabalho de Conclusão de Curso",
+    "period": "P8",
+    "syllabus": []
+  },
+  {
+    "code": "ES82",
+    "abbreviation": "TEC.0029",
+    "curriculumId": 766,
+    "subject": "Empreendedorismo",
+    "period": "P8",
+    "syllabus": []
+  },
+  {
+    "code": "ES85",
+    "abbreviation": "TEC.2376",
+    "curriculumId": 766,
+    "subject": "Visualização de Dados",
+    "period": "P8",
+    "syllabus": []
+  },
+  {
+    "code": "ES86",
+    "abbreviation": "TEC.2377",
+    "curriculumId": 766,
+    "subject": "Direito na Informática",
+    "period": "P8",
+    "syllabus": []
   }
 ]
